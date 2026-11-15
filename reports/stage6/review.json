@@ -1,0 +1,12 @@
+{
+  "review_type": "independent read-only code and report review",
+  "initial_finding": "Summary accepted different fixed QL checkpoints across seeds",
+  "resolution": "Per-map model SHA validation; test_summary_rejects_changed_model_between_seeds failed before fix and passed after fix",
+  "focused_tests_at_review": "12 passed",
+  "final_suite": "142 passed in 13.07s",
+  "report_numerical_comparisons": 564,
+  "report_numerical_mismatches": 0,
+  "remaining_actionable_findings": [],
+  "unresolved_experiment_limitation": "Identical seed/config does not guarantee bitwise replay in observed runs, including no-tripinfo controls; cause unknown. No proof of universal output passivity.",
+  "reviewer_did_not": ["edit files", "launch full experiment", "render plots"]
+}

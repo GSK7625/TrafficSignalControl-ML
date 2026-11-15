@@ -1,0 +1,11 @@
+{
+  "queue_seconds": [
+    51644,
+    51664,
+    51644,
+    51644
+  ],
+  "no_tripinfo_repeat_equal": false,
+  "tripinfo_repeat_equal": true,
+  "output_toggle_equal": true
+}

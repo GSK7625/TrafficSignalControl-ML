@@ -1,0 +1,36 @@
+{
+  "git_head": "aa64b2f7e3f9cbedf4655f1c1eff5d91f11b6370",
+  "data": {
+    "cologne1": {
+      "data/cologne1/cologne1.net.xml": "99fc6bcfa9b048464234afa8fa30b52e4d7ea06ee696823b8cac00dc0709800c",
+      "data/cologne1/cologne1.rou.xml": "63c4a823dafd0fa43e0dddf79ca34516f3666a1021fa89eaf486b20a3f24375c",
+      "data/cologne1/cologne1.sumocfg": "897598657fd4506a3c46d35c447272e54c311b9c9572326ee00a147ad204ba1a",
+      "data/cologne1/LICENSE": "f594ef1e139be8ef63eebf3e1c1c7ee1536982a3cf50a44b0e5d624d411b11e9"
+    },
+    "ingolstadt1": {
+      "data/ingolstadt1/ingolstadt1.net.xml": "5d474be4c1cae6c9d7fb407e6ef9d4bc0ccf1b4d5280b8761c0538f4f2a312f3",
+      "data/ingolstadt1/ingolstadt1.rou.xml": "682e73f3df639e5117c46d91f812f3a007d227bcb3d8c74a8d9cef231c0ebad0",
+      "data/ingolstadt1/ingolstadt1.sumocfg": "226dd08dba609e825c94ffa238b74f2f98368dde4b6ca94c225d4f17eb13b730",
+      "data/ingolstadt1/LICENSE": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    }
+  },
+  "models": {
+    "cologne1": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+    "ingolstadt1": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa"
+  },
+  "code": {
+    "evaluate.py": "2ca79194cef82111487f0799ee83d0af15609ce0ffaca7d62bef37c5f5eceb21",
+    "evaluation_metrics.py": "d496b5bfe32bcb988ee076738a4059f8811257a6e943acc7164d436ed0698f59",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08",
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "plot_results.py": "fad385b69ad4f6ee27b0bb539ecc408468140ebd9ffb75bb97dcaa389826be3c",
+    "q_learning.py": "28598a4b09a09d9f211733ff05bb6f857a0502ded5fecdd55f502bb75b079b46",
+    "smoke_test.py": "3ec3390ca9566ed6daba9e7ffac7acf33420d4e4bf027144dba8093da23379dd",
+    "sumo_env.py": "bdb301b2dbee7de4d21ceadedab64196163886e32a16734b59cf68cdd73524a2",
+    "test_evaluation.py": "7335ed05e36e12e7db3bfd2e1728baeaf2652955888f265a8bd817e9214278e6",
+    "test_ft.py": "aa74ace20d47b11a98d6d8d5cfe1507079eb31d02e30e1f74e6395091c57b9db",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "test_q_learning.py": "c3754e772be7997a02e70294f714e070fd2ceb7523f4b4048b178cad72619bc4",
+    "test_sumo_env.py": "22418163cc2be7f8c787428529a2c2d981c0ab0d412999589ffc536cc06f6643"
+  }
+}

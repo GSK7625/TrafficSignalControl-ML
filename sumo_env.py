@@ -22,12 +22,15 @@ def yellow_state(green):
 
 
 class SumoEnv:
-    def __init__(self, map_name, output_dir=None, seed=23423):
+    def __init__(self, map_name, output_dir=None, seed=23423, *, tripinfo=False):
         if map_name not in ("cologne1", "ingolstadt1"):
             raise ValueError("map_name must be cologne1 or ingolstadt1")
         if type(seed) is not int or not 0 <= seed < 2**31:
             raise ValueError("seed must be an integer in [0, 2**31)")
         self.seed = seed
+        if tripinfo and output_dir is None:
+            raise ValueError("tripinfo requires output_dir")
+        self.tripinfo = tripinfo
         self.map_name = map_name
         self.config = ROOT / "data" / map_name / f"{map_name}.sumocfg"
         config = ET.parse(self.config).getroot()
@@ -132,6 +135,12 @@ class SumoEnv:
                 "--statistic-output", str(self.output_dir / "statistics.xml"),
                 "--collision-output", str(self.output_dir / "collisions.xml"),
             ]
+            if self.tripinfo:
+                command += [
+                    "--tripinfo-output", str(self.output_dir / "tripinfo.xml"),
+                    "--tripinfo-output.write-unfinished", "true",
+                    "--tripinfo-output.write-undeparted", "true",
+                ]
             (self.output_dir / "command.txt").write_text(
                 "\n".join(command) + "\n", encoding="utf-8")
         label = f"stage2-{id(self)}"

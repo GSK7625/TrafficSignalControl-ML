@@ -1,0 +1,13 @@
+***Starting server on port 51706 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml' ... done (6ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 57600.00.
+Warning: Teleporting vehicle 'carIn9903:1'; waited too long (yield), lane='164051413_2', time=58281.00.
+Warning: Vehicle 'carIn9903:1' ends teleporting on edge '104012170', time=58284.00.
+Warning: Teleporting vehicle 'h18297c1:1'; waited too long (yield), lane='164051413_2', time=59000.00.
+Warning: Vehicle 'h18297c1:1' ends teleporting on edge '104010475#0', time=59000.00.
+Simulation ended at time: 61200.00.
+Reason: TraCI requested termination.
+DijkstraRouter answered 1897 queries and explored 3.48 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

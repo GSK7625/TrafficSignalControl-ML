@@ -1,0 +1,11 @@
+{
+  "identical_to_stage5_all_signal_rows": true,
+  "queue_samples": 3600,
+  "valid_trip_count": 995,
+  "waiting_from_XML": 13.759798994974874,
+  "travel_from_XML": 47.91155778894473,
+  "time_loss_from_XML": 20.43905527638191,
+  "queue_from_CSV": 47.50666666666667,
+  "teleport_events": 67,
+  "teleport_unique_vehicles": 59
+}

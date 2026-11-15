@@ -1,0 +1,8252 @@
+{
+  "models": {
+    "cologne1": {
+      "sha256": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+      "actions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "encoding": {
+        "queue_bins": [
+          0,
+          4
+        ],
+        "phase_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "incoming_lanes": [
+          "-32038056#3_0",
+          "-32038056#3_1",
+          "23429231#1_0",
+          "23429231#1_1",
+          "27115123#3_0",
+          "27115123#3_1",
+          "28198821#3_0",
+          "28198821#3_1"
+        ],
+        "incoming_groups": [
+          {
+            "edge": "-32038056#3",
+            "lanes": [
+              "-32038056#3_0",
+              "-32038056#3_1"
+            ]
+          },
+          {
+            "edge": "23429231#1",
+            "lanes": [
+              "23429231#1_0",
+              "23429231#1_1"
+            ]
+          },
+          {
+            "edge": "27115123#3",
+            "lanes": [
+              "27115123#3_0",
+              "27115123#3_1"
+            ]
+          },
+          {
+            "edge": "28198821#3",
+            "lanes": [
+              "28198821#3_0",
+              "28198821#3_1"
+            ]
+          }
+        ],
+        "outgoing_lanes": [
+          "-28198821#4_0",
+          "-28198821#4_1",
+          "32038051#0_0",
+          "32038051#0_1",
+          "32038056#0_0",
+          "32038056#0_1",
+          "32324544#0_0",
+          "32324544#0_1"
+        ],
+        "outgoing_groups": [
+          {
+            "edge": "-28198821#4",
+            "lanes": [
+              "-28198821#4_0",
+              "-28198821#4_1"
+            ]
+          },
+          {
+            "edge": "32038051#0",
+            "lanes": [
+              "32038051#0_0",
+              "32038051#0_1"
+            ]
+          },
+          {
+            "edge": "32038056#0",
+            "lanes": [
+              "32038056#0_0",
+              "32038056#0_1"
+            ]
+          },
+          {
+            "edge": "32324544#0",
+            "lanes": [
+              "32324544#0_0",
+              "32324544#0_1"
+            ]
+          }
+        ]
+      },
+      "table_states": 57,
+      "decision_states": 57,
+      "successor_only_states": 0,
+      "theoretical_states": 52488,
+      "incoming_groups": 4,
+      "outgoing_groups": 4,
+      "updates": 281,
+      "updated_pairs": 175,
+      "q_cells": 456,
+      "observed_state_action_fraction": 0.38377192982456143,
+      "single_update_pairs": 107,
+      "update_histogram": {
+        "1": 107,
+        "2": 44,
+        "3": 15,
+        "4": 5,
+        "5": 3,
+        "6": 1
+      },
+      "maximum_pair_updates": 6,
+      "most_updated_pairs": [
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "action": 4,
+          "updates": 6
+        }
+      ],
+      "negative": 175,
+      "zero": 281,
+      "positive": 0,
+      "updated_zero_pairs": 0,
+      "any_equal_value_states": 47,
+      "tied_max_states": 47,
+      "partly_learned_states": 47,
+      "greedy_actions_over_model": {
+        "0": 22,
+        "1": 15,
+        "2": 5,
+        "3": 3,
+        "4": 8,
+        "5": 1,
+        "6": 2,
+        "7": 1
+      },
+      "evaluation": {
+        "unseen": 112,
+        "tied": 354,
+        "zero_beats_negative": 242,
+        "decisions": 509,
+        "unique_max": 155,
+        "selected_untried": 354,
+        "known_selected_untried": 242,
+        "known_ties": 242,
+        "unseen_fraction": 0.2200392927308448,
+        "tie_fraction": 0.6954813359528488,
+        "unique_max_fraction": 0.3045186640471513,
+        "distinct_states": 15,
+        "distinct_unseen_states": 7,
+        "known_states_not_evaluated": 49,
+        "selection_reasons": [
+          {
+            "action": 0,
+            "unseen": 112,
+            "known_tie": 122,
+            "unique_max": 0
+          },
+          {
+            "action": 1,
+            "unseen": 0,
+            "known_tie": 115,
+            "unique_max": 107
+          },
+          {
+            "action": 2,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 48
+          },
+          {
+            "action": 3,
+            "unseen": 0,
+            "known_tie": 5,
+            "unique_max": 0
+          },
+          {
+            "action": 4,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 0
+          },
+          {
+            "action": 5,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 0
+          },
+          {
+            "action": 6,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 0
+          },
+          {
+            "action": 7,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 0
+          }
+        ]
+      }
+    },
+    "ingolstadt1": {
+      "sha256": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa",
+      "actions": [
+        0,
+        2,
+        4
+      ],
+      "encoding": {
+        "queue_bins": [
+          0,
+          4
+        ],
+        "phase_ids": [
+          0,
+          2,
+          4
+        ],
+        "incoming_lanes": [
+          "104010354_1",
+          "104010354_2",
+          "164051413_1",
+          "164051413_2",
+          "201963537#1_1",
+          "201963537#1_2",
+          "201963537#1_3"
+        ],
+        "incoming_groups": [
+          {
+            "edge": "104010354",
+            "lanes": [
+              "104010354_1",
+              "104010354_2"
+            ]
+          },
+          {
+            "edge": "164051413",
+            "lanes": [
+              "164051413_1",
+              "164051413_2"
+            ]
+          },
+          {
+            "edge": "201963537#1",
+            "lanes": [
+              "201963537#1_1",
+              "201963537#1_2",
+              "201963537#1_3"
+            ]
+          }
+        ],
+        "outgoing_lanes": [
+          "-164051413_1",
+          "104010475#0_1",
+          "104010475#0_2",
+          "124812857#0_1",
+          "124812857#0_2",
+          "124812857#0_3"
+        ],
+        "outgoing_groups": [
+          {
+            "edge": "-164051413",
+            "lanes": [
+              "-164051413_1"
+            ]
+          },
+          {
+            "edge": "104010475#0",
+            "lanes": [
+              "104010475#0_1",
+              "104010475#0_2"
+            ]
+          },
+          {
+            "edge": "124812857#0",
+            "lanes": [
+              "124812857#0_1",
+              "124812857#0_2",
+              "124812857#0_3"
+            ]
+          }
+        ]
+      },
+      "table_states": 15,
+      "decision_states": 15,
+      "successor_only_states": 0,
+      "theoretical_states": 2187,
+      "incoming_groups": 3,
+      "outgoing_groups": 3,
+      "updates": 304,
+      "updated_pairs": 40,
+      "q_cells": 45,
+      "observed_state_action_fraction": 0.8888888888888888,
+      "single_update_pairs": 10,
+      "update_histogram": {
+        "1": 10,
+        "2": 5,
+        "3": 2,
+        "4": 3,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 2,
+        "9": 2,
+        "10": 2,
+        "11": 1,
+        "12": 1,
+        "13": 2,
+        "14": 1,
+        "16": 1,
+        "17": 2,
+        "21": 1,
+        "25": 1,
+        "35": 1
+      },
+      "maximum_pair_updates": 35,
+      "most_updated_pairs": [
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "action": 0,
+          "updates": 35
+        }
+      ],
+      "negative": 40,
+      "zero": 5,
+      "positive": 0,
+      "updated_zero_pairs": 0,
+      "any_equal_value_states": 2,
+      "tied_max_states": 2,
+      "partly_learned_states": 3,
+      "greedy_actions_over_model": {
+        "0": 6,
+        "2": 6,
+        "4": 3
+      },
+      "evaluation": {
+        "unseen": 1,
+        "tied": 16,
+        "zero_beats_negative": 15,
+        "decisions": 511,
+        "unique_max": 495,
+        "selected_untried": 16,
+        "known_selected_untried": 15,
+        "known_ties": 15,
+        "unseen_fraction": 0.0019569471624266144,
+        "tie_fraction": 0.03131115459882583,
+        "unique_max_fraction": 0.9686888454011742,
+        "distinct_states": 15,
+        "distinct_unseen_states": 1,
+        "known_states_not_evaluated": 1,
+        "selection_reasons": [
+          {
+            "action": 0,
+            "unseen": 1,
+            "known_tie": 0,
+            "unique_max": 283
+          },
+          {
+            "action": 2,
+            "unseen": 0,
+            "known_tie": 15,
+            "unique_max": 122
+          },
+          {
+            "action": 4,
+            "unseen": 0,
+            "known_tie": 0,
+            "unique_max": 90
+          }
+        ]
+      }
+    }
+  },
+  "observations": {
+    "cologne1/stage5/train": {
+      "observations": 281,
+      "raw_observations": 273,
+      "edge_observations": 265,
+      "encoded_states": 57,
+      "aggregation_collisions": 6,
+      "discretization_collisions": 29,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            12,
+            18,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              5,
+              7,
+              9,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              6,
+              6,
+              9,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            7,
+            32,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              1,
+              6,
+              16,
+              16,
+              7,
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              5,
+              16,
+              16,
+              7,
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            37,
+            32,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "lane_queues_phase": [
+            [
+              18,
+              19,
+              16,
+              16,
+              0,
+              0,
+              9,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5
+            ],
+            [
+              19,
+              18,
+              16,
+              16,
+              0,
+              0,
+              9,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 11,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                31,
+                13,
+                18,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                15,
+                6,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                23,
+                13,
+                19,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                12,
+                11,
+                6,
+                7,
+                9,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                10,
+                14,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                7,
+                3,
+                7,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                10,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                6,
+                7,
+                0,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                4,
+                23,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                3,
+                1,
+                12,
+                11,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                4,
+                23,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                3,
+                1,
+                12,
+                11,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                1,
+                28,
+                8,
+                18,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                1,
+                0,
+                12,
+                16,
+                1,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                13,
+                11,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                6,
+                7,
+                6,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                32,
+                7,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                1,
+                2,
+                16,
+                16,
+                2,
+                5,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                5,
+                4,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                4,
+                32,
+                14,
+                18,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                2,
+                2,
+                16,
+                16,
+                7,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                9,
+                15,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                1,
+                0,
+                16,
+                16,
+                5,
+                4,
+                9,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                38,
+                0,
+                7,
+                1,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                29,
+                9,
+                0,
+                0,
+                5,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                49,
+                0,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                26,
+                23,
+                0,
+                0,
+                7,
+                7,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 22,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                46,
+                0,
+                13,
+                18,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                22,
+                24,
+                0,
+                0,
+                6,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                9,
+                0,
+                14,
+                13,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                4,
+                0,
+                0,
+                7,
+                7,
+                9,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                71,
+                32,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                35,
+                36,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                31,
+                32,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                24,
+                7,
+                16,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                70,
+                32,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                37,
+                33,
+                16,
+                16,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                58,
+                32,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                23,
+                35,
+                16,
+                16,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "distinct_edge_observations": 21,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                19,
+                25,
+                0,
+                18,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                10,
+                9,
+                13,
+                12,
+                0,
+                0,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                14,
+                25,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              "lane_queues_phase": [
+                7,
+                7,
+                9,
+                16,
+                0,
+                0,
+                9,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                29,
+                10,
+                0,
+                13,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                20,
+                9,
+                1,
+                9,
+                0,
+                0,
+                4,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                25,
+                16,
+                0,
+                18,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                20,
+                5,
+                2,
+                14,
+                0,
+                0,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          "distinct_edge_observations": 7,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                29,
+                32,
+                0,
+                18,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                20,
+                9,
+                16,
+                16,
+                0,
+                0,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                69,
+                27,
+                0,
+                18,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                40,
+                29,
+                16,
+                11,
+                0,
+                0,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 5,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                27,
+                32,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                15,
+                12,
+                16,
+                16,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                9,
+                32,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                4,
+                5,
+                16,
+                16,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          "distinct_edge_observations": 6,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                19,
+                25,
+                3,
+                19,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                12,
+                7,
+                12,
+                13,
+                2,
+                1,
+                9,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                31,
+                32,
+                1,
+                18,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                16,
+                15,
+                16,
+                16,
+                1,
+                0,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 31,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                7,
+                32,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                4,
+                3,
+                16,
+                16,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                46,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                23,
+                23,
+                16,
+                16,
+                6,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                27,
+                32,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                15,
+                12,
+                16,
+                16,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                60,
+                11,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                29,
+                31,
+                5,
+                6,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                13,
+                24,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                13,
+                16,
+                8,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                63,
+                32,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                21,
+                42,
+                16,
+                16,
+                5,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 6,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                21,
+                32,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                12,
+                9,
+                16,
+                16,
+                1,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                49,
+                32,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                23,
+                26,
+                16,
+                16,
+                2,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                38,
+                10,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                20,
+                18,
+                2,
+                8,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                71,
+                8,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                36,
+                35,
+                2,
+                6,
+                0,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                31,
+                32,
+                13,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                17,
+                14,
+                16,
+                16,
+                7,
+                6,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                29,
+                32,
+                12,
+                3,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                15,
+                14,
+                16,
+                16,
+                5,
+                7,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 7,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                89,
+                32,
+                12,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                33,
+                56,
+                16,
+                16,
+                5,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                49,
+                32,
+                12,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                21,
+                28,
+                16,
+                16,
+                5,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 9,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                88,
+                17,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                39,
+                49,
+                8,
+                9,
+                7,
+                7,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                16,
+                32,
+                12,
+                2,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                9,
+                7,
+                16,
+                16,
+                5,
+                7,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                31,
+                10,
+                9,
+                4,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                23,
+                8,
+                0,
+                10,
+                2,
+                7,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                74,
+                14,
+                8,
+                3,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                41,
+                33,
+                1,
+                13,
+                1,
+                7,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                19,
+                32,
+                5,
+                18,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                11,
+                8,
+                16,
+                16,
+                1,
+                4,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                12,
+                9,
+                18,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                3,
+                2,
+                10,
+                2,
+                5,
+                4,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 14,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                30,
+                27,
+                13,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                10,
+                20,
+                16,
+                11,
+                6,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                11,
+                32,
+                13,
+                5,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                11,
+                16,
+                16,
+                6,
+                7,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                72,
+                32,
+                13,
+                18,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                41,
+                31,
+                16,
+                16,
+                6,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                16,
+                31,
+                12,
+                14,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                10,
+                6,
+                16,
+                15,
+                5,
+                7,
+                8,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                65,
+                16,
+                13,
+                8,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                35,
+                30,
+                0,
+                16,
+                6,
+                7,
+                6,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                8,
+                16,
+                13,
+                19,
+                0,
+                0,
+                0,
+                0,
+                6
+              ],
+              "lane_queues_phase": [
+                4,
+                4,
+                0,
+                16,
+                6,
+                7,
+                9,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          "distinct_edge_observations": 15,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                5,
+                20,
+                8,
+                18,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                2,
+                3,
+                16,
+                4,
+                4,
+                4,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                29,
+                14,
+                18,
+                0,
+                0,
+                0,
+                0,
+                7
+              ],
+              "lane_queues_phase": [
+                2,
+                3,
+                16,
+                13,
+                7,
+                7,
+                9,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cologne1/stage5/evaluate": {
+      "observations": 204,
+      "raw_observations": 103,
+      "edge_observations": 81,
+      "encoded_states": 15,
+      "aggregation_collisions": 17,
+      "discretization_collisions": 10,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              4,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              7,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            11,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              5,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              7,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            13,
+            17,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              6,
+              7,
+              8,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              6,
+              7,
+              9,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                2,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                4,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 8,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                29,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                13,
+                16,
+                7,
+                7,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                12,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                5,
+                7,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                17,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                6,
+                7,
+                9,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                17,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                9,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 5,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                7,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                6,
+                7,
+                0,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                2,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                1,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                1,
+                20,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                8,
+                12,
+                7,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                13,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                10,
+                32,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                7,
+                3,
+                16,
+                16,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                11,
+                32,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                7,
+                4,
+                16,
+                16,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 23,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                19,
+                32,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                10,
+                9,
+                16,
+                16,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                4,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cologne1/stage6/QL": {
+      "observations": 509,
+      "raw_observations": 199,
+      "edge_observations": 145,
+      "encoded_states": 15,
+      "aggregation_collisions": 36,
+      "discretization_collisions": 12,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              1,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              2,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              4,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              7,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            32,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              16,
+              16,
+              3,
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              16,
+              16,
+              7,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 18,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                2,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                4,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 12,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                29,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                13,
+                16,
+                7,
+                7,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 8,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                12,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                5,
+                7,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                17,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                6,
+                7,
+                9,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                17,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                9,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 8,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                13,
+                7,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                6,
+                7,
+                0,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                32,
+                14,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                16,
+                16,
+                7,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                4,
+                21,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                3,
+                1,
+                11,
+                10,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                4,
+                22,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                3,
+                1,
+                11,
+                11,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 22,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                2,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                1,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                1,
+                20,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                8,
+                12,
+                7,
+                7,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                13,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                32,
+                14,
+                9,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                1,
+                16,
+                16,
+                7,
+                7,
+                0,
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                10,
+                32,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                7,
+                3,
+                16,
+                16,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                11,
+                32,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              "lane_queues_phase": [
+                7,
+                4,
+                16,
+                16,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 42,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                19,
+                32,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                10,
+                9,
+                16,
+                16,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                32,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                4,
+                1,
+                16,
+                16,
+                6,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ingolstadt1/stage5/train": {
+      "observations": 304,
+      "raw_observations": 184,
+      "edge_observations": 154,
+      "encoded_states": 15,
+      "aggregation_collisions": 25,
+      "discretization_collisions": 12,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 6,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                13,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                44,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                13,
+                12,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                25,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                3,
+                3,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 13,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 20,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 4,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                0,
+                2,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                2,
+                0,
+                4,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                0,
+                0,
+                0,
+                2,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                4,
+                0,
+                19,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                2,
+                0,
+                34,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                0,
+                0,
+                0,
+                7,
+                8,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                4,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                2,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                4,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                3,
+                1,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 11,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                14,
+                0,
+                4,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                7,
+                7,
+                0,
+                0,
+                1,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                14,
+                0,
+                1,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                7,
+                7,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 37,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                5,
+                0,
+                22,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                3,
+                2,
+                0,
+                0,
+                2,
+                1,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                8,
+                0,
+                22,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                4,
+                4,
+                0,
+                0,
+                2,
+                1,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 26,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                3,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                6,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                3,
+                3,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ingolstadt1/stage5/evaluate": {
+      "observations": 204,
+      "raw_observations": 109,
+      "edge_observations": 90,
+      "encoded_states": 13,
+      "aggregation_collisions": 17,
+      "discretization_collisions": 11,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                14,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 8,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                5,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                6,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 5,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                0,
+                5,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                0,
+                1,
+                1,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                4,
+                0,
+                9,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                2,
+                0,
+                0,
+                1,
+                1,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 10,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                8,
+                0,
+                1,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                3,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                10,
+                0,
+                1,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                5,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 17,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                8,
+                0,
+                14,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                4,
+                4,
+                0,
+                0,
+                1,
+                1,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                10,
+                0,
+                10,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                5,
+                0,
+                0,
+                0,
+                0,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 13,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                7,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                4,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                3,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ingolstadt1/stage6/QL": {
+      "observations": 511,
+      "raw_observations": 188,
+      "edge_observations": 145,
+      "encoded_states": 15,
+      "aggregation_collisions": 31,
+      "discretization_collisions": 12,
+      "aggregation_examples": [
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "edge_queues_phase": [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_queues_phase": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "state": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 5,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                14,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 3,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 9,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distinct_edge_observations": 23,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                0,
+                1,
+                5,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                0,
+                2,
+                6,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lane_queues_phase": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 2,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                0,
+                4,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                0,
+                1,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                1,
+                0,
+                4,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                1,
+                0,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 12,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                0,
+                5,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                0,
+                1,
+                1,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                4,
+                0,
+                9,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                2,
+                2,
+                0,
+                0,
+                1,
+                1,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 13,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                3,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                2,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 16,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                8,
+                0,
+                1,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                3,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                10,
+                0,
+                1,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                5,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4
+          ],
+          "distinct_edge_observations": 35,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                8,
+                0,
+                14,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                4,
+                4,
+                0,
+                0,
+                1,
+                1,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                10,
+                0,
+                10,
+                0,
+                0,
+                0,
+                4
+              ],
+              "lane_queues_phase": [
+                5,
+                5,
+                0,
+                0,
+                0,
+                0,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "distinct_edge_observations": 19,
+          "examples": [
+            {
+              "edge_queues_phase": [
+                7,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                4,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "edge_queues_phase": [
+                5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lane_queues_phase": [
+                3,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "policy": {
+    "stage5/evaluate/cologne1/42": {
+      "unseen": 25,
+      "tied": 72,
+      "zero_beats_negative": 47,
+      "decisions": 102,
+      "unique_max": 30,
+      "selected_untried": 72,
+      "known_selected_untried": 47,
+      "known_ties": 47,
+      "unseen_fraction": 0.24509803921568626,
+      "tie_fraction": 0.7058823529411765,
+      "unique_max_fraction": 0.29411764705882354
+    },
+    "stage5/evaluate/cologne1/12345": {
+      "unseen": 20,
+      "tied": 71,
+      "zero_beats_negative": 51,
+      "decisions": 102,
+      "unique_max": 31,
+      "selected_untried": 71,
+      "known_selected_untried": 51,
+      "known_ties": 51,
+      "unseen_fraction": 0.19607843137254902,
+      "tie_fraction": 0.696078431372549,
+      "unique_max_fraction": 0.30392156862745096
+    },
+    "stage6/QL/cologne1/42": {
+      "unseen": 25,
+      "tied": 72,
+      "zero_beats_negative": 47,
+      "decisions": 102,
+      "unique_max": 30,
+      "selected_untried": 72,
+      "known_selected_untried": 47,
+      "known_ties": 47,
+      "unseen_fraction": 0.24509803921568626,
+      "tie_fraction": 0.7058823529411765,
+      "unique_max_fraction": 0.29411764705882354
+    },
+    "stage6/QL/cologne1/12345": {
+      "unseen": 20,
+      "tied": 71,
+      "zero_beats_negative": 51,
+      "decisions": 102,
+      "unique_max": 31,
+      "selected_untried": 71,
+      "known_selected_untried": 51,
+      "known_ties": 51,
+      "unseen_fraction": 0.19607843137254902,
+      "tie_fraction": 0.696078431372549,
+      "unique_max_fraction": 0.30392156862745096
+    },
+    "stage6/QL/cologne1/2026": {
+      "unseen": 26,
+      "tied": 69,
+      "zero_beats_negative": 43,
+      "decisions": 101,
+      "unique_max": 32,
+      "selected_untried": 69,
+      "known_selected_untried": 43,
+      "known_ties": 43,
+      "unseen_fraction": 0.25742574257425743,
+      "tie_fraction": 0.6831683168316832,
+      "unique_max_fraction": 0.31683168316831684
+    },
+    "stage6/QL/cologne1/2027": {
+      "unseen": 23,
+      "tied": 70,
+      "zero_beats_negative": 47,
+      "decisions": 102,
+      "unique_max": 32,
+      "selected_untried": 70,
+      "known_selected_untried": 47,
+      "known_ties": 47,
+      "unseen_fraction": 0.22549019607843138,
+      "tie_fraction": 0.6862745098039216,
+      "unique_max_fraction": 0.3137254901960784
+    },
+    "stage6/QL/cologne1/2028": {
+      "unseen": 18,
+      "tied": 72,
+      "zero_beats_negative": 54,
+      "decisions": 102,
+      "unique_max": 30,
+      "selected_untried": 72,
+      "known_selected_untried": 54,
+      "known_ties": 54,
+      "unseen_fraction": 0.17647058823529413,
+      "tie_fraction": 0.7058823529411765,
+      "unique_max_fraction": 0.29411764705882354
+    },
+    "stage5/evaluate/ingolstadt1/42": {
+      "unseen": 0,
+      "tied": 3,
+      "zero_beats_negative": 3,
+      "decisions": 101,
+      "unique_max": 98,
+      "selected_untried": 3,
+      "known_selected_untried": 3,
+      "known_ties": 3,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.0297029702970297,
+      "unique_max_fraction": 0.9702970297029703
+    },
+    "stage5/evaluate/ingolstadt1/12345": {
+      "unseen": 0,
+      "tied": 4,
+      "zero_beats_negative": 4,
+      "decisions": 103,
+      "unique_max": 99,
+      "selected_untried": 4,
+      "known_selected_untried": 4,
+      "known_ties": 4,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.038834951456310676,
+      "unique_max_fraction": 0.9611650485436893
+    },
+    "stage6/QL/ingolstadt1/42": {
+      "unseen": 0,
+      "tied": 3,
+      "zero_beats_negative": 3,
+      "decisions": 101,
+      "unique_max": 98,
+      "selected_untried": 3,
+      "known_selected_untried": 3,
+      "known_ties": 3,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.0297029702970297,
+      "unique_max_fraction": 0.9702970297029703
+    },
+    "stage6/QL/ingolstadt1/12345": {
+      "unseen": 0,
+      "tied": 4,
+      "zero_beats_negative": 4,
+      "decisions": 103,
+      "unique_max": 99,
+      "selected_untried": 4,
+      "known_selected_untried": 4,
+      "known_ties": 4,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.038834951456310676,
+      "unique_max_fraction": 0.9611650485436893
+    },
+    "stage6/QL/ingolstadt1/2026": {
+      "unseen": 0,
+      "tied": 2,
+      "zero_beats_negative": 2,
+      "decisions": 104,
+      "unique_max": 102,
+      "selected_untried": 2,
+      "known_selected_untried": 2,
+      "known_ties": 2,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.019230769230769232,
+      "unique_max_fraction": 0.9807692307692307
+    },
+    "stage6/QL/ingolstadt1/2027": {
+      "unseen": 0,
+      "tied": 4,
+      "zero_beats_negative": 4,
+      "decisions": 101,
+      "unique_max": 97,
+      "selected_untried": 4,
+      "known_selected_untried": 4,
+      "known_ties": 4,
+      "unseen_fraction": 0.0,
+      "tie_fraction": 0.039603960396039604,
+      "unique_max_fraction": 0.9603960396039604
+    },
+    "stage6/QL/ingolstadt1/2028": {
+      "unseen": 1,
+      "tied": 3,
+      "zero_beats_negative": 2,
+      "decisions": 102,
+      "unique_max": 99,
+      "selected_untried": 3,
+      "known_selected_untried": 2,
+      "known_ties": 2,
+      "unseen_fraction": 0.00980392156862745,
+      "tie_fraction": 0.029411764705882353,
+      "unique_max_fraction": 0.9705882352941176
+    }
+  },
+  "comparisons": {
+    "cologne1/FT": {
+      "reconstructed_reward": -6696.145000000001,
+      "average_queue_length": 73.87244444444444,
+      "completion_rate": 0.938560794044665,
+      "throughput": 1891.2,
+      "teleports": 0,
+      "undeparted": 53.8,
+      "unfinished": 70,
+      "average_waiting_time": 145.81222872307563,
+      "average_travel_time": 188.9111685602552,
+      "average_time_loss": 165.9632991930396
+    },
+    "cologne1/MP": {
+      "reconstructed_reward": -2567.1300000000006,
+      "average_queue_length": 28.392166666666665,
+      "completion_rate": 0.976575682382134,
+      "throughput": 1967.8,
+      "teleports": 10.6,
+      "undeparted": 6.2,
+      "unfinished": 30.4,
+      "average_waiting_time": 64.75655740459,
+      "average_travel_time": 101.07603375362862,
+      "average_time_loss": 78.26290726134211
+    },
+    "cologne1/QL": {
+      "reconstructed_reward": -4830.303333333332,
+      "average_queue_length": 47.65072222222222,
+      "completion_rate": 0.49200992555831263,
+      "throughput": 991.4,
+      "teleports": 65.8,
+      "undeparted": 849.6,
+      "unfinished": 114.8,
+      "average_waiting_time": 14.554059003962859,
+      "average_travel_time": 48.81783805294297,
+      "average_time_loss": 21.27922285177431
+    },
+    "ingolstadt1/FT": {
+      "reconstructed_reward": -873.6319883040935,
+      "average_queue_length": 9.219722222222222,
+      "completion_rate": 0.9794871794871796,
+      "throughput": 1680.8,
+      "teleports": 0.2,
+      "undeparted": 7.8,
+      "unfinished": 27.2,
+      "average_waiting_time": 32.00787336317903,
+      "average_travel_time": 64.35958016898826,
+      "average_time_loss": 43.69502100633937
+    },
+    "ingolstadt1/MP": {
+      "reconstructed_reward": -534.4799415204678,
+      "average_queue_length": 5.639722222222222,
+      "completion_rate": 0.9728438228438229,
+      "throughput": 1669.4,
+      "teleports": 0.6,
+      "undeparted": 19.2,
+      "unfinished": 26.8,
+      "average_waiting_time": 33.70669191430555,
+      "average_travel_time": 65.86979220306415,
+      "average_time_loss": 45.28095183548856
+    },
+    "ingolstadt1/QL": {
+      "reconstructed_reward": -833.852169762642,
+      "average_queue_length": 8.304944444444445,
+      "completion_rate": 0.931002331002331,
+      "throughput": 1597.6,
+      "teleports": 3.4,
+      "undeparted": 78.4,
+      "unfinished": 36.6,
+      "average_waiting_time": 52.51159087367965,
+      "average_travel_time": 84.08775742965557,
+      "average_time_loss": 64.15263584268868
+    }
+  },
+  "input_sha256": {
+    "reports/stage5/analysis.json": "6fa78ad3210162f139d0ec8be16a9b91ad89f58cdfd8e963deee4468824b2d78",
+    "reports/stage5/evaluate/cologne1/seed_12345/actions.csv": "e1e002eceb3647614b09468f2123b71603c39292f23a265e6139e74af59e1307",
+    "reports/stage5/evaluate/cologne1/seed_12345/result.json": "6a7020eff476573a2f4bead0ef9900005b49452b1e1bc28a02d2a7dfdd23506f",
+    "reports/stage5/evaluate/cologne1/seed_42/actions.csv": "7460dfe04494155413ad4e770431ef459f387cf23ac7c87086721e12fe284ff3",
+    "reports/stage5/evaluate/cologne1/seed_42/result.json": "8d95e528007d7bafbe9c979169cf0ba5f2db77fbc33d2448ab9288e55604496a",
+    "reports/stage5/evaluate/ingolstadt1/seed_12345/actions.csv": "8396353df33c43d863bff847c00b4f7227358b1762b00cc17d4e1737dfcd1ae0",
+    "reports/stage5/evaluate/ingolstadt1/seed_12345/result.json": "85794f979c0f9f036f71e259c184be6e051a31175b421205c0a6068046c2c85f",
+    "reports/stage5/evaluate/ingolstadt1/seed_42/actions.csv": "dd6e2bd9a0a5ba71fb7f5fa24243c4c9387bb0722d23f3baac99a55bc3ef4010",
+    "reports/stage5/evaluate/ingolstadt1/seed_42/result.json": "e76312dfb7e2a3244f1de70d5e7ae3768edeaa465e8334982d8ea8987af2b1d4",
+    "reports/stage5/summary.csv": "1ff2aa0eca800666c3d3cef782f60cc60bf14860a9aabe7f825c8a1ee3b1a378",
+    "reports/stage5/train/cologne1/cologne1_q_table.json": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+    "reports/stage5/train/cologne1/episode_001/actions.csv": "c890d60496b5358252d11264e34092d0398d421b3292a0962eada950d43a629d",
+    "reports/stage5/train/cologne1/episode_001/metadata.json": "f002e2275b01c75ca5088e8f1eeb8fcc9fa80ce933067950fa06a890a195fd67",
+    "reports/stage5/train/cologne1/episode_001/q_table.json": "48e0529c49eaeb71c51ef2e7b605f670bad0e67a7020f5631907b077b0ecccfb",
+    "reports/stage5/train/cologne1/episode_001/result.json": "2ed20c7a97b1e817db1f1c2c8fe2193f98f982dee2cc08ddeed7942c34df8259",
+    "reports/stage5/train/cologne1/episode_001/signals.csv": "e3e2deb119c3dd4e1ca188519c2841908e2f907c813fadcd92629c772bc3ba54",
+    "reports/stage5/train/cologne1/episode_002/actions.csv": "f4df6bcad885ee83994a68ae9fcc55d94b0f3a69edb0e77b6ace539dba62f892",
+    "reports/stage5/train/cologne1/episode_002/metadata.json": "9330d7fb8118901eec7056184ed782e31ae803256b6b2f05c2c6a912f2d0b794",
+    "reports/stage5/train/cologne1/episode_002/q_table.json": "4c67a7c89ebb83cbf7dbb36df288d8bed248a2682c7f2091651fdbed2e28bf6e",
+    "reports/stage5/train/cologne1/episode_002/result.json": "be4e96f01c2c73e7d7b96fa2da850bfbd89e962652e3bfc50d231c180326759b",
+    "reports/stage5/train/cologne1/episode_002/signals.csv": "4583744cd3916e1cb8536f50a29671142cc45371f79bb1d42b796d1f1a6211cd",
+    "reports/stage5/train/cologne1/episode_003/actions.csv": "012c09c396c01f638b1d762147c94c8c78d082bc129a7f0af3eb117a6487c752",
+    "reports/stage5/train/cologne1/episode_003/metadata.json": "bd64b1280ee322dda3601d3c88c37a13d9778d17eb5531f4678540c3c771433b",
+    "reports/stage5/train/cologne1/episode_003/q_table.json": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+    "reports/stage5/train/cologne1/episode_003/result.json": "b025bbfdf5e5ecec83da9b27cc1200d2d4bad0bc296ef95a73095e3869eb0a95",
+    "reports/stage5/train/cologne1/episode_003/signals.csv": "b00815b1c91f53165935903cc9aac9263a68fc1204404bce4c77c7dfc10fb7ab",
+    "reports/stage5/train/ingolstadt1/episode_001/actions.csv": "1755e6c57ca1afb9ee7fc2aaca0c700691eb84460dbdee6cb461f1d0cd98c4f6",
+    "reports/stage5/train/ingolstadt1/episode_001/metadata.json": "a4b6b9d49d1c945577f095b13f1ca00ec896243b0014a64bbcb62e3a6aa6878f",
+    "reports/stage5/train/ingolstadt1/episode_001/q_table.json": "bd28657fc19787454f56aacecbfa78bb327618ad2b2709ee00a020cda358df92",
+    "reports/stage5/train/ingolstadt1/episode_001/result.json": "503585b9f593f88b4657a620af7432b56b709c83d0c76396d898de90d9401af0",
+    "reports/stage5/train/ingolstadt1/episode_001/signals.csv": "698c102cb320c50c102ac35abfa7bac3e95f5cec1a3df186e55691941c6dbded",
+    "reports/stage5/train/ingolstadt1/episode_002/actions.csv": "84997d57438ceffbe42103028dbad782398893d10a1f1dcbf2a3c0401f3d6547",
+    "reports/stage5/train/ingolstadt1/episode_002/metadata.json": "fcfeeff79552a2ff8bec23e445ac12c50348a32b420844ed02bdba94f611a87c",
+    "reports/stage5/train/ingolstadt1/episode_002/q_table.json": "a31f05abe3eee82583a597c7f1526c49257b8ce9489f37331214032205e26abd",
+    "reports/stage5/train/ingolstadt1/episode_002/result.json": "34830ea21add6c543e99a9d1f1e567ab1381ac2edc24febc8150f69df6bc085c",
+    "reports/stage5/train/ingolstadt1/episode_002/signals.csv": "8b5b7d584a3e5b1530a0e9938a6bd28656023d539a03efd6840eec14241340a1",
+    "reports/stage5/train/ingolstadt1/episode_003/actions.csv": "0635405bc3fa3285615b95282ca7cdb90a2aba2fba6dd07e9152a4ea4f90ec46",
+    "reports/stage5/train/ingolstadt1/episode_003/metadata.json": "89976df6c25a31c15a5d64d2090db7a7141c98a770b35e25ad162a2edcd63d54",
+    "reports/stage5/train/ingolstadt1/episode_003/q_table.json": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa",
+    "reports/stage5/train/ingolstadt1/episode_003/result.json": "ddbc50ea54a87b8ec68d76a0acb88816c07f5192bf70f585a7ec801873990df7",
+    "reports/stage5/train/ingolstadt1/episode_003/signals.csv": "335b9878a17355232e14104c3dccd5be9b9e164a0441a5ee37f2f803117403fa",
+    "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa",
+    "reports/stage6/movement_service.csv": "d8df1235fa33be61edb523d2b9f84d751f4584b72ce0ff95ae0e22a82c6a9bb6",
+    "reports/stage6/runs/cologne1/FT/seed_12345/actions.csv": "a58f94f53ca9f3aa7af3a8c6dcce2a2fe6ef156794e0e2bf87d6cdf1278270d8",
+    "reports/stage6/runs/cologne1/FT/seed_12345/metadata.json": "57f8950c789225f107aa8db393bd28f47e016e556db0c10b739dd27952621385",
+    "reports/stage6/runs/cologne1/FT/seed_12345/result.json": "f4ad176ca689c2a746fa3f2b40733d6837d6639207c3122c095c9b22a9750d71",
+    "reports/stage6/runs/cologne1/FT/seed_12345/signals.csv": "bce781ab20ea73d967cab48624cb73125d46674d9fd2940788ea7c41d23f7e52",
+    "reports/stage6/runs/cologne1/FT/seed_2026/actions.csv": "c7b2e68b818ea8411359b7553e30ab4dd7382afa3a59a1ebdca60b6bd45698b7",
+    "reports/stage6/runs/cologne1/FT/seed_2026/metadata.json": "1e80d9787d8475ed919bcbcc8e365e132d408c0748846bc053e82b5f67bffb12",
+    "reports/stage6/runs/cologne1/FT/seed_2026/result.json": "b02b5982ae22c65d949cc5af886cd706204464b17726dd1bffcafb6adaa756b7",
+    "reports/stage6/runs/cologne1/FT/seed_2026/signals.csv": "908b275f2c06334a5c930c49aa8cfa26e0c23ce90a6085cba11efc98f347cca3",
+    "reports/stage6/runs/cologne1/FT/seed_2027/actions.csv": "e3e4a7ce6097d375ecab7d5a6b2540a3114fbb2d1d7960603e2130b94c885609",
+    "reports/stage6/runs/cologne1/FT/seed_2027/metadata.json": "13be8d7b9727f502a33e7256b8aae3b1ef7c3e586371e13d180b20fffde04bc8",
+    "reports/stage6/runs/cologne1/FT/seed_2027/result.json": "8d9a9a42e0abc164c21ca4ebfb3df8a0dc2b91a16d3739f888b82110c71848e5",
+    "reports/stage6/runs/cologne1/FT/seed_2027/signals.csv": "380fd8825baaf875d8be160ee4c5aeba702f8fb862d0833e81a5b3d9c6fef174",
+    "reports/stage6/runs/cologne1/FT/seed_2028/actions.csv": "ffd6349a3bd0151534435e02749cb38a8aedd6b761f9e46a6111aaa64aa122b2",
+    "reports/stage6/runs/cologne1/FT/seed_2028/metadata.json": "c676251c91774d7c18c39881bf21eef83f4e6508b407fc2d856c4bef8b8b300e",
+    "reports/stage6/runs/cologne1/FT/seed_2028/result.json": "3628e0d1b9d242bf594531ea0988376676f21c391ce172987a03eb7bf8e62a87",
+    "reports/stage6/runs/cologne1/FT/seed_2028/signals.csv": "ae548b42da7a86efaa48809387512bd771ef571533e5f3d32e70069f96c56dc0",
+    "reports/stage6/runs/cologne1/FT/seed_42/actions.csv": "cba93947f39e4bcdda799c2a917825a77e39f68af9e56edb888d512e60c86be5",
+    "reports/stage6/runs/cologne1/FT/seed_42/metadata.json": "5481544e6ec1ff254d8834b7d8be068c3443f5496ad3847b6c472fd598588a5f",
+    "reports/stage6/runs/cologne1/FT/seed_42/result.json": "50545cbf301d63c7f61d4fd9b4756fe00a1ba09c001ecca92e94861781be95b6",
+    "reports/stage6/runs/cologne1/FT/seed_42/signals.csv": "1453cffcc3a2869ba771f189098088e3b783a77093909f30d4bd270810ab8136",
+    "reports/stage6/runs/cologne1/MP/seed_12345/actions.csv": "28c7a902836bf415278a981efb99b2685feda2641add2e61d9a32f720007c662",
+    "reports/stage6/runs/cologne1/MP/seed_12345/metadata.json": "37f924f4b6e8f50df5a5a7d759e564a59338a82a23f5733feb442c68633279e2",
+    "reports/stage6/runs/cologne1/MP/seed_12345/result.json": "13000c521c7c158c1802fbc93ae4fda7c8fe88c24949ec7d88d58df39c2312b4",
+    "reports/stage6/runs/cologne1/MP/seed_12345/signals.csv": "3ba453f5f29810ccaa1cf5b4dc1de2d73aa392409abd0aba57daca609fb964ad",
+    "reports/stage6/runs/cologne1/MP/seed_2026/actions.csv": "6719e1c47ea93d91bc0b80cd1b07f441c109a5b605410189e83c4122cb8a08ff",
+    "reports/stage6/runs/cologne1/MP/seed_2026/metadata.json": "337c740b1dc8568f6b52724f0649192d8610215ed684acdbe51bd6e4a444bdf5",
+    "reports/stage6/runs/cologne1/MP/seed_2026/result.json": "964529460badfa4da73fff9f4525009dce47dfbbca843706010739da15ad5e5b",
+    "reports/stage6/runs/cologne1/MP/seed_2026/signals.csv": "c47a53293df77dff5c604e7efff680ccb1050a24cfa891337cee5f8cd48da3dd",
+    "reports/stage6/runs/cologne1/MP/seed_2027/actions.csv": "9187b4fb82d3e7e73f7911ba28b17e05594111d94c3920d24d25cad67888bef1",
+    "reports/stage6/runs/cologne1/MP/seed_2027/metadata.json": "df5ef608c7b26cddcb579810e6339ac427ff374edc4db3e01ad645985dc138d0",
+    "reports/stage6/runs/cologne1/MP/seed_2027/result.json": "867252e7147242d20d49a5dd130d43cc9df88af18bac23a4b36ba87ab9925c9b",
+    "reports/stage6/runs/cologne1/MP/seed_2027/signals.csv": "a9ee31e619441f570a88533ebd7b49929ad7a18792b37706f99e1d579f67a217",
+    "reports/stage6/runs/cologne1/MP/seed_2028/actions.csv": "39a87064cd86d2db3e0beb5aca0d144dc6c6273127f7d69dcfe298b15a1326dc",
+    "reports/stage6/runs/cologne1/MP/seed_2028/metadata.json": "27d440b504fb783e1e025bf1a5dad30a87f084c1d08a2c79758acc407fccd11e",
+    "reports/stage6/runs/cologne1/MP/seed_2028/result.json": "86e43e7bcf00921a1d874261f9517731a6743a69e4643e68d860bf234230dd1f",
+    "reports/stage6/runs/cologne1/MP/seed_2028/signals.csv": "8be08b0013575a17724fe4281bee264ae1b84c390944f3c7777265c90c1795a1",
+    "reports/stage6/runs/cologne1/MP/seed_42/actions.csv": "377e8c236d373522b12b51d2eea534de19aa4cb932cc2caff8f9842536e09f82",
+    "reports/stage6/runs/cologne1/MP/seed_42/metadata.json": "ca456c1d2cc9b19c915683eccad58331a68e9f905665dbb5b370e4b11d2848d8",
+    "reports/stage6/runs/cologne1/MP/seed_42/result.json": "0e8c37e794e75afb0a63b84f480b590e254641f22db0860b40039efc34b7c829",
+    "reports/stage6/runs/cologne1/MP/seed_42/signals.csv": "b1d94589376bf70b040ec24f31eae801d2592e51e0c94ffd7f4e58edcb4bd484",
+    "reports/stage6/runs/cologne1/QL/seed_12345/actions.csv": "f742557d150dd69ac6821c685f5c97d71ec084e0da188a5027629b3ced38c58a",
+    "reports/stage6/runs/cologne1/QL/seed_12345/metadata.json": "c60258448c59cfffa6cbb4186f0ac5ad231a8bf5d970663775a806f32ab09195",
+    "reports/stage6/runs/cologne1/QL/seed_12345/result.json": "c3763d26e8b94d8e60dd9e6883d373c92849a023bde12fce5558e878fe3aa3d4",
+    "reports/stage6/runs/cologne1/QL/seed_12345/signals.csv": "025a32cba7058e7b5de3a22991e983af570e6dbc93296207b31818b1306b3c82",
+    "reports/stage6/runs/cologne1/QL/seed_2026/actions.csv": "0590f651de77b017c939581e5d221926dcdd45c156b405a1e6526c9a6df98d17",
+    "reports/stage6/runs/cologne1/QL/seed_2026/metadata.json": "78c3c50b9139e85a2df9289261f12914f6c84cd8ff86c6d58801ca231f9dc849",
+    "reports/stage6/runs/cologne1/QL/seed_2026/result.json": "62830077884bea586ab233e42e25316c0fb0a49162bcfed5fb7b55af18121a1d",
+    "reports/stage6/runs/cologne1/QL/seed_2026/signals.csv": "9d8c4d766b0cce6a8098adbdc91db030aea1c7718c664f888d8aabe41639d2bb",
+    "reports/stage6/runs/cologne1/QL/seed_2027/actions.csv": "21b35a32f6149e648fb8996b1b5f75140fb1c5e10da800cf1959db4a16327ffa",
+    "reports/stage6/runs/cologne1/QL/seed_2027/metadata.json": "9d15d34bb400c6557786099126b7a42a596c06fa2ab5c67bee4555526aeb9f61",
+    "reports/stage6/runs/cologne1/QL/seed_2027/result.json": "c37862af33ef1f897b137db00239dc65fd1ee034b5090412c2b28363ad15dd16",
+    "reports/stage6/runs/cologne1/QL/seed_2027/signals.csv": "f0bd2ed83d32fdd00cdc8e71ce340aafc45212f76889625d5a08176c3943da75",
+    "reports/stage6/runs/cologne1/QL/seed_2028/actions.csv": "b02c4c5807b0af43cf04ee62e58a42a568fe76dc60fc19952e8ad016c4984e67",
+    "reports/stage6/runs/cologne1/QL/seed_2028/metadata.json": "db836882e1953243f0093c51bd0efa8c4687df4afabf85791355847a71d39467",
+    "reports/stage6/runs/cologne1/QL/seed_2028/result.json": "1810fac09618b8ef1ab12400335278dd2a87e0f6ff953b6d895cda75fa8801e7",
+    "reports/stage6/runs/cologne1/QL/seed_2028/signals.csv": "3ebd18ce0a511a76405c85ee47f92d7ef1dc26b4d80eee748053ff9ee905379f",
+    "reports/stage6/runs/cologne1/QL/seed_42/actions.csv": "d9ec0be0c5712821aede1b77fe281471d24238f13c65e2e7ffd0bb1ce5a868be",
+    "reports/stage6/runs/cologne1/QL/seed_42/metadata.json": "056b5b4933a47f9ac60988210954f5d36475a3435e5ac1ae2c17276b4a969549",
+    "reports/stage6/runs/cologne1/QL/seed_42/result.json": "dca3dd19882a835a5c81f4cbfd2da48ff60249a77040dc9004dcbd6c46e0dcf6",
+    "reports/stage6/runs/cologne1/QL/seed_42/signals.csv": "0317782032d9d900ae4b8db05407c2261580dc7dc7776aabf67f8b5a9bfccfc9",
+    "reports/stage6/runs/ingolstadt1/FT/seed_12345/actions.csv": "df591496a9f98cfc789467dbe4a550b03680d6b2d440b69d1cf252a5f44f02ca",
+    "reports/stage6/runs/ingolstadt1/FT/seed_12345/metadata.json": "b255cef353f39e8c0075715a4fdc333da833a0c0ab5138aa85d42ee71fea306e",
+    "reports/stage6/runs/ingolstadt1/FT/seed_12345/result.json": "c40e3db18ac2cac4a04ed3ce267c84cb6b7b703bfb3d46e0545affcb8544625a",
+    "reports/stage6/runs/ingolstadt1/FT/seed_12345/signals.csv": "f570758170245fcddcb3286cc5d93355f8c4e762159259a20a4bf53123ac980d",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2026/actions.csv": "630bbc4a1b56da6edfab9a42d31ee52c11a8a6a2c698c6ecafe3c0d3d137d8b0",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2026/metadata.json": "d723af14c1a87edd455adafccc67f77310d8e2b053d3f476920375aba2aaa904",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2026/result.json": "4e500da1142a18d98f95abdfed836cc71f9f6d601abce3cb69863fff373b202a",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2026/signals.csv": "fe6f8a19519151639c29d2d52297b96c34414405097d82f8846aaf9abffc6e45",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2027/actions.csv": "30aa7d77447b88b8228242267921055a9ddedf73c214ded4d55352470462cc34",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2027/metadata.json": "973ca284edc710eb0b8a38eb6ddf9670293e4f6195ff67a0fda0d4718e76ec7d",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2027/result.json": "b4521d72d108d72fb3e375bf7ffc465136c2e1c9a381c437525607f2997cfb85",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2027/signals.csv": "13336628ccc6bcc7799a05396103f1f6bbcfb1b5d70780bceb712e0c32ea5d40",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2028/actions.csv": "62ac36026e250771e72cbec990619145e1ac4ad019e77df7beb3eada37fcdfda",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2028/metadata.json": "391f8622e2f7adc4e352caa12ab774f5ddc8a3833d306c98f1c3cedf69df0721",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2028/result.json": "48802338f5c151d9c527d47b6a98335c28eee2be2672a1c0a08f0b5a387126f9",
+    "reports/stage6/runs/ingolstadt1/FT/seed_2028/signals.csv": "5fa1d6e7ce7e39c751474b19aaf7378da8454a8899db7d643af660aabb6793fb",
+    "reports/stage6/runs/ingolstadt1/FT/seed_42/actions.csv": "0792ded870b0df5681a1f9e3773ffe7354f3d273c85a7407088a7a1e71f5470d",
+    "reports/stage6/runs/ingolstadt1/FT/seed_42/metadata.json": "07812bbda79fcfd5133af9c9528f2833fc9f9a270330e5e207b43fa3009120a9",
+    "reports/stage6/runs/ingolstadt1/FT/seed_42/result.json": "5719f85694904d6eea1b715ef1f96aa75e04aaf62890679969a0b9b2a5137459",
+    "reports/stage6/runs/ingolstadt1/FT/seed_42/signals.csv": "2ed6ddbb89817186953148b6afaa718e87fba650ea0d8ae420f4bb08cf1cf590",
+    "reports/stage6/runs/ingolstadt1/MP/seed_12345/actions.csv": "c9715b5b24cecb4fd12e1cf99c80278686e503a019b23547370f5cf99b6b3904",
+    "reports/stage6/runs/ingolstadt1/MP/seed_12345/metadata.json": "d27480ec41840ec1802dd62340ba0da865c4d7c52852ee2f490b8b40ce8f3bd4",
+    "reports/stage6/runs/ingolstadt1/MP/seed_12345/result.json": "2fe9771808ada635586ece6e6bd5a60e3ddde1c0043e049bb261982924e49ba0",
+    "reports/stage6/runs/ingolstadt1/MP/seed_12345/signals.csv": "e0e709308bd315327cd8e07c8af36e786698ecb49483d8b964736c40477f6336",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2026/actions.csv": "ca9a565194bd3103ea2ac74e6d86dd234fe1f7d18e7631f79b6554c64730c138",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2026/metadata.json": "b20f0eee26683544c32fee5461989e8380c66d0ff88ba9b0aa541b0e38c96359",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2026/result.json": "39f6b093bbcd9bca1f9daab00420966a42cf55d0e08b1d9acbed13771aaaa2b8",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2026/signals.csv": "5b752f6d6f9af74613f41c9c5e9a2f9c9d41e32fc8d25503f3b2e43755209d5a",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2027/actions.csv": "bd0d0c0a9a8479d565f383e8844c688f00df3387cffa458fc7d7e0fb7d606ed4",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2027/metadata.json": "89130402346379df9049ca8bd15fc1fed96a5532f7d1d0cf82e164fa2c7cfed5",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2027/result.json": "c0d68bfd139915ea2256af188decd88733f841c7245c98ea7ddeee7d3d85d396",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2027/signals.csv": "5d3dbd022adcc4b242b05327cf326170b374a13dc7740201ea5c51696ceb217a",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2028/actions.csv": "62e99bffda46d1af1e48fe71ad18074b7d27929d9ec5f0297dd61e553e8b1f28",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2028/metadata.json": "c227e2f5e072b509be20532c7560e2dfcdeb93b3b609dd20eaf418e4dab63e01",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2028/result.json": "5555cc290988c8357dd9b55524f719b13c4ef2cc9c544ddc52a549e904517e37",
+    "reports/stage6/runs/ingolstadt1/MP/seed_2028/signals.csv": "5594393b2118b6964f289d0b1a0b1d1c531cb1db99b543765b082f86529f16cc",
+    "reports/stage6/runs/ingolstadt1/MP/seed_42/actions.csv": "65811161ce8bdc8a2573a6048b249f1ea8398b98fc501f286e1c7d5105b00db7",
+    "reports/stage6/runs/ingolstadt1/MP/seed_42/metadata.json": "10cdbd557fcfc6fc842b51de1d3c69b7aacdadbe69820315cbf31f0e7e74702a",
+    "reports/stage6/runs/ingolstadt1/MP/seed_42/result.json": "4a7ee93607f4421639b91045e0bd3ec950d349521c0c0aa6c9755a4377af3731",
+    "reports/stage6/runs/ingolstadt1/MP/seed_42/signals.csv": "0ce8306515d16460e1e6392462474f14fc0825c8678a84df4a7a7e214e4bd5d8",
+    "reports/stage6/runs/ingolstadt1/QL/seed_12345/actions.csv": "38b5bbae6950349ac2539e64a691085751c492b786633ca285f1a136f0c11268",
+    "reports/stage6/runs/ingolstadt1/QL/seed_12345/metadata.json": "29666cfd1819ed9c17bdd5d2e3905eca1499ca807f671d820da366f96371b71e",
+    "reports/stage6/runs/ingolstadt1/QL/seed_12345/result.json": "70faf4ec56e21ad67e248e489389adb0c74b9601dd8118a505bf944c2d65deb7",
+    "reports/stage6/runs/ingolstadt1/QL/seed_12345/signals.csv": "f06fc5b05edd848650e16ba15eb6acae3c36482030f273459e655b86c2d6f1fd",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2026/actions.csv": "a54c74f50000e36e15c86cd8bd780e7beaa86fe60485f485076c21424164efbf",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2026/metadata.json": "a6ddc295217179ed8829da03c4e30090c7f0a9884bc2a0d5e678b418237c3b16",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2026/result.json": "8488071c95e06ed3a9c7411bf85dc2f35e0d152262b2e91b4a128fa98e055ab1",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2026/signals.csv": "d8fba5be39eb5c99142448854158799d80a486626f53faf3614f0b8d82a7cb92",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2027/actions.csv": "0321f7bab350db2279d834e007211157747a90f702685a54ac6baa5f32690a31",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2027/metadata.json": "a8cd9704bee5c14acc72a9e2b49c5af40ec16aefe8699f22e4c3920240541f69",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2027/result.json": "c1cf921b678c05f3f097993f37eff4b41ada1277b905d194534e9bf3df457ecd",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2027/signals.csv": "dbe8dddc9ba66523c907f336d6cb6a653c8c6cfbee23349d6b89ec1456ae08b6",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2028/actions.csv": "95149d1fde09255668e9b3efbd54f71961eaf2cbc707a58bb6d795eb055d0ef3",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2028/metadata.json": "f645b7084dee04903cc527ad8fe317b2e9068e95d76b990d8da180c001031117",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2028/result.json": "b0f842835ab4c43fca657725a527fb1cb89e2d5c084e16340fdc3be9a19fd327",
+    "reports/stage6/runs/ingolstadt1/QL/seed_2028/signals.csv": "e7f22bbdc9d95747cfa2bf9eb2f0996c883f7f9fa756a75a6ec97937a26f68ac",
+    "reports/stage6/runs/ingolstadt1/QL/seed_42/actions.csv": "9ab4a5ab4592c65c6d4000beb5146db7d0536534a6574cef90ee699576c548e1",
+    "reports/stage6/runs/ingolstadt1/QL/seed_42/metadata.json": "2a04259d50702d9f3664505f751dc8b8339cc8f895624ef425510327277cb77f",
+    "reports/stage6/runs/ingolstadt1/QL/seed_42/result.json": "8ed19c47f909a565f4d68b554d4afeec20e84f390c3e09cac338407800881c8e",
+    "reports/stage6/runs/ingolstadt1/QL/seed_42/signals.csv": "5451d2f5685c35360a6cea630fd52714a5674d3f26e1002ace02ca989afb92da",
+    "reports/stage6/runs.csv": "1c594fd991e6d236facc9de29fe7a0edc87d303c45b809149e839b8afac406fb"
+  }
+}

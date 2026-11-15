@@ -1,0 +1,53 @@
+{
+  "algorithm": "MP",
+  "map": "ingolstadt1",
+  "seed": 23423,
+  "begin": 57600.0,
+  "end": 61200.0,
+  "simulation_seconds": 3600.0,
+  "control_calls": 95,
+  "total_seconds": {
+    "green": 2848.0,
+    "yellow": 564.0,
+    "all_red": 188.0
+  },
+  "queue_seconds": 19350.0,
+  "action_counts": {
+    "0": 42,
+    "2": 38,
+    "4": 15
+  },
+  "longest_action_streak": 1,
+  "last_action": {
+    "action": 0,
+    "durations": {
+      "yellow": 6.0,
+      "all_red": 2.0,
+      "green": 28.0
+    }
+  },
+  "process_closed": true,
+  "safety_statistics": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "3",
+    "jam": "1",
+    "yield": "2",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 0,
+  "traci_teleport_starts": 3,
+  "warning_lines": 6,
+  "missing_yellow_warnings": 0,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0,
+  "vehicles": {
+    "loaded": "1716",
+    "inserted": "1683",
+    "running": "26",
+    "waiting": "33"
+  }
+}

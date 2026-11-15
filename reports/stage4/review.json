@@ -1,0 +1,24 @@
+{
+  "reviewer": "independent read-only subagent",
+  "scope": [
+    "mp.py",
+    "test_mp.py",
+    "reports/stage4/PLAN.md",
+    "SumoEnv and FT integration",
+    "stage3 mapping",
+    "final raw artifacts"
+  ],
+  "critical": [],
+  "important": [],
+  "minor": [],
+  "test_command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+  "test_result": "49 passed",
+  "data_hashes_match_stage3": true,
+  "judgment": "Weighted whole-lane equal-share MP approximation matches specified model; no measured movement queue/saturation/stability claim.",
+  "excluded": [
+    "README was pending at review time; parent checks final report against raw outputs",
+    "Universal safety/stability/superiority",
+    "GUI and per-vehicle forensic traces"
+  ],
+  "parent_ruling": "README checked directly against final result.json, actions/signals, analysis.json and source hashes; universal claims and unobserved per-vehicle causation remain excluded."
+}

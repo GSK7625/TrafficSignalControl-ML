@@ -1,0 +1,14 @@
+{
+  "stage3_reference": "reports/stage3/source_hashes_after.json",
+  "unchanged": true,
+  "sha256": {
+    "data\\cologne1\\cologne1.net.xml": "99fc6bcfa9b048464234afa8fa30b52e4d7ea06ee696823b8cac00dc0709800c",
+    "data\\cologne1\\cologne1.rou.xml": "63c4a823dafd0fa43e0dddf79ca34516f3666a1021fa89eaf486b20a3f24375c",
+    "data\\cologne1\\cologne1.sumocfg": "897598657fd4506a3c46d35c447272e54c311b9c9572326ee00a147ad204ba1a",
+    "data\\cologne1\\LICENSE": "f594ef1e139be8ef63eebf3e1c1c7ee1536982a3cf50a44b0e5d624d411b11e9",
+    "data\\ingolstadt1\\ingolstadt1.net.xml": "5d474be4c1cae6c9d7fb407e6ef9d4bc0ccf1b4d5280b8761c0538f4f2a312f3",
+    "data\\ingolstadt1\\ingolstadt1.rou.xml": "682e73f3df639e5117c46d91f812f3a007d227bcb3d8c74a8d9cef231c0ebad0",
+    "data\\ingolstadt1\\ingolstadt1.sumocfg": "226dd08dba609e825c94ffa238b74f2f98368dde4b6ca94c225d4f17eb13b730",
+    "data\\ingolstadt1\\LICENSE": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+  }
+}

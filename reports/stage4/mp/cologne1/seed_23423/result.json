@@ -1,0 +1,58 @@
+{
+  "algorithm": "MP",
+  "map": "cologne1",
+  "seed": 23423,
+  "begin": 25200.0,
+  "end": 28800.0,
+  "simulation_seconds": 3600.0,
+  "control_calls": 91,
+  "total_seconds": {
+    "green": 2710.0,
+    "yellow": 712.0,
+    "all_red": 178.0
+  },
+  "queue_seconds": 110116.0,
+  "action_counts": {
+    "0": 17,
+    "1": 17,
+    "2": 9,
+    "3": 1,
+    "4": 16,
+    "5": 15,
+    "6": 16,
+    "7": 0
+  },
+  "longest_action_streak": 2,
+  "last_action": {
+    "action": 0,
+    "durations": {
+      "yellow": 8.0,
+      "all_red": 2.0,
+      "green": 10.0
+    }
+  },
+  "process_closed": true,
+  "safety_statistics": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "15",
+    "jam": "0",
+    "yield": "15",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 0,
+  "traci_teleport_starts": 15,
+  "warning_lines": 36,
+  "missing_yellow_warnings": 6,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0,
+  "vehicles": {
+    "loaded": "2015",
+    "inserted": "2009",
+    "running": "33",
+    "waiting": "6"
+  }
+}

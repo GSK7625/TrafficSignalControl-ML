@@ -1,0 +1,320 @@
+{
+  "algorithm": "MP",
+  "pressure_model": "equal-share lane approximation",
+  "formula": "sum_{(i,j) with G in a} (q_i-q_j)/d_i",
+  "weight_meaning": "structural allocation, not measured turn ratio or saturation flow",
+  "tie_break": "first in action_order",
+  "map": "cologne1",
+  "seed": 42,
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "begin": 25200.0,
+  "end": 28800.0,
+  "action_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "original_green_states": {
+    "0": "srrrrrrrrrGGGGGrrrrr",
+    "1": "GGGGGrrrrrsrrrrrrrrr",
+    "2": "GGGggrrrrrGGGggrrrrr",
+    "3": "rrrGGrrrrrrrrGGrrrrr",
+    "4": "rrrrrGGGGGrrrrrsrrrr",
+    "5": "rrrrrsrrrrrrrrrGGGGG",
+    "6": "rrrrrGGGggrrrrrGGGgg",
+    "7": "rrrrrrrrGGrrrrrrrrGG"
+  },
+  "runtime_green_states": {
+    "0": "rrrrrrrrrrGGGGGrrrrr",
+    "1": "GGGGGrrrrrrrrrrrrrrr",
+    "2": "GGGrrrrrrrGGGrrrrrrr",
+    "3": "rrrGGrrrrrrrrGGrrrrr",
+    "4": "rrrrrGGGGGrrrrrrrrrr",
+    "5": "rrrrrrrrrrrrrrrGGGGG",
+    "6": "rrrrrGGGrrrrrrrGGGrr",
+    "7": "rrrrrrrrGGrrrrrrrrGG"
+  },
+  "phase_foes": {
+    "0": [],
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "green_seconds": 30,
+  "yellow_seconds": 8,
+  "minimum_all_red_seconds": 2,
+  "incoming_lanes": [
+    "-32038056#3_0",
+    "-32038056#3_1",
+    "23429231#1_0",
+    "23429231#1_1",
+    "27115123#3_0",
+    "27115123#3_1",
+    "28198821#3_0",
+    "28198821#3_1"
+  ],
+  "outgoing_lanes": [
+    "-28198821#4_0",
+    "-28198821#4_1",
+    "32038051#0_0",
+    "32038051#0_1",
+    "32038056#0_0",
+    "32038056#0_1",
+    "32324544#0_0",
+    "32324544#0_1"
+  ],
+  "movements": [
+    {
+      "incoming": "-32038056#3_0",
+      "outgoing": "-28198821#4_0",
+      "weight": 0.5,
+      "link_indices": [
+        1
+      ],
+      "actions": [
+        1,
+        2
+      ]
+    },
+    {
+      "incoming": "-32038056#3_0",
+      "outgoing": "32038051#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        0
+      ],
+      "actions": [
+        1,
+        2
+      ]
+    },
+    {
+      "incoming": "-32038056#3_1",
+      "outgoing": "-28198821#4_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        2
+      ],
+      "actions": [
+        1,
+        2
+      ]
+    },
+    {
+      "incoming": "-32038056#3_1",
+      "outgoing": "32038056#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        4
+      ],
+      "actions": [
+        1,
+        3
+      ]
+    },
+    {
+      "incoming": "-32038056#3_1",
+      "outgoing": "32324544#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        3
+      ],
+      "actions": [
+        1,
+        3
+      ]
+    },
+    {
+      "incoming": "23429231#1_0",
+      "outgoing": "32038051#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        6
+      ],
+      "actions": [
+        4,
+        6
+      ]
+    },
+    {
+      "incoming": "23429231#1_0",
+      "outgoing": "32038056#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        5
+      ],
+      "actions": [
+        4,
+        6
+      ]
+    },
+    {
+      "incoming": "23429231#1_1",
+      "outgoing": "-28198821#4_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        8
+      ],
+      "actions": [
+        4,
+        7
+      ]
+    },
+    {
+      "incoming": "23429231#1_1",
+      "outgoing": "32038051#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        7
+      ],
+      "actions": [
+        4,
+        6
+      ]
+    },
+    {
+      "incoming": "23429231#1_1",
+      "outgoing": "32324544#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        9
+      ],
+      "actions": [
+        4,
+        7
+      ]
+    },
+    {
+      "incoming": "27115123#3_0",
+      "outgoing": "-28198821#4_0",
+      "weight": 0.5,
+      "link_indices": [
+        15
+      ],
+      "actions": [
+        5,
+        6
+      ]
+    },
+    {
+      "incoming": "27115123#3_0",
+      "outgoing": "32324544#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        16
+      ],
+      "actions": [
+        5,
+        6
+      ]
+    },
+    {
+      "incoming": "27115123#3_1",
+      "outgoing": "32038051#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        19
+      ],
+      "actions": [
+        5,
+        7
+      ]
+    },
+    {
+      "incoming": "27115123#3_1",
+      "outgoing": "32038056#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        18
+      ],
+      "actions": [
+        5,
+        7
+      ]
+    },
+    {
+      "incoming": "27115123#3_1",
+      "outgoing": "32324544#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        17
+      ],
+      "actions": [
+        5,
+        6
+      ]
+    },
+    {
+      "incoming": "28198821#3_0",
+      "outgoing": "32038056#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        11
+      ],
+      "actions": [
+        0,
+        2
+      ]
+    },
+    {
+      "incoming": "28198821#3_0",
+      "outgoing": "32324544#0_0",
+      "weight": 0.5,
+      "link_indices": [
+        10
+      ],
+      "actions": [
+        0,
+        2
+      ]
+    },
+    {
+      "incoming": "28198821#3_1",
+      "outgoing": "-28198821#4_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        14
+      ],
+      "actions": [
+        0,
+        3
+      ]
+    },
+    {
+      "incoming": "28198821#3_1",
+      "outgoing": "32038051#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        13
+      ],
+      "actions": [
+        0,
+        3
+      ]
+    },
+    {
+      "incoming": "28198821#3_1",
+      "outgoing": "32038056#0_1",
+      "weight": 0.3333333333333333,
+      "link_indices": [
+        12
+      ],
+      "actions": [
+        0,
+        2
+      ]
+    }
+  ]
+}

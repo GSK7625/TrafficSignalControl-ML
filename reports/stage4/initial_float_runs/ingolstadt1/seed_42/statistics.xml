@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-15T11:24:14.154223+07:00 by Eclipse SUMO sumo 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml"/>
+        <route-files value="C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml"/>
+    </input>
+
+    <output>
+        <collision-output value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage4\mp\ingolstadt1\seed_42\collisions.xml"/>
+        <statistic-output value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage4\mp\ingolstadt1\seed_42\statistics.xml"/>
+    </output>
+
+    <time>
+        <begin value="57600"/>
+        <end value="61200"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <collision.action value="teleport"/>
+        <collision.check-junctions value="true"/>
+    </processing>
+
+    <report>
+        <log value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage4\mp\ingolstadt1\seed_42\sumo.log"/>
+        <error-log value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage4\mp\ingolstadt1\seed_42\warnings.log"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="61599"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+</sumoConfiguration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <performance clockBegin="7985.76" clockEnd="7991.09" clockDuration="5.33" traciDuration="0.00" realTimeFactor="675.17" vehicleUpdatesPerSecond="0.00" personUpdatesPerSecond="0.00" begin="57600.00" end="61200.00" duration="3600.00"/>
+    <vehicles loaded="1716" inserted="1708" running="36" waiting="8"/>
+    <teleports total="0" jam="0" yield="0" wrongLane="0"/>
+    <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <personTeleports total="0" abortWait="0" wrongDest="0"/>
+</statistics>

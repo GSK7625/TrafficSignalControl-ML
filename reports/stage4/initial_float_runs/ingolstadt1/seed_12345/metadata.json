@@ -1,0 +1,149 @@
+{
+  "algorithm": "MP",
+  "pressure_model": "equal-share lane approximation",
+  "formula": "sum_{(i,j) with G in a} (q_i-q_j)/d_i",
+  "weight_meaning": "structural allocation, not measured turn ratio or saturation flow",
+  "tie_break": "first in action_order",
+  "map": "ingolstadt1",
+  "seed": 12345,
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "begin": 57600.0,
+  "end": 61200.0,
+  "action_order": [
+    0,
+    2,
+    4
+  ],
+  "original_green_states": {
+    "0": "GGgGrGGG",
+    "2": "GGGrrrrr",
+    "4": "rrrGGGrr"
+  },
+  "runtime_green_states": {
+    "0": "GGrGrGGG",
+    "2": "GGGrrrrr",
+    "4": "rrrGGGrr"
+  },
+  "phase_foes": {
+    "0": [],
+    "2": [],
+    "4": []
+  },
+  "green_seconds": 30,
+  "yellow_seconds": 6,
+  "minimum_all_red_seconds": 2,
+  "incoming_lanes": [
+    "104010354_1",
+    "104010354_2",
+    "164051413_1",
+    "164051413_2",
+    "201963537#1_1",
+    "201963537#1_2",
+    "201963537#1_3"
+  ],
+  "outgoing_lanes": [
+    "-164051413_1",
+    "104010475#0_1",
+    "104010475#0_2",
+    "124812857#0_1",
+    "124812857#0_2",
+    "124812857#0_3"
+  ],
+  "movements": [
+    {
+      "incoming": "104010354_1",
+      "outgoing": "-164051413_1",
+      "weight": 0.5,
+      "link_indices": [
+        5
+      ],
+      "actions": [
+        0,
+        4
+      ]
+    },
+    {
+      "incoming": "104010354_1",
+      "outgoing": "124812857#0_2",
+      "weight": 0.5,
+      "link_indices": [
+        6
+      ],
+      "actions": [
+        0
+      ]
+    },
+    {
+      "incoming": "104010354_2",
+      "outgoing": "124812857#0_3",
+      "weight": 1.0,
+      "link_indices": [
+        7
+      ],
+      "actions": [
+        0
+      ]
+    },
+    {
+      "incoming": "164051413_1",
+      "outgoing": "124812857#0_1",
+      "weight": 1.0,
+      "link_indices": [
+        3
+      ],
+      "actions": [
+        0,
+        4
+      ]
+    },
+    {
+      "incoming": "164051413_2",
+      "outgoing": "104010475#0_2",
+      "weight": 1.0,
+      "link_indices": [
+        4
+      ],
+      "actions": [
+        4
+      ]
+    },
+    {
+      "incoming": "201963537#1_1",
+      "outgoing": "104010475#0_1",
+      "weight": 1.0,
+      "link_indices": [
+        0
+      ],
+      "actions": [
+        0,
+        2
+      ]
+    },
+    {
+      "incoming": "201963537#1_2",
+      "outgoing": "104010475#0_2",
+      "weight": 1.0,
+      "link_indices": [
+        1
+      ],
+      "actions": [
+        0,
+        2
+      ]
+    },
+    {
+      "incoming": "201963537#1_3",
+      "outgoing": "-164051413_1",
+      "weight": 1.0,
+      "link_indices": [
+        2
+      ],
+      "actions": [
+        2
+      ]
+    }
+  ]
+}

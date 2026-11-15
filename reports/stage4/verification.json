@@ -1,0 +1,17 @@
+{
+  "test_command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+  "test_result": "49 passed in 1.53s (pre-report); final test output also checked in session",
+  "final_runs": 6,
+  "initial_runs_preserved": 6,
+  "simulation_seconds_each": 3600,
+  "collisions": 0,
+  "teleports": 43,
+  "data_hashes_match_stage3": true,
+  "existing_code_unchanged": "git diff --exit-code -- data sumo_env.py ft.py test_ft.py test_sumo_env.py smoke_test.py",
+  "code_sha256": {
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "sumo_env.py": "ba72fb44087dc173533ec53ffc09f622e817afb2efe00cb7c42e190bc5d7486d",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08"
+  }
+}

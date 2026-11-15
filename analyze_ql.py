@@ -1,6 +1,7 @@
 """Stage 6.2: read saved evidence only; never import a SUMO runner or train."""
 
 import argparse
+from bisect import bisect_left
 from collections import Counter, defaultdict
 import csv
 import hashlib
@@ -73,7 +74,7 @@ def observation_analysis(records, encoding):
         phase = record['phase']
         if phase not in encoding['phase_ids']:
             raise ValueError('Invalid observation phase')
-        encoded = tuple(0 if q == 0 else 1 if q <= 4 else 2 for q in totals) + (phase,)
+        encoded = tuple(bisect_left(encoding['queue_bins'], q) for q in totals) + (phase,)
         if 'encoded' in record and encoded != tuple(record['encoded']):
             raise ValueError('Saved encoding differs from raw lane queues')
         edge = tuple(totals) + (phase,)
@@ -88,8 +89,9 @@ def observation_analysis(records, encoding):
     for side in ('incoming', 'outgoing'):
         for group in encoding[side + '_groups']:
             values = [row[index] for row in grouped]
-            high = [v for v in values if v >= 5]
-            counts = [sum(v == 0 for v in values), sum(1 <= v <= 4 for v in values), len(high)]
+            high = [v for v in values if bisect_left(encoding['queue_bins'], v) == 2]
+            counts = [sum(bisect_left(encoding['queue_bins'], v) == b for v in values)
+                      for b in range(len(encoding['queue_bins']) + 1)]
             bins.append(dict(side=side, edge=group['edge'], lanes=group['lanes'], samples=len(values),
                              bins=counts, proportions=[n / len(values) for n in counts],
                              min=min(values), max=max(values), mean=statistics.mean(values),

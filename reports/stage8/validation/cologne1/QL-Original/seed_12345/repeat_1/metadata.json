@@ -1,0 +1,355 @@
+{
+  "map": "cologne1",
+  "algorithm": "QL",
+  "seed": 12345,
+  "begin": 25200.0,
+  "end": 28800.0,
+  "step_length": 1.0,
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "environment": {
+    "begin": 25200.0,
+    "end": 28800.0,
+    "green_seconds": 30,
+    "yellow_seconds": 8,
+    "minimum_all_red_seconds": 2,
+    "runtime_green_states": [
+      [
+        0,
+        "rrrrrrrrrrGGGGGrrrrr"
+      ],
+      [
+        1,
+        "GGGGGrrrrrrrrrrrrrrr"
+      ],
+      [
+        2,
+        "GGGrrrrrrrGGGrrrrrrr"
+      ],
+      [
+        3,
+        "rrrGGrrrrrrrrGGrrrrr"
+      ],
+      [
+        4,
+        "rrrrrGGGGGrrrrrrrrrr"
+      ],
+      [
+        5,
+        "rrrrrrrrrrrrrrrGGGGG"
+      ],
+      [
+        6,
+        "rrrrrGGGrrrrrrrGGGrr"
+      ],
+      [
+        7,
+        "rrrrrrrrGGrrrrrrrrGG"
+      ]
+    ]
+  },
+  "actions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "tls_id": "cluster_357187_359543",
+  "incoming_lanes": [
+    "-32038056#3_0",
+    "-32038056#3_1",
+    "23429231#1_0",
+    "23429231#1_1",
+    "27115123#3_0",
+    "27115123#3_1",
+    "28198821#3_0",
+    "28198821#3_1"
+  ],
+  "outgoing_lanes": [
+    "-28198821#4_0",
+    "-28198821#4_1",
+    "32038051#0_0",
+    "32038051#0_1",
+    "32038056#0_0",
+    "32038056#0_1",
+    "32324544#0_0",
+    "32324544#0_1"
+  ],
+  "controlled_links": [
+    [
+      0,
+      "-32038056#3_0",
+      "32038051#0_0",
+      ":cluster_357187_359543_0_0"
+    ],
+    [
+      1,
+      "-32038056#3_0",
+      "-28198821#4_0",
+      ":cluster_357187_359543_1_0"
+    ],
+    [
+      2,
+      "-32038056#3_1",
+      "-28198821#4_1",
+      ":cluster_357187_359543_1_1"
+    ],
+    [
+      3,
+      "-32038056#3_1",
+      "32324544#0_1",
+      ":cluster_357187_359543_3_0"
+    ],
+    [
+      4,
+      "-32038056#3_1",
+      "32038056#0_1",
+      ":cluster_357187_359543_4_0"
+    ],
+    [
+      5,
+      "23429231#1_0",
+      "32038056#0_0",
+      ":cluster_357187_359543_5_0"
+    ],
+    [
+      6,
+      "23429231#1_0",
+      "32038051#0_0",
+      ":cluster_357187_359543_6_0"
+    ],
+    [
+      7,
+      "23429231#1_1",
+      "32038051#0_1",
+      ":cluster_357187_359543_6_1"
+    ],
+    [
+      8,
+      "23429231#1_1",
+      "-28198821#4_1",
+      ":cluster_357187_359543_8_0"
+    ],
+    [
+      9,
+      "23429231#1_1",
+      "32324544#0_1",
+      ":cluster_357187_359543_9_0"
+    ],
+    [
+      15,
+      "27115123#3_0",
+      "-28198821#4_0",
+      ":cluster_357187_359543_15_0"
+    ],
+    [
+      16,
+      "27115123#3_0",
+      "32324544#0_0",
+      ":cluster_357187_359543_16_0"
+    ],
+    [
+      17,
+      "27115123#3_1",
+      "32324544#0_1",
+      ":cluster_357187_359543_16_1"
+    ],
+    [
+      18,
+      "27115123#3_1",
+      "32038056#0_1",
+      ":cluster_357187_359543_18_0"
+    ],
+    [
+      19,
+      "27115123#3_1",
+      "32038051#0_1",
+      ":cluster_357187_359543_19_0"
+    ],
+    [
+      10,
+      "28198821#3_0",
+      "32324544#0_0",
+      ":cluster_357187_359543_10_0"
+    ],
+    [
+      11,
+      "28198821#3_0",
+      "32038056#0_0",
+      ":cluster_357187_359543_11_0"
+    ],
+    [
+      12,
+      "28198821#3_1",
+      "32038056#0_1",
+      ":cluster_357187_359543_11_1"
+    ],
+    [
+      13,
+      "28198821#3_1",
+      "32038051#0_1",
+      ":cluster_357187_359543_13_0"
+    ],
+    [
+      14,
+      "28198821#3_1",
+      "-28198821#4_1",
+      ":cluster_357187_359543_14_0"
+    ]
+  ],
+  "source_hashes": {
+    "data/cologne1/cologne1.net.xml": "99fc6bcfa9b048464234afa8fa30b52e4d7ea06ee696823b8cac00dc0709800c",
+    "data/cologne1/cologne1.rou.xml": "63c4a823dafd0fa43e0dddf79ca34516f3666a1021fa89eaf486b20a3f24375c",
+    "data/cologne1/cologne1.sumocfg": "897598657fd4506a3c46d35c447272e54c311b9c9572326ee00a147ad204ba1a",
+    "data/cologne1/LICENSE": "f594ef1e139be8ef63eebf3e1c1c7ee1536982a3cf50a44b0e5d624d411b11e9"
+  },
+  "code_hashes": {
+    "analyze_ql.py": "adc3c59baf74b3c729eaa7174cd14dcdacea62ba998654fd90e88a9d1af7eaca",
+    "evaluate.py": "52c95e92d84c7ce3d296d2e2691eff6ab49d540fc82c220e70d6f282672f4c2d",
+    "evaluation_metrics.py": "d496b5bfe32bcb988ee076738a4059f8811257a6e943acc7164d436ed0698f59",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08",
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "plot_results.py": "1271755fef4695043b7a8ed2c67afcd3658430caf457f4232cdc4bed14ca5548",
+    "q_learning.py": "07483a4adbca430922c23494317cbebcdeb9346302c1e942f8c160f7ad76986f",
+    "smoke_test.py": "3ec3390ca9566ed6daba9e7ffac7acf33420d4e4bf027144dba8093da23379dd",
+    "stage6_1_probe.py": "6afa775263f419a82c11392ffe72a6a60e9c7397b9bef405b575d4f1211babd7",
+    "stage7_summary.py": "ae283cf97d2cb2045a0cfb82e0154ff1bcebfb3aa81362ef932fc97d337ca43a",
+    "stage8_summary.py": "c2fe4d8a1e49f221715e3ebf614e11b3046aef199573d58c48e3962659da9d57",
+    "sumo_env.py": "bdb301b2dbee7de4d21ceadedab64196163886e32a16734b59cf68cdd73524a2",
+    "test_analyze_ql.py": "ee1589b1210a77b519f05fd590fb56ee42f65ea001f13eabea8be9245bc33f63",
+    "test_evaluation.py": "544a8d875bfdf8ed4c4081ee5915990eadd93c11073f37d7b2929534b3278047",
+    "test_ft.py": "aa74ace20d47b11a98d6d8d5cfe1507079eb31d02e30e1f74e6395091c57b9db",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "test_q_learning.py": "4cc54eeea8e9ff194ac74ad6ec669d8859eee350bf078cb554d4847095c78b4d",
+    "test_stage6_1.py": "627a5195d3533c024f52b5488bb4b05f43b02ac0c4461ea6f6f426270396a983",
+    "test_stage7.py": "3a43d3ceb432fecd56d7d9f9c94d5d250da6753eb61df34c44323aa01f37590b",
+    "test_stage8.py": "9a1e456e259d5611fa1dd07ac696619758347ed0be01732cba0879d3b461ae42",
+    "test_sumo_env.py": "22418163cc2be7f8c787428529a2c2d981c0ab0d412999589ffc536cc06f6643"
+  },
+  "git_head": "ae8390b9bf9e85b1796e1c8428283ce72de1fed1",
+  "git_status": " M analyze_ql.py\n M evaluate.py\n M q_learning.py\n M test_analyze_ql.py\n M test_q_learning.py\n",
+  "collision_check_junctions": true,
+  "collision_action": "teleport",
+  "time_to_teleport": "SUMO default (300 seconds in 1.28.0)",
+  "epsilon": 0,
+  "model": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json",
+  "model_sha256_before": "36626479972dd09f0e23582c8f03980daba5c74b6474f7627d5d785651bf4b64",
+  "model_training": {
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "discount_unit": "decision",
+    "tie_break": "first in actions",
+    "episodes_trained": 15,
+    "sumo_seed": 23423,
+    "exploration_seed": 7,
+    "epsilon_schedule": {
+      "name": "linear per episode",
+      "start": 1,
+      "minimum": 0.05,
+      "episodes": 15
+    }
+  },
+  "encoding": {
+    "queue_bins": [
+      0,
+      4
+    ],
+    "phase_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "incoming_lanes": [
+      "-32038056#3_0",
+      "-32038056#3_1",
+      "23429231#1_0",
+      "23429231#1_1",
+      "27115123#3_0",
+      "27115123#3_1",
+      "28198821#3_0",
+      "28198821#3_1"
+    ],
+    "incoming_groups": [
+      {
+        "edge": "-32038056#3",
+        "lanes": [
+          "-32038056#3_0",
+          "-32038056#3_1"
+        ]
+      },
+      {
+        "edge": "23429231#1",
+        "lanes": [
+          "23429231#1_0",
+          "23429231#1_1"
+        ]
+      },
+      {
+        "edge": "27115123#3",
+        "lanes": [
+          "27115123#3_0",
+          "27115123#3_1"
+        ]
+      },
+      {
+        "edge": "28198821#3",
+        "lanes": [
+          "28198821#3_0",
+          "28198821#3_1"
+        ]
+      }
+    ],
+    "outgoing_lanes": [
+      "-28198821#4_0",
+      "-28198821#4_1",
+      "32038051#0_0",
+      "32038051#0_1",
+      "32038056#0_0",
+      "32038056#0_1",
+      "32324544#0_0",
+      "32324544#0_1"
+    ],
+    "outgoing_groups": [
+      {
+        "edge": "-28198821#4",
+        "lanes": [
+          "-28198821#4_0",
+          "-28198821#4_1"
+        ]
+      },
+      {
+        "edge": "32038051#0",
+        "lanes": [
+          "32038051#0_0",
+          "32038051#0_1"
+        ]
+      },
+      {
+        "edge": "32038056#0",
+        "lanes": [
+          "32038056#0_0",
+          "32038056#0_1"
+        ]
+      },
+      {
+        "edge": "32324544#0",
+        "lanes": [
+          "32324544#0_0",
+          "32324544#0_1"
+        ]
+      }
+    ]
+  },
+  "requested": 2015
+}

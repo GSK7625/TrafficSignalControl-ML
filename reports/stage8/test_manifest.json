@@ -1,0 +1,239 @@
+{
+  "selection_sha256": "ba26d7ff036939f965c580d420968b3451f80eba5d6dd15b09b6942a8cd2f9ff",
+  "seeds": [
+    41001,
+    41002,
+    41003
+  ],
+  "repeats": 2,
+  "runs": [
+    {
+      "label": "QL-Original",
+      "seed": 41001,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41001/repeat_1",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41001,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41001/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41001,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41001/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    },
+    {
+      "label": "QL-Original",
+      "seed": 41001,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41001/repeat_2",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41001,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41001/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41001,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41001/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    },
+    {
+      "label": "QL-Original",
+      "seed": 41002,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41002/repeat_1",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41002,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41002/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41002,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41002/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    },
+    {
+      "label": "QL-Original",
+      "seed": 41002,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41002/repeat_2",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41002,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41002/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41002,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41002/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    },
+    {
+      "label": "QL-Original",
+      "seed": 41003,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41003/repeat_1",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41003,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41003/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41003,
+      "repeat": 1,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41003/repeat_1",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    },
+    {
+      "label": "QL-Original",
+      "seed": 41003,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-Original/seed_41003/repeat_2",
+      "model": "reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState",
+      "seed": 41003,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState/seed_41003/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": null
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "seed": 41003,
+      "repeat": 2,
+      "output": "reports/stage8/test/cologne1/QL-NewState-Guard/seed_41003/repeat_2",
+      "model": "reports/stage8/training/cologne1/cologne1_q_table.json",
+      "queue_bins": [
+        0,
+        4,
+        14
+      ],
+      "guard_seconds": 300
+    }
+  ]
+}

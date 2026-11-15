@@ -1,0 +1,62 @@
+{
+  "locked_at_utc": "2026-11-15T10:15:14.586898+00:00",
+  "map": "cologne1",
+  "validation_seeds": [
+    42,
+    12345
+  ],
+  "confirmation_seeds": [
+    41001,
+    41002,
+    41003
+  ],
+  "repeats": 2,
+  "rule": "mean completion descending, minimum completion descending, mean teleports ascending, maximum gap ascending; final15ep only, no test reselection",
+  "selected": "QL-Original",
+  "validation": [
+    {
+      "label": "QL-Original",
+      "completion": 0.837468982630273,
+      "minimum_completion": 0.8054590570719603,
+      "teleports": 42.75,
+      "max_gap": 2060
+    },
+    {
+      "label": "QL-NewState",
+      "completion": 0.7196029776674937,
+      "minimum_completion": 0.5344913151364764,
+      "teleports": 52.5,
+      "max_gap": 2930
+    },
+    {
+      "label": "QL-NewState-Guard",
+      "completion": 0.7632754342431762,
+      "minimum_completion": 0.6923076923076923,
+      "teleports": 42.75,
+      "max_gap": 1470
+    }
+  ],
+  "models": {
+    "QL-Original": {
+      "path": "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json",
+      "sha256": "36626479972dd09f0e23582c8f03980daba5c74b6474f7627d5d785651bf4b64"
+    },
+    "QL-NewState": {
+      "path": "reports\\stage8\\training\\cologne1\\cologne1_q_table.json",
+      "sha256": "31812235eafce305b338097543452142b51b31e009cf91e02e68b0679525c3f9"
+    }
+  },
+  "guard": {
+    "model": "QL-NewState",
+    "seconds": 300,
+    "scope": "observed incoming-edge queue; not movement fairness"
+  },
+  "old_test_seeds_exposed": [
+    31001,
+    31002,
+    31003
+  ],
+  "expand_ingolstadt": false,
+  "extend_training": false,
+  "reason": "State-only validation worse than Original, repeated actions and sparse coverage persist; more training is not yet justified"
+}

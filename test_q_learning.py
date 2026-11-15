@@ -12,6 +12,33 @@ import q_learning as ql
 from sumo_env import ROOT, SumoEnv
 
 
+def test_configurable_bins_boundaries_and_new_model_requires_matching_encoding(tmp_path):
+    env = SumoEnv('cologne1')
+    encoding = ql.build_encoding(env, (0, 4, 14))
+    for queue, expected in [(0, 0), (1, 1), (4, 1), (5, 2), (14, 2), (15, 3), (113, 3)]:
+        state = dict(incoming=[queue] + [0]*7, outgoing=[0]*8, phase=7)
+        assert ql.encode_state(state, encoding) == (expected, 0, 0, 0, 0, 0, 0, 0, 7)
+    metadata = ql.make_metadata(env, episodes=15, alpha=.1, gamma=.95,
+                               epsilon_start=1, epsilon_min=.05, exploration_seed=7,
+                               queue_bins=(0, 4, 14))
+    table = {(3, 2, 1, 0, 0, 0, 0, 0, 7): [-1.]*8}
+    path = tmp_path / 'new.json'
+    ql.save_q_table(path, table, metadata)
+    assert ql.load_q_table(path, env, (0, 4, 14)) == (table, metadata)
+    with pytest.raises(ValueError, match='encoding'):
+        ql.load_q_table(path, env)
+    old = ROOT / 'reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json'
+    assert len(ql.load_q_table(old, env)[0]) == 129
+    with pytest.raises(ValueError, match='encoding'):
+        ql.load_q_table(old, env, (0, 4, 14))
+
+
+@pytest.mark.parametrize('bins', [(), (4,), (0, 4, 4), (0, -1), (0, 4.5), (False, 4)])
+def test_invalid_queue_thresholds_rejected(bins):
+    with pytest.raises(ValueError, match='queue_bins'):
+        ql.build_encoding(SumoEnv('cologne1'), bins)
+
+
 @pytest.mark.parametrize("name,groups", [("cologne1", 4), ("ingolstadt1", 3)])
 def test_encoding_real_edges_unique_lanes_and_bins(name, groups):
     env = SumoEnv(name)

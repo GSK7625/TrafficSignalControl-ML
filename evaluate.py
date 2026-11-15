@@ -24,26 +24,59 @@ def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def greedy_steps(env, table, encoding):
-    """Use existing QL selection with epsilon=0; never create/update Q rows."""
+def greedy_steps(env, table, encoding, guard_seconds=None):
+    """Frozen greedy QL, optionally constrained by observed incoming-edge service."""
+    if guard_seconds is not None and (type(guard_seconds) is not int or guard_seconds <= 0):
+        raise ValueError('guard_seconds must be a positive integer or None')
+    groups = encoding['incoming_groups'] if guard_seconds is not None else []
+    demand_since = [None] * len(groups)
+    serving_actions = [
+        [a for a in env.actions if any(env.green_states[a][i] == 'G'
+         for i, incoming, _, _ in env.links if incoming in group['lanes'])]
+        for group in groups]
     state = env.get_state()
     done = False
     while not done:
         encoded = ql.encode_state(state, encoding)
-        action = ql.choose_action(table, encoded, env.actions, epsilon=0)
+        greedy = ql.choose_action(table, encoded, env.actions, epsilon=0)
+        values = ql.get_q_values(table, encoded, env.actions, create=False)
+        action, guard_edge, guard_age = greedy, None, 0
+        if guard_seconds is not None:
+            now = env.conn.simulation.getTime()
+            by_lane = dict(zip(encoding['incoming_lanes'], state['incoming']))
+            for index, group in enumerate(groups):
+                if sum(by_lane[lane] for lane in group['lanes']) == 0:
+                    demand_since[index] = None
+                elif demand_since[index] is None:
+                    demand_since[index] = now
+            overdue = [i for i, since in enumerate(demand_since)
+                       if since is not None and now - since >= guard_seconds]
+            if overdue:
+                index = min(overdue, key=lambda i: demand_since[i])
+                guard_edge, guard_age = groups[index]['edge'], now - demand_since[index]
+                # Shared lanes reveal edge demand, not which turn is waiting.
+                action = max(serving_actions[index], key=lambda a: values[env.actions.index(a)])
         next_state, _, done, info = env.step(action)
+        for index, group in enumerate(groups):
+            if any(sample['signal'][i] == 'G' for sample in info['samples']
+                   for i, incoming, _, _ in env.links if incoming in group['lanes']):
+                demand_since[index] = None
         yield {**info, 'state': state, 'encoded_state': encoded,
                'unseen': encoded not in table,
-               'q_values': ql.get_q_values(table, encoded, env.actions, create=False)}
+               'q_values': values, 'greedy_action': greedy,
+               'guard_edge': guard_edge, 'guard_age': guard_age}
         state = next_state
 
 
-def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=None):
+def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=None,
+                   queue_bins=(0, 4), guard_seconds=None):
     """One run with common recording. horizon is only for short integration tests."""
     if algorithm not in ALGORITHMS:
         raise ValueError('algorithm must be FT, MP or QL')
     if (algorithm == 'QL') != (model is not None):
         raise ValueError('Supply model exactly when running QL')
+    if guard_seconds is not None and (algorithm != 'QL' or type(guard_seconds) is not int or guard_seconds <= 0):
+        raise ValueError('guard_seconds requires QL and a positive integer')
     output = Path(output).resolve()
     env = SumoEnv(map_name, output, seed, tripinfo=True)
     table = metadata = before_table = None
@@ -51,7 +84,7 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
     if model is not None:
         model = Path(model).resolve()
         model_before = sha256(model)
-        table, metadata = ql.load_q_table(model, env)
+        table, metadata = ql.load_q_table(model, env, queue_bins)
         before_table = copy.deepcopy(table)
     if horizon is not None:
         if type(horizon) is not int or not 0 < horizon <= env.end - env.begin:
@@ -80,6 +113,9 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
             epsilon=0 if algorithm == 'QL' else None,
             model=str(model) if model else None, model_sha256_before=model_before,
             model_training=metadata['training'] if metadata else None,
+            encoding=metadata['encoding'] if metadata else None,
+            guard_seconds=guard_seconds,
+            policy_variant='QL with observed incoming-edge guard' if guard_seconds else algorithm,
             requested=len(requests),
         )
         (output / 'metadata.json').write_text(json.dumps(run_metadata, indent=2), encoding='utf-8')
@@ -88,7 +124,7 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
         elif algorithm == 'MP':
             steps = max_pressure(env)
         else:
-            steps = greedy_steps(env, table, metadata['encoding'])
+            steps = greedy_steps(env, table, metadata['encoding'], guard_seconds)
         with (output / 'signals.csv').open('x', newline='', encoding='utf-8') as sf, \
                 (output / 'actions.csv').open('x', newline='', encoding='utf-8') as af:
             signals = csv.DictWriter(sf, fieldnames=(
@@ -97,7 +133,8 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
             actions = csv.DictWriter(af, fieldnames=(
                 'decision', 'start', 'end', 'previous_phase', 'action', 'elapsed',
                 'green', 'yellow', 'all_red', 'queue_seconds',
-                'state', 'pressures', 'encoded_state', 'q_values', 'unseen'))
+                'state', 'pressures', 'encoded_state', 'q_values', 'unseen',
+                'greedy_action', 'guard_edge', 'guard_age'))
             signals.writeheader()
             actions.writeheader()
             for decision, info in enumerate(steps):
@@ -118,7 +155,8 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
                     **{k: info[k] for k in ('start', 'end', 'previous_phase', 'action', 'elapsed', 'queue_seconds')},
                     **info['durations'],
                     **{k: json.dumps(info.get(k)) for k in
-                       ('state', 'pressures', 'encoded_state', 'q_values', 'unseen')}))
+                       ('state', 'pressures', 'encoded_state', 'q_values', 'unseen',
+                        'greedy_action', 'guard_edge', 'guard_age')}))
         assert env.conn.simulation.getTime() == env.end
         assert sum(totals.values()) == env.end - env.begin
         process = env.conn._process
@@ -147,12 +185,14 @@ def main():
     parser.add_argument('--map', choices=MAPS)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--model', type=Path)
+    parser.add_argument('--queue-bins', type=int, nargs='+', default=[0, 4])
+    parser.add_argument('--guard-seconds', type=int, help='Optional observed incoming-edge service constraint')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--all', action='store_true', help='Run the predefined 30 runs into a NEW directory')
     args = parser.parse_args()
     if args.all:
-        if args.algorithm or args.map or args.model:
-            parser.error('--all cannot be combined with algorithm/map/model')
+        if args.algorithm or args.map or args.model or args.guard_seconds is not None or args.queue_bins != [0, 4]:
+            parser.error('--all requires original settings and cannot use algorithm/map/model/guard')
         args.output.mkdir(parents=True, exist_ok=False)
         for map_name in MAPS:
             for seed in SEEDS:
@@ -163,7 +203,8 @@ def main():
     else:
         if args.algorithm is None or args.map is None:
             parser.error('--algorithm and --map required without --all')
-        run_evaluation(args.map, args.algorithm, args.seed, args.output, args.model)
+        run_evaluation(args.map, args.algorithm, args.seed, args.output, args.model,
+                       queue_bins=args.queue_bins, guard_seconds=args.guard_seconds)
 
 
 if __name__ == '__main__':

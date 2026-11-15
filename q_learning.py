@@ -1,6 +1,7 @@
 """Tabular Q-Learning: discrete edge queues, original green IDs, shared SumoEnv."""
 
 import argparse
+from bisect import bisect_left
 import csv
 import hashlib
 import json
@@ -12,13 +13,17 @@ import xml.etree.ElementTree as ET
 from sumo_env import ROOT, SumoEnv
 
 
-def build_encoding(env):
+def build_encoding(env, queue_bins=(0, 4)):
     """Use XML edge membership, not movement links (which repeat lanes)."""
+    if (not queue_bins or queue_bins[0] != 0
+            or any(type(x) is not int or x < 0 for x in queue_bins)
+            or any(a >= b for a, b in zip(queue_bins, queue_bins[1:]))):
+        raise ValueError("queue_bins must be increasing integer upper bounds starting at 0")
     config = ET.parse(env.config).getroot()
     net = ET.parse(env.config.parent / config.find("input/net-file").get("value"))
     lane_edges = {lane.get("id"): edge.get("id")
                   for edge in net.findall("edge") for lane in edge.findall("lane")}
-    encoding = {"queue_bins": [0, 4], "phase_ids": list(env.actions)}
+    encoding = {"queue_bins": list(queue_bins), "phase_ids": list(env.actions)}
     for side in ("incoming", "outgoing"):
         lanes = getattr(env, side + "_lanes")
         if len(lanes) != len(set(lanes)):
@@ -33,7 +38,7 @@ def build_encoding(env):
 
 
 def encode_state(state, encoding):
-    """Sum each edge's unique boundary lanes, bin 0 / 1..4 / >=5, append phase ID."""
+    """Sum unique lanes per edge, apply saved inclusive upper bounds, append phase ID."""
     encoded = []
     for side in ("incoming", "outgoing"):
         lanes = encoding[side + "_lanes"]
@@ -45,7 +50,7 @@ def encode_state(state, encoding):
         lane_queue = dict(zip(lanes, queues))
         for group in encoding[side + "_groups"]:
             queue = sum(lane_queue[lane] for lane in group["lanes"])
-            encoded.append(0 if queue == 0 else 1 if queue <= 4 else 2)
+            encoded.append(bisect_left(encoding["queue_bins"], queue))
     if type(state["phase"]) is not int or state["phase"] not in encoding["phase_ids"]:
         raise ValueError("Only nonterminal states with a valid green phase can be encoded")
     return tuple(encoded) + (state["phase"],)
@@ -115,7 +120,8 @@ def source_hashes(env):
             for path in sorted(env.config.parent.iterdir()) if path.is_file()}
 
 
-def make_metadata(env, *, episodes, alpha, gamma, epsilon_start, epsilon_min, exploration_seed):
+def make_metadata(env, *, episodes, alpha, gamma, epsilon_start, epsilon_min, exploration_seed,
+                  queue_bins=(0, 4)):
     if not 0 < alpha <= 1 or not 0 <= gamma <= 1:
         raise ValueError("alpha must be in (0, 1], gamma in [0, 1]")
     episode_epsilon(1, episodes, epsilon_start, epsilon_min)
@@ -123,7 +129,7 @@ def make_metadata(env, *, episodes, alpha, gamma, epsilon_start, epsilon_min, ex
         raise ValueError("exploration_seed must be an integer in [0, 2**31)")
     return {
         "schema_version": 1, "algorithm": "Q-Learning", "map": env.map_name,
-        "actions": list(env.actions), "encoding": build_encoding(env),
+        "actions": list(env.actions), "encoding": build_encoding(env, queue_bins),
         "environment": environment_config(env), "source_hashes": source_hashes(env),
         "sumo_version": None,
         "training": {"alpha": alpha, "gamma": gamma, "discount_unit": "decision",
@@ -144,12 +150,12 @@ def save_q_table(path, q_table, metadata):
         file.write(content + "\n")
 
 
-def load_q_table(path, env):
+def load_q_table(path, env, queue_bins=(0, 4)):
     """Reject a different map, encoding, timing, input data or malformed row."""
     payload = json.loads(Path(path).read_text(encoding="utf-8"))
     metadata = payload["metadata"]
     expected = {"schema_version": 1, "algorithm": "Q-Learning", "map": env.map_name,
-                "actions": list(env.actions), "encoding": build_encoding(env),
+                "actions": list(env.actions), "encoding": build_encoding(env, queue_bins),
                 "environment": environment_config(env), "source_hashes": source_hashes(env)}
     for key, value in expected.items():
         if metadata.get(key) != value:
@@ -160,7 +166,7 @@ def load_q_table(path, env):
     for row in payload["rows"]:
         state, values = row["state"], row["values"]
         if (len(state) != dimensions + 1 or any(type(x) is not int for x in state)
-                or any(x not in (0, 1, 2) for x in state[:-1]) or state[-1] not in env.actions):
+                or any(not 0 <= x <= len(queue_bins) for x in state[:-1]) or state[-1] not in env.actions):
             raise ValueError("Invalid encoded state in model")
         if (len(values) != len(env.actions)
                 or any(type(q) not in (int, float) or not math.isfinite(q) for q in values)):
@@ -288,13 +294,13 @@ SUMMARY_FIELDS = ("map", "mode", "episode", "sumo_seed", "exploration_seed", "tr
 
 
 def train(map_name, output, episodes, *, seed=23423, exploration_seed=7,
-          alpha=0.1, gamma=0.95, epsilon_start=1.0, epsilon_min=0.05):
+          alpha=0.1, gamma=0.95, epsilon_start=1.0, epsilon_min=0.05, queue_bins=(0, 4)):
     """Start a fresh table; keep one exploration RNG across independent SUMO episodes."""
     output = Path(output)
     env = SumoEnv(map_name, seed=seed)
     metadata = make_metadata(env, episodes=episodes, alpha=alpha, gamma=gamma,
                              epsilon_start=epsilon_start, epsilon_min=epsilon_min,
-                             exploration_seed=exploration_seed)
+                             exploration_seed=exploration_seed, queue_bins=queue_bins)
     output.mkdir(parents=True, exist_ok=False)
     rng = random.Random(exploration_seed)
     q_table = {}
@@ -315,10 +321,10 @@ def train(map_name, output, episodes, *, seed=23423, exploration_seed=7,
     return q_table, metadata
 
 
-def evaluate(map_name, model, output, *, seed=42):
+def evaluate(map_name, model, output, *, seed=42, queue_bins=(0, 4)):
     """Load a compatible table, use epsilon=0, never update or insert a Q row."""
     env = SumoEnv(map_name, output, seed)
-    q_table, metadata = load_q_table(model, env)
+    q_table, metadata = load_q_table(model, env, queue_bins)
     result = run_episode(env, q_table, metadata, episode=1, training=False)
     with (env.output_dir / "evaluation.csv").open("x", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=SUMMARY_FIELDS)
@@ -337,6 +343,8 @@ def main():
         command.add_argument("map", choices=("cologne1", "ingolstadt1"))
         command.add_argument("--output", type=Path, required=True)
         command.add_argument("--seed", type=int, default=23423 if command is training else 42)
+        command.add_argument("--queue-bins", type=int, nargs="+", default=[0, 4],
+                             help="Inclusive queue upper bounds; Stage8: 0 4 14")
     training.add_argument("--episodes", type=int, required=True)
     training.add_argument("--exploration-seed", type=int, default=7)
     training.add_argument("--alpha", type=float, default=.1)
@@ -348,9 +356,9 @@ def main():
     if args.mode == "train":
         train(args.map, args.output, args.episodes, seed=args.seed,
               exploration_seed=args.exploration_seed, alpha=args.alpha, gamma=args.gamma,
-              epsilon_start=args.epsilon_start, epsilon_min=args.epsilon_min)
+              epsilon_start=args.epsilon_start, epsilon_min=args.epsilon_min, queue_bins=args.queue_bins)
     else:
-        evaluate(args.map, args.model, args.output, seed=args.seed)
+        evaluate(args.map, args.model, args.output, seed=args.seed, queue_bins=args.queue_bins)
 
 
 if __name__ == "__main__":

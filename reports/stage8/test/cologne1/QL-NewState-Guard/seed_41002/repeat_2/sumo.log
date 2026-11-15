@@ -1,0 +1,91 @@
+***Starting server on port 50776 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.net.xml' ... done (11ms).
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 25200.00.
+Warning: Teleporting vehicle '161721_421_0'; waited too long (yield), lane='27115123#3_1', time=25667.00.
+Warning: Vehicle '161721_421_0' ends teleporting on edge '32038051#0', time=25667.00.
+Warning: Teleporting vehicle '147215_416_0'; waited too long (yield), lane='28198821#3_0', time=25911.00.
+Warning: Vehicle '147215_416_0' ends teleporting on edge '32038056#0', time=25911.00.
+Warning: Teleporting vehicle '121463_406_0'; waited too long (yield), lane='28198821#3_0', time=25918.00.
+Warning: Vehicle '121463_406_0' ends teleporting on edge '32038056#0', time=25918.00.
+Warning: Teleporting vehicle '137320_412_0'; waited too long (yield), lane='27115123#3_1', time=25984.00.
+Warning: Vehicle '137320_412_0' ends teleporting on edge '32038051#0', time=25984.00.
+Warning: Teleporting vehicle '108574_400_0'; waited too long (yield), lane='23429231#1_1', time=26254.00.
+Warning: Vehicle '108574_400_0' ends teleporting on edge '32324544#0', time=26254.00.
+Warning: Teleporting vehicle '100992_396_0'; waited too long (jam), lane='27115123#2_1', time=26301.00.
+Warning: Teleporting vehicle '80745_388_0'; waited too long (yield), lane='130165204_0', time=26301.00.
+Warning: Teleporting vehicle '110198_401_0'; waited too long (yield), lane='28198821#3_0', time=26314.00.
+Warning: Vehicle '110198_401_0' ends teleporting on edge '32038056#0', time=26314.00.
+Warning: Teleporting vehicle '115085_403_0'; waited too long (yield), lane='28198821#3_0', time=26315.00.
+Warning: Vehicle '115085_403_0' ends teleporting on edge '32038056#0', time=26315.00.
+Warning: Vehicle '80745_388_0' ends teleporting on edge '32038056#0', time=26344.00.
+Warning: Vehicle '100992_396_0' ends teleporting on edge '32038056#0', time=26344.00.
+Warning: Teleporting vehicle '164286_422_0'; waited too long (wrong lane), lane='27115123#3_0', time=26485.00.
+Warning: Teleporting vehicle '95319_394_0'; waited too long (yield), lane='27115123#3_1', time=26485.00.
+Warning: Vehicle '95319_394_0' ends teleporting on edge '32038051#0', time=26485.00.
+Warning: Vehicle '164286_422_0' ends teleporting on edge '32038051#0', time=26487.00.
+Warning: Teleporting vehicle '159332_421_0'; waited too long (jam), lane='27115123#2_1', time=26490.00.
+Warning: Vehicle '159332_421_0' ends teleporting on edge '27115123#3', time=26490.00.
+Warning: Teleporting vehicle '144457_416_0'; waited too long (yield), lane='130165204_0', time=26606.00.
+Warning: Vehicle '144457_416_0' ends teleporting on edge '32038056#0', time=26624.00.
+Warning: Teleporting vehicle '146877_416_0'; waited too long (yield), lane='-32038056#3_0', time=26679.00.
+Warning: Vehicle '146877_416_0' ends teleporting on edge '32038051#0', time=26679.00.
+Warning: Teleporting vehicle '207870_441_0'; waited too long (yield), lane='-32038056#3_1', time=26712.00.
+Warning: Vehicle '207870_441_0' ends teleporting on edge '-28198821#4', time=26712.00.
+Warning: Teleporting vehicle '196432_436_0'; waited too long (yield), lane='28198821#3_0', time=26753.00.
+Warning: Vehicle '196432_436_0' ends teleporting on edge '32038056#0', time=26753.00.
+Warning: Teleporting vehicle '143271_415_0'; waited too long (yield), lane='28198821#3_0', time=26754.00.
+Warning: Vehicle '143271_415_0' ends teleporting on edge '32038056#0', time=26754.00.
+Warning: Teleporting vehicle '163598_422_0'; waited too long (yield), lane='27115123#3_1', time=27025.00.
+Warning: Vehicle '163598_422_0' ends teleporting on edge '32038051#0', time=27025.00.
+Warning: Teleporting vehicle '163719_422_0'; waited too long (jam), lane='27115123#2_1', time=27031.00.
+Warning: Teleporting vehicle '123353_406_0'; waited too long (yield), lane='28198821#3_1', time=27074.00.
+Warning: Vehicle '123353_406_0' ends teleporting on edge '32038051#0', time=27074.00.
+Warning: Vehicle '163719_422_0' ends teleporting on edge '32038051#0', time=27074.00.
+Warning: Teleporting vehicle '104234_397_0'; waited too long (yield), lane='-32038056#3_1', time=27078.00.
+Warning: Vehicle '104234_397_0' ends teleporting on edge '32324544#0', time=27078.00.
+Warning: Teleporting vehicle '40062_360_0'; waited too long (yield), lane='-32038056#3_0', time=27104.00.
+Warning: Teleporting vehicle '206714_440_0'; waited too long (yield), lane='28198821#3_0', time=27104.00.
+Warning: Vehicle '40062_360_0' ends teleporting on edge '32038051#0', time=27104.00.
+Warning: Vehicle '206714_440_0' ends teleporting on edge '32038056#0', time=27104.00.
+Warning: Teleporting vehicle '164467_422_0'; waited too long (jam), lane='-32038056#3_0', time=27130.00.
+Warning: Vehicle '164467_422_0' ends teleporting on edge '32038051#0', time=27130.00.
+Warning: Teleporting vehicle '206443_440_0'; waited too long (jam), lane='28198821#3_0', time=27170.00.
+Warning: Vehicle '206443_440_0' ends teleporting on edge '32038056#0', time=27170.00.
+Warning: Teleporting vehicle '175059_428_0'; waited too long (yield), lane='28198821#3_1', time=27407.00.
+Warning: Vehicle '175059_428_0' ends teleporting on edge '32038051#0', time=27407.00.
+Warning: Teleporting vehicle '144022_416_0'; waited too long (yield), lane='27115123#3_1', time=27585.00.
+Warning: Vehicle '144022_416_0' ends teleporting on edge '32038056#0', time=27585.00.
+Warning: Teleporting vehicle '182638_431_0'; waited too long (yield), lane='130165204_0', time=27604.00.
+Warning: Vehicle '182638_431_0' ends teleporting on edge '32038051#0', time=27647.00.
+Warning: Teleporting vehicle '159954_421_0'; waited too long (yield), lane='23429231#1_0', time=27676.00.
+Warning: Vehicle '159954_421_0' ends teleporting on edge '32038051#0', time=27676.00.
+Warning: Teleporting vehicle '165528_423_0'; waited too long (yield), lane='28198821#3_1', time=27897.00.
+Warning: Vehicle '165528_423_0' ends teleporting on edge '32038051#0', time=27897.00.
+Warning: Teleporting vehicle '270659_466_0'; waited too long (yield), lane='-32038056#3_0', time=28284.00.
+Warning: Vehicle '270659_466_0' ends teleporting on edge '32038051#0', time=28284.00.
+Warning: Teleporting vehicle '262168_462_0'; waited too long (jam), lane='-32038056#3_0', time=28300.00.
+Warning: Vehicle '262168_462_0' ends teleporting on edge '32038051#0', time=28300.00.
+Warning: Teleporting vehicle '143000_415_0'; waited too long (yield), lane='28198821#3_1', time=28365.00.
+Warning: Vehicle '143000_415_0' ends teleporting on edge '32038051#0', time=28365.00.
+Warning: Teleporting vehicle '255757_460_0'; waited too long (yield), lane='28198821#3_0', time=28422.00.
+Warning: Vehicle '255757_460_0' ends teleporting on edge '32324544#0', time=28422.00.
+Warning: Teleporting vehicle '181512_431_0'; waited too long (yield), lane='27115123#3_1', time=28515.00.
+Warning: Vehicle '181512_431_0' ends teleporting on edge '32038051#0', time=28515.00.
+Warning: Teleporting vehicle '166951_424_0'; waited too long (yield), lane='130165204_0', time=28542.00.
+Warning: Vehicle '166951_424_0' ends teleporting on edge '27115123#3', time=28562.00.
+Warning: Teleporting vehicle '263319_462_0'; waited too long (yield), lane='23429231#1_0', time=28595.00.
+Warning: Vehicle '263319_462_0' ends teleporting on edge '32038051#0', time=28595.00.
+Warning: Teleporting vehicle '106740_399_0'; waited too long (yield), lane='23429231#1_0', time=28601.00.
+Warning: Vehicle '106740_399_0' ends teleporting on edge '32038051#0', time=28601.00.
+Simulation ended at time: 28800.00.
+Reason: TraCI requested termination.
+DijkstraRouter answered 2676 queries and explored 3.34 edges on average.
+DijkstraRouter spent 0.01s answering queries (0.00ms on average).

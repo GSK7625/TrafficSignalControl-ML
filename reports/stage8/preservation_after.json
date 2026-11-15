@@ -1,0 +1,57 @@
+{
+  "original_tracked_files": 2734,
+  "unchanged": 2729,
+  "intended_changes": [
+    "analyze_ql.py",
+    "evaluate.py",
+    "q_learning.py",
+    "test_analyze_ql.py",
+    "test_q_learning.py"
+  ],
+  "git_head_unchanged": true,
+  "code_sha256": {
+    "analyze_ql.py": "adc3c59baf74b3c729eaa7174cd14dcdacea62ba998654fd90e88a9d1af7eaca",
+    "evaluate.py": "841da463b0f0f7a469083c3847cf7142041e514a20815b3a29d24ac8761e184c",
+    "evaluation_metrics.py": "d496b5bfe32bcb988ee076738a4059f8811257a6e943acc7164d436ed0698f59",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08",
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "plot_results.py": "1271755fef4695043b7a8ed2c67afcd3658430caf457f4232cdc4bed14ca5548",
+    "q_learning.py": "07483a4adbca430922c23494317cbebcdeb9346302c1e942f8c160f7ad76986f",
+    "smoke_test.py": "3ec3390ca9566ed6daba9e7ffac7acf33420d4e4bf027144dba8093da23379dd",
+    "stage6_1_probe.py": "6afa775263f419a82c11392ffe72a6a60e9c7397b9bef405b575d4f1211babd7",
+    "stage7_summary.py": "ae283cf97d2cb2045a0cfb82e0154ff1bcebfb3aa81362ef932fc97d337ca43a",
+    "stage8_summary.py": "0b8bebd32176329457f34365611dcbb0a9cff38d84359ee5e3096c15569ae0b0",
+    "sumo_env.py": "bdb301b2dbee7de4d21ceadedab64196163886e32a16734b59cf68cdd73524a2",
+    "test_analyze_ql.py": "ee1589b1210a77b519f05fd590fb56ee42f65ea001f13eabea8be9245bc33f63",
+    "test_evaluation.py": "544a8d875bfdf8ed4c4081ee5915990eadd93c11073f37d7b2929534b3278047",
+    "test_ft.py": "aa74ace20d47b11a98d6d8d5cfe1507079eb31d02e30e1f74e6395091c57b9db",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "test_q_learning.py": "4cc54eeea8e9ff194ac74ad6ec669d8859eee350bf078cb554d4847095c78b4d",
+    "test_stage6_1.py": "627a5195d3533c024f52b5488bb4b05f43b02ac0c4461ea6f6f426270396a983",
+    "test_stage7.py": "3a43d3ceb432fecd56d7d9f9c94d5d250da6753eb61df34c44323aa01f37590b",
+    "test_stage8.py": "d99726914fe1bf1b35ad18f4c3ffc9b26b76d77506d7418fd7e917a9d0a94d0e",
+    "test_sumo_env.py": "22418163cc2be7f8c787428529a2c2d981c0ab0d412999589ffc536cc06f6643"
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 176,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0,
+    "last_seconds": 16.11
+  },
+  "new_training_episodes": 15,
+  "replayed_training_episodes": 30,
+  "new_full_evaluations": 36,
+  "independent_raw_metric_checks": 36,
+  "overwrite_rejections": [
+    "analysis",
+    "training",
+    "evaluation"
+  ],
+  "new_python_files": [
+    "stage8_summary.py",
+    "test_stage8.py"
+  ],
+  "net_python_lines": 461
+}

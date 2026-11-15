@@ -3,9 +3,20 @@
 from collections import Counter
 
 import pytest
-
 import analyze_ql as analysis
 
+
+def test_observation_analysis_uses_saved_four_bins():
+    from analyze_ql import observation_analysis
+    encoding = dict(queue_bins=[0, 4, 14], phase_ids=[0], incoming_lanes=['a_0'],
+                    outgoing_lanes=['b_0'], incoming_groups=[dict(edge='a', lanes=['a_0'])],
+                    outgoing_groups=[dict(edge='b', lanes=['b_0'])])
+    records = [dict(incoming=[q], outgoing=[0], phase=0, encoded=[b, 0, 0])
+               for q, b in [(0, 0), (4, 1), (5, 2), (14, 2), (15, 3), (113, 3)]]
+    bins, aliases = observation_analysis(records, encoding)
+    assert bins[0]['bins'] == [1, 1, 2, 2]
+    assert bins[1]['bins'] == [6, 0, 0, 0]
+    assert aliases['encoded_states'] == 4
 
 def test_greedy_evidence_separates_untried_zero_from_updated_zero():
     actions = [0, 2, 4]
@@ -24,7 +35,7 @@ def test_greedy_evidence_separates_untried_zero_from_updated_zero():
 
 
 def test_queue_aliasing_distinguishes_edge_aggregation_and_discretization():
-    encoding = {'incoming_lanes': ['a_0', 'a_1'], 'outgoing_lanes': ['b_0'],
+    encoding = {'queue_bins': [0, 4], 'incoming_lanes': ['a_0', 'a_1'], 'outgoing_lanes': ['b_0'],
                 'incoming_groups': [{'edge': 'a', 'lanes': ['a_0', 'a_1']}],
                 'outgoing_groups': [{'edge': 'b', 'lanes': ['b_0']}], 'phase_ids': [0]}
     records = [{'incoming': [x, y], 'outgoing': [0], 'phase': 0}

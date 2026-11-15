@@ -1,0 +1,8 @@
+Warning: Teleporting vehicle 'carIn79774:1'; waited too long (yield), lane='164051413_2', time=59359.00.
+Warning: Vehicle 'carIn79774:1' ends teleporting on edge '104010475#0', time=59359.00.
+Warning: Teleporting vehicle 'carIn63219:1'; waited too long (jam), lane='653473569#5_2', time=59360.00.
+Warning: Vehicle 'carIn63219:1' ends teleporting on edge '104010475#0', time=59362.00.
+Warning: Teleporting vehicle 'carIn131398:1'; waited too long (wrong lane), lane='164051413_1', time=60013.00.
+Warning: Teleporting vehicle 'carIn89081:1'; waited too long (yield), lane='164051413_2', time=60013.00.
+Warning: Vehicle 'carIn89081:1' ends teleporting on edge '104010475#0', time=60013.00.
+Warning: Vehicle 'carIn131398:1' ends teleporting on edge '104010475#0', time=60015.00.

@@ -1,0 +1,65 @@
+***Starting server on port 55930 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.net.xml' ... done (8ms).
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 25200.00.
+Warning: Teleporting vehicle '151372_418_0'; waited too long (yield), lane='27115123#3_1', time=25535.00.
+Warning: Vehicle '151372_418_0' ends teleporting on edge '32038051#0', time=25535.00.
+Warning: Teleporting vehicle '113509_402_0'; waited too long (yield), lane='23429231#1_1', time=25559.00.
+Warning: Vehicle '113509_402_0' ends teleporting on edge '-28198821#4', time=25559.00.
+Warning: Teleporting vehicle '154066_420_0'; waited too long (yield), lane='27115123#3_1', time=25943.00.
+Warning: Vehicle '154066_420_0' ends teleporting on edge '32038056#0', time=25943.00.
+Warning: Teleporting vehicle '151094_418_0'; waited too long (yield), lane='130165204_0', time=25968.00.
+Warning: Vehicle '151094_418_0' ends teleporting on edge '27115123#3', time=26007.00.
+Warning: Teleporting vehicle '109448_401_0'; waited too long (yield), lane='23429231#1_0', time=26059.00.
+Warning: Vehicle '109448_401_0' ends teleporting on edge '32038051#0', time=26059.00.
+Warning: Teleporting vehicle '139001_413_0'; waited too long (yield), lane='23429231#1_1', time=26077.00.
+Warning: Vehicle '139001_413_0' ends teleporting on edge '32038051#0', time=26077.00.
+Warning: Teleporting vehicle '123398_406_0'; waited too long (yield), lane='27115123#3_1', time=26405.00.
+Warning: Vehicle '123398_406_0' ends teleporting on edge '32038051#0', time=26405.00.
+Warning: Teleporting vehicle '156076_420_0'; waited too long (jam), lane='27115123#2_1', time=26411.00.
+Warning: Teleporting vehicle '108574_400_0'; waited too long (yield), lane='23429231#1_1', time=26415.00.
+Warning: Vehicle '108574_400_0' ends teleporting on edge '32324544#0', time=26415.00.
+Warning: Teleporting vehicle '132718_410_0'; waited too long (yield), lane='130165204_0', time=26425.00.
+Warning: Vehicle '156076_420_0' ends teleporting on edge '32038056#0', time=26454.00.
+Warning: Vehicle '132718_410_0' ends teleporting on edge '32038051#0', time=26468.00.
+Warning: Teleporting vehicle '154418_420_0'; waited too long (yield), lane='23429231#1_0', time=27164.00.
+Warning: Vehicle '154418_420_0' ends teleporting on edge '32038051#0', time=27164.00.
+Warning: Teleporting vehicle '199461_437_0'; waited too long (jam), lane='23429231#1_0', time=27190.00.
+Warning: Vehicle '199461_437_0' ends teleporting on edge '32038051#0', time=27190.00.
+Warning: Teleporting vehicle '92127_392_0'; waited too long (yield), lane='27115123#3_0', time=27211.00.
+Warning: Vehicle '92127_392_0' ends teleporting on edge '32324544#0', time=27211.00.
+Warning: Teleporting vehicle '165167_423_0'; waited too long (yield), lane='27115123#3_1', time=27268.00.
+Warning: Vehicle '165167_423_0' ends teleporting on edge '32324544#0', time=27268.00.
+Warning: Teleporting vehicle '183279_431_0'; waited too long (yield), lane='130165204_0', time=27281.00.
+Warning: Vehicle '183279_431_0' ends teleporting on edge '32038051#0', time=27304.00.
+Warning: Teleporting vehicle '213502_444_0'; waited too long (yield), lane='28198821#3_1', time=27339.00.
+Warning: Vehicle '213502_444_0' ends teleporting on edge '32038051#0', time=27339.00.
+Warning: Teleporting vehicle '201205_438_0'; waited too long (yield), lane='-32038056#3_0', time=27482.00.
+Warning: Vehicle '201205_438_0' ends teleporting on edge '32038051#0', time=27482.00.
+Warning: Teleporting vehicle '227412_450_0'; waited too long (yield), lane='-32038056#3_1', time=27483.00.
+Warning: Vehicle '227412_450_0' ends teleporting on edge '-28198821#4', time=27483.00.
+Warning: Teleporting vehicle '194552_436_0'; waited too long (yield), lane='28198821#3_0', time=27675.00.
+Warning: Vehicle '194552_436_0' ends teleporting on edge '32324544#0', time=27675.00.
+Warning: Teleporting vehicle '211205_442_0'; waited too long (yield), lane='-32038056#3_1', time=28097.00.
+Warning: Vehicle '211205_442_0' ends teleporting on edge '32324544#0', time=28097.00.
+Warning: Teleporting vehicle '251382_457_0'; waited too long (yield), lane='28198821#3_1', time=28184.00.
+Warning: Vehicle '251382_457_0' ends teleporting on edge '32038051#0', time=28184.00.
+Warning: Teleporting vehicle '274349_467_0'; waited too long (yield), lane='-32038056#3_0', time=28387.00.
+Warning: Vehicle '274349_467_0' ends teleporting on edge '-28198821#4', time=28387.00.
+Warning: Teleporting vehicle '182295_431_0'; waited too long (yield), lane='-32038056#3_1', time=28401.00.
+Warning: Vehicle '182295_431_0' ends teleporting on edge '32324544#0', time=28401.00.
+Warning: Teleporting vehicle '272079_466_0'; waited too long (yield), lane='27115123#3_0', time=28675.00.
+Warning: Vehicle '272079_466_0' ends teleporting on edge '32324544#0', time=28675.00.
+Warning: Teleporting vehicle '274061_467_0'; waited too long (jam), lane='27115123#3_0', time=28720.00.
+Warning: Vehicle '274061_467_0' ends teleporting on edge '32324544#0', time=28720.00.
+Simulation ended at time: 28800.00.
+Reason: TraCI requested termination.
+DijkstraRouter answered 2773 queries and explored 3.28 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

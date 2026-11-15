@@ -131,15 +131,16 @@ def audit_signals(signals, metadata):
     return metrics, green
 
 
-def replay_training(root, name, payload, mapping):
+def replay_training(root, name, payload, mapping, *, training_dir=None):
     """Reconstruct visits, RNG branches and Bellman updates; compare every checkpoint."""
     settings = payload['metadata']['training']
     actions = payload['metadata']['actions']
     table, updates, visits = {}, Counter(), Counter()
     rng = random.Random(settings['exploration_seed'])
     episodes, observations = [], []
+    training_dir = root / f'reports/stage5/train/{name}' if training_dir is None else Path(training_dir)
     for episode in range(1, settings['episodes_trained'] + 1):
-        folder = root / f'reports/stage5/train/{name}/episode_{episode:03d}'
+        folder = training_dir / f'episode_{episode:03d}'
         rows = read_csv(folder / 'actions.csv')
         result = read_json(folder / 'result.json')
         checkpoint = read_json(folder / 'q_table.json')

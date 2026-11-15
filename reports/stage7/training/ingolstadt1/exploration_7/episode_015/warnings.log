@@ -1,0 +1,10 @@
+Warning: Teleporting vehicle 'h1736c1:1'; waited too long (yield), lane='164051413_2', time=60310.00.
+Warning: Vehicle 'h1736c1:1' ends teleporting on edge '104010475#0', time=60310.00.
+Warning: Teleporting vehicle 'h16467c1:3'; waited too long (yield), lane='164051413_2', time=60615.00.
+Warning: Vehicle 'h16467c1:3' ends teleporting on edge '104010475#0', time=60615.00.
+Warning: Teleporting vehicle 'h3091c2:1'; waited too long (jam), lane='653473569#5_1', time=60679.00.
+Warning: Vehicle 'h3091c2:1' ends teleporting on edge '164051413', time=60679.00.
+Warning: Teleporting vehicle 'carIn59685:1'; waited too long (yield), lane='164051413_2', time=61036.00.
+Warning: Vehicle 'carIn59685:1' ends teleporting on edge '104010475#0', time=61036.00.
+Warning: Teleporting vehicle 'carIn54105:1'; waited too long (jam), lane='653473569#5_2', time=61037.00.
+Warning: Vehicle 'carIn54105:1' ends teleporting on edge '104010475#0', time=61039.00.

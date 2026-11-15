@@ -1,0 +1,27 @@
+{
+  "locked_at_utc": "2026-11-15T09:24:41.222738+00:00",
+  "validation_seeds": [
+    42,
+    12345
+  ],
+  "test_seeds": [
+    31001,
+    31002,
+    31003
+  ],
+  "rule": "mean completion descending, min movement coverage descending, mean teleports ascending, max gap ascending, exploration7 first",
+  "models": {
+    "cologne1": {
+      "label": "QL-15ep-e7",
+      "model": "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json",
+      "sha256": "36626479972dd09f0e23582c8f03980daba5c74b6474f7627d5d785651bf4b64",
+      "exploration_seed": 7
+    },
+    "ingolstadt1": {
+      "label": "QL-15ep-e7",
+      "model": "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json",
+      "sha256": "24169b3ebe29d41548fc08daf4f96b4f9aa704a32343363534e4d0ae75a7573a",
+      "exploration_seed": 7
+    }
+  }
+}

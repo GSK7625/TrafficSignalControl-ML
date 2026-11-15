@@ -1,0 +1,18 @@
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Warning: Teleporting vehicle '115444_403_0'; waited too long (yield), lane='28198821#3_1', time=25603.00.
+Warning: Vehicle '115444_403_0' ends teleporting on edge '32038051#0', time=25603.00.
+Warning: Teleporting vehicle '149887_417_0'; waited too long (yield), lane='-32038056#3_1', time=25975.00.
+Warning: Vehicle '149887_417_0' ends teleporting on edge '32324544#0', time=25975.00.
+Warning: Teleporting vehicle '161062_421_0'; waited too long (yield), lane='27115123#3_1', time=26283.00.
+Warning: Vehicle '161062_421_0' ends teleporting on edge '32038056#0', time=26283.00.
+Warning: Teleporting vehicle '154682_420_0'; waited too long (yield), lane='28198821#3_1', time=26443.00.
+Warning: Vehicle '154682_420_0' ends teleporting on edge '32038051#0', time=26443.00.
+Warning: Teleporting vehicle '161985_421_0'; waited too long (yield), lane='28198821#3_1', time=26886.00.
+Warning: Vehicle '161985_421_0' ends teleporting on edge '32038051#0', time=26886.00.
+Warning: Teleporting vehicle '170077_426_0'; waited too long (yield), lane='28198821#3_1', time=28123.00.
+Warning: Vehicle '170077_426_0' ends teleporting on edge '32038051#0', time=28123.00.

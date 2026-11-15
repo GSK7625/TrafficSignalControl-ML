@@ -1,0 +1,7 @@
+Warning: Teleporting vehicle 'carIn37169:1'; waited too long (yield), lane='391891458#0_1', time=58496.00.
+Warning: Vehicle 'carIn37169:1' ends teleporting on edge '104010475#0', time=58499.00.
+Warning: Teleporting vehicle 'carIn131398:1'; waited too long (yield), lane='164051413_2', time=59704.00.
+Warning: Vehicle 'carIn131398:1' ends teleporting on edge '104010475#0', time=59704.00.
+Warning: Teleporting vehicle 'carIn124917:1'; waited too long (jam), lane=':cluster_1526094852_194342371_2_0', time=59710.00.
+Warning: Vehicle 'carIn124917:1' ends teleporting on edge '-653473569#5', time=59710.00.
+ingolstadt1 QL seed=12345: valid=1695/1716 queue=9.25, teleports=3

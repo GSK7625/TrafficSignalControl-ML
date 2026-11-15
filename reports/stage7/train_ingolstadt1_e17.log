@@ -1,0 +1,186 @@
+Warning: Teleporting vehicle 'carIn48979:1'; waited too long (yield), lane='201963537#1_3', time=57973.00.
+Warning: Vehicle 'carIn48979:1' ends teleporting on edge '-164051413', time=57973.00.
+Warning: Teleporting vehicle 'h15472c1:3'; waited too long (yield), lane='104010354_1', time=58277.00.
+Warning: Vehicle 'h15472c1:3' ends teleporting on edge '124812857#0', time=58277.00.
+Warning: Teleporting vehicle 'carIn96510:1'; waited too long (yield), lane='104010354_1', time=58280.00.
+Warning: Vehicle 'carIn96510:1' ends teleporting on edge '124812857#0', time=58280.00.
+Warning: Teleporting vehicle 'carIn29057:1'; waited too long (yield), lane='164051413_2', time=60040.00.
+Warning: Vehicle 'carIn29057:1' ends teleporting on edge '104010475#0', time=60040.00.
+Warning: Teleporting vehicle 'h22469c1:1'; waited too long (yield), lane='201963537#1_3', time=61092.00.
+Warning: Vehicle 'h22469c1:1' ends teleporting on edge '-164051413', time=61092.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 1, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 1.0, "total_reward": -1689.3976076555018, "queue_seconds": 57607.0, "q_states": 11, "unseen_decisions": 1, "control_calls": 104, "action_counts": {"0": 31, "2": 34, "4": 39}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3104.0, "yellow": 372.0, "all_red": 124.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "5", "jam": "0", "yield": "5", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 5, "warning_lines": 10, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1700", "running": "58", "waiting": "16"}}
+Warning: Teleporting vehicle 'carIn74144:1'; waited too long (yield), lane='391891458#0_1', time=59247.00.
+Warning: Vehicle 'carIn74144:1' ends teleporting on edge '104010475#0', time=59249.00.
+Warning: Teleporting vehicle 'h2365c1:1'; waited too long (yield), lane='104010354_1', time=61063.00.
+Warning: Vehicle 'h2365c1:1' ends teleporting on edge '124812857#0', time=61063.00.
+Warning: Teleporting vehicle 'h6013c2:3'; waited too long (yield), lane='104010354_1', time=61066.00.
+Warning: Vehicle 'h6013c2:3' ends teleporting on edge '124812857#0', time=61066.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 2, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.9321428571428572, "total_reward": -1274.2429824561405, "queue_seconds": 45095.0, "q_states": 14, "unseen_decisions": 0, "control_calls": 101, "action_counts": {"0": 34, "2": 39, "4": 28}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3016.0, "yellow": 438.0, "all_red": 146.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "3", "jam": "0", "yield": "3", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 3, "warning_lines": 6, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1708", "running": "26", "waiting": "8"}}
+Warning: Teleporting vehicle 'carIn70484:1'; waited too long (yield), lane='164051413_2', time=58034.00.
+Warning: Vehicle 'carIn70484:1' ends teleporting on edge '104010475#0', time=58034.00.
+Warning: Teleporting vehicle 'carIn18932:1'; waited too long (yield), lane='201963537#1_3', time=58691.00.
+Warning: Vehicle 'carIn18932:1' ends teleporting on edge '-164051413', time=58691.00.
+Warning: Teleporting vehicle 'carIn74144:1'; waited too long (wrong lane), lane='164051413_1', time=59517.00.
+Warning: Teleporting vehicle 'h21249c1:3'; waited too long (yield), lane='164051413_2', time=59517.00.
+Warning: Vehicle 'h21249c1:3' ends teleporting on edge '104010475#0', time=59517.00.
+Warning: Vehicle 'carIn74144:1' ends teleporting on edge '104010475#0', time=59517.00.
+Warning: Teleporting vehicle '50_frequency1.21'; waited too long (yield), lane='391891458#0_1', time=59522.00.
+Warning: Vehicle '50_frequency1.21' ends teleporting on edge '-653473569#5', time=59522.00.
+Warning: Vehicle 'carIn9764:1' performs emergency braking on lane '653473569#5_2' with decel=9.00, wished=4.50, severity=1.00, time=60775.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 3, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.8642857142857143, "total_reward": -1268.4377192982456, "queue_seconds": 44233.0, "q_states": 15, "unseen_decisions": 0, "control_calls": 103, "action_counts": {"0": 39, "2": 41, "4": 23}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3064.0, "yellow": 402.0, "all_red": 134.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "1"}, "teleport_statistics": {"total": "5", "jam": "0", "yield": "4", "wrongLane": "1"}, "traci_collision_events": 0, "traci_teleport_starts": 5, "warning_lines": 11, "missing_yellow_warnings": 0, "emergency_braking_warnings": 1, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1663", "running": "29", "waiting": "53"}}
+Warning: Teleporting vehicle 'carIn66513:1'; waited too long (yield), lane='391891458#0_1', time=58545.00.
+Warning: Vehicle 'carIn66513:1' ends teleporting on edge '104010475#0', time=58548.00.
+Warning: Teleporting vehicle 'randUni33878:1'; waited too long (yield), lane='164051413_2', time=58844.00.
+Warning: Vehicle 'randUni33878:1' ends teleporting on edge '104012170', time=58847.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 4, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.7964285714285715, "total_reward": -1221.09298245614, "queue_seconds": 43729.0, "q_states": 15, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 40, "2": 34, "4": 26}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2992.0, "yellow": 456.0, "all_red": 152.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "2", "jam": "0", "yield": "2", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 2, "warning_lines": 4, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1698", "running": "23", "waiting": "18"}}
+Warning: Teleporting vehicle 'randUni33878:1'; waited too long (yield), lane='164051413_2', time=58843.00.
+Warning: Vehicle 'randUni33878:1' ends teleporting on edge '104010475#0', time=58843.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 5, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.7285714285714286, "total_reward": -1024.9508771929823, "queue_seconds": 36070.0, "q_states": 16, "unseen_decisions": 0, "control_calls": 102, "action_counts": {"0": 48, "2": 28, "4": 26}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3032.0, "yellow": 426.0, "all_red": 142.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "1", "jam": "0", "yield": "1", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 1, "warning_lines": 2, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1696", "running": "38", "waiting": "20"}}
+Warning: Teleporting vehicle 'carIn100059:1'; waited too long (yield), lane='164051413_2', time=59883.00.
+Warning: Vehicle 'carIn100059:1' ends teleporting on edge '104010475#0', time=59884.00.
+Warning: Teleporting vehicle 'carIn109385:1'; waited too long (yield), lane='391891458#0_1', time=60190.00.
+Warning: Vehicle 'carIn109385:1' ends teleporting on edge '104010475#0', time=60194.00.
+Warning: Teleporting vehicle 'carIn95058:1'; waited too long (yield), lane='201963537#1_3', time=60950.00.
+Warning: Vehicle 'carIn95058:1' ends teleporting on edge '-164051413', time=60950.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 6, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.6607142857142857, "total_reward": -1238.001754385965, "queue_seconds": 43529.0, "q_states": 16, "unseen_decisions": 0, "control_calls": 102, "action_counts": {"0": 38, "2": 36, "4": 28}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3040.0, "yellow": 420.0, "all_red": 140.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "3", "jam": "0", "yield": "3", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 3, "warning_lines": 6, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1700", "running": "35", "waiting": "16"}}
+Warning: Teleporting vehicle 'h18297c1:1'; waited too long (yield), lane='164051413_2', time=59001.00.
+Warning: Vehicle 'h18297c1:1' ends teleporting on edge '104010475#0', time=59001.00.
+Warning: Teleporting vehicle 'h21249c1:3'; waited too long (yield), lane='391891458#0_1', time=59137.00.
+Warning: Vehicle 'h21249c1:3' ends teleporting on edge '104010475#0', time=59139.00.
+Warning: Teleporting vehicle 'carIn95654:1'; waited too long (yield), lane='164051413_2', time=60563.00.
+Warning: Vehicle 'carIn95654:1' ends teleporting on edge '104010475#0', time=60563.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 7, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.592857142857143, "total_reward": -1012.2809523809523, "queue_seconds": 36289.0, "q_states": 16, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 44, "2": 32, "4": 24}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2984.0, "yellow": 462.0, "all_red": 154.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "3", "jam": "0", "yield": "3", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 3, "warning_lines": 6, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1690", "running": "36", "waiting": "26"}}
+Warning: Teleporting vehicle 'carIn131398:1'; waited too long (jam), lane=':cluster_1041665560_1641678966_0_0', time=59268.00.
+Warning: Teleporting vehicle 'carIn78385:1'; waited too long (yield), lane='391891458#0_1', time=59270.00.
+Warning: Vehicle 'carIn78385:1' ends teleporting on edge '104010475#0', time=59273.00.
+Warning: Vehicle 'carIn131398:1' ends teleporting on edge '104010475#0', time=59292.00.
+Warning: Teleporting vehicle 'carIn133013:1'; waited too long (yield), lane='164051413_2', time=59553.00.
+Warning: Teleporting vehicle 'carIn87524:1'; waited too long (jam), lane='653473569#5_2', time=59553.00.
+Warning: Vehicle 'carIn133013:1' ends teleporting on edge '104010475#0', time=59553.00.
+Warning: Vehicle 'carIn87524:1' ends teleporting on edge '164051413', time=59553.00.
+Warning: Teleporting vehicle 'carIn41461:1'; waited too long (jam), lane='164051413_2', time=59714.00.
+Warning: Vehicle 'carIn41461:1' ends teleporting on edge '104010475#0', time=59714.00.
+Warning: Teleporting vehicle 'carIn69706:1'; waited too long (yield), lane='391891458#0_1', time=59859.00.
+Warning: Vehicle 'carIn69706:1' ends teleporting on edge '104010475#0', time=59863.00.
+Warning: Teleporting vehicle 'carIn100059:1'; waited too long (yield), lane='164051413_2', time=60048.00.
+Warning: Teleporting vehicle 'carIn125461:1'; waited too long (jam), lane='653473569#5_2', time=60048.00.
+Warning: Vehicle 'carIn100059:1' ends teleporting on edge '104010475#0', time=60048.00.
+Warning: Vehicle 'carIn125461:1' ends teleporting on edge '164051413', time=60048.00.
+Warning: Teleporting vehicle 'carIn6490:1'; waited too long (yield), lane='391891458#0_1', time=60165.00.
+Warning: Vehicle 'carIn6490:1' ends teleporting on edge '104010475#0', time=60168.00.
+Warning: Teleporting vehicle 'carIn21296:1'; waited too long (jam), lane='653473569#5_2', time=60529.00.
+Warning: Vehicle 'carIn21296:1' ends teleporting on edge '164051413', time=60530.00.
+Warning: Teleporting vehicle 'carIn38523:1'; waited too long (yield), lane='164051413_2', time=60937.00.
+Warning: Vehicle 'carIn38523:1' ends teleporting on edge '104010475#0', time=60937.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 8, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.525, "total_reward": -852.1438596491229, "queue_seconds": 30330.0, "q_states": 16, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 47, "2": 36, "4": 17}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2992.0, "yellow": 456.0, "all_red": 152.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "11", "jam": "5", "yield": "6", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 11, "warning_lines": 22, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1655", "running": "26", "waiting": "61"}}
+Warning: Teleporting vehicle 'carIn85069:1'; waited too long (yield), lane='164051413_2', time=58277.00.
+Warning: Vehicle 'carIn85069:1' ends teleporting on edge '104010475#0', time=58277.00.
+Warning: Teleporting vehicle 'randUni33878:1'; waited too long (yield), lane='164051413_2', time=58843.00.
+Warning: Vehicle 'randUni33878:1' ends teleporting on edge '104010475#0', time=58843.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 9, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.4571428571428572, "total_reward": -1041.9355263157893, "queue_seconds": 37455.0, "q_states": 16, "unseen_decisions": 0, "control_calls": 101, "action_counts": {"0": 46, "2": 35, "4": 20}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3024.0, "yellow": 432.0, "all_red": 144.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "2", "jam": "0", "yield": "2", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 2, "warning_lines": 4, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1669", "running": "41", "waiting": "47"}}
+Warning: Teleporting vehicle 'carIn37169:1'; waited too long (yield), lane='391891458#0_1', time=58493.00.
+Warning: Vehicle 'carIn37169:1' ends teleporting on edge '104010475#0', time=58497.00.
+Warning: Teleporting vehicle 'h6054c1:2'; waited too long (yield), lane='164051413_2', time=58967.00.
+Warning: Vehicle 'h6054c1:2' ends teleporting on edge '104010475#0', time=58967.00.
+Warning: Teleporting vehicle 'carIn92856:1'; waited too long (yield), lane='164051413_2', time=59488.00.
+Warning: Vehicle 'carIn92856:1' ends teleporting on edge '104010475#0', time=59488.00.
+Warning: Teleporting vehicle 'h1736c1:1'; waited too long (yield), lane='164051413_2', time=60309.00.
+Warning: Vehicle 'h1736c1:1' ends teleporting on edge '104010475#0', time=60309.00.
+Warning: Teleporting vehicle 'h21249c1:3'; waited too long (yield), lane='391891458#0_1', time=60389.00.
+Warning: Vehicle 'h21249c1:3' ends teleporting on edge '104010475#0', time=60394.00.
+Warning: Teleporting vehicle 'h1989c1:1'; waited too long (yield), lane='164051413_2', time=61140.00.
+Warning: Vehicle 'h1989c1:1' ends teleporting on edge '104010475#0', time=61140.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 10, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.38928571428571435, "total_reward": -871.7385964912278, "queue_seconds": 31437.0, "q_states": 17, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 45, "2": 36, "4": 19}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2970.0, "yellow": 474.0, "all_red": 156.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "6", "jam": "0", "yield": "6", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 6, "warning_lines": 12, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1686", "running": "40", "waiting": "30"}}
+Warning: Teleporting vehicle 'h2825c2:1'; waited too long (yield), lane='164051413_2', time=58807.00.
+Warning: Vehicle 'h2825c2:1' ends teleporting on edge '104010475#0', time=58807.00.
+Warning: Teleporting vehicle 'h6245c2:3'; waited too long (jam), lane=':cluster_1526094852_194342371_2_0', time=58975.00.
+Warning: Vehicle 'h6245c2:3' ends teleporting on edge '-653473569#5', time=58975.00.
+Warning: Teleporting vehicle 'carIn38435:1'; waited too long (yield), lane='164051413_2', time=59826.00.
+Warning: Vehicle 'carIn38435:1' ends teleporting on edge '104010475#0', time=59826.00.
+Warning: Teleporting vehicle '60.40'; waited too long (jam), lane=':cluster_1526094852_194342371_2_0', time=59907.00.
+Warning: Vehicle '60.40' teleports beyond arrival edge '-653473569#5', time=59914.00.
+Warning: Teleporting vehicle 'carIn44265:1'; waited too long (yield), lane='164051413_2', time=61103.00.
+Warning: Vehicle 'carIn44265:1' ends teleporting on edge '104010475#0', time=61103.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 11, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.3214285714285714, "total_reward": -653.7438596491228, "queue_seconds": 23742.0, "q_states": 19, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 52, "2": 34, "4": 14}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3000.0, "yellow": 450.0, "all_red": 150.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "5", "jam": "2", "yield": "3", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 5, "warning_lines": 10, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1615", "running": "34", "waiting": "101"}}
+Warning: Teleporting vehicle 'h2865c2:1'; waited too long (yield), lane='164051413_2', time=58567.00.
+Warning: Vehicle 'h2865c2:1' ends teleporting on edge '104010475#0', time=58567.00.
+Warning: Teleporting vehicle 'h1736c1:1'; waited too long (yield), lane='164051413_2', time=60311.00.
+Warning: Vehicle 'h1736c1:1' ends teleporting on edge '104010475#0', time=60311.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 12, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.25357142857142867, "total_reward": -778.6333333333332, "queue_seconds": 28766.0, "q_states": 20, "unseen_decisions": 0, "control_calls": 99, "action_counts": {"0": 47, "2": 36, "4": 16}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2944.0, "yellow": 492.0, "all_red": 164.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "2", "jam": "0", "yield": "2", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 2, "warning_lines": 4, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1673", "running": "28", "waiting": "43"}}
+Warning: Teleporting vehicle 'carIn70484:1'; waited too long (yield), lane='164051413_2', time=58034.00.
+Warning: Vehicle 'carIn70484:1' ends teleporting on edge '104010475#0', time=58034.00.
+Warning: Teleporting vehicle 'carIn48988:1'; waited too long (yield), lane='164051413_2', time=58342.00.
+Warning: Vehicle 'carIn48988:1' ends teleporting on edge '104010475#0', time=58342.00.
+Warning: Teleporting vehicle 'carIn75793:1'; waited too long (jam), lane='653473569#5_2', time=58343.00.
+Warning: Vehicle 'carIn75793:1' ends teleporting on edge '104010475#0', time=58346.00.
+Warning: Teleporting vehicle 'h7703c2:3'; waited too long (wrong lane), lane='164051413_1', time=58646.00.
+Warning: Teleporting vehicle 'h6245c2:1'; waited too long (yield), lane='164051413_2', time=58646.00.
+Warning: Vehicle 'h6245c2:1' ends teleporting on edge '104010475#0', time=58646.00.
+Warning: Vehicle 'h7703c2:3' ends teleporting on edge '104010475#0', time=58646.00.
+Warning: Teleporting vehicle 'h8445c2:3'; waited too long (yield), lane='391891458#0_1', time=58735.00.
+Warning: Vehicle 'h8445c2:3' ends teleporting on edge '104010475#0', time=58738.00.
+Warning: Teleporting vehicle 'h8072c1:3'; waited too long (yield), lane='164051413_2', time=58953.00.
+Warning: Vehicle 'h8072c1:3' ends teleporting on edge '104010475#0', time=58953.00.
+Warning: Teleporting vehicle 'randUni29553:1'; waited too long (jam), lane='653473569#5_1', time=59125.00.
+Warning: Vehicle 'randUni29553:1' ends teleporting on edge '164051413', time=59125.00.
+Warning: Teleporting vehicle 'h23154c1:1'; waited too long (jam), lane=':cluster_1526094852_194342371_2_0', time=59256.00.
+Warning: Vehicle 'h23154c1:1' ends teleporting on edge '-653473569#5', time=59256.00.
+Warning: Teleporting vehicle 'carIn85069:1'; waited too long (yield), lane='164051413_2', time=59258.00.
+Warning: Vehicle 'carIn85069:1' ends teleporting on edge '104010475#0', time=59258.00.
+Warning: Teleporting vehicle 'carIn37169:1'; waited too long (yield), lane='391891458#0_1', time=59633.00.
+Warning: Vehicle 'carIn37169:1' ends teleporting on edge '104010475#0', time=59638.00.
+Warning: Teleporting vehicle 'carIn55888:1'; waited too long (yield), lane='164051413_2', time=59659.00.
+Warning: Vehicle 'carIn55888:1' ends teleporting on edge '104010475#0', time=59659.00.
+Warning: Teleporting vehicle 'h157c2:3'; waited too long (jam), lane='653473569#5_2', time=59660.00.
+Warning: Vehicle 'h157c2:3' ends teleporting on edge '104010475#0', time=59663.00.
+Warning: Teleporting vehicle 'carIn37120:1'; waited too long (yield), lane='391891458#0_1', time=59938.00.
+Warning: Vehicle 'carIn37120:1' ends teleporting on edge '104010475#0', time=59942.00.
+Warning: Teleporting vehicle 'h22732c1:3'; waited too long (yield), lane='164051413_2', time=59964.00.
+Warning: Vehicle 'h22732c1:3' ends teleporting on edge '104010475#0', time=59964.00.
+Warning: Teleporting vehicle 'carIn41120:1'; waited too long (yield), lane='391891458#0_1', time=60633.00.
+Warning: Vehicle 'carIn41120:1' ends teleporting on edge '104010475#0', time=60635.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 13, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.18571428571428583, "total_reward": -678.6634868421054, "queue_seconds": 24283.0, "q_states": 20, "unseen_decisions": 0, "control_calls": 101, "action_counts": {"0": 50, "2": 41, "4": 10}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3024.0, "yellow": 432.0, "all_red": 144.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "16", "jam": "4", "yield": "11", "wrongLane": "1"}, "traci_collision_events": 0, "traci_teleport_starts": 16, "warning_lines": 32, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1587", "running": "21", "waiting": "129"}}
+Warning: Teleporting vehicle 'carIn38141:1'; waited too long (yield), lane='164051413_2', time=58369.00.
+Warning: Vehicle 'carIn38141:1' ends teleporting on edge '104012170', time=58373.00.
+Warning: Teleporting vehicle 'h8445c2:3'; waited too long (yield), lane='391891458#0_1', time=58485.00.
+Warning: Vehicle 'h8445c2:3' ends teleporting on edge '104010475#0', time=58488.00.
+Warning: Teleporting vehicle 'carIn66513:1'; waited too long (yield), lane='164051413_2', time=59143.00.
+Warning: Vehicle 'carIn66513:1' ends teleporting on edge '104010475#0', time=59143.00.
+Warning: Teleporting vehicle 'carIn81083:1'; waited too long (yield), lane='164051413_2', time=59448.00.
+Warning: Vehicle 'carIn81083:1' ends teleporting on edge '104010475#0', time=59449.00.
+Warning: Teleporting vehicle 'carIn39:1'; waited too long (jam), lane='653473569#5_1', time=59525.00.
+Warning: Vehicle 'carIn39:1' ends teleporting on edge '164051413', time=59525.00.
+Warning: Teleporting vehicle 'carIn92856:1'; waited too long (yield), lane='164051413_2', time=59951.00.
+Warning: Vehicle 'carIn92856:1' ends teleporting on edge '104010475#0', time=59951.00.
+Warning: Teleporting vehicle 'carIn133013:1'; waited too long (jam), lane='653473569#5_2', time=59952.00.
+Warning: Vehicle 'carIn133013:1' ends teleporting on edge '104010475#0', time=59954.00.
+Warning: Teleporting vehicle 'carIn111726:1'; waited too long (yield), lane='164051413_2', time=60467.00.
+Warning: Vehicle 'carIn111726:1' ends teleporting on edge '104010475#0', time=60467.00.
+Warning: Teleporting vehicle 'carIn47060:1'; waited too long (jam), lane='653473569#5_2', time=60468.00.
+Warning: Vehicle 'carIn47060:1' ends teleporting on edge '104010475#0', time=60470.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 14, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.11785714285714288, "total_reward": -703.5859649122806, "queue_seconds": 25388.0, "q_states": 20, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 49, "2": 36, "4": 15}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 2976.0, "yellow": 468.0, "all_red": 156.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "9", "jam": "3", "yield": "6", "wrongLane": "0"}, "traci_collision_events": 0, "traci_teleport_starts": 9, "warning_lines": 18, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1607", "running": "28", "waiting": "109"}}
+Warning: Teleporting vehicle 'carIn85069:1'; waited too long (yield), lane='164051413_2', time=58277.00.
+Warning: Vehicle 'carIn85069:1' ends teleporting on edge '104010475#0', time=58277.00.
+Warning: Teleporting vehicle 'h2865c2:1'; waited too long (yield), lane='164051413_2', time=58647.00.
+Warning: Vehicle 'h2865c2:1' ends teleporting on edge '104010475#0', time=58647.00.
+Warning: Teleporting vehicle 'carIn55742:1'; waited too long (jam), lane='653473569#5_2', time=58648.00.
+Warning: Vehicle 'carIn55742:1' ends teleporting on edge '104010475#0', time=58650.00.
+Warning: Teleporting vehicle 'carIn132615:1'; waited too long (yield), lane='164051413_2', time=58952.00.
+Warning: Vehicle 'carIn132615:1' ends teleporting on edge '104010475#0', time=58952.00.
+Warning: Teleporting vehicle 'carIn37169:1'; waited too long (yield), lane='164051413_2', time=59255.00.
+Warning: Vehicle 'carIn37169:1' ends teleporting on edge '104010475#0', time=59255.00.
+Warning: Teleporting vehicle 'carIn3978:1'; waited too long (yield), lane='164051413_2', time=59898.00.
+Warning: Vehicle 'carIn3978:1' ends teleporting on edge '104010475#0', time=59898.00.
+Warning: Teleporting vehicle 'carIn17413:1'; waited too long (jam), lane='653473569#5_2', time=59899.00.
+Warning: Vehicle 'carIn17413:1' ends teleporting on edge '104010475#0', time=59902.00.
+Warning: Teleporting vehicle 'h6054c1:2'; waited too long (yield), lane='391891458#0_1', time=60070.00.
+Warning: Vehicle 'h6054c1:2' ends teleporting on edge '104010475#0', time=60074.00.
+Warning: Teleporting vehicle 'carIn41120:1'; waited too long (wrong lane), lane='164051413_1', time=60201.00.
+Warning: Vehicle 'carIn41120:1' ends teleporting on edge '104010475#0', time=60201.00.
+Warning: Teleporting vehicle 'carIn23344:1'; waited too long (yield), lane='164051413_2', time=60203.00.
+Warning: Vehicle 'carIn23344:1' ends teleporting on edge '104010475#0', time=60203.00.
+Warning: Teleporting vehicle 'carIn66513:1'; waited too long (yield), lane='391891458#0_1', time=60375.00.
+Warning: Vehicle 'carIn66513:1' ends teleporting on edge '104010475#0', time=60378.00.
+Warning: Teleporting vehicle 'carIn9764:1'; waited too long (yield), lane='164051413_2', time=61078.00.
+Warning: Vehicle 'carIn9764:1' ends teleporting on edge '104010475#0', time=61078.00.
+{"algorithm": "Q-Learning", "mode": "train", "map": "ingolstadt1", "episode": 15, "sumo_seed": 23423, "training_sumo_seed": 23423, "exploration_seed": 17, "training_exploration_seed": 17, "epsilon": 0.050000000000000044, "total_reward": -749.1333333333333, "queue_seconds": 26930.0, "q_states": 20, "unseen_decisions": 0, "control_calls": 100, "action_counts": {"0": 48, "2": 40, "4": 12}, "begin": 57600.0, "end": 61200.0, "simulation_seconds": 3600.0, "total_seconds": {"green": 3000.0, "yellow": 450.0, "all_red": 150.0}, "process_closed": true, "safety_statistics": {"collisions": "0", "emergencyStops": "0", "emergencyBraking": "0"}, "teleport_statistics": {"total": "12", "jam": "2", "yield": "9", "wrongLane": "1"}, "traci_collision_events": 0, "traci_teleport_starts": 12, "warning_lines": 24, "missing_yellow_warnings": 0, "emergency_braking_warnings": 0, "emergency_stop_warnings": 0, "vehicles": {"loaded": "1716", "inserted": "1609", "running": "44", "waiting": "107"}}

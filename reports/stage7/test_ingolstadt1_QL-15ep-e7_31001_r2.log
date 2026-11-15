@@ -1,0 +1,3 @@
+Warning: Teleporting vehicle 'carIn85069:1'; waited too long (yield), lane='164051413_2', time=58275.00.
+Warning: Vehicle 'carIn85069:1' ends teleporting on edge '104012170', time=58278.00.
+ingolstadt1 QL seed=31001: valid=1700/1716 queue=9.14, teleports=1

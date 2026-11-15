@@ -1,0 +1,27 @@
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Warning: Teleporting vehicle '151372_418_0'; waited too long (yield), lane='27115123#3_1', time=25533.00.
+Warning: Vehicle '151372_418_0' ends teleporting on edge '32038051#0', time=25533.00.
+Warning: Teleporting vehicle '115444_403_0'; waited too long (yield), lane='28198821#3_1', time=25601.00.
+Warning: Vehicle '115444_403_0' ends teleporting on edge '32038051#0', time=25601.00.
+Warning: Teleporting vehicle '149887_417_0'; waited too long (yield), lane='-32038056#3_1', time=25977.00.
+Warning: Vehicle '149887_417_0' ends teleporting on edge '32324544#0', time=25977.00.
+Warning: Teleporting vehicle '182638_431_0'; waited too long (yield), lane='27115123#3_1', time=26484.00.
+Warning: Vehicle '182638_431_0' ends teleporting on edge '32038051#0', time=26484.00.
+Warning: Teleporting vehicle '153702_420_0'; waited too long (yield), lane='27115123#3_1', time=26788.00.
+Warning: Vehicle '153702_420_0' ends teleporting on edge '32038056#0', time=26788.00.
+Warning: Teleporting vehicle '202246_438_0'; waited too long (yield), lane='28198821#3_1', time=26936.00.
+Warning: Vehicle '202246_438_0' ends teleporting on edge '32038051#0', time=26936.00.
+Warning: Teleporting vehicle '185414_432_0'; waited too long (yield), lane='-32038056#3_1', time=27342.00.
+Warning: Vehicle '185414_432_0' ends teleporting on edge '32324544#0', time=27342.00.
+Warning: Teleporting vehicle '210898_442_0'; waited too long (yield), lane='23429231#1_1', time=27485.00.
+Warning: Vehicle '210898_442_0' ends teleporting on edge '32324544#0', time=27485.00.
+Warning: Teleporting vehicle '154920_420_0'; waited too long (yield), lane='28198821#3_1', time=28083.00.
+Warning: Vehicle '154920_420_0' ends teleporting on edge '32038051#0', time=28083.00.
+Warning: Teleporting vehicle '276708_468_0'; waited too long (yield), lane='-32038056#3_0', time=28732.00.
+Warning: Vehicle '276708_468_0' ends teleporting on edge '32038051#0', time=28732.00.
+cologne1 MP seed=31001: valid=1969/2015 queue=27.98, teleports=10

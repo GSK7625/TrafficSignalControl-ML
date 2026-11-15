@@ -1,0 +1,939 @@
+{
+  "started_at_utc": "2026-11-15T09:24:41.223736+00:00",
+  "selection_sha256": "48f3179f15bdd2bfffe752675839545a9e5e54f0162a523a41f2e23384d2ae1a",
+  "code_sha256": {
+    "analyze_ql.py": "8ed5df231e552faccc562d10040f19296436f009e9daad56a82cfa78fb58d108",
+    "evaluate.py": "2ca79194cef82111487f0799ee83d0af15609ce0ffaca7d62bef37c5f5eceb21",
+    "evaluation_metrics.py": "d496b5bfe32bcb988ee076738a4059f8811257a6e943acc7164d436ed0698f59",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08",
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "plot_results.py": "1271755fef4695043b7a8ed2c67afcd3658430caf457f4232cdc4bed14ca5548",
+    "q_learning.py": "28598a4b09a09d9f211733ff05bb6f857a0502ded5fecdd55f502bb75b079b46",
+    "smoke_test.py": "3ec3390ca9566ed6daba9e7ffac7acf33420d4e4bf027144dba8093da23379dd",
+    "stage6_1_probe.py": "6afa775263f419a82c11392ffe72a6a60e9c7397b9bef405b575d4f1211babd7",
+    "stage7_summary.py": "ae283cf97d2cb2045a0cfb82e0154ff1bcebfb3aa81362ef932fc97d337ca43a",
+    "sumo_env.py": "bdb301b2dbee7de4d21ceadedab64196163886e32a16734b59cf68cdd73524a2",
+    "test_analyze_ql.py": "8e0704b1df1a3448b8f34a995a305d40d8a30bfe9ef3bcc63fd203e244aa8a89",
+    "test_evaluation.py": "544a8d875bfdf8ed4c4081ee5915990eadd93c11073f37d7b2929534b3278047",
+    "test_ft.py": "aa74ace20d47b11a98d6d8d5cfe1507079eb31d02e30e1f74e6395091c57b9db",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "test_q_learning.py": "c3754e772be7997a02e70294f714e070fd2ceb7523f4b4048b178cad72619bc4",
+    "test_stage6_1.py": "627a5195d3533c024f52b5488bb4b05f43b02ac0c4461ea6f6f426270396a983",
+    "test_stage7.py": "3a43d3ceb432fecd56d7d9f9c94d5d250da6753eb61df34c44323aa01f37590b",
+    "test_sumo_env.py": "22418163cc2be7f8c787428529a2c2d981c0ab0d412999589ffc536cc06f6643"
+  },
+  "commands": [
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31001/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31001/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31001/repeat_1",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31001/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31001/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31001/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31001/repeat_2",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31001/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31002/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31002/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31002/repeat_1",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31002/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31002/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31002/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31002/repeat_2",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31002/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31003/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31003/repeat_1"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31003/repeat_1",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31003/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "FT",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/FT/seed_31003/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "MP",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/MP/seed_31003/repeat_2"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-3ep",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/QL-3ep/seed_31003/repeat_2",
+        "--model",
+        "reports/stage5/train/cologne1/cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "cologne1",
+      "label": "QL-15ep-e7",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "cologne1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/cologne1/QL-15ep-e7/seed_31003/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\cologne1\\exploration_7\\cologne1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31001/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31001/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31001/repeat_1",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31001,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31001/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31001/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31001/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31001/repeat_2",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31001,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31001",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31001/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31002/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31002/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31002/repeat_1",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31002,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31002/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31002/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31002/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31002/repeat_2",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31002,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31002",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31002/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31003/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31003/repeat_1"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31003/repeat_1",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31003,
+      "repeat": 1,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31003/repeat_1",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "FT",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "FT",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/FT/seed_31003/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "MP",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "MP",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/MP/seed_31003/repeat_2"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-3ep",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-3ep/seed_31003/repeat_2",
+        "--model",
+        "reports/stage5/train/ingolstadt1/ingolstadt1_q_table.json"
+      ]
+    },
+    {
+      "map": "ingolstadt1",
+      "label": "QL-15ep-e7",
+      "seed": 31003,
+      "repeat": 2,
+      "command": [
+        "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+        "evaluate.py",
+        "--algorithm",
+        "QL",
+        "--map",
+        "ingolstadt1",
+        "--seed",
+        "31003",
+        "--output",
+        "reports/stage7/test/ingolstadt1/QL-15ep-e7/seed_31003/repeat_2",
+        "--model",
+        "reports\\stage7\\training\\ingolstadt1\\exploration_7\\ingolstadt1_q_table.json"
+      ]
+    }
+  ]
+}

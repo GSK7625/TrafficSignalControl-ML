@@ -1,0 +1,58 @@
+{
+  "algorithm": "Q-Learning",
+  "mode": "train",
+  "map": "cologne1",
+  "episode": 9,
+  "sumo_seed": 23423,
+  "training_sumo_seed": 23423,
+  "exploration_seed": 17,
+  "training_exploration_seed": 17,
+  "epsilon": 0.4571428571428572,
+  "total_reward": -6593.808333333331,
+  "queue_seconds": 255845.0,
+  "q_states": 102,
+  "unseen_decisions": 0,
+  "control_calls": 93,
+  "action_counts": {
+    "0": 7,
+    "1": 15,
+    "2": 16,
+    "3": 13,
+    "4": 9,
+    "5": 9,
+    "6": 15,
+    "7": 9
+  },
+  "begin": 25200.0,
+  "end": 28800.0,
+  "simulation_seconds": 3600.0,
+  "total_seconds": {
+    "green": 2770.0,
+    "yellow": 664.0,
+    "all_red": 166.0
+  },
+  "process_closed": true,
+  "safety_statistics": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "24",
+    "jam": "1",
+    "yield": "23",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 0,
+  "traci_teleport_starts": 24,
+  "warning_lines": 53,
+  "missing_yellow_warnings": 6,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0,
+  "vehicles": {
+    "loaded": "2015",
+    "inserted": "1881",
+    "running": "107",
+    "waiting": "134"
+  }
+}

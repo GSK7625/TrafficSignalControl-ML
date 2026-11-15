@@ -1,0 +1,23 @@
+C:\Program Files (x86)\SUMO\bin\sumo.exe
+-c
+C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.sumocfg
+--step-length
+1
+--seed
+23423
+--collision.check-junctions
+true
+--collision.action
+teleport
+--no-step-log
+true
+--duration-log.disable
+true
+--log
+C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage7\training\ingolstadt1\exploration_17\episode_014\sumo.log
+--error-log
+C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage7\training\ingolstadt1\exploration_17\episode_014\warnings.log
+--statistic-output
+C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage7\training\ingolstadt1\exploration_17\episode_014\statistics.xml
+--collision-output
+C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage7\training\ingolstadt1\exploration_17\episode_014\collisions.xml

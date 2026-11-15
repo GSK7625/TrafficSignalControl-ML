@@ -1,0 +1,5 @@
+{
+  "episodes": 10,
+  "seconds_each": 3600,
+  "replay_rng_updates_checkpoints": "passed"
+}

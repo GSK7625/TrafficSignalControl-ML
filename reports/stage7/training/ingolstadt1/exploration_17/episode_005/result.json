@@ -1,0 +1,53 @@
+{
+  "algorithm": "Q-Learning",
+  "mode": "train",
+  "map": "ingolstadt1",
+  "episode": 5,
+  "sumo_seed": 23423,
+  "training_sumo_seed": 23423,
+  "exploration_seed": 17,
+  "training_exploration_seed": 17,
+  "epsilon": 0.7285714285714286,
+  "total_reward": -1024.9508771929823,
+  "queue_seconds": 36070.0,
+  "q_states": 16,
+  "unseen_decisions": 0,
+  "control_calls": 102,
+  "action_counts": {
+    "0": 48,
+    "2": 28,
+    "4": 26
+  },
+  "begin": 57600.0,
+  "end": 61200.0,
+  "simulation_seconds": 3600.0,
+  "total_seconds": {
+    "green": 3032.0,
+    "yellow": 426.0,
+    "all_red": 142.0
+  },
+  "process_closed": true,
+  "safety_statistics": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "1",
+    "jam": "0",
+    "yield": "1",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 0,
+  "traci_teleport_starts": 1,
+  "warning_lines": 2,
+  "missing_yellow_warnings": 0,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0,
+  "vehicles": {
+    "loaded": "1716",
+    "inserted": "1696",
+    "running": "38",
+    "waiting": "20"
+  }
+}

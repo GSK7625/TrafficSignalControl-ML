@@ -1,0 +1,6 @@
+Warning: Teleporting vehicle 'carIn100059:1'; waited too long (yield), lane='164051413_2', time=59883.00.
+Warning: Vehicle 'carIn100059:1' ends teleporting on edge '104010475#0', time=59884.00.
+Warning: Teleporting vehicle 'carIn109385:1'; waited too long (yield), lane='391891458#0_1', time=60190.00.
+Warning: Vehicle 'carIn109385:1' ends teleporting on edge '104010475#0', time=60194.00.
+Warning: Teleporting vehicle 'carIn95058:1'; waited too long (yield), lane='201963537#1_3', time=60950.00.
+Warning: Vehicle 'carIn95058:1' ends teleporting on edge '-164051413', time=60950.00.

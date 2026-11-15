@@ -1,0 +1,28 @@
+{
+  "full_hour_pilot_episodes": 10,
+  "full_hour_main_episodes": 60,
+  "new_validation_runs": 12,
+  "new_test_runs": 48,
+  "historical_stage6_runs_rechecked": 30,
+  "raw_metric_runs_checked": 90,
+  "all_raw_fields_match_saved_results": true,
+  "all_six_controller_files_unchanged": true,
+  "tracked_files_before": 1333,
+  "changed_tracked_files": [
+    "analyze_ql.py"
+  ],
+  "all_historical_reports_data_models_unchanged": true,
+  "model_sha256_after": {
+    "cologne1": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+    "ingolstadt1": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa"
+  },
+  "sumo_binary_unchanged": true,
+  "tests_before": "151 passed in 14.84s",
+  "tests_after": "157 passed in 17.50s; no skips/deselections",
+  "sumo_short_integration_tests_included": true,
+  "limitations": [
+    "No DQN, no algorithm/state/reward/control changes",
+    "No causal isolation of training budget vs epsilon schedule",
+    "No convergence or fix for SUMO nondeterminism claimed"
+  ]
+}

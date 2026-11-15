@@ -1,0 +1,19 @@
+Warning: Teleporting vehicle 'carIn37169:1'; waited too long (yield), lane='391891458#0_1', time=58500.00.
+Warning: Vehicle 'carIn37169:1' ends teleporting on edge '104010475#0', time=58504.00.
+Warning: Teleporting vehicle 'carIn45535:1'; waited too long (yield), lane='164051413_2', time=58644.00.
+Warning: Vehicle 'carIn45535:1' ends teleporting on edge '104010475#0', time=58644.00.
+Warning: Teleporting vehicle 'carIn37120:1'; waited too long (yield), lane='391891458#0_1', time=58804.00.
+Warning: Vehicle 'carIn37120:1' ends teleporting on edge '104010475#0', time=58809.00.
+Warning: Teleporting vehicle 'h18146c1:1'; waited too long (yield), lane='164051413_2', time=59616.00.
+Warning: Vehicle 'h18146c1:1' ends teleporting on edge '104010475#0', time=59616.00.
+Warning: Teleporting vehicle 'h6054c1:2'; waited too long (yield), lane='391891458#0_1', time=59674.00.
+Warning: Vehicle 'h6054c1:2' ends teleporting on edge '104010475#0', time=59677.00.
+Warning: Teleporting vehicle 'carIn41120:1'; waited too long (yield), lane='164051413_2', time=59920.00.
+Warning: Vehicle 'carIn41120:1' ends teleporting on edge '104010475#0', time=59920.00.
+Warning: Teleporting vehicle 'carIn66513:1'; waited too long (yield), lane='391891458#0_1', time=59978.00.
+Warning: Vehicle 'carIn66513:1' ends teleporting on edge '104012170', time=59983.00.
+Warning: Teleporting vehicle 'carIn105482:1'; waited too long (yield), lane='164051413_2', time=60224.00.
+Warning: Vehicle 'carIn105482:1' ends teleporting on edge '104010475#0', time=60224.00.
+Warning: Teleporting vehicle 'carIn128876:1'; waited too long (jam), lane='653473569#5_1', time=60406.00.
+Warning: Vehicle 'carIn128876:1' ends teleporting on edge '164051413', time=60406.00.
+ingolstadt1 QL seed=12345: valid=1527/1716 queue=6.91, teleports=9

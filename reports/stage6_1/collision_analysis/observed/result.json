@@ -1,0 +1,82 @@
+{
+  "begin": 57600.0,
+  "end": 58150.0,
+  "queue_seconds": 5867,
+  "samples_sha256": "db8b06e1869a5e68aca9d46dc43738bef0bace0b690c7a64e133aed2a440d9d5",
+  "trace_sha256": "9a97fcd75771c3e6cbbd4797a5512adcd402a75ed8692c090ba0eed69f2bd20d",
+  "vehicles": {
+    "loaded": "245",
+    "inserted": "220",
+    "running": "33",
+    "waiting": "0"
+  },
+  "safety": {
+    "collisions": "1",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleports": {
+    "total": "1",
+    "jam": "0",
+    "yield": "0",
+    "wrongLane": "0"
+  },
+  "process_exit": 0,
+  "metrics": {
+    "requested": 221,
+    "inserted": 220,
+    "arrived": 187,
+    "valid_completed": 187,
+    "completed_metric_count": 187,
+    "arrived_teleported": 0,
+    "teleported": 1,
+    "unfinished": 33,
+    "undeparted": 1,
+    "unfinished_teleported": 1,
+    "average_waiting_time": 31.700534759358288,
+    "average_travel_time": 60.17112299465241,
+    "average_time_loss": 40.87294117647059,
+    "throughput": 1224.0,
+    "throughput_all_arrivals": 1224.0,
+    "completion_rate": 0.8461538461538461,
+    "insertion_rate": 0.995475113122172,
+    "undeparted_rate": 0.004524886877828055,
+    "queue_seconds": 5867.0,
+    "average_queue_length": 10.667272727272728,
+    "queue_samples": 550,
+    "green_seconds_per_movement": [
+      300,
+      300,
+      150,
+      288,
+      138,
+      288,
+      150,
+      150
+    ],
+    "longest_no_green_per_movement": [
+      46,
+      46,
+      84,
+      46,
+      84,
+      46,
+      84,
+      84
+    ],
+    "unserved_movements": [],
+    "longest_movement_no_green": 84,
+    "loaded": 245,
+    "sumo_running": 33,
+    "sumo_waiting": 0,
+    "teleports": 1,
+    "teleport_ids": [
+      "carIn2369:1"
+    ],
+    "collisions": 1,
+    "emergency_braking": 0,
+    "emergency_stops": 0,
+    "emergency_braking_warnings": 0,
+    "emergency_stop_warnings": 0
+  }
+}

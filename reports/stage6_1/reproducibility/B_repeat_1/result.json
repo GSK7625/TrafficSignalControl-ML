@@ -1,0 +1,25 @@
+{
+  "begin": 25200.0,
+  "end": 25900.0,
+  "queue_seconds": 51644,
+  "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+  "trace_sha256": "1bcae9c319b7707e477b7af24cf7b179812e466d2399fbc944cb6e5378c679c2",
+  "vehicles": {
+    "loaded": "512",
+    "inserted": "412",
+    "running": "128",
+    "waiting": "35"
+  },
+  "safety": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleports": {
+    "total": "0",
+    "jam": "0",
+    "yield": "0",
+    "wrongLane": "0"
+  },
+  "process_exit": 0
+}

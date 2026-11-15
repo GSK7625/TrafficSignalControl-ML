@@ -11,6 +11,40 @@ import pytest
 from evaluation_metrics import trip_metrics, signal_metrics, requested_trips
 
 
+def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path):
+    """Two teleport events for a single ID; unfinished/pending stay in demand."""
+    from evaluation_metrics import read_metrics
+    rows = [trip('a', 0, 3, 99, 99), trip('b', 1, 4, 2, 3),
+            trip('c', 2, -1, 100, 100), trip('d', -1, -1)]
+    root = ET.Element('tripinfos')
+    for row in rows:
+        ET.SubElement(root, 'tripinfo', row)
+    ET.ElementTree(root).write(tmp_path / 'tripinfo.xml')
+    (tmp_path / 'statistics.xml').write_text(
+        '<statistics><vehicles loaded="4" inserted="3" running="1" waiting="1"/>'
+        '<safety collisions="0" emergencyBraking="0" emergencyStops="0"/>'
+        '<teleports total="2"/></statistics>')
+    (tmp_path / 'collisions.xml').write_text('<collisions/>')
+    (tmp_path / 'warnings.log').write_text('')
+    with (tmp_path / 'signals.csv').open('w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=(
+            'start', 'end', 'signal', 'queue', 'teleports', 'collisions'))
+        writer.writeheader()
+        for i, queue in enumerate((2, 3, 4, 5)):
+            writer.writerow(dict(start=i, end=i+1, signal='G', queue=queue,
+                                 teleports=json.dumps(['a'] if i in (1, 2) else []), collisions='[]'))
+    result = read_metrics(tmp_path, {'a', 'b', 'c', 'd'}, 0, 4)
+    assert result['teleports'] == 2 and result['teleported'] == 1
+    assert result['teleport_ids'] == ['a']
+    assert result['requested'] == 4 and result['inserted'] == 3
+    assert result['arrived'] == 2 and result['valid_completed'] == 1
+    assert result['unfinished'] == result['undeparted'] == 1
+    assert result['average_travel_time'] == 3
+    assert result['average_waiting_time'] == 2 and result['average_time_loss'] == 3
+    assert result['queue_seconds'] == 14 and result['average_queue_length'] == 3.5
+    assert result['completion_rate'] == .25 and result['throughput'] == 900
+
+
 def trip(vehicle, depart, arrival, waiting=0, loss=0, **extra):
     return dict(id=vehicle, depart=str(depart), arrival=str(arrival),
                 waitingTime=str(waiting), timeLoss=str(loss), **extra)

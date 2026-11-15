@@ -1,0 +1,14 @@
+[
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 25200.0,
+    "end": 25201.0,
+    "stage": "green",
+    "signal": "rrrrrrrrrrGGGGGrrrrr",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  }
+]

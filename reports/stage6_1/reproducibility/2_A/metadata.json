@@ -1,0 +1,102 @@
+{
+  "map": "cologne1",
+  "seed": 42,
+  "mode": "A",
+  "observe": true,
+  "reverse_reads": false,
+  "detail_window": [
+    25830,
+    25870
+  ],
+  "begin": 25200.0,
+  "end": 25900.0,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "traci": "1.28.0",
+    "sumolib": "1.28.0",
+    "pytest": "9.2.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "traci_module": "C:\\Program Files (x86)\\SUMO\\tools\\traci\\__init__.py",
+  "sumolib_module": "C:\\Program Files (x86)\\SUMO\\tools\\sumolib\\__init__.py",
+  "binary": "C:\\Program Files (x86)\\SUMO\\bin\\sumo.exe",
+  "binary_sha256": "35d45c1166ceb5b72cce37676216f79124fcfe05920a496b14daee19acdaf9f3",
+  "code_hashes": {
+    "evaluate.py": "2ca79194cef82111487f0799ee83d0af15609ce0ffaca7d62bef37c5f5eceb21",
+    "evaluation_metrics.py": "d496b5bfe32bcb988ee076738a4059f8811257a6e943acc7164d436ed0698f59",
+    "ft.py": "ce97409010dcba8a3e29c08b68934c8430d2288d7223ccc9fe1b4e6ee6972b08",
+    "mp.py": "e6ad5cb3b66dbfcddea048623f34d806f9d6c862ea499899a2af47f3bfcc32b7",
+    "plot_results.py": "1271755fef4695043b7a8ed2c67afcd3658430caf457f4232cdc4bed14ca5548",
+    "q_learning.py": "28598a4b09a09d9f211733ff05bb6f857a0502ded5fecdd55f502bb75b079b46",
+    "smoke_test.py": "3ec3390ca9566ed6daba9e7ffac7acf33420d4e4bf027144dba8093da23379dd",
+    "stage6_1_probe.py": "6382466be3edbf13d475a8f4ecaa6d39ff87d3e738161186f36e07ac4f55a720",
+    "sumo_env.py": "bdb301b2dbee7de4d21ceadedab64196163886e32a16734b59cf68cdd73524a2",
+    "test_evaluation.py": "4b0b126c855d0401b6a3a595b1165e0592db439b456cc506318e78ab155dd070",
+    "test_ft.py": "aa74ace20d47b11a98d6d8d5cfe1507079eb31d02e30e1f74e6395091c57b9db",
+    "test_mp.py": "dbcf2603b309cdcc583db5ece3354382f6867f5f6c6fb4b4a93c71e1ebed454b",
+    "test_q_learning.py": "c3754e772be7997a02e70294f714e070fd2ceb7523f4b4048b178cad72619bc4",
+    "test_stage6_1.py": "1472e53ec963d67d55a325bce300867ef66eea68a077169219e20a9d23ab7a7c",
+    "test_sumo_env.py": "22418163cc2be7f8c787428529a2c2d981c0ab0d412999589ffc536cc06f6643"
+  },
+  "input_hashes": {
+    "data/cologne1/cologne1.net.xml": "99fc6bcfa9b048464234afa8fa30b52e4d7ea06ee696823b8cac00dc0709800c",
+    "data/cologne1/cologne1.rou.xml": "63c4a823dafd0fa43e0dddf79ca34516f3666a1021fa89eaf486b20a3f24375c",
+    "data/cologne1/cologne1.sumocfg": "897598657fd4506a3c46d35c447272e54c311b9c9572326ee00a147ad204ba1a",
+    "data/cologne1/LICENSE": "f594ef1e139be8ef63eebf3e1c1c7ee1536982a3cf50a44b0e5d624d411b11e9"
+  },
+  "actions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "tls_id": "cluster_357187_359543",
+  "incoming_lanes": [
+    "-32038056#3_0",
+    "-32038056#3_1",
+    "23429231#1_0",
+    "23429231#1_1",
+    "27115123#3_0",
+    "27115123#3_1",
+    "28198821#3_0",
+    "28198821#3_1"
+  ],
+  "argv": [
+    "C:\\Program Files (x86)\\SUMO\\bin\\sumo.exe",
+    "-c",
+    "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\data\\cologne1\\cologne1.sumocfg",
+    "--step-length",
+    "1",
+    "--seed",
+    "42",
+    "--collision.check-junctions",
+    "true",
+    "--collision.action",
+    "teleport",
+    "--no-step-log",
+    "true",
+    "--duration-log.disable",
+    "true",
+    "--log",
+    "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\reports\\stage6_1\\reproducibility\\2_A\\sumo.log",
+    "--error-log",
+    "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\reports\\stage6_1\\reproducibility\\2_A\\warnings.log",
+    "--statistic-output",
+    "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\reports\\stage6_1\\reproducibility\\2_A\\statistics.xml",
+    "--collision-output",
+    "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\reports\\stage6_1\\reproducibility\\2_A\\collisions.xml",
+    "--remote-port",
+    "63606"
+  ],
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "step_length": 1.0
+}

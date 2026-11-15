@@ -1,0 +1,7455 @@
+[
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57600.0,
+    "end": 57601.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57601.0,
+    "end": 57602.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57602.0,
+    "end": 57603.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57603.0,
+    "end": 57604.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57604.0,
+    "end": 57605.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57605.0,
+    "end": 57606.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57606.0,
+    "end": 57607.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57607.0,
+    "end": 57608.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57608.0,
+    "end": 57609.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57609.0,
+    "end": 57610.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57610.0,
+    "end": 57611.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn105842:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57611.0,
+    "end": 57612.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn105842:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57612.0,
+    "end": 57613.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn105842:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57613.0,
+    "end": 57614.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57614.0,
+    "end": 57615.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "h8750c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57615.0,
+    "end": 57616.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "h8750c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57616.0,
+    "end": 57617.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57617.0,
+    "end": 57618.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57618.0,
+    "end": 57619.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57619.0,
+    "end": 57620.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57620.0,
+    "end": 57621.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn28488:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57621.0,
+    "end": 57622.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn28488:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57622.0,
+    "end": 57623.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57623.0,
+    "end": 57624.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn106322:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57624.0,
+    "end": 57625.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn106322:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57625.0,
+    "end": 57626.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn5482:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57626.0,
+    "end": 57627.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 0,
+    "junction_before": [
+      "carIn5482:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57627.0,
+    "end": 57628.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 1,
+    "junction_before": [
+      "carIn5482:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57628.0,
+    "end": 57629.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn36103:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 0,
+    "action": 0,
+    "start": 57629.0,
+    "end": 57630.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn36103:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57630.0,
+    "end": 57631.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 3,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57631.0,
+    "end": 57632.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 3,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57632.0,
+    "end": 57633.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 3,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57633.0,
+    "end": 57634.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 4,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57634.0,
+    "end": 57635.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 4,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57635.0,
+    "end": 57636.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 4,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57636.0,
+    "end": 57637.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57637.0,
+    "end": 57638.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57638.0,
+    "end": 57639.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57639.0,
+    "end": 57640.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 2,
+    "junction_before": [
+      "carIn115534:1",
+      "carIn21562:1",
+      "carIn26332:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57640.0,
+    "end": 57641.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn115534:1",
+      "carIn21562:1",
+      "carIn26332:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57641.0,
+    "end": 57642.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn115534:1",
+      "carIn21562:1",
+      "carIn26332:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57642.0,
+    "end": 57643.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn119141:1",
+      "carIn21562:1",
+      "carIn26332:1",
+      "h15808c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57643.0,
+    "end": 57644.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn119141:1",
+      "carIn21562:1",
+      "carIn28951:1",
+      "h15808c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57644.0,
+    "end": 57645.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn119141:1",
+      "carIn119185:1",
+      "carIn28951:1",
+      "h15808c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57645.0,
+    "end": 57646.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn119185:1",
+      "carIn28951:1",
+      "carIn46350:1",
+      "carIn79970:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57646.0,
+    "end": 57647.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn27195:1",
+      "carIn28951:1",
+      "carIn46350:1",
+      "carIn79970:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57647.0,
+    "end": 57648.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn27195:1",
+      "carIn46350:1",
+      "carIn75667:1",
+      "carIn96537:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57648.0,
+    "end": 57649.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn26410:1",
+      "carIn46350:1",
+      "carIn75667:1",
+      "carIn96537:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57649.0,
+    "end": 57650.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn26410:1",
+      "carIn51024:1",
+      "carIn75667:1",
+      "carIn76112:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57650.0,
+    "end": 57651.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn128705:1",
+      "carIn51024:1",
+      "carIn75667:1",
+      "carIn76112:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57651.0,
+    "end": 57652.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn128705:1",
+      "carIn76112:1",
+      "h21989c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57652.0,
+    "end": 57653.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn27521:1",
+      "carIn76112:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57653.0,
+    "end": 57654.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn130142:1",
+      "carIn27521:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57654.0,
+    "end": 57655.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn130142:1",
+      "carIn27521:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57655.0,
+    "end": 57656.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn130142:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57656.0,
+    "end": 57657.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn130142:1",
+      "randUni34730:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57657.0,
+    "end": 57658.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "h14257c2:1",
+      "randUni34730:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57658.0,
+    "end": 57659.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "h14257c2:1",
+      "randUni34730:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57659.0,
+    "end": 57660.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn107084:1",
+      "h14257c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57660.0,
+    "end": 57661.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn107084:1",
+      "h14257c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57661.0,
+    "end": 57662.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn107084:1",
+      "carIn77943:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57662.0,
+    "end": 57663.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn107084:1",
+      "carIn77943:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57663.0,
+    "end": 57664.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn77943:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57664.0,
+    "end": 57665.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn77943:1",
+      "carIn81046:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57665.0,
+    "end": 57666.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn81046:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57666.0,
+    "end": 57667.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn81046:1",
+      "h15382c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 1,
+    "action": 2,
+    "start": 57667.0,
+    "end": 57668.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "h15382c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57668.0,
+    "end": 57669.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "h15382c1:3",
+      "randUni10474:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57669.0,
+    "end": 57670.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "randUni10474:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57670.0,
+    "end": 57671.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "randUni10474:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57671.0,
+    "end": 57672.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "randUni10474:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57672.0,
+    "end": 57673.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57673.0,
+    "end": 57674.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57674.0,
+    "end": 57675.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57675.0,
+    "end": 57676.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57676.0,
+    "end": 57677.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57677.0,
+    "end": 57678.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn102997:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57678.0,
+    "end": 57679.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn102997:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57679.0,
+    "end": 57680.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn102997:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57680.0,
+    "end": 57681.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn75554:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57681.0,
+    "end": 57682.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [
+      "carIn75554:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57682.0,
+    "end": 57683.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 18,
+    "junction_before": [
+      "carIn75554:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57683.0,
+    "end": 57684.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 19,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57684.0,
+    "end": 57685.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 21,
+    "junction_before": [
+      "randUni20090:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57685.0,
+    "end": 57686.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 22,
+    "junction_before": [
+      "randUni20090:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57686.0,
+    "end": 57687.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 23,
+    "junction_before": [
+      "carIn37268:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57687.0,
+    "end": 57688.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 23,
+    "junction_before": [
+      "carIn37268:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57688.0,
+    "end": 57689.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 24,
+    "junction_before": [
+      "carIn37268:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57689.0,
+    "end": 57690.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 26,
+    "junction_before": [
+      "carIn129760:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57690.0,
+    "end": 57691.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 28,
+    "junction_before": [
+      "carIn129760:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57691.0,
+    "end": 57692.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57692.0,
+    "end": 57693.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "carIn129626:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57693.0,
+    "end": 57694.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "carIn129626:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57694.0,
+    "end": 57695.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "h20539c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57695.0,
+    "end": 57696.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "h20539c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57696.0,
+    "end": 57697.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "h20539c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57697.0,
+    "end": 57698.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57698.0,
+    "end": 57699.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57699.0,
+    "end": 57700.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57700.0,
+    "end": 57701.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57701.0,
+    "end": 57702.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57702.0,
+    "end": 57703.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57703.0,
+    "end": 57704.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57704.0,
+    "end": 57705.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 29,
+    "junction_before": [
+      "carIn91254:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 2,
+    "action": 4,
+    "start": 57705.0,
+    "end": 57706.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 30,
+    "junction_before": [
+      "carIn91254:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57706.0,
+    "end": 57707.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57707.0,
+    "end": 57708.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57708.0,
+    "end": 57709.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57709.0,
+    "end": 57710.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57710.0,
+    "end": 57711.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57711.0,
+    "end": 57712.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 30,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57712.0,
+    "end": 57713.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 31,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57713.0,
+    "end": 57714.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 32,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57714.0,
+    "end": 57715.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 27,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57715.0,
+    "end": 57716.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 24,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn13117:1",
+      "h21130c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57716.0,
+    "end": 57717.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 22,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn13117:1",
+      "h21130c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57717.0,
+    "end": 57718.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 20,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn13117:1",
+      "h21130c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57718.0,
+    "end": 57719.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn100220:1",
+      "carIn13117:1",
+      "h21130c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57719.0,
+    "end": 57720.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn100220:1",
+      "carIn20106:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57720.0,
+    "end": 57721.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 15,
+    "junction_before": [
+      "60.39",
+      "60R.41",
+      "carIn100220:1",
+      "carIn20106:1",
+      "randUni27349:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57721.0,
+    "end": 57722.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "60.39",
+      "h20403c1:5",
+      "randUni27349:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57722.0,
+    "end": 57723.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "h20403c1:5",
+      "randUni27349:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57723.0,
+    "end": 57724.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn73466:1",
+      "h2215c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57724.0,
+    "end": 57725.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn73466:1",
+      "h2215c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57725.0,
+    "end": 57726.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn36018:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57726.0,
+    "end": 57727.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "carIn102740:1",
+      "carIn36018:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57727.0,
+    "end": 57728.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn35345:1",
+      "h3139c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57728.0,
+    "end": 57729.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn35345:1",
+      "h3139c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57729.0,
+    "end": 57730.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn26407:1",
+      "carIn78692:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57730.0,
+    "end": 57731.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn26407:1",
+      "carIn78692:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57731.0,
+    "end": 57732.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn96193:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57732.0,
+    "end": 57733.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "carIn96193:1",
+      "carIn98489:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57733.0,
+    "end": 57734.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "h4745c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57734.0,
+    "end": 57735.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "h4745c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57735.0,
+    "end": 57736.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn106797:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57736.0,
+    "end": 57737.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn106797:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57737.0,
+    "end": 57738.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn26708:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57738.0,
+    "end": 57739.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn26708:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57739.0,
+    "end": 57740.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn26708:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57740.0,
+    "end": 57741.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn34550:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57741.0,
+    "end": 57742.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 20,
+    "junction_before": [
+      "carIn124270:1",
+      "carIn34550:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57742.0,
+    "end": 57743.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [
+      "carIn124270:1",
+      "carIn41791:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 3,
+    "action": 0,
+    "start": 57743.0,
+    "end": 57744.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 20,
+    "junction_before": [
+      "carIn41791:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57744.0,
+    "end": 57745.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 20,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57745.0,
+    "end": 57746.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 20,
+    "junction_before": [
+      "carIn13016:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57746.0,
+    "end": 57747.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 20,
+    "junction_before": [
+      "carIn13016:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57747.0,
+    "end": 57748.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 20,
+    "junction_before": [
+      "carIn13016:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57748.0,
+    "end": 57749.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 20,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57749.0,
+    "end": 57750.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 21,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57750.0,
+    "end": 57751.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 21,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57751.0,
+    "end": 57752.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 22,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57752.0,
+    "end": 57753.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 21,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57753.0,
+    "end": 57754.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 20,
+    "junction_before": [
+      "carIn56649:1",
+      "h21189c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57754.0,
+    "end": 57755.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 19,
+    "junction_before": [
+      "carIn56649:1",
+      "h21189c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57755.0,
+    "end": 57756.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 18,
+    "junction_before": [
+      "carIn56649:1",
+      "h21189c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57756.0,
+    "end": 57757.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 17,
+    "junction_before": [
+      "carIn38625:1",
+      "carIn56649:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57757.0,
+    "end": 57758.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 16,
+    "junction_before": [
+      "carIn38625:1",
+      "carIn56649:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57758.0,
+    "end": 57759.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn38625:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57759.0,
+    "end": 57760.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 14,
+    "junction_before": [
+      "carIn17767:1",
+      "carIn38625:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57760.0,
+    "end": 57761.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 13,
+    "junction_before": [
+      "carIn17767:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57761.0,
+    "end": 57762.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn17767:1",
+      "carIn77438:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57762.0,
+    "end": 57763.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn77438:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57763.0,
+    "end": 57764.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn48979:1",
+      "carIn7365:1",
+      "carIn77438:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57764.0,
+    "end": 57765.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn48979:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57765.0,
+    "end": 57766.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn48979:1",
+      "h19804c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57766.0,
+    "end": 57767.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 11,
+    "junction_before": [
+      "h19804c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57767.0,
+    "end": 57768.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn88932:1",
+      "h19804c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57768.0,
+    "end": 57769.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn88932:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57769.0,
+    "end": 57770.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn767:1",
+      "carIn88932:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57770.0,
+    "end": 57771.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn767:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57771.0,
+    "end": 57772.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn64490:1",
+      "carIn767:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57772.0,
+    "end": 57773.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn64490:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57773.0,
+    "end": 57774.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn107842:1",
+      "carIn64490:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57774.0,
+    "end": 57775.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn107842:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57775.0,
+    "end": 57776.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn107842:1",
+      "carIn3969:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57776.0,
+    "end": 57777.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn107842:1",
+      "carIn3969:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57777.0,
+    "end": 57778.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn3969:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57778.0,
+    "end": 57779.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn3969:1",
+      "h20540c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57779.0,
+    "end": 57780.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "h20540c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57780.0,
+    "end": 57781.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn44740:1",
+      "h20540c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 4,
+    "action": 2,
+    "start": 57781.0,
+    "end": 57782.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn44740:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57782.0,
+    "end": 57783.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn44740:1",
+      "carIn64859:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57783.0,
+    "end": 57784.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn64859:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57784.0,
+    "end": 57785.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn64859:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57785.0,
+    "end": 57786.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57786.0,
+    "end": 57787.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57787.0,
+    "end": 57788.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57788.0,
+    "end": 57789.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57789.0,
+    "end": 57790.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57790.0,
+    "end": 57791.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57791.0,
+    "end": 57792.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn70477:1",
+      "carIn70484:1",
+      "randUni5403:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57792.0,
+    "end": 57793.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn70477:1",
+      "carIn70484:1",
+      "randUni5403:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57793.0,
+    "end": 57794.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn70477:1",
+      "carIn70484:1",
+      "randUni5403:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57794.0,
+    "end": 57795.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn70484:1",
+      "h10915c2:1",
+      "randUni26227:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57795.0,
+    "end": 57796.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn70484:1",
+      "h10915c2:1",
+      "randUni26227:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57796.0,
+    "end": 57797.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn48988:1",
+      "h10915c2:1",
+      "randUni26227:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57797.0,
+    "end": 57798.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn48988:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57798.0,
+    "end": 57799.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn48988:1",
+      "carIn86816:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57799.0,
+    "end": 57800.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn86816:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57800.0,
+    "end": 57801.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57801.0,
+    "end": 57802.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57802.0,
+    "end": 57803.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 14,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57803.0,
+    "end": 57804.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 15,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57804.0,
+    "end": 57805.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 15,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57805.0,
+    "end": 57806.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57806.0,
+    "end": 57807.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57807.0,
+    "end": 57808.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 17,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57808.0,
+    "end": 57809.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 17,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57809.0,
+    "end": 57810.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57810.0,
+    "end": 57811.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57811.0,
+    "end": 57812.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57812.0,
+    "end": 57813.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 17,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57813.0,
+    "end": 57814.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57814.0,
+    "end": 57815.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57815.0,
+    "end": 57816.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 16,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57816.0,
+    "end": 57817.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 17,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57817.0,
+    "end": 57818.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57818.0,
+    "end": 57819.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 19,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 5,
+    "action": 4,
+    "start": 57819.0,
+    "end": 57820.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57820.0,
+    "end": 57821.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 18,
+    "junction_before": [
+      "carIn102915:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57821.0,
+    "end": 57822.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 20,
+    "junction_before": [
+      "carIn102915:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57822.0,
+    "end": 57823.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 19,
+    "junction_before": [
+      "carIn102915:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57823.0,
+    "end": 57824.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 20,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57824.0,
+    "end": 57825.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 20,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57825.0,
+    "end": 57826.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 20,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57826.0,
+    "end": 57827.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 21,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57827.0,
+    "end": 57828.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 21,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57828.0,
+    "end": 57829.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 19,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57829.0,
+    "end": 57830.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn42651:1",
+      "h7328c1:1",
+      "randUni33724:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57830.0,
+    "end": 57831.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn42651:1",
+      "h7328c1:1",
+      "randUni33724:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57831.0,
+    "end": 57832.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn42651:1",
+      "h7328c1:1",
+      "randUni33724:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57832.0,
+    "end": 57833.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn41197:1",
+      "carIn42651:1",
+      "h18300c2:1",
+      "h7328c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57833.0,
+    "end": 57834.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn41197:1",
+      "h18300c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57834.0,
+    "end": 57835.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn100288:1",
+      "carIn41197:1",
+      "h18300c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57835.0,
+    "end": 57836.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn100288:1",
+      "carIn32135:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57836.0,
+    "end": 57837.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn100288:1",
+      "carIn32135:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57837.0,
+    "end": 57838.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn2912:1",
+      "carIn29531:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57838.0,
+    "end": 57839.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 16,
+    "junction_before": [
+      "carIn2912:1",
+      "carIn29531:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57839.0,
+    "end": 57840.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn49437:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57840.0,
+    "end": 57841.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 17,
+    "junction_before": [
+      "carIn49437:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57841.0,
+    "end": 57842.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57842.0,
+    "end": 57843.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57843.0,
+    "end": 57844.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57844.0,
+    "end": 57845.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "h18996c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57845.0,
+    "end": 57846.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "h18996c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57846.0,
+    "end": 57847.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57847.0,
+    "end": 57848.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57848.0,
+    "end": 57849.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "carIn82399:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57849.0,
+    "end": 57850.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "h3864c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57850.0,
+    "end": 57851.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57851.0,
+    "end": 57852.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57852.0,
+    "end": 57853.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "carIn92532:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57853.0,
+    "end": 57854.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "carIn92532:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57854.0,
+    "end": 57855.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57855.0,
+    "end": 57856.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "randUni14624:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57856.0,
+    "end": 57857.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "randUni14624:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 6,
+    "action": 0,
+    "start": 57857.0,
+    "end": 57858.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 18,
+    "junction_before": [
+      "h10591c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57858.0,
+    "end": 57859.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 18,
+    "junction_before": [
+      "h10591c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57859.0,
+    "end": 57860.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57860.0,
+    "end": 57861.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57861.0,
+    "end": 57862.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57862.0,
+    "end": 57863.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57863.0,
+    "end": 57864.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 19,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57864.0,
+    "end": 57865.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57865.0,
+    "end": 57866.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 18,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57866.0,
+    "end": 57867.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 17,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57867.0,
+    "end": 57868.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 17,
+    "junction_before": [
+      "carIn12775:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57868.0,
+    "end": 57869.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 16,
+    "junction_before": [
+      "carIn12775:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57869.0,
+    "end": 57870.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn12775:1",
+      "randUni6170:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57870.0,
+    "end": 57871.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 15,
+    "junction_before": [
+      "carIn12775:1",
+      "h15353c2:1",
+      "randUni6170:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57871.0,
+    "end": 57872.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 14,
+    "junction_before": [
+      "carIn12775:1",
+      "h15353c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57872.0,
+    "end": 57873.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 13,
+    "junction_before": [
+      "h15353c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57873.0,
+    "end": 57874.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 14,
+    "junction_before": [
+      "carIn13362:1",
+      "h15353c2:1",
+      "h15564c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57874.0,
+    "end": 57875.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 13,
+    "junction_before": [
+      "carIn13362:1",
+      "h15564c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57875.0,
+    "end": 57876.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 13,
+    "junction_before": [
+      "carIn13362:1",
+      "carIn99385:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57876.0,
+    "end": 57877.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn99385:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57877.0,
+    "end": 57878.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn99385:1",
+      "h19989c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57878.0,
+    "end": 57879.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn99385:1",
+      "h19989c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57879.0,
+    "end": 57880.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn92858:1",
+      "h19989c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57880.0,
+    "end": 57881.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn92858:1",
+      "h19989c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57881.0,
+    "end": 57882.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn101439:1",
+      "carIn92858:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57882.0,
+    "end": 57883.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn101439:1",
+      "carIn92858:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57883.0,
+    "end": 57884.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn101439:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57884.0,
+    "end": 57885.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn101439:1",
+      "carIn84229:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57885.0,
+    "end": 57886.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn84229:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57886.0,
+    "end": 57887.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn16842:1",
+      "carIn84229:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57887.0,
+    "end": 57888.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn16842:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57888.0,
+    "end": 57889.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn16842:1",
+      "randUni29093:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57889.0,
+    "end": 57890.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "randUni29093:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57890.0,
+    "end": 57891.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn11547:1",
+      "randUni29093:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57891.0,
+    "end": 57892.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn11547:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57892.0,
+    "end": 57893.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn11547:1",
+      "carIn32621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57893.0,
+    "end": 57894.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn32621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57894.0,
+    "end": 57895.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn25314:1",
+      "carIn32621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 7,
+    "action": 2,
+    "start": 57895.0,
+    "end": 57896.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn25314:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57896.0,
+    "end": 57897.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "carIn25314:1",
+      "h19105c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57897.0,
+    "end": 57898.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "h19105c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57898.0,
+    "end": 57899.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 3,
+    "junction_before": [
+      "h19105c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57899.0,
+    "end": 57900.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "h19105c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57900.0,
+    "end": 57901.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 4,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57901.0,
+    "end": 57902.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57902.0,
+    "end": 57903.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57903.0,
+    "end": 57904.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57904.0,
+    "end": 57905.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57905.0,
+    "end": 57906.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [
+      "50R_frequency3.17",
+      "h6245c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57906.0,
+    "end": 57907.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "50R_frequency3.17",
+      "h6245c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57907.0,
+    "end": 57908.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "50R_frequency3.17",
+      "h6245c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57908.0,
+    "end": 57909.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "50R_frequency3.17",
+      "h6245c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57909.0,
+    "end": 57910.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "50R_frequency3.17",
+      "carIn75793:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57910.0,
+    "end": 57911.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [
+      "50R_frequency3.17",
+      "carIn75793:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57911.0,
+    "end": 57912.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn75793:1",
+      "h18601c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57912.0,
+    "end": 57913.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn75793:1",
+      "h18601c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57913.0,
+    "end": 57914.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [
+      "h18601c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57914.0,
+    "end": 57915.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57915.0,
+    "end": 57916.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57916.0,
+    "end": 57917.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57917.0,
+    "end": 57918.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57918.0,
+    "end": 57919.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57919.0,
+    "end": 57920.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57920.0,
+    "end": 57921.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57921.0,
+    "end": 57922.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57922.0,
+    "end": 57923.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57923.0,
+    "end": 57924.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57924.0,
+    "end": 57925.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57925.0,
+    "end": 57926.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57926.0,
+    "end": 57927.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57927.0,
+    "end": 57928.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57928.0,
+    "end": 57929.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57929.0,
+    "end": 57930.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57930.0,
+    "end": 57931.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57931.0,
+    "end": 57932.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57932.0,
+    "end": 57933.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 8,
+    "action": 4,
+    "start": 57933.0,
+    "end": 57934.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57934.0,
+    "end": 57935.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 13,
+    "junction_before": [
+      "h8072c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57935.0,
+    "end": 57936.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 14,
+    "junction_before": [
+      "h8072c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57936.0,
+    "end": 57937.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 13,
+    "junction_before": [
+      "h8072c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57937.0,
+    "end": 57938.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57938.0,
+    "end": 57939.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57939.0,
+    "end": 57940.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57940.0,
+    "end": 57941.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57941.0,
+    "end": 57942.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57942.0,
+    "end": 57943.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57943.0,
+    "end": 57944.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn82741:1",
+      "h2483c1:1",
+      "randUni13258:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57944.0,
+    "end": 57945.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn82741:1",
+      "h2483c1:1",
+      "randUni13258:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57945.0,
+    "end": 57946.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn82741:1",
+      "h2483c1:1",
+      "randUni13258:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57946.0,
+    "end": 57947.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn125694:1",
+      "carIn82741:1",
+      "h19249c2:1",
+      "h2483c1:1",
+      "randUni13258:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57947.0,
+    "end": 57948.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn125694:1",
+      "h19249c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57948.0,
+    "end": 57949.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn125694:1",
+      "h19249c2:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57949.0,
+    "end": 57950.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "h8633c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57950.0,
+    "end": 57951.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "h8633c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57951.0,
+    "end": 57952.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn116805:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57952.0,
+    "end": 57953.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn116805:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57953.0,
+    "end": 57954.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57954.0,
+    "end": 57955.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57955.0,
+    "end": 57956.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57956.0,
+    "end": 57957.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [
+      "carIn99578:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57957.0,
+    "end": 57958.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [
+      "carIn99578:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57958.0,
+    "end": 57959.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57959.0,
+    "end": 57960.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57960.0,
+    "end": 57961.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57961.0,
+    "end": 57962.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57962.0,
+    "end": 57963.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57963.0,
+    "end": 57964.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57964.0,
+    "end": 57965.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [
+      "carIn23683:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57965.0,
+    "end": 57966.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [
+      "carIn23683:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57966.0,
+    "end": 57967.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57967.0,
+    "end": 57968.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57968.0,
+    "end": 57969.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57969.0,
+    "end": 57970.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57970.0,
+    "end": 57971.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 9,
+    "action": 0,
+    "start": 57971.0,
+    "end": 57972.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 9,
+    "junction_before": [
+      "h15937c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57972.0,
+    "end": 57973.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 9,
+    "junction_before": [
+      "h15937c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57973.0,
+    "end": 57974.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57974.0,
+    "end": 57975.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57975.0,
+    "end": 57976.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57976.0,
+    "end": 57977.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57977.0,
+    "end": 57978.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57978.0,
+    "end": 57979.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57979.0,
+    "end": 57980.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57980.0,
+    "end": 57981.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 13,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57981.0,
+    "end": 57982.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn106296:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57982.0,
+    "end": 57983.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 11,
+    "junction_before": [
+      "carIn106296:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57983.0,
+    "end": 57984.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [
+      "carIn106296:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57984.0,
+    "end": 57985.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn104643:1",
+      "carIn106296:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57985.0,
+    "end": 57986.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn104643:1",
+      "carIn106296:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57986.0,
+    "end": 57987.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn104643:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57987.0,
+    "end": 57988.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn104643:1",
+      "carIn114105:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57988.0,
+    "end": 57989.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn114105:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57989.0,
+    "end": 57990.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn114105:1",
+      "carIn72316:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57990.0,
+    "end": 57991.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn72316:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57991.0,
+    "end": 57992.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn64958:1",
+      "carIn72316:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57992.0,
+    "end": 57993.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn64958:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57993.0,
+    "end": 57994.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn64958:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57994.0,
+    "end": 57995.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn133015:1",
+      "carIn64958:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57995.0,
+    "end": 57996.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn133015:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57996.0,
+    "end": 57997.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn133015:1",
+      "randUni24217:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57997.0,
+    "end": 57998.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "randUni24217:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57998.0,
+    "end": 57999.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "h17593c1:1",
+      "randUni24217:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 57999.0,
+    "end": 58000.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "h17593c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58000.0,
+    "end": 58001.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn112995:1",
+      "h17593c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58001.0,
+    "end": 58002.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn112995:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58002.0,
+    "end": 58003.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn112995:1",
+      "carIn67360:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58003.0,
+    "end": 58004.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn67360:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58004.0,
+    "end": 58005.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn67360:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58005.0,
+    "end": 58006.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58006.0,
+    "end": 58007.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58007.0,
+    "end": 58008.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58008.0,
+    "end": 58009.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 10,
+    "action": 2,
+    "start": 58009.0,
+    "end": 58010.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58010.0,
+    "end": 58011.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58011.0,
+    "end": 58012.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58012.0,
+    "end": 58013.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58013.0,
+    "end": 58014.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58014.0,
+    "end": 58015.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58015.0,
+    "end": 58016.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58016.0,
+    "end": 58017.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58017.0,
+    "end": 58018.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58018.0,
+    "end": 58019.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58019.0,
+    "end": 58020.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn84877:1",
+      "carIn85069:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58020.0,
+    "end": 58021.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn84877:1",
+      "carIn85069:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58021.0,
+    "end": 58022.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn84877:1",
+      "carIn85069:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58022.0,
+    "end": 58023.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn85069:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58023.0,
+    "end": 58024.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn85069:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58024.0,
+    "end": 58025.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58025.0,
+    "end": 58026.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn9903:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58026.0,
+    "end": 58027.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn9903:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58027.0,
+    "end": 58028.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn56192:1",
+      "carIn9903:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58028.0,
+    "end": 58029.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn56192:1",
+      "h1498c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58029.0,
+    "end": 58030.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 6,
+    "junction_before": [
+      "carIn56192:1",
+      "h1498c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58030.0,
+    "end": 58031.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn114414:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58031.0,
+    "end": 58032.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn114414:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58032.0,
+    "end": 58033.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn127325:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58033.0,
+    "end": 58034.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn127325:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58034.0,
+    "end": 58035.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58035.0,
+    "end": 58036.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58036.0,
+    "end": 58037.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58037.0,
+    "end": 58038.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58038.0,
+    "end": 58039.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58039.0,
+    "end": 58040.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58040.0,
+    "end": 58041.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58041.0,
+    "end": 58042.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58042.0,
+    "end": 58043.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58043.0,
+    "end": 58044.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58044.0,
+    "end": 58045.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58045.0,
+    "end": 58046.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58046.0,
+    "end": 58047.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 11,
+    "action": 4,
+    "start": 58047.0,
+    "end": 58048.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn38599:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58048.0,
+    "end": 58049.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [
+      "carIn38599:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58049.0,
+    "end": 58050.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58050.0,
+    "end": 58051.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58051.0,
+    "end": 58052.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58052.0,
+    "end": 58053.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58053.0,
+    "end": 58054.0,
+    "stage": "yellow",
+    "signal": "rrryyyrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58054.0,
+    "end": 58055.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58055.0,
+    "end": 58056.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 12,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58056.0,
+    "end": 58057.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 11,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58057.0,
+    "end": 58058.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 8,
+    "junction_before": [
+      "carIn119432:1",
+      "h15472c1:3",
+      "randUni2621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58058.0,
+    "end": 58059.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 6,
+    "junction_before": [
+      "carIn119432:1",
+      "h15472c1:3",
+      "randUni2621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58059.0,
+    "end": 58060.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 4,
+    "junction_before": [
+      "carIn119432:1",
+      "h15472c1:3",
+      "randUni2621:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58060.0,
+    "end": 58061.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn119432:1",
+      "carIn12479:1",
+      "h15472c1:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58061.0,
+    "end": 58062.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn12479:1",
+      "carIn96510:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58062.0,
+    "end": 58063.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn12479:1",
+      "carIn96510:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58063.0,
+    "end": 58064.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn37367:1",
+      "carIn39729:1",
+      "carIn41392:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58064.0,
+    "end": 58065.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn37367:1",
+      "carIn39729:1",
+      "carIn41392:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58065.0,
+    "end": 58066.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "h21908c1:3",
+      "h22816c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58066.0,
+    "end": 58067.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "h21908c1:3",
+      "h22816c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58067.0,
+    "end": 58068.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "h2510c1:1",
+      "randUni3712:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58068.0,
+    "end": 58069.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "h2510c1:1",
+      "randUni3712:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58069.0,
+    "end": 58070.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 2,
+    "junction_before": [
+      "carIn53610:1",
+      "carIn79899:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58070.0,
+    "end": 58071.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 4,
+    "junction_before": [
+      "carIn53610:1",
+      "carIn79899:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58071.0,
+    "end": 58072.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 4,
+    "junction_before": [
+      "carIn20383:1",
+      "carIn68993:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58072.0,
+    "end": 58073.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [
+      "carIn20383:1",
+      "carIn68993:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58073.0,
+    "end": 58074.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [
+      "carIn10740:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58074.0,
+    "end": 58075.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [
+      "carIn10740:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58075.0,
+    "end": 58076.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58076.0,
+    "end": 58077.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58077.0,
+    "end": 58078.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58078.0,
+    "end": 58079.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58079.0,
+    "end": 58080.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58080.0,
+    "end": 58081.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58081.0,
+    "end": 58082.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58082.0,
+    "end": 58083.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58083.0,
+    "end": 58084.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58084.0,
+    "end": 58085.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 5,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 12,
+    "action": 0,
+    "start": 58085.0,
+    "end": 58086.0,
+    "stage": "green",
+    "signal": "GGrGrGGG",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58086.0,
+    "end": 58087.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58087.0,
+    "end": 58088.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58088.0,
+    "end": 58089.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58089.0,
+    "end": 58090.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58090.0,
+    "end": 58091.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58091.0,
+    "end": 58092.0,
+    "stage": "yellow",
+    "signal": "yyryryyy",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58092.0,
+    "end": 58093.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58093.0,
+    "end": 58094.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58094.0,
+    "end": 58095.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58095.0,
+    "end": 58096.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "randUni11417:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58096.0,
+    "end": 58097.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "randUni11417:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58097.0,
+    "end": 58098.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "randUni11417:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58098.0,
+    "end": 58099.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 4,
+    "junction_before": [
+      "carIn131497:1",
+      "randUni11417:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58099.0,
+    "end": 58100.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn131497:1",
+      "randUni11417:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58100.0,
+    "end": 58101.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn131497:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58101.0,
+    "end": 58102.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "carIn131497:1",
+      "randUni10337:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58102.0,
+    "end": 58103.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "randUni10337:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58103.0,
+    "end": 58104.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "h10915c1:1",
+      "randUni10337:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58104.0,
+    "end": 58105.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 5,
+    "junction_before": [
+      "h10915c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58105.0,
+    "end": 58106.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [
+      "h10915c1:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58106.0,
+    "end": 58107.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58107.0,
+    "end": 58108.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 6,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58108.0,
+    "end": 58109.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58109.0,
+    "end": 58110.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 7,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58110.0,
+    "end": 58111.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58111.0,
+    "end": 58112.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58112.0,
+    "end": 58113.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58113.0,
+    "end": 58114.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58114.0,
+    "end": 58115.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58115.0,
+    "end": 58116.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58116.0,
+    "end": 58117.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58117.0,
+    "end": 58118.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58118.0,
+    "end": 58119.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58119.0,
+    "end": 58120.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58120.0,
+    "end": 58121.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58121.0,
+    "end": 58122.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58122.0,
+    "end": 58123.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 13,
+    "action": 2,
+    "start": 58123.0,
+    "end": 58124.0,
+    "stage": "green",
+    "signal": "GGGrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58124.0,
+    "end": 58125.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58125.0,
+    "end": 58126.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58126.0,
+    "end": 58127.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58127.0,
+    "end": 58128.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58128.0,
+    "end": 58129.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58129.0,
+    "end": 58130.0,
+    "stage": "yellow",
+    "signal": "yyyrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58130.0,
+    "end": 58131.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58131.0,
+    "end": 58132.0,
+    "stage": "all_red",
+    "signal": "rrrrrrrr",
+    "queue": 10,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58132.0,
+    "end": 58133.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 9,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58133.0,
+    "end": 58134.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn38141:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58134.0,
+    "end": 58135.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn38141:1"
+    ],
+    "collisions": [
+      {
+        "collider": "carIn2369:1",
+        "victim": "carIn72005:1",
+        "colliderType": "default_016",
+        "victimType": "default_016",
+        "colliderSpeed": 5.657669895914717,
+        "victimSpeed": 2.1250892431940884,
+        "type": "junction",
+        "lane": ":cluster_1526094852_194342371_3_0",
+        "pos": 3.856054064018494
+      }
+    ],
+    "teleports": [
+      "carIn2369:1"
+    ]
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58135.0,
+    "end": 58136.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn38141:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58136.0,
+    "end": 58137.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn38141:1",
+      "carIn76776:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58137.0,
+    "end": 58138.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn76776:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58138.0,
+    "end": 58139.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn2369:1",
+      "carIn76776:1",
+      "h7703c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58139.0,
+    "end": 58140.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn2369:1",
+      "h7703c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58140.0,
+    "end": 58141.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "carIn2369:1",
+      "h7703c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58141.0,
+    "end": 58142.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 7,
+    "junction_before": [
+      "h7703c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58142.0,
+    "end": 58143.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "h7703c2:3"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58143.0,
+    "end": 58144.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58144.0,
+    "end": 58145.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58145.0,
+    "end": 58146.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn127284:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58146.0,
+    "end": 58147.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn127284:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58147.0,
+    "end": 58148.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn127284:1",
+      "carIn48247:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58148.0,
+    "end": 58149.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 9,
+    "junction_before": [
+      "carIn127284:1",
+      "carIn48247:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  },
+  {
+    "decision": 14,
+    "action": 4,
+    "start": 58149.0,
+    "end": 58150.0,
+    "stage": "green",
+    "signal": "rrrGGGrr",
+    "queue": 8,
+    "junction_before": [
+      "carIn48247:1"
+    ],
+    "collisions": [],
+    "teleports": []
+  }
+]

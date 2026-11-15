@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/v1_28_0/src/microsim/MSLink.cpp",
+      "sha256": "510d020d81df8abdfccb61d87ed5b73312aadb9955c5aba478be517e426b3726"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/v1_28_0/src/microsim/MSVehicle.cpp",
+      "sha256": "7d02f2118209ecf170594a103e88ca53081b528e6fb133c09b083f4bcb3d2d23"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/v1_28_0/src/libsumo/Vehicle.cpp",
+      "sha256": "21df7ca8196006df9b223a95124f95fd58dc99cde61840b0cbf744bf792304b5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/v1_28_0/src/libsumo/Lane.cpp",
+      "sha256": "ecfd0bda16adc16d9bc3c563869715f5d6f3211697fdc3a2510a960763ae248f"
+    }
+  ],
+  "confirmed": [
+    "getDistance reads odometer; queue getter counts stopped vehicles without vehicle/TLS setters",
+    "MSLink initializes additional sibling conflicts and rechecks a set ordered by pairs of pointers",
+    "initial internal-foe order varies in actual SUMO processes",
+    "same foe-list order can occur with both trajectory branches, so order alone is not a proven cause"
+  ],
+  "hypotheses": [
+    "address-dependent initialization/hidden conflict state",
+    "unsaved private simulator state or upstream undefined behavior"
+  ],
+  "not_proven": [
+    "exact faulty C++ line",
+    "whether reported internal-foe ordering causes the trajectory divergence",
+    "connection to issue18283: its documented case uses the sublane model, unlike this default run"
+  ]
+}

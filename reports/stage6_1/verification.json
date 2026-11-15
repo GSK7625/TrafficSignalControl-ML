@@ -1,0 +1,1185 @@
+{
+  "protected_files": 832,
+  "protected_changed": [],
+  "production_unchanged": [
+    "sumo_env.py",
+    "evaluate.py",
+    "evaluation_metrics.py",
+    "ft.py",
+    "mp.py",
+    "q_learning.py"
+  ],
+  "runs": [
+    {
+      "run": "0_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "1_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "2_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51644,
+      "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+      "trace_sha256": "1bcae9c319b7707e477b7af24cf7b179812e466d2399fbc944cb6e5378c679c2"
+    },
+    {
+      "run": "3_B",
+      "horizon": 700.0,
+      "mode": "B",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "4_C",
+      "horizon": 700.0,
+      "mode": "C",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51644,
+      "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+      "trace_sha256": "1bcae9c319b7707e477b7af24cf7b179812e466d2399fbc944cb6e5378c679c2"
+    },
+    {
+      "run": "5_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": null
+    },
+    {
+      "run": "6_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": null
+    },
+    {
+      "run": "7_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 51644,
+      "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+      "trace_sha256": null
+    },
+    {
+      "run": "8_A",
+      "horizon": 700.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": true,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "B_repeat_0",
+      "horizon": 700.0,
+      "mode": "B",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "B_repeat_1",
+      "horizon": 700.0,
+      "mode": "B",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51644,
+      "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+      "trace_sha256": "1bcae9c319b7707e477b7af24cf7b179812e466d2399fbc944cb6e5378c679c2"
+    },
+    {
+      "run": "C_repeat_0",
+      "horizon": 700.0,
+      "mode": "C",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51644,
+      "samples_sha256": "9de5c6f73622c48fbc61f8c2bbb489b5ab7c9992876e8201217ee278dd926f82",
+      "trace_sha256": "1bcae9c319b7707e477b7af24cf7b179812e466d2399fbc944cb6e5378c679c2"
+    },
+    {
+      "run": "C_repeat_1",
+      "horizon": 700.0,
+      "mode": "C",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 51664,
+      "samples_sha256": "d0f9c227c8f6807215b1a8bc45e27ee73cd4b1a48cae70070af7b352fdc4398d",
+      "trace_sha256": "8f3a2a557e87ed901e6a454df970ab8ac5f6e72ca2952d506f42dd54f44802e0"
+    },
+    {
+      "run": "foes_0",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "30099015842c83d043792682d31a739f673741ab10d5a1bfc0dac13595a200e4",
+      "trace_sha256": "ef28bb425a8453f1e533a152a4372bcfc770e7f0c1b3603b545f9b51668a3703"
+    },
+    {
+      "run": "foes_1",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "30099015842c83d043792682d31a739f673741ab10d5a1bfc0dac13595a200e4",
+      "trace_sha256": "ef28bb425a8453f1e533a152a4372bcfc770e7f0c1b3603b545f9b51668a3703"
+    },
+    {
+      "run": "foes_2",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "628df3476dd1d028f1b9a07e6adf20f7277b7c5bcfb1cbe99215d0a55b08ed6a",
+      "trace_sha256": "a74288ec88a091f061b2dc85a3c5adf61f3719e264a9b92097e94a8083690ae9"
+    },
+    {
+      "run": "initial_0",
+      "horizon": 1.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 0,
+      "samples_sha256": "7d82976fe874b90be5fab41fb42e54c616cfd286f58ff3ecf65bc800ac5437ee",
+      "trace_sha256": null
+    },
+    {
+      "run": "initial_1",
+      "horizon": 1.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 0,
+      "samples_sha256": "7d82976fe874b90be5fab41fb42e54c616cfd286f58ff3ecf65bc800ac5437ee",
+      "trace_sha256": null
+    },
+    {
+      "run": "initial_2",
+      "horizon": 1.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 0,
+      "samples_sha256": "7d82976fe874b90be5fab41fb42e54c616cfd286f58ff3ecf65bc800ac5437ee",
+      "trace_sha256": null
+    },
+    {
+      "run": "initial_3",
+      "horizon": 1.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 0,
+      "samples_sha256": "7d82976fe874b90be5fab41fb42e54c616cfd286f58ff3ecf65bc800ac5437ee",
+      "trace_sha256": null
+    },
+    {
+      "run": "initial_4",
+      "horizon": 1.0,
+      "mode": "A",
+      "observer": false,
+      "reverse_reads": false,
+      "queue_seconds": 0,
+      "samples_sha256": "7d82976fe874b90be5fab41fb42e54c616cfd286f58ff3ecf65bc800ac5437ee",
+      "trace_sha256": null
+    },
+    {
+      "run": "initial_trajectory_0",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "30099015842c83d043792682d31a739f673741ab10d5a1bfc0dac13595a200e4",
+      "trace_sha256": "ef28bb425a8453f1e533a152a4372bcfc770e7f0c1b3603b545f9b51668a3703"
+    },
+    {
+      "run": "initial_trajectory_1",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "628df3476dd1d028f1b9a07e6adf20f7277b7c5bcfb1cbe99215d0a55b08ed6a",
+      "trace_sha256": "a74288ec88a091f061b2dc85a3c5adf61f3719e264a9b92097e94a8083690ae9"
+    },
+    {
+      "run": "initial_trajectory_2",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "30099015842c83d043792682d31a739f673741ab10d5a1bfc0dac13595a200e4",
+      "trace_sha256": "ef28bb425a8453f1e533a152a4372bcfc770e7f0c1b3603b545f9b51668a3703"
+    },
+    {
+      "run": "initial_trajectory_3",
+      "horizon": 660.0,
+      "mode": "A",
+      "observer": true,
+      "reverse_reads": false,
+      "queue_seconds": 47801,
+      "samples_sha256": "30099015842c83d043792682d31a739f673741ab10d5a1bfc0dac13595a200e4",
+      "trace_sha256": "ef28bb425a8453f1e533a152a4372bcfc770e7f0c1b3603b545f9b51668a3703"
+    }
+  ],
+  "first_differences": {
+    "0_A": null,
+    "1_A": null,
+    "2_A": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "3_B": null,
+    "4_C": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "8_A": null,
+    "B_repeat_0": null,
+    "B_repeat_1": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "C_repeat_0": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "C_repeat_1": null,
+    "foes_0": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "foes_1": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "foes_2": null,
+    "initial_trajectory_0": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "initial_trajectory_1": null,
+    "initial_trajectory_2": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    },
+    "initial_trajectory_3": {
+      "index": 653,
+      "time": 25854.0,
+      "field": "vehicles",
+      "left": "7c707c19f6b2fdd3688d675a0e266d14572d8adca83afcc2e4143441e07b06ff",
+      "right": "5e49ac4a4a661e8ff22f1492e3544788357e10501512f8a2ec35d43542e2a7a4"
+    }
+  },
+  "first_by_component": {
+    "time": null,
+    "signal": null,
+    "departed": 25859.0,
+    "active": 25859.0,
+    "vehicles": 25854.0,
+    "queue": 25874.0,
+    "teleports": null,
+    "collisions": null
+  },
+  "native_first_difference_fcd_start": {
+    "native_0": null,
+    "native_1": null,
+    "native_2": null,
+    "native_3": 25853.0,
+    "native_4": 25853.0,
+    "native_5": 25853.0,
+    "native_6": null,
+    "native_7": 25853.0
+  },
+  "saved_state_time": 25853,
+  "saved_state_including_rng_identical": true,
+  "saved_state_sha256": "8eb20e47590e3d64e21c6efca4b1cf42f1dcf08440d8939dc79f33528472c77c",
+  "rng_replay_speed_at_fcd_25853": {
+    "rng_0": 10.052142789202,
+    "rng_1": 10.052142789202,
+    "rng_2": 10.052142789202,
+    "rng_3": 10.836552277279
+  },
+  "initial_internal_foe_order_varies": true,
+  "safety_matches_stage6_prefix": {
+    "collision_analysis": {
+      "matching_samples": 550,
+      "exact": true
+    },
+    "emergency_braking_analysis": {
+      "matching_samples": 1640,
+      "exact": true
+    }
+  },
+  "independent_raw_metric_checks": [
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\FT\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\FT\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\FT\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\FT\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\FT\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\MP\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\MP\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\MP\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\MP\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\MP\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\QL\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\QL\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\QL\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\QL\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\cologne1\\QL\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\FT\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\FT\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\FT\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\FT\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\FT\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\MP\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\MP\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\MP\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\MP\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\MP\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\QL\\seed_12345",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\QL\\seed_2026",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\QL\\seed_2027",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\QL\\seed_2028",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6\\runs\\ingolstadt1\\QL\\seed_42",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6_1\\collision_analysis\\observed",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": [
+        "h3063c2:1"
+      ]
+    },
+    {
+      "path": "reports\\stage6_1\\emergency_braking_analysis\\observed",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6_1\\emergency_braking_analysis\\repeat_0",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6_1\\reproducibility\\4_C",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6_1\\reproducibility\\C_repeat_0",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    },
+    {
+      "path": "reports\\stage6_1\\reproducibility\\C_repeat_1",
+      "checked": [
+        "requested",
+        "inserted",
+        "arrived",
+        "valid_completed",
+        "unfinished",
+        "undeparted",
+        "teleported",
+        "teleports",
+        "queue_seconds",
+        "completion_rate",
+        "throughput",
+        "average_queue_length",
+        "average_waiting_time",
+        "average_time_loss",
+        "average_travel_time"
+      ],
+      "passed": true,
+      "requested_not_yet_eligible_for_insertion": []
+    }
+  ],
+  "tests_before": {
+    "passed": 142,
+    "seconds": 12.8,
+    "interpreter": ".venv/Scripts/python.exe"
+  },
+  "tests_final": {
+    "passed": 147,
+    "seconds": 14.33,
+    "log": "tests_final.log"
+  },
+  "exact_upstream_root_cause": "not identified; nondeterminism isolated to SUMO execution",
+  "decision": "metrics reconciled; simulator repeatability unresolved; do not claim QL improvements yet"
+}

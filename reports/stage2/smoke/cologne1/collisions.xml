@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-15T10:50:42.805755+07:00 by Eclipse SUMO sumo 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.net.xml"/>
+        <route-files value="C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.rou.xml"/>
+    </input>
+
+    <output>
+        <collision-output value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage2\smoke\cologne1\collisions.xml"/>
+        <statistic-output value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage2\smoke\cologne1\statistics.xml"/>
+    </output>
+
+    <time>
+        <begin value="25200"/>
+        <end value="28800"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <collision.action value="teleport"/>
+        <collision.check-junctions value="true"/>
+    </processing>
+
+    <report>
+        <log value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage2\smoke\cologne1\sumo.log"/>
+        <error-log value="C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage2\smoke\cologne1\warnings.log"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="54563"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="23423"/>
+    </random_number>
+
+</sumoConfiguration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+    <collision time="25599.00" type="junction" lane=":cluster_357187_359543_1_1" pos="27.61" collider="137244_412_0" victim="136669_411_0" colliderType="pkw" victimType="pkw" colliderSpeed="12.16" victimSpeed="0.00" colliderFront="11785.30,13327.04" colliderBack="11789.49,13327.98" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="25602.00" type="junction" lane=":cluster_357187_359543_1_1" pos="25.94" collider="138220_412_0" victim="136669_411_0" colliderType="pkw" victimType="pkw" colliderSpeed="13.35" victimSpeed="0.00" colliderFront="11786.93,13327.40" colliderBack="11791.12,13328.35" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="26062.00" type="junction" lane=":cluster_357187_359543_13_0" pos="8.66" collider="141027_414_0" victim="142878_415_0" colliderType="pkw" victimType="pkw" colliderSpeed="0.00" victimSpeed="8.91" colliderFront="11788.20,13326.01" colliderBack="11784.30,13324.23" victimFront="11785.56,13327.10" victimBack="11789.76,13328.04"/>
+    <collision time="26472.00" type="junction" lane=":cluster_357187_359543_11_1" pos="29.17" collider="155932_420_0" victim="186295_432_0" colliderType="pkw" victimType="pkw" colliderSpeed="11.42" victimSpeed="0.00" colliderFront="11808.72,13329.05" colliderBack="11804.52,13328.10" victimFront="11804.42,13329.76" victimBack="11808.30,13331.56"/>
+    <collision time="27199.00" type="junction" lane=":cluster_357187_359543_13_0" pos="8.65" collider="212264_442_0" victim="234642_451_0" colliderType="pkw" victimType="pkw" colliderSpeed="0.05" victimSpeed="9.47" colliderFront="11788.19,13326.01" colliderBack="11784.29,13324.22" victimFront="11786.00,13327.19" victimBack="11790.19,13328.14"/>
+    <collision time="27205.00" type="junction" lane=":cluster_357187_359543_1_1" pos="28.64" collider="93058_392_0" victim="210570_441_0" colliderType="pkw" victimType="pkw" colliderSpeed="11.61" victimSpeed="0.01" colliderFront="11784.29,13326.81" colliderBack="11788.48,13327.76" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="27829.00" type="junction" lane=":cluster_357187_359543_13_0" pos="8.65" collider="170077_426_0" victim="201027_437_0" colliderType="pkw" victimType="pkw" colliderSpeed="0.01" victimSpeed="9.77" colliderFront="11788.19,13326.01" colliderBack="11784.29,13324.22" victimFront="11785.56,13327.10" victimBack="11789.75,13328.04"/>
+    <collision time="27839.00" type="junction" lane=":cluster_357187_359543_1_1" pos="27.34" collider="265895_464_0" victim="143000_415_0" colliderType="pkw" victimType="pkw" colliderSpeed="12.03" victimSpeed="0.00" colliderFront="11785.57,13327.10" colliderBack="11789.76,13328.04" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="27847.00" type="junction" lane=":cluster_357187_359543_1_1" pos="26.38" collider="179963_430_0" victim="143000_415_0" colliderType="pkw" victimType="pkw" colliderSpeed="13.93" victimSpeed="0.00" colliderFront="11786.50,13327.31" colliderBack="11790.69,13328.25" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="27849.00" type="junction" lane=":cluster_357187_359543_1_1" pos="27.58" collider="120014_405_0" victim="143000_415_0" colliderType="pkw" victimType="pkw" colliderSpeed="12.52" victimSpeed="0.00" colliderFront="11785.33,13327.04" colliderBack="11789.52,13327.99" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+    <collision time="27853.00" type="junction" lane=":cluster_357187_359543_1_1" pos="28.87" collider="238908_451_0" victim="143000_415_0" colliderType="pkw" victimType="pkw" colliderSpeed="10.81" victimSpeed="0.00" colliderFront="11784.07,13326.76" colliderBack="11788.26,13327.71" victimFront="11788.20,13326.01" victimBack="11784.30,13324.23"/>
+</collisions>

@@ -1,0 +1,14 @@
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Warning: Teleporting vehicle '123965_406_0'; waited too long (yield), lane='-32038056#3_0', time=25545.00.
+Warning: Vehicle '123965_406_0' ends teleporting on edge '-28198821#4', time=25545.00.
+Warning: Teleporting vehicle '160150_421_0'; waited too long (jam), lane='-32038056#3_0', time=25590.00.
+Warning: Vehicle '160150_421_0' ends teleporting on edge '32038051#0', time=25590.00.
+Warning: Teleporting vehicle '137244_412_0'; junction collision with vehicle '136669_411_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=25599.00, stage=move.
+Warning: Vehicle '137244_412_0' ends teleporting on edge '-28198821#4', time=25599.00.
+Warning: Teleporting vehicle '138220_412_0'; junction collision with vehicle '136669_411_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=25602.00, stage=move.
+Warning: Vehicle '138220_412_0' ends teleporting on edge '-28198821#4', time=25602.00.

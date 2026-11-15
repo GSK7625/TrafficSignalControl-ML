@@ -1,0 +1,9 @@
+***Starting server on port 54571 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml' ... done (3ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 57600.00.
+Simulation ended at time: 57630.00.
+Reason: TraCI requested termination.
+DijkstraRouter answered 23 queries and explored 3.57 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

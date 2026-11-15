@@ -1,0 +1,48 @@
+{
+  "map": "cologne1",
+  "status": "prototype",
+  "full_horizon_seconds": 3600.0,
+  "reset_and_process_close_checked": true,
+  "steps": 102,
+  "covered_pairs": 64,
+  "observed_green_seconds_nonterminal": [
+    30.0
+  ],
+  "observed_yellow_seconds_nonterminal": [
+    4.0
+  ],
+  "observed_all_red_seconds_nonterminal": [
+    2.0,
+    3.0,
+    6.0,
+    7.0,
+    8.0
+  ],
+  "transitions_with_extended_red": 6,
+  "last_action": {
+    "elapsed": 11.0,
+    "durations": {
+      "yellow": 4.0,
+      "all_red": 2.0,
+      "green": 5.0
+    },
+    "phase": 3
+  },
+  "safety_statistics": {
+    "collisions": "11",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "30",
+    "jam": "2",
+    "yield": "17",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 11,
+  "traci_teleport_starts": 30,
+  "warning_lines": 66,
+  "missing_yellow_warnings": 6,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0
+}

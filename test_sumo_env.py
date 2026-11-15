@@ -22,18 +22,27 @@ def test_network_mapping_and_actions(name, actions, n_in, n_out):
     assert all("y" not in state for state in env.green_states.values())
     assert all(lane.startswith(":" + env.tls_id + "_") for lane in env.internal_lanes)
     if name == "ingolstadt1":
-        assert env.green_states[0] == "GGgGrGGG"
-        assert (2, 7) in env.phase_foes[0]
+        assert env.original_green_states[0] == "GGgGrGGG"
+        assert env.green_states[0] == "GGrGrGGG"
         assert all(not lane.endswith("_0") for lane in env.incoming_lanes)
     else:
-        assert env.green_states[0] == "srrrrrrrrrGGGGGrrrrr"
-        assert (1, 13) in env.phase_foes[2]
+        assert env.original_green_states[0] == "srrrrrrrrrGGGGGrrrrr"
+        assert env.green_states[0] == "rrrrrrrrrrGGGGGrrrrr"
 
 
 def test_yellow_closes_every_open_movement_including_shared_and_yielding():
     assert yellow_state("GgsrrG") == "yyyrry"
     assert yellow_state("GGgGrGGG") == "yyyyryyy"
     assert yellow_state("srrrrrrrrrGGGGGrrrrr") == "yrrrrrrrrryyyyyrrrrr"
+
+
+@pytest.mark.parametrize("name", ["cologne1", "ingolstadt1"])
+def test_runtime_closes_yielding_movements_without_losing_any_link(name):
+    env = SumoEnv(name)
+    assert all(set(state) <= {"G", "r"} for state in env.green_states.values())
+    assert all(not pairs for pairs in env.phase_foes.values())
+    for index, _, _, _ in env.links:
+        assert any(state[index] == "G" for state in env.green_states.values())
 
 
 class ClockConnection:
@@ -88,25 +97,25 @@ def test_same_action_no_transition_and_reward_uses_all_samples():
 
 
 def test_changed_action_reward_includes_yellow_red_and_green():
-    env = clock_env((2,) * 4 + (4,) * 2 + (1,) * 30)
+    env = clock_env((2,) * 8 + (4,) * 2 + (1,) * 30)
     state, reward, done, info = env.step(1)
-    assert reward == pytest.approx(-46 / 36)
-    assert info["durations"] == {"yellow": 4, "all_red": 2, "green": 30}
+    assert reward == pytest.approx(-54 / 40)
+    assert info["durations"] == {"yellow": 8, "all_red": 2, "green": 30}
     assert state["phase"] == 1 and not done
-    assert [s["signal"] for s in info["samples"][:4]] == ["yrrrrrrrrryyyyyrrrrr"] * 4
-    assert all(s["signal"] == "r" * 20 for s in info["samples"][4:6])
+    assert [s["signal"] for s in info["samples"][:8]] == ["rrrrrrrrrryyyyyrrrrr"] * 8
+    assert all(s["signal"] == "r" * 20 for s in info["samples"][8:10])
 
 
 def test_all_red_waits_for_clearance_instead_of_opening_after_two_seconds():
     env = clock_env()
-    env._junction_vehicles = lambda: ("tail",) if env.conn.time < env.begin + 9 else ()
+    env._junction_vehicles = lambda: ("tail",) if env.conn.time < env.begin + 13 else ()
     _, _, _, info = env.step(1)
-    assert info["durations"] == {"yellow": 4, "all_red": 5, "green": 30}
+    assert info["durations"] == {"yellow": 8, "all_red": 5, "green": 30}
 
 
 @pytest.mark.parametrize("end_offset,stage,phase", [
-    (2, "yellow", None), (5, "all_red", None),
-    (6, "all_red", None), (7, "green", 1),
+    (2, "yellow", None), (9, "all_red", None),
+    (10, "all_red", None), (11, "green", 1),
 ])
 def test_end_cuts_transition_or_green_without_advancing_past_end(end_offset, stage, phase):
     env = clock_env()
@@ -127,7 +136,7 @@ def test_blocked_junction_stays_red_until_episode_end():
     state, _, done, info = env.step(1)
     assert done and state["phase"] is None
     assert info["durations"]["green"] == 0
-    assert info["durations"]["all_red"] == 8
+    assert info["durations"]["all_red"] == 4
 
 
 def test_invalid_action_does_not_advance_simulation():

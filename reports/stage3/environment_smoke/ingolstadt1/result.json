@@ -1,0 +1,44 @@
+{
+  "map": "ingolstadt1",
+  "status": "prototype",
+  "full_horizon_seconds": 3600.0,
+  "reset_and_process_close_checked": true,
+  "steps": 101,
+  "covered_pairs": 9,
+  "observed_green_seconds_nonterminal": [
+    30.0
+  ],
+  "observed_yellow_seconds_nonterminal": [
+    6.0
+  ],
+  "observed_all_red_seconds_nonterminal": [
+    2.0
+  ],
+  "transitions_with_extended_red": 0,
+  "last_action": {
+    "elapsed": 24.0,
+    "durations": {
+      "yellow": 6.0,
+      "all_red": 2.0,
+      "green": 16.0
+    },
+    "phase": 0
+  },
+  "safety_statistics": {
+    "collisions": "0",
+    "emergencyStops": "0",
+    "emergencyBraking": "0"
+  },
+  "teleport_statistics": {
+    "total": "2",
+    "jam": "0",
+    "yield": "2",
+    "wrongLane": "0"
+  },
+  "traci_collision_events": 0,
+  "traci_teleport_starts": 2,
+  "warning_lines": 4,
+  "missing_yellow_warnings": 0,
+  "emergency_braking_warnings": 0,
+  "emergency_stop_warnings": 0
+}

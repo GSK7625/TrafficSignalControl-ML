@@ -1,8 +1,9 @@
-"""Shared SUMO environment, stage-2 prototype (not a safety certification).
+"""Shared SUMO environment (not a safety certification).
 
 Action IDs are the ORIGINAL green-phase indices: 0..7 / 0,2,4.
 G=priority green, g=yielding green, s=stop then yield, y=yellow, r=red.
-See reports/stage2/README.md for timing, sampling and safety limitations.
+Runtime closes g/s; every movement retains protected service in another phase.
+See reports/stage3/README.md for timing, sampling and safety limitations.
 """
 
 from pathlib import Path
@@ -16,17 +17,17 @@ ROOT = Path(__file__).resolve().parent
 
 
 def yellow_state(green):
-    """Close all open movements; s->y temporarily replaces its stop rule.
-
-    This provisional transition also closes shared links before G/g changes.
-    """
+    """Close every open movement, including links shared with the next phase."""
     return "".join("y" if light in "Ggs" else "r" for light in green)
 
 
 class SumoEnv:
-    def __init__(self, map_name, output_dir=None):
+    def __init__(self, map_name, output_dir=None, seed=23423):
         if map_name not in ("cologne1", "ingolstadt1"):
             raise ValueError("map_name must be cologne1 or ingolstadt1")
+        if type(seed) is not int or not 0 <= seed < 2**31:
+            raise ValueError("seed must be an integer in [0, 2**31)")
+        self.seed = seed
         self.map_name = map_name
         self.config = ROOT / "data" / map_name / f"{map_name}.sumocfg"
         config = ET.parse(self.config).getroot()
@@ -36,9 +37,14 @@ class SumoEnv:
         net_xml = ET.parse(net_path).getroot()
         tls, = net_xml.findall("tlLogic")
         self.tls_id = tls.get("id")
-        self.green_states = {
+        self.original_green_states = {
             i: phase.get("state") for i, phase in enumerate(tls.findall("phase"))
             if "y" not in phase.get("state") and "G" in phase.get("state")
+        }
+        # Yielding vehicles can wait inside a crossing path; serve them under G elsewhere.
+        self.green_states = {
+            i: "".join("G" if light == "G" else "r" for light in state)
+            for i, state in self.original_green_states.items()
         }
         self.actions = tuple(self.green_states)
         self.links = tuple(
@@ -83,9 +89,12 @@ class SumoEnv:
         count = len(requests)
         if {link[0] for link in self.links} != set(range(count)):
             raise ValueError("Incomplete signal/request mapping")
+        for index in range(count):
+            if not any(state[index] == "G" for state in self.green_states.values()):
+                raise ValueError(f"Movement {index} has no protected green service")
         self.phase_foes = {}
         for phase, state in self.green_states.items():
-            if len(state) != count or set(state) - set("Ggsr"):
+            if len(state) != count or set(state) - set("Gr") or "G" not in state:
                 raise ValueError(f"Invalid green phase {phase}")
             pairs = []
             for i in range(count):
@@ -94,17 +103,11 @@ class SumoEnv:
                     foes = requests[i].get("foes")[-1-j] == "1" or requests[j].get("foes")[-1-i] == "1"
                     if not foes or state[i] == "r" or state[j] == "r":
                         continue
-                    if state[i] == state[j] == "G":
-                        raise ValueError(f"Conflicting protected greens: phase {phase}, {i}/{j}")
-                    yields_i = state[i] in "gs" and requests[i].get("response")[-1-j] == "1"
-                    yields_j = state[j] in "gs" and requests[j].get("response")[-1-i] == "1"
-                    if not (yields_i or yields_j):
-                        raise ValueError(f"Foes without a yielding rule: phase {phase}, {i}/{j}")
-                    pairs.append((i, j))
+                    raise ValueError(f"Conflicting protected greens: phase {phase}, {i}/{j}")
             self.phase_foes[phase] = tuple(pairs)
         self.green_seconds = 30
-        # shortcut: provisional yellow durations, calibrate before claiming safety.
-        self.yellow_seconds = 4 if map_name == "cologne1" else 3
+        # ceil(1 + (2 * maximum approach speed) / (2 * 3 m/s²)); audit in stage3.
+        self.yellow_seconds = 8 if map_name == "cologne1" else 6
         self.minimum_red_seconds = 2
         self.output_dir = Path(output_dir).resolve() if output_dir is not None else None
         self.conn = None
@@ -117,7 +120,7 @@ class SumoEnv:
         self._clear_after = {}
         command = [
             sumolib.checkBinary("sumo"), "-c", str(self.config),
-            "--step-length", "1", "--seed", "23423",
+            "--step-length", "1", "--seed", str(self.seed),
             "--collision.check-junctions", "true", "--collision.action", "teleport",
             "--no-step-log", "true", "--duration-log.disable", "true",
         ]

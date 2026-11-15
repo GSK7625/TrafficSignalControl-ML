@@ -1,0 +1,609 @@
+{
+  "cologne1": {
+    "original_states": {
+      "0": "srrrrrrrrrGGGGGrrrrr",
+      "1": "GGGGGrrrrrsrrrrrrrrr",
+      "2": "GGGggrrrrrGGGggrrrrr",
+      "3": "rrrGGrrrrrrrrGGrrrrr",
+      "4": "rrrrrGGGGGrrrrrsrrrr",
+      "5": "rrrrrsrrrrrrrrrGGGGG",
+      "6": "rrrrrGGGggrrrrrGGGgg",
+      "7": "rrrrrrrrGGrrrrrrrrGG"
+    },
+    "runtime_states": {
+      "0": "rrrrrrrrrrGGGGGrrrrr",
+      "1": "GGGGGrrrrrrrrrrrrrrr",
+      "2": "GGGrrrrrrrGGGrrrrrrr",
+      "3": "rrrGGrrrrrrrrGGrrrrr",
+      "4": "rrrrrGGGGGrrrrrrrrrr",
+      "5": "rrrrrrrrrrrrrrrGGGGG",
+      "6": "rrrrrGGGrrrrrrrGGGrr",
+      "7": "rrrrrrrrGGrrrrrrrrGG"
+    },
+    "original_foes": {
+      "0": [],
+      "1": [],
+      "2": [
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ]
+      ],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [
+        [
+          6,
+          18
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ]
+      ],
+      "7": []
+    },
+    "links": [
+      {
+        "index": 0,
+        "incoming": "-32038056#3_0",
+        "outgoing": "32038051#0_0",
+        "via": ":cluster_357187_359543_0_0",
+        "service": [
+          1,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 10.87,
+        "changes": {
+          "0": "s->r"
+        }
+      },
+      {
+        "index": 1,
+        "incoming": "-32038056#3_0",
+        "outgoing": "-28198821#4_0",
+        "via": ":cluster_357187_359543_1_0",
+        "service": [
+          1,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 33.54,
+        "changes": {}
+      },
+      {
+        "index": 2,
+        "incoming": "-32038056#3_1",
+        "outgoing": "-28198821#4_1",
+        "via": ":cluster_357187_359543_1_1",
+        "service": [
+          1,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 33.54,
+        "changes": {}
+      },
+      {
+        "index": 3,
+        "incoming": "-32038056#3_1",
+        "outgoing": "32324544#0_1",
+        "via": ":cluster_357187_359543_3_0",
+        "service": [
+          1,
+          3
+        ],
+        "speed": 13.89,
+        "path_length": 28.199999999999996,
+        "changes": {
+          "2": "g->r"
+        }
+      },
+      {
+        "index": 4,
+        "incoming": "-32038056#3_1",
+        "outgoing": "32038056#0_1",
+        "via": ":cluster_357187_359543_4_0",
+        "service": [
+          1,
+          3
+        ],
+        "speed": 13.89,
+        "path_length": 4.68,
+        "changes": {
+          "2": "g->r"
+        }
+      },
+      {
+        "index": 5,
+        "incoming": "23429231#1_0",
+        "outgoing": "32038056#0_0",
+        "via": ":cluster_357187_359543_5_0",
+        "service": [
+          4,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 9.07,
+        "changes": {
+          "5": "s->r"
+        }
+      },
+      {
+        "index": 6,
+        "incoming": "23429231#1_0",
+        "outgoing": "32038051#0_0",
+        "via": ":cluster_357187_359543_6_0",
+        "service": [
+          4,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 22.37,
+        "changes": {}
+      },
+      {
+        "index": 7,
+        "incoming": "23429231#1_1",
+        "outgoing": "32038051#0_1",
+        "via": ":cluster_357187_359543_6_1",
+        "service": [
+          4,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 22.37,
+        "changes": {}
+      },
+      {
+        "index": 8,
+        "incoming": "23429231#1_1",
+        "outgoing": "-28198821#4_1",
+        "via": ":cluster_357187_359543_8_0",
+        "service": [
+          4,
+          7
+        ],
+        "speed": 19.44,
+        "path_length": 30.63,
+        "changes": {
+          "6": "g->r"
+        }
+      },
+      {
+        "index": 9,
+        "incoming": "23429231#1_1",
+        "outgoing": "32324544#0_1",
+        "via": ":cluster_357187_359543_9_0",
+        "service": [
+          4,
+          7
+        ],
+        "speed": 19.44,
+        "path_length": 20.85,
+        "changes": {
+          "6": "g->r"
+        }
+      },
+      {
+        "index": 15,
+        "incoming": "27115123#3_0",
+        "outgoing": "-28198821#4_0",
+        "via": ":cluster_357187_359543_15_0",
+        "service": [
+          5,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 8.93,
+        "changes": {
+          "4": "s->r"
+        }
+      },
+      {
+        "index": 16,
+        "incoming": "27115123#3_0",
+        "outgoing": "32324544#0_0",
+        "via": ":cluster_357187_359543_16_0",
+        "service": [
+          5,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 22.84,
+        "changes": {}
+      },
+      {
+        "index": 17,
+        "incoming": "27115123#3_1",
+        "outgoing": "32324544#0_1",
+        "via": ":cluster_357187_359543_16_1",
+        "service": [
+          5,
+          6
+        ],
+        "speed": 19.44,
+        "path_length": 22.84,
+        "changes": {}
+      },
+      {
+        "index": 18,
+        "incoming": "27115123#3_1",
+        "outgoing": "32038056#0_1",
+        "via": ":cluster_357187_359543_18_0",
+        "service": [
+          5,
+          7
+        ],
+        "speed": 19.44,
+        "path_length": 30.57,
+        "changes": {
+          "6": "g->r"
+        }
+      },
+      {
+        "index": 19,
+        "incoming": "27115123#3_1",
+        "outgoing": "32038051#0_1",
+        "via": ":cluster_357187_359543_19_0",
+        "service": [
+          5,
+          7
+        ],
+        "speed": 19.44,
+        "path_length": 22.42,
+        "changes": {
+          "6": "g->r"
+        }
+      },
+      {
+        "index": 10,
+        "incoming": "28198821#3_0",
+        "outgoing": "32324544#0_0",
+        "via": ":cluster_357187_359543_10_0",
+        "service": [
+          0,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 11.86,
+        "changes": {
+          "1": "s->r"
+        }
+      },
+      {
+        "index": 11,
+        "incoming": "28198821#3_0",
+        "outgoing": "32038056#0_0",
+        "via": ":cluster_357187_359543_11_0",
+        "service": [
+          0,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 33.48,
+        "changes": {}
+      },
+      {
+        "index": 12,
+        "incoming": "28198821#3_1",
+        "outgoing": "32038056#0_1",
+        "via": ":cluster_357187_359543_11_1",
+        "service": [
+          0,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 33.48,
+        "changes": {}
+      },
+      {
+        "index": 13,
+        "incoming": "28198821#3_1",
+        "outgoing": "32038051#0_1",
+        "via": ":cluster_357187_359543_13_0",
+        "service": [
+          0,
+          3
+        ],
+        "speed": 13.89,
+        "path_length": 28.53,
+        "changes": {
+          "2": "g->r"
+        }
+      },
+      {
+        "index": 14,
+        "incoming": "28198821#3_1",
+        "outgoing": "-28198821#4_1",
+        "via": ":cluster_357187_359543_14_0",
+        "service": [
+          0,
+          3
+        ],
+        "speed": 13.89,
+        "path_length": 4.68,
+        "changes": {
+          "2": "g->r"
+        }
+      }
+    ],
+    "used_vehicle_types": {
+      "pkw": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 4.3,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      }
+    },
+    "begin": 25200.0,
+    "end": 28800.0
+  },
+  "ingolstadt1": {
+    "original_states": {
+      "0": "GGgGrGGG",
+      "2": "GGGrrrrr",
+      "4": "rrrGGGrr"
+    },
+    "runtime_states": {
+      "0": "GGrGrGGG",
+      "2": "GGGrrrrr",
+      "4": "rrrGGGrr"
+    },
+    "original_foes": {
+      "0": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "2": [],
+      "4": []
+    },
+    "links": [
+      {
+        "index": 5,
+        "incoming": "104010354_1",
+        "outgoing": "-164051413_1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_5_0",
+        "service": [
+          0,
+          4
+        ],
+        "speed": 13.89,
+        "path_length": 10.85,
+        "changes": {}
+      },
+      {
+        "index": 6,
+        "incoming": "104010354_1",
+        "outgoing": "124812857#0_2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_6_0",
+        "service": [
+          0
+        ],
+        "speed": 13.89,
+        "path_length": 16.98,
+        "changes": {}
+      },
+      {
+        "index": 7,
+        "incoming": "104010354_2",
+        "outgoing": "124812857#0_3",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_6_1",
+        "service": [
+          0
+        ],
+        "speed": 13.89,
+        "path_length": 16.98,
+        "changes": {}
+      },
+      {
+        "index": 3,
+        "incoming": "164051413_1",
+        "outgoing": "124812857#0_1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_3_0",
+        "service": [
+          0,
+          4
+        ],
+        "speed": 13.89,
+        "path_length": 9.14,
+        "changes": {}
+      },
+      {
+        "index": 4,
+        "incoming": "164051413_2",
+        "outgoing": "104010475#0_2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_4_0",
+        "service": [
+          4
+        ],
+        "speed": 13.89,
+        "path_length": 23.95,
+        "changes": {}
+      },
+      {
+        "index": 0,
+        "incoming": "201963537#1_1",
+        "outgoing": "104010475#0_1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_0_0",
+        "service": [
+          0,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 14.95,
+        "changes": {}
+      },
+      {
+        "index": 1,
+        "incoming": "201963537#1_2",
+        "outgoing": "104010475#0_2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_0_1",
+        "service": [
+          0,
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 14.95,
+        "changes": {}
+      },
+      {
+        "index": 2,
+        "incoming": "201963537#1_3",
+        "outgoing": "-164051413_1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_2_0",
+        "service": [
+          2
+        ],
+        "speed": 13.89,
+        "path_length": 26.06,
+        "changes": {
+          "0": "g->r"
+        }
+      }
+    ],
+    "used_vehicle_types": {
+      "bus": {
+        "decel": 4.0,
+        "emergency_decel": 7.0,
+        "tau": 1.0,
+        "length": 12.0,
+        "max_speed": 27.77777777777778,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.0
+      },
+      "default_015": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "default_016": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "default_017": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "default_018": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "random_016": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "random_017": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      },
+      "random_018": {
+        "decel": 4.5,
+        "emergency_decel": 9.0,
+        "tau": 1.0,
+        "length": 5.0,
+        "max_speed": 55.55555555555556,
+        "speed_factor": 1.0,
+        "speed_deviation": 0.1
+      }
+    },
+    "begin": 57600.0,
+    "end": 61200.0
+  }
+}

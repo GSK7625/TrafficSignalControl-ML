@@ -1,0 +1,26 @@
+{
+  "cologne1": {
+    "max_road_speed_m_s": 19.44,
+    "speed_factor_upper_bound": 2,
+    "design_speed_m_s": 38.88,
+    "reaction_s": 1,
+    "design_decel_m_s2": 3,
+    "min_used_vtype_decel_m_s2": 4.5,
+    "yellow_s": 8,
+    "min_red_s": 2,
+    "max_internal_path_m": 33.54,
+    "max_vehicle_length_m": 4.3
+  },
+  "ingolstadt1": {
+    "max_road_speed_m_s": 13.89,
+    "speed_factor_upper_bound": 2,
+    "design_speed_m_s": 27.78,
+    "reaction_s": 1,
+    "design_decel_m_s2": 3,
+    "min_used_vtype_decel_m_s2": 4.0,
+    "yellow_s": 6,
+    "min_red_s": 2,
+    "max_internal_path_m": 26.06,
+    "max_vehicle_length_m": 12.0
+  }
+}

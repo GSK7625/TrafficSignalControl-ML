@@ -1,0 +1,23 @@
+***Starting server on port 65202 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml' ... done (4ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 57600.00.
+Warning: Teleporting vehicle 'carIn36034:1'; waited too long (yield), lane='164051413_2', time=58727.00.
+Warning: Vehicle 'carIn36034:1' ends teleporting on edge '104010475#0', time=58727.00.
+Warning: Teleporting vehicle 'carIn41461:1'; waited too long (yield), lane='164051413_2', time=59670.00.
+Warning: Vehicle 'carIn41461:1' ends teleporting on edge '104010475#0', time=59670.00.
+Warning: Teleporting vehicle 'carIn10052:1'; waited too long (jam), lane='653473569#5_2', time=59671.00.
+Warning: Vehicle 'carIn10052:1' ends teleporting on edge '104010475#0', time=59674.00.
+Warning: Teleporting vehicle 'carIn122195:1'; waited too long (yield), lane='391891458#0_1', time=60173.00.
+Warning: Vehicle 'carIn122195:1' ends teleporting on edge '104010475#0', time=60178.00.
+Warning: Teleporting vehicle 'carIn68842:1'; waited too long (yield), lane='164051413_2', time=60393.00.
+Warning: Vehicle 'carIn68842:1' ends teleporting on edge '104010475#0', time=60393.00.
+Warning: Teleporting vehicle 'carIn131398:1'; waited too long (yield), lane='391891458#0_1', time=60699.00.
+Warning: Vehicle 'carIn131398:1' ends teleporting on edge '104010475#0', time=60703.00.
+Warning: Teleporting vehicle 'carIn6490:1'; waited too long (yield), lane='391891458#0_1', time=61006.00.
+Warning: Vehicle 'carIn6490:1' ends teleporting on edge '104010475#0', time=61009.00.
+Simulation ended at time: 61200.00.
+Reason: TraCI requested termination.
+DijkstraRouter answered 1828 queries and explored 3.45 edges on average.
+DijkstraRouter spent 0.01s answering queries (0.00ms on average).

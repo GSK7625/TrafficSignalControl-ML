@@ -1,0 +1,769 @@
+{
+  "queue_bins": {
+    "cologne1/evaluate": {
+      "incoming/-32038056#3": {
+        "bins": [
+          110,
+          50,
+          44
+        ],
+        "samples": 204,
+        "sum": 512,
+        "max": 20
+      },
+      "incoming/23429231#1": {
+        "bins": [
+          4,
+          0,
+          200
+        ],
+        "samples": 204,
+        "sum": 6238,
+        "max": 32
+      },
+      "incoming/27115123#3": {
+        "bins": [
+          2,
+          6,
+          196
+        ],
+        "samples": 204,
+        "sum": 2648,
+        "max": 14
+      },
+      "incoming/28198821#3": {
+        "bins": [
+          142,
+          35,
+          27
+        ],
+        "samples": 204,
+        "sum": 336,
+        "max": 18
+      },
+      "outgoing/-28198821#4": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32038051#0": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32038056#0": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32324544#0": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      }
+    },
+    "ingolstadt1/evaluate": {
+      "incoming/104010354": {
+        "bins": [
+          117,
+          33,
+          54
+        ],
+        "samples": 204,
+        "sum": 558,
+        "max": 14
+      },
+      "incoming/164051413": {
+        "bins": [
+          53,
+          151,
+          0
+        ],
+        "samples": 204,
+        "sum": 292,
+        "max": 4
+      },
+      "incoming/201963537#1": {
+        "bins": [
+          64,
+          73,
+          67
+        ],
+        "samples": 204,
+        "sum": 1019,
+        "max": 46
+      },
+      "outgoing/-164051413": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/104010475#0": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/124812857#0": {
+        "bins": [
+          204,
+          0,
+          0
+        ],
+        "samples": 204,
+        "sum": 0,
+        "max": 0
+      }
+    },
+    "cologne1/train": {
+      "incoming/-32038056#3": {
+        "bins": [
+          29,
+          22,
+          230
+        ],
+        "samples": 281,
+        "sum": 10603,
+        "max": 113
+      },
+      "incoming/23429231#1": {
+        "bins": [
+          37,
+          2,
+          242
+        ],
+        "samples": 281,
+        "sum": 6432,
+        "max": 32
+      },
+      "incoming/27115123#3": {
+        "bins": [
+          45,
+          26,
+          210
+        ],
+        "samples": 281,
+        "sum": 2484,
+        "max": 14
+      },
+      "incoming/28198821#3": {
+        "bins": [
+          72,
+          31,
+          178
+        ],
+        "samples": 281,
+        "sum": 2628,
+        "max": 19
+      },
+      "outgoing/-28198821#4": {
+        "bins": [
+          281,
+          0,
+          0
+        ],
+        "samples": 281,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32038051#0": {
+        "bins": [
+          281,
+          0,
+          0
+        ],
+        "samples": 281,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32038056#0": {
+        "bins": [
+          281,
+          0,
+          0
+        ],
+        "samples": 281,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/32324544#0": {
+        "bins": [
+          281,
+          0,
+          0
+        ],
+        "samples": 281,
+        "sum": 0,
+        "max": 0
+      }
+    },
+    "ingolstadt1/train": {
+      "incoming/104010354": {
+        "bins": [
+          129,
+          49,
+          126
+        ],
+        "samples": 304,
+        "sum": 1415,
+        "max": 14
+      },
+      "incoming/164051413": {
+        "bins": [
+          104,
+          200,
+          0
+        ],
+        "samples": 304,
+        "sum": 411,
+        "max": 4
+      },
+      "incoming/201963537#1": {
+        "bins": [
+          109,
+          68,
+          127
+        ],
+        "samples": 304,
+        "sum": 2032,
+        "max": 44
+      },
+      "outgoing/-164051413": {
+        "bins": [
+          304,
+          0,
+          0
+        ],
+        "samples": 304,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/104010475#0": {
+        "bins": [
+          304,
+          0,
+          0
+        ],
+        "samples": 304,
+        "sum": 0,
+        "max": 0
+      },
+      "outgoing/124812857#0": {
+        "bins": [
+          304,
+          0,
+          0
+        ],
+        "samples": 304,
+        "sum": 0,
+        "max": 0
+      }
+    }
+  },
+  "models": {
+    "cologne1": {
+      "sha256": "6b824ae7dbe63e93cef9f03bd1fa757d727c3b3153321121f7bdd8ad3bd9b4d9",
+      "same_as_episode_003": true,
+      "states": 57,
+      "theoretical_states": 52488,
+      "q_cells": 456,
+      "negative_cells": 175,
+      "zero_cells": 281,
+      "unique_updated_state_actions": 175,
+      "updates": 281,
+      "min_updates_per_visited_pair": 1,
+      "max_updates_per_visited_pair": 6
+    },
+    "ingolstadt1": {
+      "sha256": "564a6fae2b8e22044fbaabd8b46ea38631f1f7fa170687eb992843cee1a73daa",
+      "same_as_episode_003": true,
+      "states": 15,
+      "theoretical_states": 2187,
+      "q_cells": 45,
+      "negative_cells": 40,
+      "zero_cells": 5,
+      "unique_updated_state_actions": 40,
+      "updates": 304,
+      "min_updates_per_visited_pair": 1,
+      "max_updates_per_visited_pair": 35
+    }
+  },
+  "runs": {
+    "evaluate/cologne1/seed_12345": {
+      "reward": -4838.866666666667,
+      "queue_seconds": 171634.0,
+      "teleports": {
+        "total": "68",
+        "jam": "13",
+        "yield": "55",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "1161",
+        "running": "118",
+        "waiting": "854"
+      },
+      "unseen_decisions": 20,
+      "action_counts": {
+        "0": 45,
+        "1": 45,
+        "2": 11,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "green_seconds_per_link": {
+        "0": 1660,
+        "1": 1660,
+        "2": 1660,
+        "3": 1380,
+        "4": 1380,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 1660,
+        "11": 1660,
+        "12": 1660,
+        "13": 1380,
+        "14": 1380,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0
+      },
+      "unserved_links": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "signal_sha256": "025a32cba7058e7b5de3a22991e983af570e6dbc93296207b31818b1306b3c82"
+    },
+    "evaluate/cologne1/seed_42": {
+      "reward": -4829.066666666667,
+      "queue_seconds": 171024.0,
+      "teleports": {
+        "total": "67",
+        "jam": "12",
+        "yield": "55",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "1166",
+        "running": "113",
+        "waiting": "849"
+      },
+      "unseen_decisions": 25,
+      "action_counts": {
+        "0": 49,
+        "1": 44,
+        "2": 8,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "green_seconds_per_link": {
+        "0": 1550,
+        "1": 1550,
+        "2": 1550,
+        "3": 1340,
+        "4": 1340,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 1710,
+        "11": 1710,
+        "12": 1710,
+        "13": 1500,
+        "14": 1500,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0
+      },
+      "unserved_links": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "signal_sha256": "0317782032d9d900ae4b8db05407c2261580dc7dc7776aabf67f8b5a9bfccfc9"
+    },
+    "evaluate/ingolstadt1/seed_12345": {
+      "reward": -842.9052631578948,
+      "queue_seconds": 30224.0,
+      "teleports": {
+        "total": "2",
+        "jam": "0",
+        "yield": "2",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1630",
+        "running": "37",
+        "waiting": "86"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 58,
+        "2": 26,
+        "4": 19
+      },
+      "green_seconds_per_link": {
+        "0": 2520,
+        "1": 2520,
+        "2": 780,
+        "3": 2280,
+        "4": 540,
+        "5": 2280,
+        "6": 1740,
+        "7": 1740
+      },
+      "unserved_links": [],
+      "signal_sha256": "f06fc5b05edd848650e16ba15eb6acae3c36482030f273459e655b86c2d6f1fd"
+    },
+    "evaluate/ingolstadt1/seed_42": {
+      "reward": -869.8769736842105,
+      "queue_seconds": 31328.0,
+      "teleports": {
+        "total": "3",
+        "jam": "1",
+        "yield": "2",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1622",
+        "running": "40",
+        "waiting": "94"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 54,
+        "2": 29,
+        "4": 18
+      },
+      "green_seconds_per_link": {
+        "0": 2484,
+        "1": 2484,
+        "2": 870,
+        "3": 2154,
+        "4": 540,
+        "5": 2154,
+        "6": 1614,
+        "7": 1614
+      },
+      "unserved_links": [],
+      "signal_sha256": "5451d2f5685c35360a6cea630fd52714a5674d3f26e1002ace02ca989afb92da"
+    },
+    "train/cologne1/episode_001": {
+      "reward": -5934.116666666665,
+      "queue_seconds": 230243.0,
+      "teleports": {
+        "total": "23",
+        "jam": "2",
+        "yield": "20",
+        "wrongLane": "1"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "1897",
+        "running": "52",
+        "waiting": "118"
+      },
+      "unseen_decisions": 1,
+      "action_counts": {
+        "0": 6,
+        "1": 14,
+        "2": 11,
+        "3": 13,
+        "4": 11,
+        "5": 13,
+        "6": 14,
+        "7": 11
+      },
+      "green_seconds_per_link": {
+        "0": 750,
+        "1": 750,
+        "2": 750,
+        "3": 780,
+        "4": 780,
+        "5": 750,
+        "6": 750,
+        "7": 750,
+        "8": 660,
+        "9": 660,
+        "10": 510,
+        "11": 510,
+        "12": 510,
+        "13": 540,
+        "14": 540,
+        "15": 810,
+        "16": 810,
+        "17": 810,
+        "18": 720,
+        "19": 720
+      },
+      "unserved_links": [],
+      "signal_sha256": "e3e2deb119c3dd4e1ca188519c2841908e2f907c813fadcd92629c772bc3ba54"
+    },
+    "train/cologne1/episode_002": {
+      "reward": -7291.216666666666,
+      "queue_seconds": 280246.0,
+      "teleports": {
+        "total": "28",
+        "jam": "1",
+        "yield": "27",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "1650",
+        "running": "79",
+        "waiting": "365"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 23,
+        "1": 15,
+        "2": 13,
+        "3": 15,
+        "4": 5,
+        "5": 8,
+        "6": 6,
+        "7": 9
+      },
+      "green_seconds_per_link": {
+        "0": 840,
+        "1": 840,
+        "2": 840,
+        "3": 870,
+        "4": 870,
+        "5": 330,
+        "6": 330,
+        "7": 330,
+        "8": 420,
+        "9": 420,
+        "10": 1080,
+        "11": 1080,
+        "12": 1080,
+        "13": 1110,
+        "14": 1110,
+        "15": 420,
+        "16": 420,
+        "17": 420,
+        "18": 510,
+        "19": 510
+      },
+      "unserved_links": [],
+      "signal_sha256": "4583744cd3916e1cb8536f50a29671142cc45371f79bb1d42b796d1f1a6211cd"
+    },
+    "train/cologne1/episode_003": {
+      "reward": -8960.241666666665,
+      "queue_seconds": 346256.0,
+      "teleports": {
+        "total": "20",
+        "jam": "5",
+        "yield": "15",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "1933",
+        "running": "116",
+        "waiting": "82"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 18,
+        "1": 9,
+        "2": 14,
+        "3": 11,
+        "4": 13,
+        "5": 7,
+        "6": 12,
+        "7": 10
+      },
+      "green_seconds_per_link": {
+        "0": 660,
+        "1": 660,
+        "2": 660,
+        "3": 600,
+        "4": 600,
+        "5": 750,
+        "6": 750,
+        "7": 750,
+        "8": 690,
+        "9": 690,
+        "10": 930,
+        "11": 930,
+        "12": 930,
+        "13": 870,
+        "14": 870,
+        "15": 570,
+        "16": 570,
+        "17": 570,
+        "18": 510,
+        "19": 510
+      },
+      "unserved_links": [],
+      "signal_sha256": "b00815b1c91f53165935903cc9aac9263a68fc1204404bce4c77c7dfc10fb7ab"
+    },
+    "train/ingolstadt1/episode_001": {
+      "reward": -1823.9333333333334,
+      "queue_seconds": 62914.0,
+      "teleports": {
+        "total": "6",
+        "jam": "0",
+        "yield": "6",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1698",
+        "running": "39",
+        "waiting": "18"
+      },
+      "unseen_decisions": 1,
+      "action_counts": {
+        "0": 36,
+        "2": 31,
+        "4": 37
+      },
+      "green_seconds_per_link": {
+        "0": 2010,
+        "1": 2010,
+        "2": 930,
+        "3": 2190,
+        "4": 1110,
+        "5": 2190,
+        "6": 1080,
+        "7": 1080
+      },
+      "unserved_links": [],
+      "signal_sha256": "698c102cb320c50c102ac35abfa7bac3e95f5cec1a3df186e55691941c6dbded"
+    },
+    "train/ingolstadt1/episode_002": {
+      "reward": -1145.2669172932333,
+      "queue_seconds": 41343.0,
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1689",
+        "running": "28",
+        "waiting": "27"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 41,
+        "2": 29,
+        "4": 30
+      },
+      "green_seconds_per_link": {
+        "0": 2084,
+        "1": 2084,
+        "2": 870,
+        "3": 2114,
+        "4": 900,
+        "5": 2114,
+        "6": 1214,
+        "7": 1214
+      },
+      "unserved_links": [],
+      "signal_sha256": "8b5b7d584a3e5b1530a0e9938a6bd28656023d539a03efd6840eec14241340a1"
+    },
+    "train/ingolstadt1/episode_003": {
+      "reward": -671.6736842105264,
+      "queue_seconds": 24386.0,
+      "teleports": {
+        "total": "7",
+        "jam": "1",
+        "yield": "6",
+        "wrongLane": "0"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1647",
+        "running": "23",
+        "waiting": "69"
+      },
+      "unseen_decisions": 0,
+      "action_counts": {
+        "0": 46,
+        "2": 36,
+        "4": 18
+      },
+      "green_seconds_per_link": {
+        "0": 2436,
+        "1": 2436,
+        "2": 1080,
+        "3": 1896,
+        "4": 540,
+        "5": 1896,
+        "6": 1356,
+        "7": 1356
+      },
+      "unserved_links": [],
+      "signal_sha256": "335b9878a17355232e14104c3dccd5be9b9e164a0441a5ee37f2f803117403fa"
+    }
+  }
+}

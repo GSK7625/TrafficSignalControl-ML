@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "algorithm": "Q-Learning",
+  "map": "cologne1",
+  "actions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "encoding": {
+    "queue_bins": [
+      0,
+      4
+    ],
+    "phase_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "incoming_lanes": [
+      "-32038056#3_0",
+      "-32038056#3_1",
+      "23429231#1_0",
+      "23429231#1_1",
+      "27115123#3_0",
+      "27115123#3_1",
+      "28198821#3_0",
+      "28198821#3_1"
+    ],
+    "incoming_groups": [
+      {
+        "edge": "-32038056#3",
+        "lanes": [
+          "-32038056#3_0",
+          "-32038056#3_1"
+        ]
+      },
+      {
+        "edge": "23429231#1",
+        "lanes": [
+          "23429231#1_0",
+          "23429231#1_1"
+        ]
+      },
+      {
+        "edge": "27115123#3",
+        "lanes": [
+          "27115123#3_0",
+          "27115123#3_1"
+        ]
+      },
+      {
+        "edge": "28198821#3",
+        "lanes": [
+          "28198821#3_0",
+          "28198821#3_1"
+        ]
+      }
+    ],
+    "outgoing_lanes": [
+      "-28198821#4_0",
+      "-28198821#4_1",
+      "32038051#0_0",
+      "32038051#0_1",
+      "32038056#0_0",
+      "32038056#0_1",
+      "32324544#0_0",
+      "32324544#0_1"
+    ],
+    "outgoing_groups": [
+      {
+        "edge": "-28198821#4",
+        "lanes": [
+          "-28198821#4_0",
+          "-28198821#4_1"
+        ]
+      },
+      {
+        "edge": "32038051#0",
+        "lanes": [
+          "32038051#0_0",
+          "32038051#0_1"
+        ]
+      },
+      {
+        "edge": "32038056#0",
+        "lanes": [
+          "32038056#0_0",
+          "32038056#0_1"
+        ]
+      },
+      {
+        "edge": "32324544#0",
+        "lanes": [
+          "32324544#0_0",
+          "32324544#0_1"
+        ]
+      }
+    ]
+  },
+  "environment": {
+    "begin": 25200.0,
+    "end": 28800.0,
+    "green_seconds": 30,
+    "yellow_seconds": 8,
+    "minimum_all_red_seconds": 2,
+    "runtime_green_states": [
+      [
+        0,
+        "rrrrrrrrrrGGGGGrrrrr"
+      ],
+      [
+        1,
+        "GGGGGrrrrrrrrrrrrrrr"
+      ],
+      [
+        2,
+        "GGGrrrrrrrGGGrrrrrrr"
+      ],
+      [
+        3,
+        "rrrGGrrrrrrrrGGrrrrr"
+      ],
+      [
+        4,
+        "rrrrrGGGGGrrrrrrrrrr"
+      ],
+      [
+        5,
+        "rrrrrrrrrrrrrrrGGGGG"
+      ],
+      [
+        6,
+        "rrrrrGGGrrrrrrrGGGrr"
+      ],
+      [
+        7,
+        "rrrrrrrrGGrrrrrrrrGG"
+      ]
+    ]
+  },
+  "source_hashes": {
+    "data/cologne1/cologne1.net.xml": "99fc6bcfa9b048464234afa8fa30b52e4d7ea06ee696823b8cac00dc0709800c",
+    "data/cologne1/cologne1.rou.xml": "63c4a823dafd0fa43e0dddf79ca34516f3666a1021fa89eaf486b20a3f24375c",
+    "data/cologne1/cologne1.sumocfg": "897598657fd4506a3c46d35c447272e54c311b9c9572326ee00a147ad204ba1a",
+    "data/cologne1/LICENSE": "f594ef1e139be8ef63eebf3e1c1c7ee1536982a3cf50a44b0e5d624d411b11e9"
+  },
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "training": {
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "discount_unit": "decision",
+    "tie_break": "first in actions",
+    "episodes_trained": 1,
+    "sumo_seed": 23423,
+    "exploration_seed": 7,
+    "epsilon_schedule": {
+      "name": "linear per episode",
+      "start": 1,
+      "minimum": 0.05,
+      "episodes": 3
+    }
+  },
+  "mode": "train",
+  "episode": 2,
+  "sumo_seed": 23423,
+  "epsilon": 0.525,
+  "exploration_seed": 7,
+  "action_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "begin": 25200.0,
+  "end": 28800.0,
+  "incoming_lanes": [
+    "-32038056#3_0",
+    "-32038056#3_1",
+    "23429231#1_0",
+    "23429231#1_1",
+    "27115123#3_0",
+    "27115123#3_1",
+    "28198821#3_0",
+    "28198821#3_1"
+  ],
+  "outgoing_lanes": [
+    "-28198821#4_0",
+    "-28198821#4_1",
+    "32038051#0_0",
+    "32038051#0_1",
+    "32038056#0_0",
+    "32038056#0_1",
+    "32324544#0_0",
+    "32324544#0_1"
+  ]
+}

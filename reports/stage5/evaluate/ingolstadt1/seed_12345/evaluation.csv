@@ -1,0 +1,2 @@
+map,mode,episode,sumo_seed,exploration_seed,training_sumo_seed,training_exploration_seed,epsilon,total_reward,queue_seconds,q_states,unseen_decisions,control_calls,action_counts,traci_collision_events,traci_teleport_starts,simulation_seconds
+ingolstadt1,evaluate,1,12345,,23423,7,0.0,-842.9052631578948,30224.0,15,0,103,"{""0"": 58, ""2"": 26, ""4"": 19}",0,2,3600.0

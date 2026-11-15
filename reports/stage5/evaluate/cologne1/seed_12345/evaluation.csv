@@ -1,0 +1,2 @@
+map,mode,episode,sumo_seed,exploration_seed,training_sumo_seed,training_exploration_seed,epsilon,total_reward,queue_seconds,q_states,unseen_decisions,control_calls,action_counts,traci_collision_events,traci_teleport_starts,simulation_seconds
+cologne1,evaluate,1,12345,,23423,7,0.0,-4838.866666666667,171634.0,57,20,102,"{""0"": 45, ""1"": 45, ""2"": 11, ""3"": 1, ""4"": 0, ""5"": 0, ""6"": 0, ""7"": 0}",0,68,3600.0

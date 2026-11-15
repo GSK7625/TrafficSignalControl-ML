@@ -8,7 +8,12 @@ import json
 import math
 from pathlib import Path
 import random
+import sys
 import xml.etree.ElementTree as ET
+
+_SRC = Path(__file__).resolve().parent
+if str(_SRC) not in sys.path:
+    sys.path.insert(0, str(_SRC))
 
 from sumo_env import ROOT, SumoEnv
 

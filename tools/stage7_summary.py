@@ -7,11 +7,16 @@ import hashlib
 import json
 from pathlib import Path
 import statistics
+import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+for _d in (ROOT / "src", ROOT / "tools"):
+    if str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
 
 import analyze_ql as audit
 
 
-ROOT = Path(__file__).resolve().parent
 STAGE = ROOT / 'reports/stage7'
 VALIDATION_SEEDS = (42, 12345)
 TEST_SEEDS = (31001, 31002, 31003)

@@ -5,12 +5,17 @@ from collections import Counter
 import json
 from pathlib import Path
 import statistics
+import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+for _d in (ROOT / "src", ROOT / "tools"):
+    if str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
 
 import analyze_ql as audit
 import stage7_summary as stage7
 
 
-ROOT = Path(__file__).resolve().parent
 STAGE = ROOT / 'reports/stage8'
 
 

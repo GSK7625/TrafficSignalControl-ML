@@ -11,7 +11,9 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+for _d in (ROOT / "src", ROOT / "tools", ROOT):
+    if str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
 from stage6_1_probe import first_difference
 
 REPORT = Path(__file__).resolve().parent

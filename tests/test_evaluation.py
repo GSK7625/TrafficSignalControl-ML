@@ -191,7 +191,7 @@ def test_summary_rejects_changed_model_between_seeds(tmp_path):
         verify_common_configuration(paths)
 
 
-RUNS = Path(__file__).parent / 'reports/stage6/runs'
+RUNS = Path(__file__).resolve().parent.parent / 'reports/stage6/runs'
 
 
 @pytest.mark.parametrize('path', sorted(RUNS.glob('*/*/seed_*/result.json')))

@@ -6,6 +6,11 @@ from itertools import combinations
 import json
 from pathlib import Path
 import statistics
+import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(ROOT / "src"))
 
 import matplotlib
 matplotlib.use('Agg')

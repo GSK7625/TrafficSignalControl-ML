@@ -13,6 +13,10 @@ import sumolib
 import traci
 import traci.constants as tc
 
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(ROOT / "src"))
+
 from evaluation_metrics import read_metrics, requested_trips
 from ft import fixed_time
 from q_learning import source_hashes
@@ -131,7 +135,7 @@ def run_probe(map_name, seed, horizon, output, mode, *, observe=False,
                     traci_module=traci.__file__, sumolib_module=sumolib.__file__,
                     binary=str(binary), binary_sha256=hashlib.sha256(binary.read_bytes()).hexdigest(),
                     code_hashes={p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-                                 for p in sorted(ROOT.glob('*.py'))},
+                                 for p in sorted((ROOT / 'src').glob('*.py'))},
                     input_hashes=source_hashes(env), actions=env.actions,
                     tls_id=env.tls_id, incoming_lanes=env.incoming_lanes)
     samples, trace, details, departures, watched_properties = [], [], [], [], {}

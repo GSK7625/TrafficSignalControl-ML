@@ -10,11 +10,16 @@ import math
 from pathlib import Path
 import random
 import statistics
+import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+for _d in (ROOT / "src", ROOT / "tools"):
+    if str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
 
 from evaluation_metrics import signal_metrics
 
 
-ROOT = Path(__file__).resolve().parent
 MAPS = ('cologne1', 'ingolstadt1')
 SEEDS = (42, 12345, 2026, 2027, 2028)
 

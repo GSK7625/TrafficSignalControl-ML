@@ -6,7 +6,12 @@ import hashlib
 import json
 from pathlib import Path
 import random
+import sys
 import xml.etree.ElementTree as ET
+
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(ROOT / "src"))
 
 from sumo_env import ROOT, SumoEnv
 

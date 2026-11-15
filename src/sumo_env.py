@@ -7,13 +7,17 @@ See reports/stage3/README.md for timing, sampling and safety limitations.
 """
 
 from pathlib import Path
+import sys
 import xml.etree.ElementTree as ET
 
 import sumolib
 import traci
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
+_SRC = Path(__file__).resolve().parent
+if str(_SRC) not in sys.path:
+    sys.path.insert(0, str(_SRC))
 
 
 def yellow_state(green):

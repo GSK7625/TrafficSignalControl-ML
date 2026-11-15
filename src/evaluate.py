@@ -7,6 +7,11 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+import sys
+
+_SRC = Path(__file__).resolve().parent
+if str(_SRC) not in sys.path:
+    sys.path.insert(0, str(_SRC))
 
 from ft import fixed_time
 from mp import max_pressure
@@ -93,7 +98,7 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
     requests = requested_trips(env)
     sources_before = ql.source_hashes(env)
     output.mkdir(parents=True, exist_ok=False)
-    code_hashes = {p.name: sha256(p) for p in sorted(ROOT.glob('*.py'))}
+    code_hashes = {p.name: sha256(p) for p in sorted((ROOT / 'src').glob('*.py'))}
     totals = dict(green=0, yellow=0, all_red=0)
     unseen = 0
     try:

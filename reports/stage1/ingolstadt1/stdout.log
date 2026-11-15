@@ -1,0 +1,25 @@
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml' ... done (3ms).
+Loading additional-files from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage1\ingolstadt1\tls_observation.add.xml' ... done (11ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 57600.00.
+Simulation ended at time: 61200.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 0.51s
+ Real time factor: 7072.69
+ UPS: 164495.088409
+Vehicles:
+ Inserted: 1715 (Loaded: 1716)
+ Running: 21
+ Waiting: 1
+Statistics (avg of 1715):
+ RouteLength: 245.86
+ Speed: 7.40
+ Duration: 48.82
+ WaitingTime: 17.51
+ TimeLoss: 28.11
+ DepartDelay: 2.56
+ DepartDelayWaiting: 2.00
+DijkstraRouter answered 1737 queries and explored 3.43 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

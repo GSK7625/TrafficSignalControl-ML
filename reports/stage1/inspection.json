@@ -1,0 +1,1895 @@
+{
+  "cologne1": {
+    "begin": 25200.0,
+    "end": 28800.0,
+    "net_edges_external": 10,
+    "tls": {
+      "id": "cluster_357187_359543",
+      "type": "static",
+      "programID": "0",
+      "offset": "0"
+    },
+    "junction_incoming": [
+      "-32038056#3_0",
+      "-32038056#3_1",
+      "23429231#1_0",
+      "23429231#1_1",
+      "28198821#3_0",
+      "28198821#3_1",
+      "27115123#3_0",
+      "27115123#3_1"
+    ],
+    "controlled_incoming": [
+      "-32038056#3_0",
+      "-32038056#3_1",
+      "23429231#1_0",
+      "23429231#1_1",
+      "27115123#3_0",
+      "27115123#3_1",
+      "28198821#3_0",
+      "28198821#3_1"
+    ],
+    "controlled_outgoing": [
+      "-28198821#4_0",
+      "-28198821#4_1",
+      "32038051#0_0",
+      "32038051#0_1",
+      "32038056#0_0",
+      "32038056#0_1",
+      "32324544#0_0",
+      "32324544#0_1"
+    ],
+    "uncontrolled_incoming": [],
+    "lane_details": {
+      "-28198821#4_0": {
+        "id": "-28198821#4_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "57.10",
+        "shape": "11778.79,13328.84 11773.88,13327.69 11723.06,13316.51",
+        "edge": "-28198821#4"
+      },
+      "-28198821#4_1": {
+        "id": "-28198821#4_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "57.10",
+        "shape": "11779.52,13325.73 11774.59,13324.57 11723.75,13313.38",
+        "edge": "-28198821#4"
+      },
+      "-32038056#3_0": {
+        "id": "-32038056#3_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "351.23",
+        "shape": "12155.58,13373.15 12126.48,13358.12 12085.10,13346.33 12031.40,13340.16 12008.94,13340.33 11940.59,13345.11 11882.84,13347.03 11852.61,13344.28 11818.30,13337.61 11813.32,13336.65 11811.52,13336.24",
+        "edge": "-32038056#3"
+      },
+      "-32038056#3_1": {
+        "id": "-32038056#3_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "351.23",
+        "shape": "12157.05,13370.30 12127.67,13355.13 12085.73,13343.18 12031.57,13336.96 12008.81,13337.13 11940.42,13341.92 11882.93,13343.82 11853.06,13341.11 11818.91,13334.47 11813.97,13333.52 11812.22,13333.12",
+        "edge": "-32038056#3"
+      },
+      "23429231#1_0": {
+        "id": "23429231#1_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "96.57",
+        "shape": "11840.56,13228.65 11809.77,13320.15",
+        "edge": "23429231#1"
+      },
+      "23429231#1_1": {
+        "id": "23429231#1_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "96.57",
+        "shape": "11837.52,13227.63 11806.72,13319.18",
+        "edge": "23429231#1"
+      },
+      "27115123#3_0": {
+        "id": "27115123#3_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "41.48",
+        "shape": "11765.86,13373.29 11782.13,13336.13 11782.39,13335.48",
+        "edge": "27115123#3"
+      },
+      "27115123#3_1": {
+        "id": "27115123#3_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "41.48",
+        "shape": "11768.79,13374.58 11785.09,13337.37 11785.48,13336.37",
+        "edge": "27115123#3"
+      },
+      "28198821#3_0": {
+        "id": "28198821#3_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "57.19",
+        "shape": "11725.12,13307.13 11776.00,13318.33 11780.98,13319.50",
+        "edge": "28198821#3"
+      },
+      "28198821#3_1": {
+        "id": "28198821#3_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "57.19",
+        "shape": "11724.43,13310.26 11775.29,13321.45 11780.25,13322.61",
+        "edge": "28198821#3"
+      },
+      "32038051#0_0": {
+        "id": "32038051#0_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "89.25",
+        "shape": "11803.31,13341.52 11774.44,13426.05",
+        "edge": "32038051#0"
+      },
+      "32038051#0_1": {
+        "id": "32038051#0_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "89.25",
+        "shape": "11800.23,13340.63 11771.42,13425.01",
+        "edge": "32038051#0"
+      },
+      "32038056#0_0": {
+        "id": "32038056#0_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "352.87",
+        "shape": "11813.63,13326.88 11815.28,13327.25 11820.12,13328.19 11853.97,13334.76 11883.12,13337.41 11940.09,13335.53 12008.56,13330.73 12031.92,13330.56 12086.98,13336.89 12130.04,13349.14 12159.99,13364.62",
+        "edge": "32038056#0"
+      },
+      "32038056#0_1": {
+        "id": "32038056#0_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "352.87",
+        "shape": "11812.93,13330.00 11814.63,13330.38 11819.51,13331.33 11853.52,13337.93 11883.03,13340.62 11940.26,13338.72 12008.69,13333.93 12031.75,13333.76 12086.35,13340.04 12128.85,13352.13 12158.52,13367.46",
+        "edge": "32038056#0"
+      },
+      "32324544#0_0": {
+        "id": "32324544#0_0",
+        "index": "0",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "90.48",
+        "shape": "11790.06,13313.93 11820.13,13228.54",
+        "edge": "32324544#0"
+      },
+      "32324544#0_1": {
+        "id": "32324544#0_1",
+        "index": "1",
+        "disallow": "tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "19.44",
+        "length": "90.48",
+        "shape": "11793.11,13314.89 11823.15,13229.60",
+        "edge": "32324544#0"
+      }
+    },
+    "controlled_links": [
+      {
+        "from": "-32038056#3",
+        "to": "32038051#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_0_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "0",
+        "dir": "r",
+        "state": "o",
+        "incoming": "-32038056#3_0",
+        "outgoing": "32038051#0_0"
+      },
+      {
+        "from": "-32038056#3",
+        "to": "-28198821#4",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_1_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "1",
+        "dir": "s",
+        "state": "o",
+        "incoming": "-32038056#3_0",
+        "outgoing": "-28198821#4_0"
+      },
+      {
+        "from": "-32038056#3",
+        "to": "-28198821#4",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_1_1",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "2",
+        "dir": "s",
+        "state": "o",
+        "incoming": "-32038056#3_1",
+        "outgoing": "-28198821#4_1"
+      },
+      {
+        "from": "-32038056#3",
+        "to": "32324544#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_3_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "3",
+        "dir": "l",
+        "state": "o",
+        "incoming": "-32038056#3_1",
+        "outgoing": "32324544#0_1"
+      },
+      {
+        "from": "-32038056#3",
+        "to": "32038056#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_4_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "4",
+        "dir": "t",
+        "state": "o",
+        "incoming": "-32038056#3_1",
+        "outgoing": "32038056#0_1"
+      },
+      {
+        "from": "23429231#1",
+        "to": "32038056#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_5_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "5",
+        "dir": "r",
+        "state": "O",
+        "incoming": "23429231#1_0",
+        "outgoing": "32038056#0_0"
+      },
+      {
+        "from": "23429231#1",
+        "to": "32038051#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_6_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "6",
+        "dir": "s",
+        "state": "O",
+        "incoming": "23429231#1_0",
+        "outgoing": "32038051#0_0"
+      },
+      {
+        "from": "23429231#1",
+        "to": "32038051#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_6_1",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "7",
+        "dir": "s",
+        "state": "O",
+        "incoming": "23429231#1_1",
+        "outgoing": "32038051#0_1"
+      },
+      {
+        "from": "23429231#1",
+        "to": "-28198821#4",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_8_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "8",
+        "dir": "l",
+        "state": "o",
+        "incoming": "23429231#1_1",
+        "outgoing": "-28198821#4_1"
+      },
+      {
+        "from": "23429231#1",
+        "to": "32324544#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_9_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "9",
+        "dir": "t",
+        "state": "o",
+        "incoming": "23429231#1_1",
+        "outgoing": "32324544#0_1"
+      },
+      {
+        "from": "28198821#3",
+        "to": "32324544#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_10_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "10",
+        "dir": "r",
+        "state": "o",
+        "incoming": "28198821#3_0",
+        "outgoing": "32324544#0_0"
+      },
+      {
+        "from": "28198821#3",
+        "to": "32038056#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_11_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "11",
+        "dir": "s",
+        "state": "o",
+        "incoming": "28198821#3_0",
+        "outgoing": "32038056#0_0"
+      },
+      {
+        "from": "28198821#3",
+        "to": "32038056#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_11_1",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "12",
+        "dir": "s",
+        "state": "o",
+        "incoming": "28198821#3_1",
+        "outgoing": "32038056#0_1"
+      },
+      {
+        "from": "28198821#3",
+        "to": "32038051#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_13_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "13",
+        "dir": "l",
+        "state": "o",
+        "incoming": "28198821#3_1",
+        "outgoing": "32038051#0_1"
+      },
+      {
+        "from": "28198821#3",
+        "to": "-28198821#4",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_14_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "14",
+        "dir": "t",
+        "state": "o",
+        "incoming": "28198821#3_1",
+        "outgoing": "-28198821#4_1"
+      },
+      {
+        "from": "27115123#3",
+        "to": "-28198821#4",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_15_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "15",
+        "dir": "r",
+        "state": "O",
+        "incoming": "27115123#3_0",
+        "outgoing": "-28198821#4_0"
+      },
+      {
+        "from": "27115123#3",
+        "to": "32324544#0",
+        "fromLane": "0",
+        "toLane": "0",
+        "via": ":cluster_357187_359543_16_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "16",
+        "dir": "s",
+        "state": "O",
+        "incoming": "27115123#3_0",
+        "outgoing": "32324544#0_0"
+      },
+      {
+        "from": "27115123#3",
+        "to": "32324544#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_16_1",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "17",
+        "dir": "s",
+        "state": "O",
+        "incoming": "27115123#3_1",
+        "outgoing": "32324544#0_1"
+      },
+      {
+        "from": "27115123#3",
+        "to": "32038056#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_18_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "18",
+        "dir": "l",
+        "state": "o",
+        "incoming": "27115123#3_1",
+        "outgoing": "32038056#0_1"
+      },
+      {
+        "from": "27115123#3",
+        "to": "32038051#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_357187_359543_19_0",
+        "tl": "cluster_357187_359543",
+        "linkIndex": "19",
+        "dir": "t",
+        "state": "o",
+        "incoming": "27115123#3_1",
+        "outgoing": "32038051#0_1"
+      }
+    ],
+    "phases": [
+      {
+        "duration": "5",
+        "state": "srrrrrrrrrGGGGGrrrrr",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 0,
+        "green_links": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "GGGGGrrrrrsrrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 1,
+        "green_links": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "GGGggrrrrrGGGggrrrrr",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 2,
+        "green_links": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "foe_pairs": [
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "rrrGGrrrrrrrrGGrrrrr",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 3,
+        "green_links": [
+          3,
+          4,
+          13,
+          14
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "rrrrrGGGGGrrrrrsrrrr",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 4,
+        "green_links": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "rrrrrsrrrrrrrrrGGGGG",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 5,
+        "green_links": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "rrrrrGGGggrrrrrGGGgg",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 6,
+        "green_links": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "foe_pairs": [
+          [
+            6,
+            18
+          ],
+          [
+            6,
+            19
+          ],
+          [
+            7,
+            18
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            9,
+            16
+          ],
+          [
+            9,
+            17
+          ]
+        ],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "5",
+        "state": "rrrrrrrrGGrrrrrrrrGG",
+        "minDur": "5",
+        "maxDur": "50",
+        "index": 7,
+        "green_links": [
+          8,
+          9,
+          18,
+          19
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      }
+    ],
+    "transitions": [
+      {
+        "from": 0,
+        "to": 1,
+        "green_to_red_without_yellow": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "new_priority_green_against_old_green": [
+          [
+            11,
+            3
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            4
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            14,
+            2
+          ]
+        ]
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": [
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            12
+          ]
+        ]
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "green_to_red_without_yellow": [
+          0,
+          1,
+          2,
+          10,
+          11,
+          12
+        ],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "green_to_red_without_yellow": [
+          3,
+          4,
+          13,
+          14
+        ],
+        "new_priority_green_against_old_green": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            13,
+            7
+          ],
+          [
+            13,
+            8
+          ],
+          [
+            14,
+            8
+          ]
+        ]
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "green_to_red_without_yellow": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "new_priority_green_against_old_green": [
+          [
+            6,
+            18
+          ],
+          [
+            6,
+            19
+          ],
+          [
+            7,
+            18
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            9,
+            16
+          ],
+          [
+            9,
+            17
+          ]
+        ]
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": [
+          [
+            18,
+            6
+          ],
+          [
+            18,
+            7
+          ],
+          [
+            19,
+            6
+          ],
+          [
+            19,
+            7
+          ]
+        ]
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "green_to_red_without_yellow": [
+          5,
+          6,
+          7,
+          15,
+          16,
+          17
+        ],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 7,
+        "to": 0,
+        "green_to_red_without_yellow": [
+          8,
+          9,
+          18,
+          19
+        ],
+        "new_priority_green_against_old_green": [
+          [
+            8,
+            11
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            8,
+            14
+          ],
+          [
+            18,
+            11
+          ],
+          [
+            18,
+            12
+          ],
+          [
+            18,
+            13
+          ],
+          [
+            19,
+            13
+          ]
+        ]
+      }
+    ],
+    "demand": {
+      "elements": {
+        "vType": 1,
+        "trip": 2015
+      },
+      "trips": 2015,
+      "first_depart": 25205.0,
+      "last_depart": 28799.0,
+      "departures_sorted": true,
+      "outside_window": 0,
+      "bins_300s": [
+        192,
+        224,
+        130,
+        158,
+        231,
+        191,
+        134,
+        130,
+        180,
+        143,
+        154,
+        148
+      ],
+      "origin": {
+        "28198821#3": 438,
+        "130165204": 112,
+        "-32038056#3": 572,
+        "27115123#2": 204,
+        "23429231#1": 688,
+        "32324544#0": 1
+      },
+      "destination": {
+        "32038051#0": 887,
+        "-28198821#4": 298,
+        "32324544#0": 335,
+        "32038056#0": 491,
+        "130165204": 3,
+        "28198821#3": 1
+      },
+      "type_counts": {
+        "pkw": 2015
+      },
+      "class_counts": {
+        "passenger": 2015
+      },
+      "OD": {
+        "28198821#3 -> 32038051#0": 153,
+        "130165204 -> 32038051#0": 51,
+        "-32038056#3 -> -28198821#4": 208,
+        "-32038056#3 -> 32324544#0": 74,
+        "-32038056#3 -> 32038051#0": 278,
+        "27115123#2 -> 32038051#0": 49,
+        "23429231#1 -> 32038051#0": 356,
+        "23429231#1 -> -28198821#4": 70,
+        "23429231#1 -> 32324544#0": 66,
+        "27115123#2 -> 32324544#0": 105,
+        "-32038056#3 -> 32038056#0": 11,
+        "130165204 -> 32324544#0": 25,
+        "23429231#1 -> 32038056#0": 196,
+        "130165204 -> 32038056#0": 26,
+        "28198821#3 -> 32324544#0": 64,
+        "27115123#2 -> 32038056#0": 39,
+        "28198821#3 -> 32038056#0": 219,
+        "130165204 -> -28198821#4": 7,
+        "130165204 -> 130165204": 3,
+        "-32038056#3 -> 28198821#3": 1,
+        "27115123#2 -> -28198821#4": 11,
+        "32324544#0 -> 32324544#0": 1,
+        "28198821#3 -> -28198821#4": 2
+      }
+    },
+    "native_exit_code": 0,
+    "statistics": {
+      "performance": {
+        "clockBegin": "4622.43",
+        "clockEnd": "4623.11",
+        "clockDuration": "0.69",
+        "traciDuration": "0.85",
+        "realTimeFactor": "5224.96",
+        "vehicleUpdatesPerSecond": "231245.28",
+        "personUpdatesPerSecond": "0.00",
+        "begin": "25200.00",
+        "end": "28800.00",
+        "duration": "3600.00"
+      },
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2014",
+        "running": "35",
+        "waiting": "1"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "5",
+        "emergencyBraking": "9"
+      },
+      "persons": {
+        "loaded": "0",
+        "running": "0",
+        "jammed": "0"
+      },
+      "personTeleports": {
+        "total": "0",
+        "abortWait": "0",
+        "wrongDest": "0"
+      },
+      "vehicleTripStatistics": {
+        "count": "2014",
+        "routeLength": "334.46",
+        "speed": "5.57",
+        "duration": "79.11",
+        "waitingTime": "29.84",
+        "timeLoss": "56.59",
+        "departDelay": "18.24",
+        "departDelayWaiting": "1.00",
+        "totalTravelTime": "159328.00",
+        "totalDepartDelay": "36731.00"
+      },
+      "pedestrianStatistics": {
+        "number": "0",
+        "routeLength": "0.00",
+        "duration": "0.00",
+        "timeLoss": "0.00"
+      },
+      "rideStatistics": {
+        "number": "0"
+      },
+      "transportStatistics": {
+        "number": "0"
+      }
+    },
+    "last_summary": {
+      "time": "28799.00",
+      "loaded": "2015",
+      "inserted": "2014",
+      "running": "35",
+      "waiting": "1",
+      "ended": "1979",
+      "arrived": "1979",
+      "collisions": "0",
+      "teleports": "0",
+      "halting": "13",
+      "stopped": "0",
+      "meanWaitingTime": "18.24",
+      "meanTravelTime": "79.57",
+      "meanSpeed": "3.56",
+      "meanSpeedRelative": "0.22",
+      "discarded": "0",
+      "duration": "0"
+    },
+    "observed_phase_durations": {
+      "0": {
+        "5.0": 89
+      },
+      "1": {
+        "5.0": 90
+      },
+      "2": {
+        "5.0": 90
+      },
+      "3": {
+        "5.0": 90
+      },
+      "4": {
+        "5.0": 90
+      },
+      "5": {
+        "5.0": 90
+      },
+      "6": {
+        "5.0": 90
+      },
+      "7": {
+        "5.0": 89
+      }
+    },
+    "first_segments": [
+      {
+        "start": 25200.0,
+        "phase": 0,
+        "state": "srrrrrrrrrGGGGGrrrrr",
+        "end": 25205.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25205.0,
+        "phase": 1,
+        "state": "GGGGGrrrrrsrrrrrrrrr",
+        "end": 25210.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25210.0,
+        "phase": 2,
+        "state": "GGGggrrrrrGGGggrrrrr",
+        "end": 25215.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25215.0,
+        "phase": 3,
+        "state": "rrrGGrrrrrrrrGGrrrrr",
+        "end": 25220.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25220.0,
+        "phase": 4,
+        "state": "rrrrrGGGGGrrrrrsrrrr",
+        "end": 25225.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25225.0,
+        "phase": 5,
+        "state": "rrrrrsrrrrrrrrrGGGGG",
+        "end": 25230.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25230.0,
+        "phase": 6,
+        "state": "rrrrrGGGggrrrrrGGGgg",
+        "end": 25235.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25235.0,
+        "phase": 7,
+        "state": "rrrrrrrrGGrrrrrrrrGG",
+        "end": 25240.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25240.0,
+        "phase": 0,
+        "state": "srrrrrrrrrGGGGGrrrrr",
+        "end": 25245.0,
+        "duration": 5.0
+      },
+      {
+        "start": 25245.0,
+        "phase": 1,
+        "state": "GGGGGrrrrrsrrrrrrrrr",
+        "end": 25250.0,
+        "duration": 5.0
+      }
+    ],
+    "traci": {
+      "version": [
+        22,
+        "SUMO 1.28.0"
+      ],
+      "deltaT": 1.0,
+      "initial_time": 25200.0,
+      "initial_phase": 0,
+      "controlled_links_match_xml": true,
+      "after_one_step": 25201.0
+    },
+    "junction_diagnostic": {
+      "exit_code": 0,
+      "safety": {
+        "collisions": "17",
+        "emergencyStops": "6",
+        "emergencyBraking": "13"
+      },
+      "teleports": {
+        "total": "17",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      }
+    },
+    "derived_metrics": {
+      "map": "cologne1",
+      "demand": 2015,
+      "completed": 1979,
+      "unfinished": 35,
+      "undeparted": 1,
+      "completed_mean_waitingTime": 29.936836786255686,
+      "completed_mean_duration": 79.57200606366852,
+      "completed_mean_timeLoss": 56.76576048509342,
+      "completed_mean_departDelay": 18.55078322385043,
+      "network_mean_halting": 16.725277777777777
+    }
+  },
+  "ingolstadt1": {
+    "begin": 57600.0,
+    "end": 61200.0,
+    "net_edges_external": 11,
+    "tls": {
+      "id": "cluster_274083968_cluster_1200364014_1200364088",
+      "type": "static",
+      "programID": "0",
+      "offset": "0"
+    },
+    "junction_incoming": [
+      "201963537#1_0",
+      "201963537#1_1",
+      "201963537#1_2",
+      "201963537#1_3",
+      "164051413_0",
+      "164051413_1",
+      "164051413_2",
+      "104010354_0",
+      "104010354_1",
+      "104010354_2"
+    ],
+    "controlled_incoming": [
+      "104010354_1",
+      "104010354_2",
+      "164051413_1",
+      "164051413_2",
+      "201963537#1_1",
+      "201963537#1_2",
+      "201963537#1_3"
+    ],
+    "controlled_outgoing": [
+      "-164051413_1",
+      "104010475#0_1",
+      "104010475#0_2",
+      "124812857#0_1",
+      "124812857#0_2",
+      "124812857#0_3"
+    ],
+    "uncontrolled_incoming": [
+      "104010354_0",
+      "164051413_0",
+      "201963537#1_0"
+    ],
+    "lane_details": {
+      "-164051413_1": {
+        "id": "-164051413_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "8.93",
+        "shape": "212980.75,451459.29 212972.13,451456.94",
+        "edge": "-164051413"
+      },
+      "104010354_0": {
+        "id": "104010354_0",
+        "index": "0",
+        "allow": "pedestrian",
+        "speed": "13.89",
+        "length": "56.41",
+        "width": "2.00",
+        "shape": "212985.21,451522.84 212984.79,451519.25 212983.35,451506.66 212982.93,451492.13 212983.74,451477.22 212985.02,451467.29 212985.16,451466.09",
+        "edge": "104010354"
+      },
+      "104010354_1": {
+        "id": "104010354_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "56.41",
+        "shape": "212987.79,451522.54 212987.37,451518.95 212985.94,451506.47 212985.53,451492.16 212986.33,451477.46 212987.60,451467.60 212987.75,451466.31",
+        "edge": "104010354"
+      },
+      "104010354_2": {
+        "id": "104010354_2",
+        "index": "2",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "56.41",
+        "shape": "212990.97,451522.17 212990.55,451518.58 212989.14,451506.24 212988.73,451492.20 212989.52,451477.75 212990.78,451467.98 212990.93,451466.59",
+        "edge": "104010354"
+      },
+      "104010475#0_1": {
+        "id": "104010475#0_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "22.04",
+        "shape": "213004.73,451467.80 213004.60,451469.32 213004.14,451479.24 213003.70,451489.81",
+        "edge": "104010475#0"
+      },
+      "104010475#0_2": {
+        "id": "104010475#0_2",
+        "index": "2",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "22.04",
+        "shape": "213001.54,451467.52 213001.41,451469.11 213000.94,451479.10 213000.51,451489.68",
+        "edge": "104010475#0"
+      },
+      "124812857#0_1": {
+        "id": "124812857#0_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.49",
+        "shape": "212989.27,451449.05 212991.91,451437.76 212996.83,451414.37 213004.33,451380.62 213019.67,451308.86",
+        "edge": "124812857#0"
+      },
+      "124812857#0_2": {
+        "id": "124812857#0_2",
+        "index": "2",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.49",
+        "shape": "212992.38,451449.79 212995.04,451438.46 212999.96,451415.04 213007.46,451381.30 213022.79,451309.54",
+        "edge": "124812857#0"
+      },
+      "124812857#0_3": {
+        "id": "124812857#0_3",
+        "index": "3",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.49",
+        "shape": "212995.49,451450.53 212998.16,451439.15 213003.09,451415.72 213010.58,451381.98 213025.92,451310.23",
+        "edge": "124812857#0"
+      },
+      "164051413_0": {
+        "id": "164051413_0",
+        "index": "0",
+        "allow": "pedestrian",
+        "speed": "13.89",
+        "length": "8.93",
+        "width": "2.00",
+        "shape": "212974.50,451448.26 212983.12,451450.61",
+        "edge": "164051413"
+      },
+      "164051413_1": {
+        "id": "164051413_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "8.93",
+        "shape": "212973.82,451450.77 212982.43,451453.11",
+        "edge": "164051413"
+      },
+      "164051413_2": {
+        "id": "164051413_2",
+        "index": "2",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "8.93",
+        "shape": "212972.98,451453.85 212981.59,451456.20",
+        "edge": "164051413"
+      },
+      "201963537#1_0": {
+        "id": "201963537#1_0",
+        "index": "0",
+        "allow": "pedestrian",
+        "speed": "13.89",
+        "length": "143.76",
+        "width": "2.00",
+        "shape": "213040.45,451313.42 213026.30,451377.83 213018.48,451413.36 213013.06,451438.58 213010.61,451451.61 213010.33,451454.04",
+        "edge": "201963537#1"
+      },
+      "201963537#1_1": {
+        "id": "201963537#1_1",
+        "index": "1",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.76",
+        "shape": "213037.91,451312.86 213023.76,451377.27 213015.94,451412.81 213010.51,451438.06 213008.04,451451.23 213007.79,451453.44",
+        "edge": "201963537#1"
+      },
+      "201963537#1_2": {
+        "id": "201963537#1_2",
+        "index": "2",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.76",
+        "shape": "213034.78,451312.18 213020.63,451376.59 213012.81,451412.13 213007.37,451437.43 213004.87,451450.75 213004.65,451452.70",
+        "edge": "201963537#1"
+      },
+      "201963537#1_3": {
+        "id": "201963537#1_3",
+        "index": "3",
+        "disallow": "pedestrian tram rail_urban rail rail_electric rail_fast ship",
+        "speed": "13.89",
+        "length": "143.76",
+        "shape": "213031.66,451311.49 213017.51,451375.90 213009.69,451411.45 213004.23,451436.80 213001.70,451450.27 213001.51,451451.95",
+        "edge": "201963537#1"
+      }
+    },
+    "controlled_links": [
+      {
+        "from": "201963537#1",
+        "to": "104010475#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_0_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "0",
+        "dir": "s",
+        "state": "O",
+        "incoming": "201963537#1_1",
+        "outgoing": "104010475#0_1"
+      },
+      {
+        "from": "201963537#1",
+        "to": "104010475#0",
+        "fromLane": "2",
+        "toLane": "2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_0_1",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "1",
+        "dir": "s",
+        "state": "O",
+        "incoming": "201963537#1_2",
+        "outgoing": "104010475#0_2"
+      },
+      {
+        "from": "201963537#1",
+        "to": "-164051413",
+        "fromLane": "3",
+        "toLane": "1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_2_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "2",
+        "dir": "l",
+        "state": "o",
+        "incoming": "201963537#1_3",
+        "outgoing": "-164051413_1"
+      },
+      {
+        "from": "164051413",
+        "to": "124812857#0",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_3_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "3",
+        "dir": "r",
+        "state": "O",
+        "incoming": "164051413_1",
+        "outgoing": "124812857#0_1"
+      },
+      {
+        "from": "164051413",
+        "to": "104010475#0",
+        "fromLane": "2",
+        "toLane": "2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_4_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "4",
+        "dir": "l",
+        "state": "o",
+        "incoming": "164051413_2",
+        "outgoing": "104010475#0_2"
+      },
+      {
+        "from": "104010354",
+        "to": "-164051413",
+        "fromLane": "1",
+        "toLane": "1",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_5_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "5",
+        "dir": "r",
+        "state": "O",
+        "incoming": "104010354_1",
+        "outgoing": "-164051413_1"
+      },
+      {
+        "from": "104010354",
+        "to": "124812857#0",
+        "fromLane": "1",
+        "toLane": "2",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_6_0",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "6",
+        "dir": "s",
+        "state": "O",
+        "incoming": "104010354_1",
+        "outgoing": "124812857#0_2"
+      },
+      {
+        "from": "104010354",
+        "to": "124812857#0",
+        "fromLane": "2",
+        "toLane": "3",
+        "via": ":cluster_274083968_cluster_1200364014_1200364088_6_1",
+        "tl": "cluster_274083968_cluster_1200364014_1200364088",
+        "linkIndex": "7",
+        "dir": "s",
+        "state": "O",
+        "incoming": "104010354_2",
+        "outgoing": "124812857#0_3"
+      }
+    ],
+    "phases": [
+      {
+        "duration": "38",
+        "state": "GGgGrGGG",
+        "index": 0,
+        "green_links": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "foe_pairs": [
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "3",
+        "state": "yygyryyy",
+        "index": 1,
+        "green_links": [
+          2
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "6",
+        "state": "GGGrrrrr",
+        "index": 2,
+        "green_links": [
+          0,
+          1,
+          2
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "3",
+        "state": "yyyrrrrr",
+        "index": 3,
+        "green_links": [],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "37",
+        "state": "rrrGGGrr",
+        "index": 4,
+        "green_links": [
+          3,
+          4,
+          5
+        ],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      },
+      {
+        "duration": "3",
+        "state": "rrryyyrr",
+        "index": 5,
+        "green_links": [],
+        "foe_pairs": [],
+        "priority_G_foe_pairs": []
+      }
+    ],
+    "transitions": [
+      {
+        "from": 0,
+        "to": 1,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      },
+      {
+        "from": 5,
+        "to": 0,
+        "green_to_red_without_yellow": [],
+        "new_priority_green_against_old_green": []
+      }
+    ],
+    "demand": {
+      "elements": {
+        "vType": 45,
+        "trip": 1716
+      },
+      "trips": 1716,
+      "first_depart": 57600.2,
+      "last_depart": 61198.0,
+      "departures_sorted": true,
+      "outside_window": 0,
+      "bins_300s": [
+        135,
+        106,
+        165,
+        168,
+        147,
+        121,
+        130,
+        173,
+        169,
+        140,
+        148,
+        114
+      ],
+      "origin": {
+        "653473569#5": 421,
+        "104010354": 463,
+        "201963537#1": 620,
+        "25149219#1": 212
+      },
+      "destination": {
+        "124812857#0": 722,
+        "-653473569#5": 469,
+        "104012170": 523,
+        "104010475#0": 1,
+        "201963537#1": 1
+      },
+      "type_counts": {
+        "default_016": 647,
+        "default_015": 7,
+        "random_016": 52,
+        "bus": 17,
+        "default_017": 907,
+        "random_017": 80,
+        "default_018": 4,
+        "random_018": 2
+      },
+      "class_counts": {
+        "passenger": 1699,
+        "bus": 17
+      },
+      "OD": {
+        "653473569#5 -> 124812857#0": 306,
+        "104010354 -> 124812857#0": 416,
+        "201963537#1 -> -653473569#5": 252,
+        "201963537#1 -> 104012170": 366,
+        "104010354 -> -653473569#5": 47,
+        "653473569#5 -> 104012170": 115,
+        "25149219#1 -> -653473569#5": 170,
+        "25149219#1 -> 104012170": 42,
+        "201963537#1 -> 104010475#0": 1,
+        "201963537#1 -> 201963537#1": 1
+      }
+    },
+    "native_exit_code": 0,
+    "statistics": {
+      "performance": {
+        "clockBegin": "4623.90",
+        "clockEnd": "4624.41",
+        "clockDuration": "0.51",
+        "traciDuration": "0.00",
+        "realTimeFactor": "7072.69",
+        "vehicleUpdatesPerSecond": "164495.09",
+        "personUpdatesPerSecond": "0.00",
+        "begin": "57600.00",
+        "end": "61200.00",
+        "duration": "3600.00"
+      },
+      "vehicles": {
+        "loaded": "1716",
+        "inserted": "1715",
+        "running": "21",
+        "waiting": "1"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "persons": {
+        "loaded": "0",
+        "running": "0",
+        "jammed": "0"
+      },
+      "personTeleports": {
+        "total": "0",
+        "abortWait": "0",
+        "wrongDest": "0"
+      },
+      "vehicleTripStatistics": {
+        "count": "1715",
+        "routeLength": "245.86",
+        "speed": "7.40",
+        "duration": "48.82",
+        "waitingTime": "17.51",
+        "timeLoss": "28.11",
+        "departDelay": "2.56",
+        "departDelayWaiting": "2.00",
+        "totalTravelTime": "83728.00",
+        "totalDepartDelay": "4391.40"
+      },
+      "pedestrianStatistics": {
+        "number": "0",
+        "routeLength": "0.00",
+        "duration": "0.00",
+        "timeLoss": "0.00"
+      },
+      "rideStatistics": {
+        "number": "0"
+      },
+      "transportStatistics": {
+        "number": "0"
+      }
+    },
+    "last_summary": {
+      "time": "61199.00",
+      "loaded": "1716",
+      "inserted": "1715",
+      "running": "21",
+      "waiting": "1",
+      "ended": "1694",
+      "arrived": "1694",
+      "collisions": "0",
+      "teleports": "0",
+      "halting": "9",
+      "stopped": "0",
+      "meanWaitingTime": "3.00",
+      "meanTravelTime": "48.97",
+      "meanSpeed": "2.47",
+      "meanSpeedRelative": "0.35",
+      "discarded": "0",
+      "duration": "0"
+    },
+    "observed_phase_durations": {
+      "0": {
+        "38.0": 39
+      },
+      "1": {
+        "3.0": 40
+      },
+      "2": {
+        "6.0": 40
+      },
+      "3": {
+        "3.0": 40
+      },
+      "4": {
+        "37.0": 40
+      },
+      "5": {
+        "3.0": 39
+      }
+    },
+    "first_segments": [
+      {
+        "start": 57600.0,
+        "phase": 0,
+        "state": "GGgGrGGG",
+        "end": 57638.0,
+        "duration": 38.0
+      },
+      {
+        "start": 57638.0,
+        "phase": 1,
+        "state": "yygyryyy",
+        "end": 57641.0,
+        "duration": 3.0
+      },
+      {
+        "start": 57641.0,
+        "phase": 2,
+        "state": "GGGrrrrr",
+        "end": 57647.0,
+        "duration": 6.0
+      },
+      {
+        "start": 57647.0,
+        "phase": 3,
+        "state": "yyyrrrrr",
+        "end": 57650.0,
+        "duration": 3.0
+      },
+      {
+        "start": 57650.0,
+        "phase": 4,
+        "state": "rrrGGGrr",
+        "end": 57687.0,
+        "duration": 37.0
+      },
+      {
+        "start": 57687.0,
+        "phase": 5,
+        "state": "rrryyyrr",
+        "end": 57690.0,
+        "duration": 3.0
+      },
+      {
+        "start": 57690.0,
+        "phase": 0,
+        "state": "GGgGrGGG",
+        "end": 57728.0,
+        "duration": 38.0
+      },
+      {
+        "start": 57728.0,
+        "phase": 1,
+        "state": "yygyryyy",
+        "end": 57731.0,
+        "duration": 3.0
+      },
+      {
+        "start": 57731.0,
+        "phase": 2,
+        "state": "GGGrrrrr",
+        "end": 57737.0,
+        "duration": 6.0
+      },
+      {
+        "start": 57737.0,
+        "phase": 3,
+        "state": "yyyrrrrr",
+        "end": 57740.0,
+        "duration": 3.0
+      }
+    ],
+    "traci": {
+      "version": [
+        22,
+        "SUMO 1.28.0"
+      ],
+      "deltaT": 1.0,
+      "initial_time": 57600.0,
+      "initial_phase": 0,
+      "controlled_links_match_xml": true,
+      "after_one_step": 57601.0
+    },
+    "junction_diagnostic": {
+      "exit_code": 0,
+      "safety": {
+        "collisions": "1",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "1",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      }
+    },
+    "derived_metrics": {
+      "map": "ingolstadt1",
+      "demand": 1716,
+      "completed": 1694,
+      "unfinished": 21,
+      "undeparted": 1,
+      "completed_mean_waitingTime": 17.5271546635183,
+      "completed_mean_duration": 48.972255017709564,
+      "completed_mean_timeLoss": 28.173730814640003,
+      "completed_mean_departDelay": 2.5768004722550124,
+      "network_mean_halting": 8.386666666666667
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Scripts\\python.exe",
+  "SUMO_HOME": "C:\\Program Files (x86)\\SUMO\\",
+  "sumo_binary": "C:\\Program Files (x86)\\SUMO\\bin\\sumo.exe",
+  "sumo_gui_binary": "C:\\Program Files (x86)\\SUMO\\bin\\sumo-gui.exe",
+  "imports": {
+    "sumolib": "C:\\Program Files (x86)\\SUMO\\tools\\sumolib\\__init__.py",
+    "traci": "C:\\Program Files (x86)\\SUMO\\tools\\traci\\__init__.py",
+    "numpy": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Lib\\site-packages\\numpy\\__init__.py",
+    "matplotlib": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Lib\\site-packages\\matplotlib\\__init__.py",
+    "pytest": "C:\\Users\\dotru\\Documents\\TrafficSignalControl-ML\\.venv\\Lib\\site-packages\\pytest\\__init__.py"
+  },
+  "versions": {
+    "sumolib": "1.28.0",
+    "traci": "1.28.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pytest": "9.2.0"
+  },
+  "torch_installed": false,
+  "sumo": {
+    "returncode": 0,
+    "stdout": "Eclipse SUMO sumo 1.28.0\n Build features: Windows-10.0.17763 AMD64 MSVC 19.51.36256.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen\n Copyright (C) 2001-2026 German Aerospace Center (DLR) and others; https://sumo.dlr.de\n\nEclipse SUMO sumo 1.28.0 is part of SUMO.\nThis program and the accompanying materials\nare made available under the terms of the Eclipse Public License v2.0\nwhich accompanies this distribution, and is available at\nhttp://www.eclipse.org/legal/epl-v20.html\nThis program may also be made available under the following Secondary\nLicenses when the conditions for such availability set forth in the Eclipse\nPublic License 2.0 are satisfied: GNU General Public License, version 2\nor later which is available at\nhttps://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html\nSPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later\n",
+    "stderr": ""
+  },
+  "sumo-gui": {
+    "returncode": 0,
+    "stdout": "Eclipse SUMO GUI 1.28.0\n Build features: Windows-10.0.17763 AMD64 MSVC 19.51.36256.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen\n Copyright (C) 2001-2026 German Aerospace Center (DLR) and others; https://sumo.dlr.de\n\nEclipse SUMO GUI 1.28.0 is part of SUMO.\nThis program and the accompanying materials\nare made available under the terms of the Eclipse Public License v2.0\nwhich accompanies this distribution, and is available at\nhttp://www.eclipse.org/legal/epl-v20.html\nThis program may also be made available under the following Secondary\nLicenses when the conditions for such availability set forth in the Eclipse\nPublic License 2.0 are satisfied: GNU General Public License, version 2\nor later which is available at\nhttps://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html\nSPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later\n",
+    "stderr": ""
+  },
+  "executable_defaults": {
+    "seed": "23423",
+    "collision.check-junctions": "false",
+    "step-length": "1",
+    "collision.action": "teleport"
+  }
+}

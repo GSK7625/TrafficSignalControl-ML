@@ -1,0 +1,21 @@
+***Starting server on port 62140 ***
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.net.xml' ... done (8ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\ingolstadt1\ingolstadt1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 57600.00.
+Warning: Teleporting vehicle '60R.42'; junction collision with vehicle 'carIn86966:1', lane=':cluster_274083968_cluster_1200364014_1200364088_6_1', gap=-1.00, time=58594.00, stage=move.
+Warning: Vehicle '60R.42' ends teleporting on edge '124812857#0', time=58594.00.
+Simulation ended at time: 58597.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 0.26s
+ TraCI-Duration: 0.13s
+ Real time factor: 3776.52
+ UPS: 82750.000000
+Vehicles:
+ Inserted: 455 (Loaded: 467)
+ Running: 28
+ Waiting: 2
+ Teleports: 1 (Collisions: 1)
+DijkstraRouter answered 466 queries and explored 3.50 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

@@ -1,0 +1,27 @@
+Loading net-file from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.net.xml' ... done (4ms).
+Loading additional-files from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\reports\stage1\cologne1\tls_observation.add.xml' ... done (9ms).
+Loading route-files incrementally from 'C:\Users\dotru\Documents\TrafficSignalControl-ML\data\cologne1\cologne1.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 25200.00.
+Simulation ended at time: 28800.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 0.69s
+ Real time factor: 5224.96
+ UPS: 231245.283019
+Vehicles:
+ Inserted: 2014 (Loaded: 2015)
+ Running: 35
+ Waiting: 1
+ Emergency Stops: 5
+ Emergency Braking: 9
+Statistics (avg of 2014):
+ RouteLength: 334.46
+ Speed: 5.57
+ Duration: 79.11
+ WaitingTime: 29.84
+ TimeLoss: 56.59
+ DepartDelay: 18.24
+ DepartDelayWaiting: 1.00
+DijkstraRouter answered 2205 queries and explored 3.27 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).

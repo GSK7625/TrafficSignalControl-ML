@@ -1,0 +1,58 @@
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Warning: Vehicle '154290_420_0' performs emergency braking on lane '27115123#3_0' with decel=9.00, wished=4.50, severity=1.00, time=25435.00.
+Warning: Vehicle '121463_406_0' performs emergency braking on lane '28198821#3_0' with decel=9.00, wished=4.50, severity=1.00, time=25615.00.
+Warning: Vehicle '121463_406_0' performs emergency stop at the end of lane '28198821#3_0' because of a red traffic light (decel=-12.63, offset=0.73), time=25615.00.
+Warning: Teleporting vehicle '129962_409_0'; junction collision with vehicle '137007_411_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=25643.00, stage=move.
+Warning: Vehicle '129962_409_0' ends teleporting on edge '32038051#0', time=25643.00.
+Warning: Teleporting vehicle '145336_416_0'; junction collision with vehicle '115533_403_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=25691.00, stage=move.
+Warning: Vehicle '145336_416_0' ends teleporting on edge '-28198821#4', time=25691.00.
+Warning: Teleporting vehicle '84905_390_0'; junction collision with vehicle '155751_420_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=25723.00, stage=move.
+Warning: Teleporting vehicle '84905_390_0'; junction collision with vehicle '127353_407_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=25723.00, stage=move.
+Warning: Vehicle '84905_390_0' ends teleporting on edge '32038051#0', time=25723.00.
+Warning: Teleporting vehicle '101521_396_0'; junction collision with vehicle '172682_426_0', lane=':cluster_357187_359543_19_0', gap=-1.00, time=25808.00, stage=move.
+Warning: Vehicle '101521_396_0' ends teleporting on edge '32038051#0', time=25808.00.
+Warning: Vehicle '127805_407_0' performs emergency braking on lane '23429231#1_1' with decel=9.00, wished=4.50, severity=1.00, time=26035.00.
+Warning: Vehicle '154087_420_0' performs emergency braking on lane '23429231#1_0' with decel=9.00, wished=4.50, severity=1.00, time=26155.00.
+Warning: Vehicle '154087_420_0' performs emergency stop at the end of lane '23429231#1_0' because of a red traffic light (decel=-17.04, offset=3.50), time=26155.00.
+Warning: Teleporting vehicle '153999_420_0'; junction collision with vehicle '168247_425_0', lane=':cluster_357187_359543_13_0', gap=-1.00, time=26322.00, stage=move.
+Warning: Vehicle '153999_420_0' ends teleporting on edge '32038051#0', time=26322.00.
+Warning: Teleporting vehicle '82166_389_0'; junction collision with vehicle '87651_391_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=26414.00, stage=move.
+Warning: Vehicle '82166_389_0' ends teleporting on edge '-28198821#4', time=26414.00.
+Warning: Teleporting vehicle '182895_431_0'; junction collision with vehicle '168218_425_0', lane=':cluster_357187_359543_13_0', gap=-1.00, time=26442.00, stage=move.
+Warning: Vehicle '182895_431_0' ends teleporting on edge '32038051#0', time=26442.00.
+Warning: Vehicle '185869_432_0' performs emergency braking on lane '-32038056#3_0' with decel=9.00, wished=4.50, severity=1.00, time=26455.00.
+Warning: Vehicle '206270_440_0' performs emergency braking on lane '27115123#3_0' with decel=9.00, wished=4.50, severity=1.00, time=26715.00.
+Warning: Vehicle '206270_440_0' performs emergency stop at the end of lane '27115123#3_0' because of a red traffic light (decel=-15.31, offset=1.10), time=26715.00.
+Warning: Vehicle '207293_441_0' performs emergency braking on lane '28198821#3_1' with decel=9.00, wished=4.50, severity=1.00, time=27100.00.
+Warning: Vehicle '207293_441_0' performs emergency stop at the end of lane '28198821#3_1' because of a red traffic light (decel=-12.93, offset=1.79), time=27100.00.
+Warning: Vehicle '138080_412_0' performs emergency braking on lane '28198821#3_1' with decel=9.00, wished=4.50, severity=1.00, time=27165.00.
+Warning: Vehicle '138080_412_0' performs emergency stop at the end of lane '28198821#3_1' because of a red traffic light (decel=-12.36, offset=0.87), time=27165.00.
+Warning: Teleporting vehicle '205143_440_0'; junction collision with vehicle '81537_389_0', lane=':cluster_357187_359543_13_0', gap=-1.00, time=27242.00, stage=move.
+Warning: Vehicle '205143_440_0' ends teleporting on edge '32038051#0', time=27242.00.
+Warning: Vehicle '194926_436_0' performs emergency braking on lane '-32038056#3_0' with decel=9.00, wished=4.50, severity=1.00, time=27295.00.
+Warning: Vehicle '143392_415_0' performs emergency braking on lane '27115123#3_0' with decel=9.00, wished=4.50, severity=1.00, time=27355.00.
+Warning: Vehicle '91291_391_0' performs emergency braking on lane ':cluster_357187_359543_3_0' with decel=9.00, wished=4.50, severity=1.00, time=27450.00.
+Warning: Vehicle '243625_453_0' performs emergency braking on lane '-32038056#3_0' with decel=9.00, wished=4.50, severity=1.00, time=27615.00.
+Warning: Teleporting vehicle '196403_436_0'; junction collision with vehicle '86506_391_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=27643.00, stage=move.
+Warning: Vehicle '196403_436_0' ends teleporting on edge '32038051#0', time=27643.00.
+Warning: Teleporting vehicle '124484_406_0'; junction collision with vehicle '86506_391_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=27645.00, stage=move.
+Warning: Vehicle '124484_406_0' ends teleporting on edge '32038051#0', time=27645.00.
+Warning: Teleporting vehicle '128376_408_0'; junction collision with vehicle '158340_421_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=27683.00, stage=move.
+Warning: Vehicle '128376_408_0' ends teleporting on edge '32038051#0', time=27683.00.
+Warning: Teleporting vehicle '233874_451_0'; junction collision with vehicle '158340_421_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=27685.00, stage=move.
+Warning: Vehicle '233874_451_0' ends teleporting on edge '32038051#0', time=27685.00.
+Warning: Teleporting vehicle '141916_415_0'; junction collision with vehicle '270606_465_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=27696.00, stage=move.
+Warning: Vehicle '141916_415_0' ends teleporting on edge '-28198821#4', time=27696.00.
+Warning: Teleporting vehicle '177151_429_0'; junction collision with vehicle '198556_436_0', lane=':cluster_357187_359543_24_0', gap=-1.00, time=27723.00, stage=move.
+Warning: Vehicle '177151_429_0' ends teleporting on edge '32038051#0', time=27723.00.
+Warning: Teleporting vehicle '201027_437_0'; junction collision with vehicle '157882_421_0', lane=':cluster_357187_359543_1_1', gap=-1.00, time=27734.00, stage=move.
+Warning: Vehicle '201027_437_0' ends teleporting on edge '-28198821#4', time=27734.00.
+Warning: Vehicle '269181_465_0' performs emergency braking on lane '28198821#3_0' with decel=9.00, wished=4.50, severity=1.00, time=28215.00.
+Warning: Vehicle '269181_465_0' performs emergency stop at the end of lane '28198821#3_0' because of a red traffic light (decel=-12.77, offset=2.60), time=28215.00.
+Warning: Teleporting vehicle '143117_415_0'; junction collision with vehicle '258714_461_0', lane=':cluster_357187_359543_11_1', gap=-1.00, time=28376.00, stage=move.
+Warning: Vehicle '143117_415_0' ends teleporting on edge '32038056#0', time=28376.00.

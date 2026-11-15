@@ -1,0 +1,20 @@
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 11 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 0 when switching to phase 3.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 3 when switching to phase 4.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 6 when switching to phase 5.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 5 when switching to phase 7.
+Warning: Missing yellow phase in tlLogic 'cluster_357187_359543', program '0' for tl-index 8 when switching to phase 0.
+Warning: Vehicle '154290_420_0' performs emergency braking on lane '27115123#3_0' with decel=9.00, wished=4.50, severity=1.00, time=25435.00.
+Warning: Vehicle '121463_406_0' performs emergency braking on lane '28198821#3_0' with decel=9.00, wished=4.50, severity=1.00, time=25615.00.
+Warning: Vehicle '121463_406_0' performs emergency stop at the end of lane '28198821#3_0' because of a red traffic light (decel=-12.63, offset=0.73), time=25615.00.
+Warning: Vehicle '127805_407_0' performs emergency braking on lane '23429231#1_1' with decel=9.00, wished=4.50, severity=1.00, time=26035.00.
+Warning: Vehicle '127805_407_0' performs emergency stop at the end of lane '23429231#1_1' because of a red traffic light (decel=-12.65, offset=0.41), time=26035.00.
+Warning: Vehicle '154087_420_0' performs emergency braking on lane '23429231#1_0' with decel=9.00, wished=4.50, severity=1.00, time=26155.00.
+Warning: Vehicle '154087_420_0' performs emergency stop at the end of lane '23429231#1_0' because of a red traffic light (decel=-17.04, offset=3.50), time=26155.00.
+Warning: Vehicle '185869_432_0' performs emergency braking on lane '-32038056#3_0' with decel=9.00, wished=4.50, severity=1.00, time=26455.00.
+Warning: Vehicle '206270_440_0' performs emergency braking on lane '27115123#3_0' with decel=9.00, wished=4.50, severity=1.00, time=26715.00.
+Warning: Vehicle '207293_441_0' performs emergency braking on lane '28198821#3_1' with decel=9.00, wished=4.50, severity=1.00, time=27100.00.
+Warning: Vehicle '194926_436_0' performs emergency braking on lane '-32038056#3_0' with decel=9.00, wished=4.50, severity=1.00, time=27295.00.
+Warning: Vehicle '194926_436_0' performs emergency stop at the end of lane '-32038056#3_0' because of a red traffic light (decel=-14.86, offset=4.29), time=27295.00.
+Warning: Vehicle '261015_461_0' performs emergency braking on lane '23429231#1_0' with decel=9.00, wished=4.50, severity=1.00, time=28475.00.
+Warning: Vehicle '261015_461_0' performs emergency stop at the end of lane '23429231#1_0' because of a red traffic light (decel=-15.09, offset=5.53), time=28475.00.

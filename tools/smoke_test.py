@@ -1,4 +1,4 @@
-"""Stage-2 diagnostic action sequence, NOT a traffic-control algorithm."""
+"""Chuoi action chan doan cua Stage 2, KHONG phai thuat toan dieu khien giao thong."""
 
 import argparse
 import csv
@@ -23,7 +23,7 @@ def source_hashes():
 
 
 def all_pairs_sequence(actions):
-    """An Euler walk visits each ordered pair once, including same-phase pairs."""
+    """Duong di Euler tham moi cap co thu tu dung mot lan, ke ca cap giu nguyen pha."""
     remaining = {action: list(actions) for action in actions}
     stack = [actions[0]]
     sequence = []

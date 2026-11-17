@@ -1,4 +1,4 @@
-"""Hand-calculated lane-pressure checks and real SUMO trace checks."""
+"""Kiem tra pressure theo lane tinh tay va kiem tra trace SUMO thuc te."""
 
 import csv
 from fractions import Fraction
@@ -14,7 +14,7 @@ from test_sumo_env import clock_env
 
 
 def small_env():
-    # Unsorted lane/action order catches accidental sorting of the state/action IDs.
+    # Thu tu lane/action khong sap xep de bat loi vo tinh sort ID state/action.
     return SimpleNamespace(
         incoming_lanes=("in_b", "in_a"), outgoing_lanes=("out_y", "out_x"),
         links=((0, "in_b", "out_y", "v0"), (1, "in_b", "out_x", "v1"),
@@ -26,7 +26,7 @@ def small_env():
 def test_hand_pressure_uses_both_queues_and_state_lane_order():
     env = small_env()
     state = {"incoming": (12, 5), "outgoing": (2, 8), "phase": 4}
-    # a4=(12-2)/2+(5-2)=8; a2=(12-8)/2=2; a0=8+2=10.
+    # a4=(12-2)/2+(5-2)=8; a2=(12-8)/2=2; a0=8+2=10 (tinh tay).
     assert mp.calculate_pressures(env, state) == {4: 8, 2: 2, 0: 10}
     assert mp.choose_action(env, state) == (0, {4: 8, 2: 2, 0: 10})
 
@@ -38,7 +38,7 @@ def test_shared_lane_weights_and_duplicate_link_do_not_multiply_queue():
                        ("in_b", "out_x"): 0.5, ("in_a", "out_y"): 1}
     state = {"incoming": (12, 0), "outgoing": (0, 0), "phase": 4}
     assert mp.calculate_pressures(env, state) == {4: 6, 2: 6, 0: 12}
-    # The duplicate's G still serves the same pair when its other link is red.
+    # Den G cua link trung lap van phuc vu dung cap do khi link con lai dang do.
     env.green_states[4] = "rrGG"
     assert mp.calculate_pressures(env, state)[4] == 6
 
@@ -91,7 +91,7 @@ def test_fractional_weights_do_not_break_an_exact_pressure_tie():
     env = SumoEnv("cologne1")
     state = {"incoming": (5, 5, 1, 9, 0, 0, 0, 9), "outgoing": (0,) * 8}
     action, pressures = mp.choose_action(env, state)
-    # a1=5/2+5/2+5/3+5/3+5/3=10; a4=1+9=10.
+    # a1=5/2+5/2+5/3+5/3+5/3=10; a4=1+9=10 (hai pha hoa nhau).
     assert pressures[1] == pressures[4] == 10
     assert action == 1
 
@@ -161,7 +161,7 @@ def test_recorded_mp_decisions_pressures_timing_reward_and_safety(path):
     assert float(signals[0]["start"]) == meta["begin"]
     assert float(signals[-1]["end"]) == meta["end"]
     assert all(p["end"] == s["start"] for p, s in zip(signals, signals[1:]))
-    # Build the independent reference from the audited CSV, not MP helpers/metadata weights.
+    # Xay dung tham chieu doc lap tu CSV da kiem dinh, khong dung ham/trong so cua MP.
     with (ROOT / f"reports/stage1/{meta['map']}/controlled_links.csv").open(newline="") as f:
         links = list(csv.DictReader(f))
     destinations = {}

@@ -1,4 +1,4 @@
-"""Lane-based Max-Pressure with explicit equal-share approximation on shared lanes."""
+"""Max-Pressure theo lane voi xap xi chia deu ro rang tren cac lane dung chung."""
 
 import argparse
 import csv
@@ -16,22 +16,22 @@ from sumo_env import ROOT, SumoEnv
 
 
 def movement_weights(env):
-    """Split one incoming lane's contribution over its unique destination lanes."""
+    """Chia dong gop cua mot lane dau vao cho cac lane dich duy nhat cua no."""
     movements = sorted({(incoming, outgoing) for _, incoming, outgoing, _ in env.links})
     counts = {lane: 0 for lane in env.incoming_lanes}
     for incoming, _ in movements:
         counts[incoming] += 1
-    # shortcut: equal structural shares, replace with measured shares if available.
+    # shortcut: chia deu theo cau truc, thay bang ty le do thuc te neu co.
     return {(incoming, outgoing): Fraction(1, counts[incoming])
             for incoming, outgoing in movements}
 
 
 def calculate_pressures(env, state):
-    """P(a) = sum w_ij * (q_i - q_j), only for unique pairs with runtime G.
+    """P(a) = sum w_ij * (q_i - q_j), chi tinh cho cac cap duy nhat co G khi chay.
 
-    q_i/q_j are whole-lane halting counts, NOT measured movement queues.
-    w_ij=1/d_i is an approximate allocation, NOT a measured saturation flow.
-    d_i includes all movements from i, even those red in the candidate phase.
+    q_i/q_j la so xe dung tren toan lane, KHONG phai hang doi do rieng theo tung huong re.
+    w_ij=1/d_i la phan bo xap xi, KHONG phai dong bao hoa do duoc.
+    d_i gom tat ca movement xuat phat tu i, ke ca movement dang do trong pha dang xet.
     """
     if (len(state["incoming"]) != len(env.incoming_lanes)
             or len(state["outgoing"]) != len(env.outgoing_lanes)):
@@ -43,7 +43,7 @@ def calculate_pressures(env, state):
     for action in env.actions:
         served = {(incoming, outgoing) for index, incoming, outgoing, _ in env.links
                   if env.green_states[action][index] == "G"}
-        # Exact fractions keep mathematical ties independent of floating-point roundoff.
+        # Dung phan so chinh xac de giu nguyen truong hop hoa nhau, khong bi sai so dau phay dong.
         pressure = 0
         for incoming, outgoing in sorted(served):
             pressure += weights[incoming, outgoing] * (
@@ -53,14 +53,14 @@ def calculate_pressures(env, state):
 
 
 def choose_action(env, state):
-    """Keep negative pressures; ties use the first action in env.actions."""
+    """Giu nguyen pressure am; neu hoa nhau thi chon action dau tien trong env.actions."""
     pressures = calculate_pressures(env, state)
     action = max(env.actions, key=pressures.__getitem__)
     return action, pressures
 
 
 def max_pressure(env):
-    """Use an already reset environment; only SumoEnv executes the signals."""
+    """Dung moi truong da reset san; chi SumoEnv thuc thi tin hieu den."""
     state = env.get_state()
     done = False
     while not done:
@@ -72,7 +72,7 @@ def max_pressure(env):
 
 
 def run_mp(map_name, output, seed=23423):
-    """Run one hour, preserving decision inputs, per-second signals and SUMO logs."""
+    """Chay mot gio, luu lai dau vao quyet dinh, tin hieu tung giay va log SUMO."""
     env = SumoEnv(map_name, output, seed)
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)

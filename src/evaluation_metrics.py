@@ -1,4 +1,4 @@
-"""Algorithm-independent metrics from SUMO tripinfo and per-second signals."""
+"""Cac metric doc lap thuat toan tu tripinfo cua SUMO va tin hieu tung giay."""
 
 import csv
 import json
@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 
 
 def requested_trips(env):
-    """Count explicit requests in [begin,end); do not use inserted as demand."""
+    """Dem cac yeu cau chuyen di ro rang trong [begin,end); khong dung inserted lam nhu cau."""
     config = ET.parse(env.config).getroot()
     ids = set()
     for name in config.find('input/route-files').get('value').split(','):
@@ -33,10 +33,10 @@ def requested_trips(env):
 
 
 def trip_metrics(trips, teleport_ids, requested, begin, end):
-    """Means use ONLY arrived, non-vaporized vehicles never seen teleporting.
+    """Gia tri trung binh CHI tinh xe da den dich, khong bi xoa va chua tung teleport.
 
-    Arrivals timestamped exactly end belong to the final observed SUMO step.
-    Unfinished durations in XML are partial, never used as completed durations.
+    Xe den dich dung moc end thuoc ve buoc SUMO cuoi cung duoc quan sat.
+    Thoi luong chua hoan thanh trong XML chi la mot phan, khong dung lam thoi luong hoan thanh.
     """
     if end <= begin or requested <= 0:
         raise ValueError('Positive horizon and requested count required')
@@ -79,7 +79,7 @@ def trip_metrics(trips, teleport_ids, requested, begin, end):
 
 
 def signal_metrics(signals, begin, end):
-    """Queue over ALL 1-s samples; movement gaps include both horizon edges."""
+    """Hang doi tinh tren TOAN BO mau 1s; khoang cho movement tinh ca hai dau khung gio."""
     if not signals or len(signals) != end - begin:
         raise ValueError('Incomplete signal coverage')
     count = len(signals[0]['signal'])
@@ -116,7 +116,7 @@ def signal_metrics(signals, begin, end):
 
 
 def read_metrics(output, request_ids, begin, end):
-    """Read closed SUMO outputs and cross-check XML against TraCI recordings."""
+    """Doc ket qua SUMO da dong va doi chieu cheo XML voi du lieu ghi tu TraCI."""
     output = Path(output)
     with (output / 'signals.csv').open(newline='', encoding='utf-8') as file:
         signals = list(csv.DictReader(file))
@@ -141,7 +141,7 @@ def read_metrics(output, request_ids, begin, end):
         emergency_braking_warnings=warnings.count('performs emergency braking'),
         emergency_stop_warnings=warnings.count('performs emergency stop'),
     )
-    # Full-hour runs must reconcile demand, tripinfo and aggregate vehicle counts.
+    # Cac luot chay du 1 gio phai doi khop nhu cau, tripinfo va tong so luong xe.
     if len(request_ids) == vehicles['loaded']:
         assert result['inserted'] == vehicles['inserted']
         assert result['undeparted'] == vehicles['waiting']

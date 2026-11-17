@@ -1,4 +1,4 @@
-"""Fixed-Time: cycle through validated green actions, 30 s per service."""
+"""Fixed-Time: xoay vong qua cac pha xanh hop le, moi luot 30 giay xanh."""
 
 import argparse
 import csv
@@ -15,7 +15,7 @@ from sumo_env import ROOT, SumoEnv
 
 
 def fixed_time(env):
-    """Use an already reset environment; queues and reward never choose actions."""
+    """Dung moi truong da reset san; hang doi va reward khong bao gio chon action."""
     action_index = 0
     done = False
     while not done:
@@ -26,7 +26,7 @@ def fixed_time(env):
 
 
 def run_ft(map_name, output, seed=23423):
-    """Run one complete episode and preserve per-second signals and SUMO logs."""
+    """Chay tron mot episode va giu lai tin hieu tung giay cung log cua SUMO."""
     env = SumoEnv(map_name, output, seed)
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)

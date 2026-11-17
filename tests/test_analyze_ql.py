@@ -1,4 +1,4 @@
-"""Offline checks: zero is not a visit count; green gaps include horizon edges."""
+"""Kiem tra offline: gia tri 0 khong phai so lan tham; khoang mat den xanh tinh ca hai dau khung gio."""
 
 from collections import Counter
 

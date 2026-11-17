@@ -1,4 +1,4 @@
-"""Stage 6.2: read saved evidence only; never import a SUMO runner or train."""
+"""Stage 6.2: chi doc bang chung da luu; khong bao gio import bo chay SUMO hay train."""
 
 import argparse
 from bisect import bisect_left
@@ -59,7 +59,7 @@ def greedy_evidence(state, table, actions, updates):
 
 
 def observation_analysis(records, encoding):
-    """Count two distinct losses: lane -> edge sums, then edge sums -> bins."""
+    """Dem hai loai mat thong tin rieng biet: lane -> tong edge, roi tong edge -> bin."""
     grouped = []
     raw_by_edge = defaultdict(set)
     edge_by_encoded = defaultdict(set)
@@ -120,7 +120,7 @@ def observation_analysis(records, encoding):
 
 
 def audit_signals(signals, metadata):
-    """Reuse the existing offline metric; also verify each actual runtime green."""
+    """Dung lai metric offline san co; dong thoi kiem tra tung giay xanh thuc te."""
     metrics = signal_metrics(signals, metadata['begin'], metadata['end'])
     runtime = dict(metadata['environment']['runtime_green_states'])
     count = len(signals[0]['signal'])
@@ -139,7 +139,7 @@ def audit_signals(signals, metadata):
 
 
 def replay_training(root, name, payload, mapping, *, training_dir=None):
-    """Reconstruct visits, RNG branches and Bellman updates; compare every checkpoint."""
+    """Tai dung so lan tham, nhanh RNG va cap nhat Bellman; doi chieu moi checkpoint."""
     settings = payload['metadata']['training']
     actions = payload['metadata']['actions']
     table, updates, visits = {}, Counter(), Counter()
@@ -209,7 +209,7 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
                                        dict(mapping, begin=result['begin'], end=result['end']))
         assert metrics['queue_seconds'] == result['queue_seconds']
         vehicles = {k: int(v) for k, v in result['vehicles'].items()}
-        # Stage 5 has no tripinfo: arrivals include teleported vehicles.
+        # Stage 5 khong co tripinfo: so xe den dich bao gom ca xe da teleport.
         arrived = vehicles['inserted'] - vehicles['running']
         episodes.append(dict(map=name, episode=episode, epsilon=run_meta['epsilon'], updates=len(rows),
                              random_branch=explored, random_fraction=explored / len(rows),
@@ -266,7 +266,7 @@ def policy_summary(details):
 
 
 def analyze_evaluation_run(folder, payload, updates, stored, stored_movements):
-    """Audit one saved Stage 6 run and its controlled-link service, without SUMO."""
+    """Kiem tra mot luot Stage 6 da luu va phuc vu tung controlled link, khong chay SUMO."""
     result = read_json(folder / 'result.json')
     meta = read_json(folder / 'metadata.json')
     name, algorithm, seed = meta['map'], meta['algorithm'], meta['seed']
@@ -319,7 +319,7 @@ def analyze_evaluation_run(folder, payload, updates, stored, stored_movements):
 
 
 def analyze(root):
-    """Return all tables before writing anything; missing/inconsistent evidence fails."""
+    """Tra ve toan bo bang truoc khi ghi file; bang chung thieu hoac mau thuan se bao loi."""
     stage5 = read_json(root / 'reports/stage5/analysis.json')
     summary5 = read_csv(root / 'reports/stage5/summary.csv')
     summary6 = read_csv(root / 'reports/stage6/runs.csv')

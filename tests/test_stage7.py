@@ -1,4 +1,4 @@
-"""Small offline checks for Stage 7 evidence and the predeclared selection."""
+"""Cac kiem tra offline nho cho bang chung Stage 7 va quy tac chon model khai bao truoc."""
 
 from collections import Counter
 from pathlib import Path

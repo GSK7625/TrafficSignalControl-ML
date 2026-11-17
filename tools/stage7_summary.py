@@ -1,4 +1,4 @@
-"""Stage 7 offline evidence; no simulator, training, or policy changes."""
+"""Bang chung offline cho Stage 7; khong chay mo phong, train hay doi policy."""
 
 import argparse
 from collections import Counter
@@ -50,7 +50,7 @@ def checkpoint_changes(previous, current):
 
 
 def training_evidence(folder, name, label):
-    """Replay all Bellman/RNG evidence using Stage 6.2; count pairs per episode."""
+    """Tai dung toan bo bang chung Bellman/RNG bang Stage 6.2; dem so cap theo tung episode."""
     payload = audit.read_json(folder / f'{name}_q_table.json')
     settings = payload['metadata']['training']
     budget = 3 if label == 'QL-3ep' else 5 if label == 'pilot' else 15
@@ -87,7 +87,7 @@ def training_evidence(folder, name, label):
 
 
 def run_evidence(folder, payload=None, updates=None):
-    """Use the common metrics already saved; verify actual greens and greedy decisions."""
+    """Dung lai cac metric chung da luu; kiem tra den xanh thuc te va quyet dinh tham lam."""
     result = audit.read_json(folder / 'result.json')
     metadata = audit.read_json(folder / 'metadata.json')
     signals, green = audit.audit_signals(audit.read_csv(folder / 'signals.csv'), metadata)
@@ -117,7 +117,7 @@ def run_evidence(folder, payload=None, updates=None):
 
 
 def choose_model(rows):
-    """Predeclared final-model rule; this function refuses any test seed."""
+    """Quy tac chon model cuoi da khai bao truoc; ham nay tu choi moi seed tap test."""
     labels = ('QL-15ep-e7', 'QL-15ep-e17')
     if any(row['seed'] not in VALIDATION_SEEDS for row in rows):
         raise ValueError('Only validation seeds may select a model')
@@ -168,7 +168,7 @@ def write_csv(path, rows):
 
 
 def summarize(runs):
-    """Unweighted run means with explicit counts; never merge maps or train/eval."""
+    """Trung binh khong trong so voi so luot ro rang; khong gop hai map hay train/eval."""
     fields = ('valid_completed', 'average_waiting_time', 'average_travel_time', 'average_time_loss',
               'average_queue_length', 'completion_rate', 'throughput', 'insertion_rate',
               'unfinished', 'undeparted', 'teleports', 'teleported', 'collisions', 'emergency_braking',
@@ -194,7 +194,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True, help='New output directory only')
     args = parser.parse_args()
-    # Fail before reading large logs if a previous report already exists.
+    # Bao loi truoc khi doc cac file log lon neu bao cao cu da ton tai.
     if args.output.exists():
         raise FileExistsError(args.output)
     models, episodes, pairs = {}, [], []

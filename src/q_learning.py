@@ -1,4 +1,4 @@
-"""Tabular Q-Learning: discrete edge queues, original green IDs, shared SumoEnv."""
+"""Tabular Q-Learning: roi rac hoa hang doi theo edge, ID pha xanh goc, dung chung SumoEnv."""
 
 import argparse
 from bisect import bisect_left
@@ -19,7 +19,7 @@ from sumo_env import ROOT, SumoEnv
 
 
 def build_encoding(env, queue_bins=(0, 4)):
-    """Use XML edge membership, not movement links (which repeat lanes)."""
+    """Dung quan he edge trong XML, khong dung link movement (vi bi lap lane)."""
     if (not queue_bins or queue_bins[0] != 0
             or any(type(x) is not int or x < 0 for x in queue_bins)
             or any(a >= b for a, b in zip(queue_bins, queue_bins[1:]))):
@@ -43,7 +43,7 @@ def build_encoding(env, queue_bins=(0, 4)):
 
 
 def encode_state(state, encoding):
-    """Sum unique lanes per edge, apply saved inclusive upper bounds, append phase ID."""
+    """Cong cac lane duy nhat theo edge, ap nguong can tren da luu, noi them ID pha."""
     encoded = []
     for side in ("incoming", "outgoing"):
         lanes = encoding[side + "_lanes"]
@@ -62,7 +62,7 @@ def encode_state(state, encoding):
 
 
 def get_q_values(q_table, state, actions, create=True):
-    """Evaluation can read an unseen state as zeros without inserting a row."""
+    """Khi evaluate co the doc state chua gap nhu hang toan 0 ma khong chen them hang."""
     if state not in q_table:
         values = [0.0] * len(actions)
         if create:
@@ -72,7 +72,7 @@ def get_q_values(q_table, state, actions, create=True):
 
 
 def choose_action(q_table, state, actions, epsilon=0.0, rng=None):
-    """Epsilon-greedy; ties always use the first column in actions."""
+    """Epsilon-greedy; neu hoa nhau luon chon cot dau tien trong actions."""
     if not 0 <= epsilon <= 1:
         raise ValueError("epsilon must be in [0, 1]")
     if epsilon > 0:
@@ -86,7 +86,7 @@ def choose_action(q_table, state, actions, epsilon=0.0, rng=None):
 
 
 def update_q_value(q_table, state, action, reward, next_state, done, actions, alpha, gamma):
-    """One online Q(s,a) update; gamma discounts decisions, not seconds."""
+    """Mot buoc cap nhat Q(s,a) truc tuyen; gamma giam gia theo quyet dinh, khong theo giay."""
     if not 0 < alpha <= 1 or not 0 <= gamma <= 1:
         raise ValueError("alpha must be in (0, 1], gamma in [0, 1]")
     if type(action) is not int or action not in actions or not math.isfinite(reward):
@@ -102,7 +102,7 @@ def update_q_value(q_table, state, action, reward, next_state, done, actions, al
 
 
 def episode_epsilon(episode, episodes, epsilon_start, epsilon_min):
-    """Linear schedule: start at episode 1, reach min at the last episode."""
+    """Lich tuyen tinh: bat dau o episode 1, dat min o episode cuoi."""
     if not 0 <= epsilon_min <= epsilon_start <= 1:
         raise ValueError("Require 0 <= epsilon_min <= epsilon_start <= 1")
     if type(episodes) is not int or episodes < 1 or not 1 <= episode <= episodes:
@@ -120,7 +120,7 @@ def environment_config(env):
 
 
 def source_hashes(env):
-    """Record original inputs including demand; never modify them."""
+    """Ghi lai cac file dau vao goc gom ca demand; khong bao gio sua chung."""
     return {str(path.relative_to(ROOT)).replace("\\", "/"): hashlib.sha256(path.read_bytes()).hexdigest()
             for path in sorted(env.config.parent.iterdir()) if path.is_file()}
 
@@ -146,7 +146,7 @@ def make_metadata(env, *, episodes, alpha, gamma, epsilon_start, epsilon_min, ex
 
 
 def save_q_table(path, q_table, metadata):
-    """JSON rows retain tuple keys and action-column order; exclusive create."""
+    """Cac dong JSON giu khoa tuple va thu tu cot action; chi tao file moi."""
     payload = {"metadata": metadata,
                "rows": [{"state": list(state), "values": values}
                         for state, values in sorted(q_table.items())]}
@@ -156,7 +156,7 @@ def save_q_table(path, q_table, metadata):
 
 
 def load_q_table(path, env, queue_bins=(0, 4)):
-    """Reject a different map, encoding, timing, input data or malformed row."""
+    """Tu choi neu khac map, encoding, thoi gian, du lieu dau vao hoac dong sai dinh dang."""
     payload = json.loads(Path(path).read_text(encoding="utf-8"))
     metadata = payload["metadata"]
     expected = {"schema_version": 1, "algorithm": "Q-Learning", "map": env.map_name,
@@ -184,7 +184,7 @@ def load_q_table(path, env, queue_bins=(0, 4)):
 
 
 def run_episode(env, q_table, metadata, *, episode, training, epsilon=0.0, rng=None):
-    """Own one SUMO process; log common FT/MP measurements and Q update evidence."""
+    """Quan ly mot tien trinh SUMO; ghi nhan cac chi so chung nhu FT/MP va bang chung cap nhat Q."""
     output = env.output_dir
     output.mkdir(parents=True, exist_ok=False)
     encoding = metadata["encoding"]
@@ -221,7 +221,7 @@ def run_episode(env, q_table, metadata, *, episode, training, epsilon=0.0, rng=N
                 action = choose_action(q_table, encoded, env.actions, epsilon, rng)
                 before = list(get_q_values(q_table, encoded, env.actions, create=False))
                 next_state, reward, done, info = env.step(action)
-                # Terminal may have phase=None during yellow/all-red; do not encode it.
+                # Trang thai ket thuc co the co phase=None trong luc vang/do tat ca; khong ma hoa no.
                 next_encoded = None if done else encode_state(next_state, encoding)
                 next_max = None if done else max(get_q_values(q_table, next_encoded, env.actions, create=False))
                 if training:
@@ -300,7 +300,7 @@ SUMMARY_FIELDS = ("map", "mode", "episode", "sumo_seed", "exploration_seed", "tr
 
 def train(map_name, output, episodes, *, seed=23423, exploration_seed=7,
           alpha=0.1, gamma=0.95, epsilon_start=1.0, epsilon_min=0.05, queue_bins=(0, 4)):
-    """Start a fresh table; keep one exploration RNG across independent SUMO episodes."""
+    """Bat dau bang Q moi; giu mot RNG kham pha xuyen suot cac episode SUMO doc lap."""
     output = Path(output)
     env = SumoEnv(map_name, seed=seed)
     metadata = make_metadata(env, episodes=episodes, alpha=alpha, gamma=gamma,
@@ -327,7 +327,7 @@ def train(map_name, output, episodes, *, seed=23423, exploration_seed=7,
 
 
 def evaluate(map_name, model, output, *, seed=42, queue_bins=(0, 4)):
-    """Load a compatible table, use epsilon=0, never update or insert a Q row."""
+    """Tai bang Q tuong thich, dung epsilon=0, khong cap nhat hay chen them dong Q."""
     env = SumoEnv(map_name, output, seed)
     q_table, metadata = load_q_table(model, env, queue_bins)
     result = run_episode(env, q_table, metadata, episode=1, training=False)

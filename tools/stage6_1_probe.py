@@ -1,4 +1,4 @@
-"""Stage 6.1 FT investigation. No training or changes to simulation settings."""
+"""Dieu tra FT cho Stage 6.1. Khong train hay thay doi cau hinh mo phong."""
 
 import argparse
 import csv
@@ -28,7 +28,7 @@ def digest(value):
 
 
 def first_difference(left, right):
-    """Compare exact values in causal inspection order, without rounding floats."""
+    """So sanh gia tri chinh xac theo thu tu nhan qua, khong lam tron so thuc."""
     fields = ('time', 'signal', 'departed', 'active', 'vehicles', 'queue',
               'teleports', 'collisions')
     for index, (a, b) in enumerate(zip(left, right)):
@@ -43,7 +43,7 @@ def first_difference(left, right):
 
 
 def signal_commands(samples):
-    """Recover reset + _run_signal setters, including one-second extra clearance."""
+    """Khoi phuc cac lenh dat den cua reset + _run_signal, gom ca giai toa keo dai tung giay."""
     commands = [(samples[0]['start'], samples[0]['signal'])]
     previous = None
     red_start = None
@@ -59,10 +59,10 @@ def signal_commands(samples):
 
 
 def replay_signals(source, output, *, fcd=True, save_rng=False):
-    """Replay the same setters/steps without SumoEnv, queue reads or observer.
+    """Phat lai dung cac lenh dat den/buoc mo phong ma khong qua SumoEnv, doc hang doi hay observer.
 
-    This isolates the interval before feedback-dependent signal divergence.
-    FCD timestamps label the START of a step; TraCI snapshots label its END.
+    Cach nay co lap khoang thoi gian truoc khi tin hieu lech do phan hoi hang doi.
+    Moc thoi gian FCD danh dau luc BAT DAU mot buoc; anh chup TraCI danh dau luc KET THUC buoc do.
     """
     source, output = Path(source), Path(output).resolve()
     output.mkdir(parents=True, exist_ok=False)
@@ -78,7 +78,7 @@ def replay_signals(source, output, *, fcd=True, save_rng=False):
             i = argv.index(option) + 1
             argv[i] = str(output / Path(argv[i]).name)
     if fcd:
-        # shortcut: Cologne1 diagnostic window; adjust for another replay investigation.
+        # shortcut: cua so chan doan Cologne1; chinh lai neu dieu tra replay khac.
         argv += ['--fcd-output', str(output / 'fcd.xml.gz'),
                  '--device.fcd.begin', '25845', '--precision', '12',
                  '--fcd-output.acceleration', 'true']
@@ -111,10 +111,10 @@ def replay_signals(source, output, *, fcd=True, save_rng=False):
 
 def run_probe(map_name, seed, horizon, output, mode, *, observe=False,
               detail_window=None, reverse_reads=False, watched=()):
-    """A=no tripinfo; B=tripinfo; C=tripinfo and the existing CSV metrics.
+    """A=khong tripinfo; B=co tripinfo; C=co tripinfo va cac metric CSV hien tai.
 
-    All modes retain SumoEnv's necessary clearance reads and built-in samples.
-    Observer adds getters/subscriptions only, never a step or vehicle/TLS setter.
+    Moi che do deu giu nguyen cac lenh doc giai toa bat buoc va lay mau cua SumoEnv.
+    Observer chi them getter/subscription, khong bao gio step hay dat den/xe.
     """
     if mode not in ('A', 'B', 'C'):
         raise ValueError('mode must be A, B or C')

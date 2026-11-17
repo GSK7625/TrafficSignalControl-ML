@@ -1,4 +1,4 @@
-"""Small, hand-calculated checks for tabular Q-Learning."""
+"""Cac kiem tra nho tinh tay cho tabular Q-Learning."""
 
 import copy
 import csv
@@ -121,7 +121,7 @@ def test_invalid_epsilon(epsilon):
 
 def test_q_update_hand_calculation_correct_column_and_negative_q():
     table = {(0,): [0, 2, -3], (1,): [-4, 6, 1]}
-    # Q(s,2) = 2 + .1 * (-5 + .95*6 - 2) = 1.87.
+    # Q(s,2) = 2 + 0.1 * (-5 + 0.95*6 - 2) = 1.87 (tinh tay).
     ql.update_q_value(table, (0,), 2, -5, (1,), False, (0, 2, 4), .1, .95)
     assert table[(0,)] == pytest.approx([0, 1.87, -3])
     assert table[(1,)] == [-4, 6, 1]
@@ -199,7 +199,7 @@ def test_linear_epsilon_schedule_and_one_episode():
 
 
 def test_real_train_three_episodes_save_load_and_read_only_evaluation(tmp_path, monkeypatch):
-    # Short horizon exercises the pipeline; delivered reports use the original full hour.
+    # Khung gio ngan de kiem tra luong chay; bao cao chinh thuc dung du 1 gio goc.
     real_env = ql.SumoEnv
     environments = []
 
@@ -272,7 +272,7 @@ def test_terminal_transition_is_not_encoded_and_evaluation_does_not_insert(tmp_p
     env.end = env.begin + seconds
     meta = ql.make_metadata(env, episodes=1, alpha=.1, gamma=.95,
                             epsilon_start=1, epsilon_min=.05, exploration_seed=7)
-    # Reset starts at phase 0; column 2 means real phase 4, forcing a transition.
+    # Reset bat dau o pha 0; cot 2 la pha thuc te 4, bat buoc phai chuyen pha.
     table = {(0, 0, 0, 0, 0, 0, 0): [-2, -1, 1]}
     before = copy.deepcopy(table)
     result = ql.run_episode(env, table, meta, episode=1, training=False)
@@ -360,7 +360,7 @@ def test_recorded_full_episode_timing_reward_safety_and_greedy_policy(path):
         queue_seconds = sum(int(s["queue"]) for s in samples)
         assert float(row["queue_seconds"]) == queue_seconds
         assert float(row["reward"]) == pytest.approx(-queue_seconds / len(samples))
-        # Independent encoder reference from lane IDs in the recorded state.
+        # Bo ma hoa doc lap tham chieu tu lane ID trong state da ghi lai.
         encoded = []
         for side in ("incoming", "outgoing"):
             queues = json.loads(row[side])

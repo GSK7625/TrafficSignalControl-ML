@@ -1,4 +1,4 @@
-"""Fair FT/MP/frozen QL evaluation. No training or model output."""
+"""Danh gia cong bang FT/MP/QL dong bang. Khong train hay xuat model."""
 
 import argparse
 import copy
@@ -30,7 +30,7 @@ def sha256(path):
 
 
 def greedy_steps(env, table, encoding, guard_seconds=None):
-    """Frozen greedy QL, optionally constrained by observed incoming-edge service."""
+    """QL tham lam dong bang, co tuy chon rang buoc phuc vu edge dau vao da quan sat."""
     if guard_seconds is not None and (type(guard_seconds) is not int or guard_seconds <= 0):
         raise ValueError('guard_seconds must be a positive integer or None')
     groups = encoding['incoming_groups'] if guard_seconds is not None else []
@@ -59,7 +59,7 @@ def greedy_steps(env, table, encoding, guard_seconds=None):
             if overdue:
                 index = min(overdue, key=lambda i: demand_since[i])
                 guard_edge, guard_age = groups[index]['edge'], now - demand_since[index]
-                # Shared lanes reveal edge demand, not which turn is waiting.
+                # Lane dung chung chi cho thay nhu cau theo edge, khong biet huong re nao dang cho.
                 action = max(serving_actions[index], key=lambda a: values[env.actions.index(a)])
         next_state, _, done, info = env.step(action)
         for index, group in enumerate(groups):
@@ -75,7 +75,7 @@ def greedy_steps(env, table, encoding, guard_seconds=None):
 
 def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=None,
                    queue_bins=(0, 4), guard_seconds=None):
-    """One run with common recording. horizon is only for short integration tests."""
+    """Chay mot luot voi ghi nhan dung chung. horizon chi dung cho kiem thu tich hop ngan."""
     if algorithm not in ALGORITHMS:
         raise ValueError('algorithm must be FT, MP or QL')
     if (algorithm == 'QL') != (model is not None):

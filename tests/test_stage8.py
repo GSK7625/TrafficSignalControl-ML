@@ -1,4 +1,4 @@
-"""Small checks for Stage 8's offline repetition evidence."""
+"""Cac kiem tra nho cho bang chung lap action offline cua Stage 8."""
 
 import json
 
@@ -41,7 +41,7 @@ def test_guard_serves_overdue_observed_edges_through_step_and_keeps_q_frozen(pat
         assert chosen == [0]*6 and all(row['guard_edge'] is None for row in rows)
     else:
         assert chosen[:first_override] == [0]*first_override
-        assert chosen[first_override] == 1  # Oldest edge -32038056#3, best eligible Q.
+        assert chosen[first_override] == 1  # Edge lau nhat -32038056#3, Q hop le cao nhat.
         assert rows[first_override]['guard_age'] == 60 and rows[first_override]['guard_edge'] is not None
     assert all(a in env.actions for a in chosen)
     assert table == before

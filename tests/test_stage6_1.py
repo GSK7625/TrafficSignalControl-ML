@@ -1,4 +1,4 @@
-"""Small checks for the investigation tools, not a determinism guarantee."""
+"""Cac kiem tra nho cho cong cu dieu tra, khong phai bao dam tinh tat dinh."""
 
 def test_first_difference_keeps_time_and_component_order():
     from stage6_1_probe import first_difference

@@ -1,4 +1,4 @@
-"""Stage 8 offline evidence; reuses training replay, coverage and common metrics."""
+"""Bang chung offline cho Stage 8; dung lai tai dung training, do phu va metric chung."""
 
 import argparse
 from collections import Counter
@@ -20,7 +20,7 @@ STAGE = ROOT / 'reports/stage8'
 
 
 def repetition_evidence(rows):
-    """Continuous green excludes the initial yellow/red of a changed action."""
+    """Thoi gian xanh lien tuc khong tinh phan vang/do dau tien khi doi action."""
     if not rows:
         raise ValueError('Empty decisions')
     previous, count, seconds = None, 0, 0
@@ -52,7 +52,7 @@ def repetition_evidence(rows):
 
 
 def audit_guard_decisions(rows, signals, metadata, encoding):
-    """Reconstruct demand ages and required overrides from queues and actual G."""
+    """Tai dung tuoi nhu cau va cac lan ghi de bat buoc tu hang doi va den G thuc te."""
     groups = encoding['incoming_groups']
     since = [None] * len(groups)
     runtime = dict(metadata['environment']['runtime_green_states'])
@@ -138,7 +138,7 @@ def run_evidence(folder, payload, updates):
 
 
 def verify_runs(runs, state_only=False):
-    """Require the declared matrix; never call a partial comparison complete."""
+    """Bat buoc du ma tran da khai bao; khong bao gio coi so sanh thieu la hoan chinh."""
     labels = ['QL-Original', 'QL-NewState']
     if not state_only:
         labels.append('QL-NewState-Guard')
@@ -213,7 +213,7 @@ def main():
             runs.append(result)
             evidence[source] = details
     verify_runs(runs, args.state_only)
-    # Keep complete per-run ranges and action distributions, not duplicated per-second logs.
+    # Giu day du mien gia tri tung luot va phan bo action, khong nhan ban log tung giay.
     summary = stage7.summarize(runs)
     for entry in summary:
         group = [r for r in runs if (r['partition'], r['map'], r['label']) ==

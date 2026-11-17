@@ -1,4 +1,4 @@
-"""Small numerical checks plus short real SUMO observer/read-only checks."""
+"""Kiem tra so hoc nho va chay thu SUMO ngan voi observer/chi doc."""
 
 import csv
 import hashlib
@@ -12,7 +12,7 @@ from evaluation_metrics import trip_metrics, signal_metrics, requested_trips
 
 
 def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path):
-    """Two teleport events for a single ID; unfinished/pending stay in demand."""
+    """Hai su kien teleport cho cung mot ID; xe chua xong/dang cho van nam trong demand."""
     from evaluation_metrics import read_metrics
     rows = [trip('a', 0, 3, 99, 99), trip('b', 1, 4, 2, 3),
             trip('c', 2, -1, 100, 100), trip('d', -1, -1)]

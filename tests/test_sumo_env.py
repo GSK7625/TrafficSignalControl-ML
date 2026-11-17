@@ -1,4 +1,4 @@
-"""Small checks for stage 2; the SUMO run is in smoke_test.py."""
+"""Cac kiem tra nho cho stage 2; luot chay SUMO nam trong smoke_test.py."""
 
 from types import SimpleNamespace
 
@@ -46,7 +46,7 @@ def test_runtime_closes_yielding_movements_without_losing_any_link(name):
 
 
 class ClockConnection:
-    """Deterministic clock/queues: SUMO itself is checked separately."""
+    """Dong ho/hang doi tat dinh: ban than SUMO duoc kiem tra rieng."""
 
     def __init__(self, begin, queues):
         self.time = begin
@@ -153,7 +153,7 @@ def test_invalid_action_does_not_advance_simulation():
 def test_bus_tail_is_tracked_after_front_passes_short_outgoing_edge():
     env = SumoEnv("ingolstadt1")
     lane = ":cluster_274083968_cluster_1200364014_1200364088_8_0"
-    position = 12.19  # 1 m before the last internal segment ends.
+    position = 12.19  # Cach cuoi doan noi bo cuoi cung 1 m.
     distance = 100.0
     env.conn = SimpleNamespace(
         lane=SimpleNamespace(getLastStepVehicleIDs=lambda l: ("bus",) if l == lane else ()),
@@ -166,7 +166,7 @@ def test_bus_tail_is_tracked_after_front_passes_short_outgoing_edge():
     )
     assert env._junction_vehicles() == ("bus",)
     lane = "uncontrolled_next_internal_lane"
-    distance = 111.0  # Front travelled 11 m; rear still 2 m inside.
+    distance = 111.0  # Dau xe da di 11 m; duoi xe van con 2 m ben trong.
     assert env._junction_vehicles() == ("bus",)
     distance = 113.1
     assert env._junction_vehicles() == ()

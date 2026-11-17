@@ -1,4 +1,4 @@
-"""FT schedule checks; recorded SUMO runs are checked below after generation."""
+"""Kiem tra lich pha FT; cac luot SUMO da ghi duoc kiem tra o duoi sau khi sinh ra."""
 
 import pytest
 import csv
@@ -24,7 +24,7 @@ def test_fixed_time_cycles_without_using_queue_or_reward(queues):
 
 @pytest.mark.parametrize("path", sorted((ROOT / "reports/stage3/ft").glob("*/seed_*/result.json")))
 def test_recorded_sumo_signals_match_ft_schedule(path):
-    """Read actual TraCI signals/timestamps again, independently of action totals."""
+    """Doc lai tin hieu va moc thoi gian TraCI thuc te, doc lap voi tong theo action."""
     result = json.loads(path.read_text(encoding="utf-8"))
     metadata = json.loads(path.with_name("metadata.json").read_text(encoding="utf-8"))
     with path.with_name("signals.csv").open(encoding="utf-8", newline="") as f:

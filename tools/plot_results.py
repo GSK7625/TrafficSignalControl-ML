@@ -1,4 +1,4 @@
-"""Rebuild stage6 tables/paired differences/plots from every completed raw run."""
+"""Tai tao cac bang, chenh lech theo cap va bieu do Stage 6 tu toan bo luot chay tho."""
 
 import argparse
 import csv
@@ -83,7 +83,7 @@ def paired_differences(rows):
 
 
 def verify_common_configuration(paths):
-    """Fail on mixed demand/settings/code rather than silently average unfair runs."""
+    """Bao loi neu tron lan demand/cau hinh/code thay vi am tham tinh trung binh khong cong bang."""
     reference = {}
     model_hashes = {}
     keys = ('source_hashes', 'code_hashes', 'environment', 'actions', 'tls_id',

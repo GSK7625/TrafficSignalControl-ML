@@ -1,9 +1,9 @@
-"""Shared SUMO environment (not a safety certification).
+"""Moi truong SUMO dung chung (khong phai chung nhan an toan).
 
-Action IDs are the ORIGINAL green-phase indices: 0..7 / 0,2,4.
-G=priority green, g=yielding green, s=stop then yield, y=yellow, r=red.
-Runtime closes g/s; every movement retains protected service in another phase.
-See reports/stage3/README.md for timing, sampling and safety limitations.
+Action ID la chi so pha xanh GOC: 0..7 / 0,2,4.
+G=xanh uu tien, g=xanh nhuong duong, s=dung roi nhuong, y=vang, r=do.
+Luc chay se tat g/s; moi movement van duoc phuc vu co bao ve o pha khac.
+Xem reports/stage3/README.md ve thoi gian, lay mau va gioi han an toan.
 """
 
 from pathlib import Path
@@ -21,7 +21,7 @@ if str(_SRC) not in sys.path:
 
 
 def yellow_state(green):
-    """Close every open movement, including links shared with the next phase."""
+    """Dong tat ca movement dang mo, ke ca cac link dung chung voi pha tiep theo."""
     return "".join("y" if light in "Ggs" else "r" for light in green)
 
 
@@ -48,7 +48,7 @@ class SumoEnv:
             i: phase.get("state") for i, phase in enumerate(tls.findall("phase"))
             if "y" not in phase.get("state") and "G" in phase.get("state")
         }
-        # Yielding vehicles can wait inside a crossing path; serve them under G elsewhere.
+        # Xe nhuong duong co the dung cho trong giao lo; phuc vu chung bang G o pha khac.
         self.green_states = {
             i: "".join("G" if light == "G" else "r" for light in state)
             for i, state in self.original_green_states.items()
@@ -75,7 +75,7 @@ class SumoEnv:
                     raise ValueError(f"Not a controlled motor-vehicle boundary lane: {lane_id}")
         self.incoming_lanes = tuple(sorted({link[1] for link in self.links}))
         self.outgoing_lanes = tuple(sorted({link[2] for link in self.links}))
-        # Follow only this TLS's internal paths, including second yielding segments.
+        # Chi di theo duong noi bo cua TLS nay, bao gom ca doan nhuong duong thu hai.
         self.distance_to_exit = {}
         for _, _, _, via in self.links:
             path = []
@@ -106,14 +106,14 @@ class SumoEnv:
             pairs = []
             for i in range(count):
                 for j in range(i + 1, count):
-                    # SUMO bitstrings start with index 0 at the RIGHT.
+                    # Chuoi bit cua SUMO danh chi so 0 tu ben PHAI.
                     foes = requests[i].get("foes")[-1-j] == "1" or requests[j].get("foes")[-1-i] == "1"
                     if not foes or state[i] == "r" or state[j] == "r":
                         continue
                     raise ValueError(f"Conflicting protected greens: phase {phase}, {i}/{j}")
             self.phase_foes[phase] = tuple(pairs)
         self.green_seconds = 30
-        # ceil(1 + (2 * maximum approach speed) / (2 * 3 m/s²)); audit in stage3.
+        # ceil(1 + (2 * toc do tiep can toi da) / (2 * 3 m/s^2)); kiem tra trong stage3.
         self.yellow_seconds = 8 if map_name == "cologne1" else 6
         self.minimum_red_seconds = 2
         self.output_dir = Path(output_dir).resolve() if output_dir is not None else None
@@ -122,7 +122,7 @@ class SumoEnv:
         self._clear_after = {}
 
     def reset(self):
-        """Start an independent process at the original begin; return its state."""
+        """Khoi dong mot tien trinh doc lap tai moc begin goc; tra ve state ban dau."""
         self.close()
         self._clear_after = {}
         command = [
@@ -166,12 +166,12 @@ class SumoEnv:
             self.conn.trafficlight.setRedYellowGreenState(self.tls_id, self.green_states[self.current_phase])
             return self.get_state()
         except Exception:
-            # Close the owned process on validation failure, then expose the error.
+            # Dong tien trinh so huu khi kiem tra that bai, roi nem loi ra ngoai.
             self.close()
             raise
 
     def close(self):
-        """Close TraCI and wait for the owned SUMO process to exit."""
+        """Dong TraCI va cho tien trinh SUMO so huu thoat han."""
         if self.conn is not None:
             try:
                 self.conn.close()
@@ -180,7 +180,7 @@ class SumoEnv:
                 self.current_phase = None
 
     def get_state(self):
-        """Queues after the last SUMO step, in sorted boundary-lane order."""
+        """Hang doi sau buoc SUMO cuoi cung, theo thu tu boundary lane da sap xep."""
         if self.conn is None:
             raise RuntimeError("Call reset() before reading state")
         return {
@@ -190,7 +190,7 @@ class SumoEnv:
         }
 
     def _junction_vehicles(self):
-        """Vehicles on internal lanes OR with a rear still over the exit."""
+        """Xe dang tren lane noi bo HOAC co duoi xe van con nam tren diem ra."""
         vehicle_api = self.conn.vehicle
         for lane in self.internal_lanes:
             for vehicle in self.conn.lane.getLastStepVehicleIDs(lane):
@@ -203,7 +203,7 @@ class SumoEnv:
                 rear_distance = vehicle_api.getLength(vehicle) - vehicle_api.getLanePosition(vehicle)
                 if rear_distance > 0:
                     self._clear_after[vehicle] = vehicle_api.getDistance(vehicle) + rear_distance
-        # Odometer tracking also covers a bus longer than the outgoing edge.
+        # Theo doi quang duong di duoc de xu ly ca xe buyt dai hon doan edge dau ra.
         active = set(vehicle_api.getIDList())
         self._clear_after = {
             vehicle: distance for vehicle, distance in self._clear_after.items()
@@ -212,7 +212,7 @@ class SumoEnv:
         return tuple(sorted(self._clear_after))
 
     def _run_signal(self, signal, seconds, stage, samples):
-        """Advance one second at a time; sample queues at each interval's end."""
+        """Cho mo phong tien tung giay mot; lay mau hang doi o cuoi moi khoang 1 giay."""
         if self.conn.simulation.getTime() >= self.end:
             return
         self.conn.trafficlight.setRedYellowGreenState(self.tls_id, signal)
@@ -236,10 +236,10 @@ class SumoEnv:
             })
 
     def step(self, action):
-        """Execute one green action; return state, reward, done, info.
+        """Thuc thi mot pha xanh; tra ve state, reward, done, info.
 
-        A changed action closes every open movement, waits for clearance,
-        then requests 30 s of green. The fixed horizon may cut ANY stage.
+        Neu doi action thi dong moi movement dang mo, cho giai toa giao lo,
+        roi yeu cau 30s xanh. Moc ket thuc co dinh co the cat BAT KY giai doan nao.
         """
         if self.conn is None:
             raise RuntimeError("Call reset() before step()")
@@ -256,7 +256,7 @@ class SumoEnv:
                              self.yellow_seconds, "yellow", samples)
             self._run_signal("r" * len(self.green_states[action]),
                              self.minimum_red_seconds, "all_red", samples)
-            # A blocked junction stays red, even if this uses the rest of the episode.
+            # Giao lo bi ket van giu do, ke ca khi dung het phan con lai cua episode.
             while self.conn.simulation.getTime() < self.end and self._junction_vehicles():
                 self._run_signal("r" * len(self.green_states[action]), 1, "all_red", samples)
         if self.conn.simulation.getTime() < self.end:

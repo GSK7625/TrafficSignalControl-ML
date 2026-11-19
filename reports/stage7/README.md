@@ -321,18 +321,17 @@ Không tự thêm state, đổi reward/tie-break hay train tiếp trong Stage7 n
 - Review offline riêng đã kiểm tra script/test; lỗi chấp nhận matrix thiếu đã được
   chặn bằng kiểm tra bắt buộc, có regression test. Không dùng review thay test SUMO.
 
-Ví dụ lệnh train đã chạy (mỗi output chỉ tạo mới, không ghi đè):
+Ví dụ tái tạo các lượt Cologne1 trong thư mục mới, chạy từ gốc dự án.
 
 ```powershell
-.\.venv\Scripts\python.exe q_learning.py train cologne1 --episodes 5 --seed 23423 --exploration-seed 7 --output reports/stage7/pilot/cologne1
-.\.venv\Scripts\python.exe q_learning.py train cologne1 --episodes 15 --seed 23423 --exploration-seed 7 --output reports/stage7/training/cologne1/exploration_7
-.\.venv\Scripts\python.exe evaluate.py --algorithm QL --map cologne1 --seed 42 --model reports/stage7/training/cologne1/exploration_7/cologne1_q_table.json --output reports/stage7/validation/cologne1/QL-15ep-e7/seed_42
-.\.venv\Scripts\python.exe stage7_summary.py --output reports/stage7/analysis
+.\.venv\Scripts\python.exe src/q_learning.py train cologne1 --episodes 5 --seed 23423 --exploration-seed 7 --output reports/stage7/pilot_repeat/cologne1
+.\.venv\Scripts\python.exe src/q_learning.py train cologne1 --episodes 15 --seed 23423 --exploration-seed 7 --output reports/stage7/training_repeat/cologne1/exploration_7
+.\.venv\Scripts\python.exe src/evaluate.py --algorithm QL --map cologne1 --seed 42 --model reports/stage7/training_repeat/cologne1/exploration_7/cologne1_q_table.json --output reports/stage7/validation_repeat/cologne1/QL-15ep-e7/seed_42
+.\.venv\Scripts\python.exe tools/stage7_summary.py --output reports/stage7/analysis_from_saved_runs
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Các thư mục trên **đã tồn tại**: muốn tái tạo phải chọn output mới; không chạy lại
-vào chúng. `training_manifest.json` ghi4 CLI train chính; `validation_manifest.json`
+Đổi đường dẫn nếu thư mục đầu ra đã tồn tại. `training_manifest.json` ghi4 CLI train chính; `validation_manifest.json`
 ghi12 CLI; `test_manifest.json` ghi48 CLI, thời điểm bắt đầu và SHA selection.
 Mỗi raw run có `command.txt` SUMO, metadata, actions/signals, XML và warning logs.
 Mỗi episode có checkpoint. `provenance_before.json`, `training_verification.json`,
@@ -342,7 +341,7 @@ Mỗi episode có checkpoint. `provenance_before.json`, `training_verification.j
 được chọn mới. Ví dụ tái tạo bảng mà không chạy SUMO vào thư mục tạm mới:
 
 ```powershell
-.\.venv\Scripts\python.exe stage7_summary.py --output C:/Temp/stage7-analysis-new
+.\.venv\Scripts\python.exe tools/stage7_summary.py --output C:/Temp/stage7-analysis-new
 ```
 
 Không có chức năng resume, auto-tuning, dashboard hoặc framework mới.

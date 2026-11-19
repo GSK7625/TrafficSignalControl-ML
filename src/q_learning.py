@@ -16,6 +16,7 @@ if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
 from sumo_env import ROOT, SumoEnv
+from evaluation_metrics import SIGNAL_FIELDS, write_signal_sample
 
 
 def build_encoding(env, queue_bins=(0, 4)):
@@ -204,9 +205,7 @@ def run_episode(env, q_table, metadata, *, episode, training, epsilon=0.0, rng=N
         (output / "metadata.json").write_text(json.dumps(run_metadata, indent=2), encoding="utf-8")
         with (output / "signals.csv").open("x", newline="", encoding="utf-8") as sf, \
                 (output / "actions.csv").open("x", newline="", encoding="utf-8") as af:
-            signals = csv.DictWriter(sf, fieldnames=(
-                "decision", "action", "start", "end", "stage", "signal", "queue",
-                "junction_before", "collisions", "teleports"))
+            signals = csv.DictWriter(sf, fieldnames=SIGNAL_FIELDS)
             actions = csv.DictWriter(af, fieldnames=(
                 "decision", "start", "end", "previous_phase", "action", "elapsed",
                 "incoming", "outgoing", "encoded_state", "next_encoded_state", "epsilon",
@@ -239,9 +238,7 @@ def run_episode(env, q_table, metadata, *, episode, training, epsilon=0.0, rng=N
                 for sample in info["samples"]:
                     collisions += len(sample["collisions"])
                     teleports += len(sample["teleports"])
-                    signals.writerow({"decision": steps, "action": action,
-                                      **{k: json.dumps(v) if isinstance(v, (tuple, list)) else v
-                                         for k, v in sample.items()}})
+                    write_signal_sample(signals, steps, action, sample)
                 actions.writerow({
                     "decision": steps, **{k: info[k] for k in (
                         "start", "end", "previous_phase", "action", "elapsed", "queue_seconds")},

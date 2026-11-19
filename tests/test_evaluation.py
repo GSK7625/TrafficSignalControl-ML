@@ -11,10 +11,12 @@ import pytest
 from evaluation_metrics import trip_metrics, signal_metrics, requested_trips
 
 
-def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path):
+@pytest.mark.parametrize('removed', [False, True])
+def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path, removed):
     """Hai su kien teleport cho cung mot ID; xe chua xong/dang cho van nam trong demand."""
     from evaluation_metrics import read_metrics
-    rows = [trip('a', 0, 3, 99, 99), trip('b', 1, 4, 2, 3),
+    rows = [trip('a', 0, 3, 99, 99, vaporized='teleport' if removed else ''),
+            trip('b', 1, 4, 2, 3),
             trip('c', 2, -1, 100, 100), trip('d', -1, -1)]
     root = ET.Element('tripinfos')
     for row in rows:
@@ -37,12 +39,14 @@ def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path):
     assert result['teleports'] == 2 and result['teleported'] == 1
     assert result['teleport_ids'] == ['a']
     assert result['requested'] == 4 and result['inserted'] == 3
-    assert result['arrived'] == 2 and result['valid_completed'] == 1
-    assert result['unfinished'] == result['undeparted'] == 1
+    assert result['arrived'] == 2 - removed and result['valid_completed'] == 1
+    assert result['unfinished'] == 1 + removed and result['undeparted'] == 1
+    assert result['sumo_running'] == 1
     assert result['average_travel_time'] == 3
     assert result['average_waiting_time'] == 2 and result['average_time_loss'] == 3
     assert result['queue_seconds'] == 14 and result['average_queue_length'] == 3.5
     assert result['completion_rate'] == .25 and result['throughput'] == 900
+    assert result['removed_without_arrival'] == int(removed)
 
 
 def trip(vehicle, depart, arrival, waiting=0, loss=0, **extra):

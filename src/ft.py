@@ -12,6 +12,7 @@ if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
 from sumo_env import ROOT, SumoEnv
+from evaluation_metrics import SIGNAL_FIELDS, write_signal_sample
 
 
 def fixed_time(env):
@@ -49,9 +50,7 @@ def run_ft(map_name, output, seed=23423):
         (output / "metadata.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
         with (output / "signals.csv").open("w", newline="", encoding="utf-8") as sf, \
                 (output / "actions.csv").open("w", newline="", encoding="utf-8") as af:
-            signals = csv.DictWriter(sf, fieldnames=(
-                "decision", "action", "start", "end", "stage", "signal", "queue",
-                "junction_before", "collisions", "teleports"))
+            signals = csv.DictWriter(sf, fieldnames=SIGNAL_FIELDS)
             actions = csv.DictWriter(af, fieldnames=(
                 "decision", "start", "end", "previous_phase", "action", "elapsed",
                 "green", "yellow", "all_red", "queue_seconds", "reward", "done"))
@@ -70,11 +69,7 @@ def run_ft(map_name, output, seed=23423):
                 for sample in info["samples"]:
                     collisions += len(sample["collisions"])
                     teleports += len(sample["teleports"])
-                    signals.writerow({
-                        "decision": steps, "action": info["action"],
-                        **{k: json.dumps(v) if isinstance(v, (tuple, list)) else v
-                           for k, v in sample.items()},
-                    })
+                    write_signal_sample(signals, steps, info["action"], sample)
                 actions.writerow({
                     "decision": steps,
                     **{k: info[k] for k in (

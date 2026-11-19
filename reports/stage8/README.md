@@ -324,16 +324,20 @@ Không di chuyển/xóa dữ liệu đã commit; archive/Git LFS chỉ là đề
 
 ## 8. Tái tạo và vị trí thuyết trình
 
-Các output bên dưới đã tồn tại; muốn tái tạo hãy đổi sang thư mục mới.
+Chạy từ gốc dự án. Các lệnh train và evaluate dưới đây dùng thư mục mới.
 
 ```powershell
-.\.venv\Scripts\python.exe q_learning.py train cologne1 --episodes 15 --seed 23423 --exploration-seed 7 --queue-bins 0 4 14 --output reports/stage8/training/cologne1
-.\.venv\Scripts\python.exe evaluate.py --algorithm QL --map cologne1 --seed 42 --queue-bins 0 4 14 --model reports/stage8/training/cologne1/cologne1_q_table.json --output reports/stage8/validation/cologne1/QL-NewState/seed_42/repeat_1
-.\.venv\Scripts\python.exe evaluate.py --algorithm QL --map cologne1 --seed 42 --queue-bins 0 4 14 --guard-seconds 300 --model reports/stage8/training/cologne1/cologne1_q_table.json --output reports/stage8/validation/cologne1/QL-NewState-Guard/seed_42/repeat_1
-.\.venv\Scripts\python.exe stage8_summary.py --output reports/my_stage8
-.\.venv\Scripts\python.exe stage8_summary.py --state-only --output reports/my_state_only
+.\.venv\Scripts\python.exe src/q_learning.py train cologne1 --episodes 15 --seed 23423 --exploration-seed 7 --queue-bins 0 4 14 --output reports/stage8/training_repeat/cologne1
+.\.venv\Scripts\python.exe src/evaluate.py --algorithm QL --map cologne1 --seed 42 --queue-bins 0 4 14 --model reports/stage8/training_repeat/cologne1/cologne1_q_table.json --output reports/stage8/validation_repeat/cologne1/QL-NewState/seed_42/repeat_1
+.\.venv\Scripts\python.exe src/evaluate.py --algorithm QL --map cologne1 --seed 42 --queue-bins 0 4 14 --guard-seconds 300 --model reports/stage8/training_repeat/cologne1/cologne1_q_table.json --output reports/stage8/validation_repeat/cologne1/QL-NewState-Guard/seed_42/repeat_1
+.\.venv\Scripts\python.exe tools/stage8_summary.py --output reports/my_stage8
+.\.venv\Scripts\python.exe tools/stage8_summary.py --state-only --output reports/my_state_only
+.\.venv\Scripts\python.exe tools/plot_stage8.py --stage8 reports/stage8 --output reports/my_stage8_plots
 .\.venv\Scripts\python.exe -m pytest -q
 ```
+
+Các lệnh tổng hợp và vẽ đọc kết quả lịch sử trong `reports/stage8`. Đặt
+`--output` vào thư mục mới để giữ các bảng và ảnh đã lưu.
 
 Lặp evaluation theo matrix ở kế hoạch/selection và `test_manifest.json`,
 thay seed/repeat/output tương ứng; Original bỏ queue-bins mới và dùng model

@@ -606,7 +606,7 @@ DQN không nằm trong phạm vi này.
 | Tệp | Nội dung / hàm phân tích |
 |---|---|
 | `../../analyze_ql.py` | Script offline stdlib + metric offline có sẵn, không import traci/sumo_env/q_learning/evaluate |
-| `../../test_analyze_ql.py` | Phân biệt Q0 đã/chưa thử; alias lane/bin; gap đầu/cuối; signal/action sai; thiếu/CSV rỗng |
+| `tests/test_analyze_ql.py` | Phân biệt Q0 đã/chưa thử; alias lane/bin; gap đầu/cuối; signal/action sai; thiếu/CSV rỗng |
 | `analysis.json` | SHA164 inputs; models, observations/alias examples, policy theo seed, comparisons |
 | `queue_bins.csv` | 42 dòng edge/nguồn: bins/tỷ lệ/min/max/chiều cố định |
 | `state_actions.csv` | 501 ô Q và số update thật, kể cả chưa được chọn |
@@ -623,20 +623,21 @@ xuất, lỗi khi thiếu file/CSV rỗng, và từ chối thư mục đầu ra 
 Ví dụ tái tạo vào một thư mục mới:
 
 ```powershell
-.\.venv\Scripts\python.exe analyze_ql.py --output reports/stage6_2_repeat
+.\.venv\Scripts\python.exe tools/analyze_ql.py --output reports/stage6_2_repeat
 ```
 
 Lệnh này chỉ sinh JSON/CSV, README là phần diễn giải do tác giả viết. Script
 không import module chạy SUMO; `signal_metrics` trong evaluation_metrics chỉ
 xử lý list mẫu đã lưu. Không cần dependency mới hoặc dashboard/biểu đồ.
 
-Lệnh test offline (loại đúng11 trường hợp hiện có khởi chạy SUMO/gọi train):
+Chạy riêng các test phân tích offline từ thư mục gốc.
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q -k 'not real_train_three and not episode_error_closes_real and not terminal_transition_is_not_encoded and not unseen_greedy_episode and not runner_closes_real_sumo and not common_runner_short_real_sumo and not tripinfo_output_matches_short and not probe_records_real_clock'
+.\.venv\Scripts\python.exe -m pytest -q tests/test_analyze_ql.py
 ```
 
-Các tên bị loại đầy đủ: `test_real_train_three_episodes_save_load_and_read_only_evaluation`,
+Lượt kiểm tra offline lịch sử loại 11 ca khởi chạy SUMO hoặc train.
+Các ca đó gồm `test_real_train_three_episodes_save_load_and_read_only_evaluation`,
 `test_episode_error_closes_real_sumo`,
 `test_terminal_transition_is_not_encoded_and_evaluation_does_not_insert` (2 cases),
 `test_unseen_greedy_episode_keeps_empty_table`,

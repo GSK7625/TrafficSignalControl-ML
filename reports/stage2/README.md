@@ -14,33 +14,19 @@ Giả định thử nghiệm: vàng Cologne1 4 s, Ingolstadt1 3 s; đỏ nền 2
 
 ## Chạy trên Windows
 
-Trong thư mục gốc dự án, dùng môi trường SUMO đã khảo sát ở giai đoạn 1:
+Chạy từ thư mục gốc với [môi trường trong README](../../README.md#cài-đặt-trên-windows). `--output` phải trỏ tới thư mục mới.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe smoke_test.py
+.\.venv\Scripts\python.exe tools/smoke_test.py --output reports/stage2/smoke_repeat
 ```
 
-`smoke_test.py` mặc định tạo `reports/stage2/smoke/`. Đầu ra đã tồn tại thì dừng để giữ bằng chứng; muốn chạy lại:
-
-```powershell
-.\.venv\Scripts\python.exe smoke_test.py --output reports/stage2/smoke_repeat
-```
-
-Nếu terminal mới chưa có SUMO trong môi trường:
-
-```powershell
-$env:SUMO_HOME = 'C:\Program Files (x86)\SUMO'
-$env:PATH = "$env:SUMO_HOME\bin;$env:PATH"
-$env:PYTHONPATH = "$env:SUMO_HOME\tools;$env:PYTHONPATH"
-```
-
-Không cần cài thêm gói. Đã chạy thực tế bằng Python 3.11.9 trong `.venv`, SUMO/TraCI/sumolib 1.28.0. Không dùng GUI.
+Lượt lịch sử dùng Python 3.11.9 trong `.venv` và SUMO, TraCI, sumolib 1.28.0.
 
 Ví dụ API, không phải một thuật toán điều khiển:
 
 ```python
-from sumo_env import SumoEnv
+from src.sumo_env import SumoEnv
 
 env = SumoEnv("ingolstadt1")
 try:

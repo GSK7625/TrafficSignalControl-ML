@@ -236,12 +236,19 @@ Các lệnh probe phải dùng **thư mục mới**; script từ chối ghi đè
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe stage6_1_probe.py --map cologne1 --seed 42 --horizon 700 --mode A --observe --detail-window 25830 25870 --output reports/stage6_1/new_A
-.\.venv\Scripts\python.exe stage6_1_probe.py --map ingolstadt1 --seed 2026 --horizon 550 --mode C --observe --detail-window 58110 58145 --watched carIn2369:1 carIn72005:1 --output reports/stage6_1/new_collision
-.\.venv\Scripts\python.exe stage6_1_probe.py --map cologne1 --seed 2028 --horizon 1640 --mode C --observe --detail-window 26785 26840 --watched 174028_427_0 --output reports/stage6_1/new_braking
-.\.venv\Scripts\python.exe -c "from stage6_1_probe import replay_signals; replay_signals('reports/stage6_1/reproducibility/foes_0','reports/stage6_1/reproducibility/new_native',save_rng=True)"
-.\.venv\Scripts\python.exe reports/stage6_1/verify.py
+.\.venv\Scripts\python.exe tools/stage6_1_probe.py --map cologne1 --seed 42 --horizon 700 --mode A --observe --detail-window 25830 25870 --output reports/stage6_1/new_A
+.\.venv\Scripts\python.exe tools/stage6_1_probe.py --map ingolstadt1 --seed 2026 --horizon 550 --mode C --observe --detail-window 58110 58145 --watched carIn2369:1 carIn72005:1 --output reports/stage6_1/new_collision
+.\.venv\Scripts\python.exe tools/stage6_1_probe.py --map cologne1 --seed 2028 --horizon 1640 --mode C --observe --detail-window 26785 26840 --watched 174028_427_0 --output reports/stage6_1/new_braking
+.\.venv\Scripts\python.exe -c "import sys; sys.path.insert(0, 'tools'); from stage6_1_probe import replay_signals; replay_signals('reports/stage6_1/reproducibility/foes_0','reports/stage6_1/reproducibility/new_native',save_rng=True)"
 ```
+
+Lệnh replay đọc đường dẫn tuyệt đối và SHA của SUMO, config và input từ lượt
+`foes_0` đã lưu. Để chạy trên máy có đường dẫn khác, tạo một lượt probe
+Cologne1 660 giây mới rồi dùng thư mục của lượt đó làm nguồn replay.
+
+`reports/stage6_1/verify.py` là công cụ kiểm chứng lịch sử. Nó yêu cầu mã
+nguồn đúng phiên bản Stage 6.1 và ghi vào `verification.json` trong cùng thư
+mục. Xem [kết quả đã lưu](verification.json) để đối chiếu.
 
 Đổi mode B/C trong lệnh đầu để kiểm tra output; bỏ --observe để đối chứng.
 Metadata/argv và log console giữ chính xác các lượt đã chạy. Tổng thực tế:

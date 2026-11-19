@@ -228,17 +228,17 @@ collisions XML. Không có lượt chạy xấu nào bị xóa.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe smoke_test.py --output reports/stage3/environment_smoke_repeat
-.\.venv\Scripts\python.exe ft.py cologne1 --seed 23423 --output reports/stage3/ft_repeat/cologne1
-.\.venv\Scripts\python.exe ft.py ingolstadt1 --seed 23423 --output reports/stage3/ft_repeat/ingolstadt1
+.\.venv\Scripts\python.exe tools/smoke_test.py --output reports/stage3/environment_smoke_repeat
+.\.venv\Scripts\python.exe src/ft.py cologne1 --seed 23423 --output reports/stage3/ft_repeat/cologne1
+.\.venv\Scripts\python.exe src/ft.py ingolstadt1 --seed 23423 --output reports/stage3/ft_repeat/ingolstadt1
 ```
 
 Các lượt bàn giao chạy `python ft.py <map>` với seed mặc định 23423 và thêm
 `--seed 42`, `--seed 12345`; mặc định lưu vào `reports/stage3/ft/<map>/seed_<seed>`.
 Đường dẫn đã tồn tại sẽ bị từ chối; dùng đường dẫn mới khi chạy lại. Pytest
 kiểm tra các lượt nằm dưới `ft/*/seed_*`; muốn kiểm tra lượt mới bằng test CSV
-này, đặt `--output` theo cùng mẫu đó. Phiên chạy không thấy SUMO thì đặt
-SUMO_HOME/PATH/PYTHONPATH như hướng dẫn giai đoạn 2, không cần cài gói mới.
+này, đặt `--output` theo cùng mẫu đó. Nếu PowerShell không tìm thấy SUMO,
+làm theo phần cài đặt trong [README gốc](../../README.md#cài-đặt-trên-windows).
 
 | Nội dung thuyết trình | Hàm |
 |---|---|

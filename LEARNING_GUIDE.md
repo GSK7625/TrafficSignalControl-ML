@@ -6,17 +6,17 @@ Cologne1/Ingolstadt1. Bắt đầu bằng luồng dưới đây; chưa cần đ�
 
 ## 1. Đọc theo thứ tự nào?
 
-1. `AGENTS.md`: mục tiêu, giới hạn và quy tắc pha an toàn.
-2. `sumo_env.py`: đọc `get_state()`, `step()`, rồi mới đọc `reset()` và các
+1. [README.md](README.md) để cài đặt và chạy thử, rồi xem [AGENTS.md](AGENTS.md) về quy tắc pha an toàn.
+2. Trong [src/sumo_env.py](src/sumo_env.py), đọc `get_state()`, `step()`, rồi mới đọc `reset()` và các
    hàm kiểm tra mạng trong `__init__()`.
-3. `ft.py: fixed_time()` và `mp.py: calculate_pressures(), max_pressure()`:
-   hai baseline rất ngắn, đều gọi chung `env.step(action)`.
-4. `q_learning.py`: `build_encoding()` → `encode_state()` → `choose_action()`
+3. [src/ft.py](src/ft.py) có `fixed_time()`. [src/mp.py](src/mp.py) có `calculate_pressures()` và `max_pressure()`.
+   Cả hai baseline đều gọi `env.step(action)`.
+4. Trong [src/q_learning.py](src/q_learning.py), đọc `build_encoding()` → `encode_state()` → `choose_action()`
    → `update_q_value()` → `run_episode()` → `train()`.
-5. `evaluate.py: greedy_steps(), run_evaluation()` và
-   `evaluation_metrics.py: trip_metrics(), signal_metrics()`.
-6. `reports/stage8/README.md` và `summary.csv`: đọc kết luận có giới hạn,
-   sau đó kiểm tra bằng từng lượt trong `runs.csv`.
+5. [src/evaluate.py](src/evaluate.py) có `greedy_steps()` và `run_evaluation()`.
+   [src/evaluation_metrics.py](src/evaluation_metrics.py) có `trip_metrics()` và `signal_metrics()`.
+6. Đọc [báo cáo Stage 8](reports/stage8/README.md) và [bảng tổng hợp](reports/stage8/summary.csv),
+   sau đó kiểm tra bằng [dữ liệu từng lượt](reports/stage8/runs.csv).
 
 Luồng train: **reset → queue/phase → state rời rạc → epsilon-greedy →
 step an toàn → reward/state sau → cập nhật Q → lặp → checkpoint**.
@@ -90,20 +90,11 @@ phải được kiểm tra bằng nhiều metric, không chỉ reward.
 
 ## 5. Chạy training và evaluation
 
-Dùng Python `.venv` có sẵn; SUMO phải có trong môi trường. Các đường dẫn
-`my_*` dưới đây phải **chưa tồn tại**. Không chạy đè báo cáo lịch sử.
-
-```powershell
-.\.venv\Scripts\python.exe q_learning.py train cologne1 --episodes 15 --seed 23423 --exploration-seed 7 --queue-bins 0 4 14 --output reports/my_train
-.\.venv\Scripts\python.exe evaluate.py --algorithm QL --map cologne1 --seed 42 --queue-bins 0 4 14 --model reports/my_train/cologne1_q_table.json --output reports/my_eval
-.\.venv\Scripts\python.exe -m pytest -q
-```
-
-Với model Stage5/7, bỏ `--queue-bins` để dùng mặc định cũ. Ngưỡng sai bị từ
-chối, không sửa metadata để vượt kiểm tra. Dùng `evaluate.py` để có tripinfo
-và metric công bằng; lệnh `q_learning.py evaluate` là runner chẩn đoán QL
-cũ, không có đầy đủ cohort completion. FT/MP có thể chạy qua `evaluate.py`
-bằng `--algorithm FT` hoặc `MP`, không truyền model.
+Làm theo [lệnh chạy ở README](README.md#chạy-ft-mp-q-learning-và-guard).
+Model Stage 5 và Stage 7 dùng ngưỡng mặc định `0 4`. Model Stage 8
+`QL-NewState` dùng `--queue-bins 0 4 14`. `src/evaluate.py` ghi tripinfo và
+tính metric chung cho FT, MP và QL. `src/q_learning.py evaluate` phục vụ
+chẩn đoán QL bằng trace từng quyết định.
 
 Evaluate khóa Q trong RAM và kiểm SHA model trước/sau. Mỗi lượt ghi
 `actions.csv`, `signals.csv`, `metadata.json`, `command.txt`, `result.json`
@@ -140,13 +131,13 @@ reward tăng hoặc một seed tốt không chứng minh hội tụ.
 
 | File | Vai trò, khi nào cần |
 |---|---|
-| `analyze_ql.py` | Điều tra offline Stage6.2, replay từng update/RNG, mất thông tin state |
-| `stage7_summary.py` | Thực nghiệm offline Stage7, coverage/checkpoint/khóa model/matrix |
-| `stage8_summary.py` | Thực nghiệm offline Stage8, dùng lại replay và metric, đo chuỗi giữ action |
-| `stage6_1_probe.py` | Điều tra sâu SUMO, observer/native replay; không nằm trong thuật toán QL |
+| `tools/analyze_ql.py` | Điều tra offline Stage6.2, replay từng update/RNG, mất thông tin state |
+| `tools/stage7_summary.py` | Thực nghiệm offline Stage7, coverage/checkpoint/khóa model/matrix |
+| `tools/stage8_summary.py` | Thực nghiệm offline Stage8, dùng lại replay và metric, đo chuỗi giữ action |
+| `tools/stage6_1_probe.py` | Điều tra sâu SUMO bằng observer và native replay |
 | `reports/stage6_1/verify.py` | Kiểm metric độc lập từ XML/CSV |
-| `test_*.py`, `smoke_test.py` | Kiểm công thức, tín hiệu, save/load và pipeline; không cần thuộc hết |
-| `plot_results.py` | Vẽ kết quả đã lưu; không huấn luyện/chọn action |
+| `tests/test_*.py`, `tools/smoke_test.py` | Kiểm công thức, tín hiệu, save/load và pipeline |
+| `tools/plot_results.py` | Vẽ kết quả đã lưu |
 
 Để thuyết trình, mở trực tiếp năm vị trí: `get_state()` (input),
 `choose_action()` (action), `update_q_value()` (công thức), `step()`/

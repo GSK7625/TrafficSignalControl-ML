@@ -232,13 +232,13 @@ review); chỉ ra cách diễn giải unseen_decisions đã làm rõ ở mục 4
 không chạy mô phỏng hoặc đánh giá chất lượng policy; kiểm tra trace thực và
 full suite do tác giả thực hiện.
 
-Lệnh đã chạy cho cả hai map (output chưa tồn tại):
+Tái tạo các lượt Stage 5 vào thư mục mới cho cả hai bản đồ.
 
 ```powershell
 foreach ($mapName in @('cologne1','ingolstadt1')) {
-    .\.venv\Scripts\python.exe q_learning.py train $mapName --episodes 3 --seed 23423 --exploration-seed 7 --output "reports/stage5/train/$mapName"
+    .\.venv\Scripts\python.exe src/q_learning.py train $mapName --episodes 3 --seed 23423 --exploration-seed 7 --output "reports/stage5/train_repeat/$mapName"
     foreach ($runSeed in @(42,12345)) {
-        .\.venv\Scripts\python.exe q_learning.py evaluate $mapName --model "reports/stage5/train/$mapName/${mapName}_q_table.json" --seed $runSeed --output "reports/stage5/evaluate/$mapName/seed_$runSeed"
+        .\.venv\Scripts\python.exe src/q_learning.py evaluate $mapName --model "reports/stage5/train_repeat/$mapName/${mapName}_q_table.json" --seed $runSeed --output "reports/stage5/evaluate_repeat/$mapName/seed_$runSeed"
     }
 }
 .\.venv\Scripts\python.exe -m pytest -q
@@ -247,8 +247,8 @@ foreach ($mapName in @('cologne1','ingolstadt1')) {
 Chạy thử mới dùng đường dẫn mới, ví dụ:
 
 ```powershell
-.\.venv\Scripts\python.exe q_learning.py train cologne1 --episodes 1 --output reports/stage5/train_probe_new/cologne1
-.\.venv\Scripts\python.exe q_learning.py evaluate cologne1 --model reports/stage5/train/cologne1/cologne1_q_table.json --seed 42 --output reports/stage5/evaluation_probe_new/cologne1
+.\.venv\Scripts\python.exe src/q_learning.py train cologne1 --episodes 1 --output reports/stage5/train_probe_new/cologne1
+.\.venv\Scripts\python.exe src/q_learning.py evaluate cologne1 --model reports/stage5/train/cologne1/cologne1_q_table.json --seed 42 --output reports/stage5/evaluation_probe_new/cologne1
 ```
 
 Hai lệnh ví dụ mới này chưa chạy. Test trace tự thu result.json dưới stage5;

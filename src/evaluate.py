@@ -17,7 +17,7 @@ from ft import fixed_time
 from mp import max_pressure
 import q_learning as ql
 from sumo_env import ROOT, SumoEnv
-from evaluation_metrics import requested_trips, read_metrics
+from evaluation_metrics import SIGNAL_FIELDS, read_metrics, requested_trips, write_signal_sample
 
 
 SEEDS = (42, 12345, 2026, 2027, 2028)
@@ -132,9 +132,7 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
             steps = greedy_steps(env, table, metadata['encoding'], guard_seconds)
         with (output / 'signals.csv').open('x', newline='', encoding='utf-8') as sf, \
                 (output / 'actions.csv').open('x', newline='', encoding='utf-8') as af:
-            signals = csv.DictWriter(sf, fieldnames=(
-                'decision', 'action', 'start', 'end', 'stage', 'signal', 'queue',
-                'junction_before', 'collisions', 'teleports'))
+            signals = csv.DictWriter(sf, fieldnames=SIGNAL_FIELDS)
             actions = csv.DictWriter(af, fieldnames=(
                 'decision', 'start', 'end', 'previous_phase', 'action', 'elapsed',
                 'green', 'yellow', 'all_red', 'queue_seconds',
@@ -152,9 +150,7 @@ def run_evaluation(map_name, algorithm, seed, output, model=None, *, horizon=Non
                     totals[stage] += seconds
                 unseen += info.get('unseen', False)
                 for sample in info['samples']:
-                    signals.writerow(dict(decision=decision, action=info['action'], **{
-                        k: json.dumps(v) if isinstance(v, (list, tuple)) else v
-                        for k, v in sample.items()}))
+                    write_signal_sample(signals, decision, info['action'], sample)
                 actions.writerow(dict(
                     decision=decision,
                     **{k: info[k] for k in ('start', 'end', 'previous_phase', 'action', 'elapsed', 'queue_seconds')},

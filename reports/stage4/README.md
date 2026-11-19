@@ -233,16 +233,15 @@ xe/chuyến ở giai đoạn đánh giá, chạy lại FT/MP cùng cách đo n�
 .\.venv\Scripts\python.exe -m pytest -q
 foreach ($mapName in @('cologne1','ingolstadt1')) {
     foreach ($runSeed in @(23423,42,12345)) {
-        .\.venv\Scripts\python.exe mp.py $mapName --seed $runSeed
+        .\.venv\Scripts\python.exe src/mp.py $mapName --seed $runSeed --output "reports/stage4/mp_repeat/$mapName/seed_$runSeed"
     }
 }
 ```
 
-Các lệnh trên đã chạy đủ sáu lượt. Chạy lại cần --output trỏ thư mục mới,
-ví dụ `--output reports/stage4/mp_repeat/cologne1/seed_23423`, vì không ghi đè.
+Báo cáo đã lưu đủ sáu lượt. Đổi `--output` nếu đường dẫn chạy lại đã tồn tại.
 Test CSV tự thu lượt nằm ở reports/stage4/mp/*/seed_*/result.json; nếu muốn
 kiểm tra lượt mới bằng test đó, dùng thư mục seed khác cùng mẫu trong mp/.
-Nếu terminal thiếu SUMO, dùng SUMO_HOME/PATH/PYTHONPATH như báo cáo giai đoạn 2.
+Cài môi trường theo [README gốc](../../README.md#cài-đặt-trên-windows).
 
 | Nội dung | File / hàm |
 |---|---|

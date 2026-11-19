@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
 
-from evaluation_metrics import read_metrics, requested_trips
+from evaluation_metrics import SIGNAL_FIELDS, read_metrics, requested_trips, write_signal_sample
 from ft import fixed_time
 from q_learning import source_hashes
 from sumo_env import ROOT, SumoEnv
@@ -190,16 +190,13 @@ def run_probe(map_name, seed, horizon, output, mode, *, observe=False,
         if observe:
             conn.simulationStep = observed_step
         with (output / 'signals.csv').open('x', newline='', encoding='utf-8') as sf:
-            writer = csv.DictWriter(sf, fieldnames=(
-                'decision', 'action', 'start', 'end', 'stage', 'signal', 'queue',
-                'junction_before', 'collisions', 'teleports'))
+            writer = csv.DictWriter(sf, fieldnames=SIGNAL_FIELDS)
             writer.writeheader()
             for decision, info in enumerate(fixed_time(env)):
                 for row in info['samples']:
                     samples.append(dict(decision=decision, action=info['action'], **row))
                     if mode == 'C':
-                        writer.writerow({k: json.dumps(v) if isinstance(v, (list, tuple)) else v
-                                         for k, v in samples[-1].items()})
+                        write_signal_sample(writer, decision, info['action'], row)
         assert conn.simulation.getTime() == env.end
     finally:
         env.close()

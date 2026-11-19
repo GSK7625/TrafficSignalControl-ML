@@ -1,4 +1,4 @@
-"""Cac metric doc lap thuat toan tu tripinfo cua SUMO va tin hieu tung giay."""
+"""Dinh dang trace tin hieu va cac metric dung chung tu SUMO."""
 
 import csv
 import json
@@ -6,6 +6,18 @@ import math
 from pathlib import Path
 import statistics
 import xml.etree.ElementTree as ET
+
+
+SIGNAL_FIELDS = (
+    'decision', 'action', 'start', 'end', 'stage', 'signal', 'queue',
+    'junction_before', 'collisions', 'teleports',
+)
+
+
+def write_signal_sample(writer, decision, action, sample):
+    csv_sample = {key: json.dumps(value) if isinstance(value, (tuple, list)) else value
+                  for key, value in sample.items()}
+    writer.writerow(dict(decision=decision, action=action, **csv_sample))
 
 
 def requested_trips(env):
@@ -49,8 +61,9 @@ def trip_metrics(trips, teleport_ids, requested, begin, end):
     if not teleported <= rows.keys():
         raise ValueError('Teleport vehicle missing from tripinfo')
     inserted = {v for v, row in rows.items() if float(row['depart']) >= 0}
-    arrived = {v for v in inserted if begin <= float(rows[v]['arrival']) <= end
-               and rows[v].get('vaporized', '') in ('', 'false', '0')}
+    finished = {v for v in inserted if begin <= float(rows[v]['arrival']) <= end}
+    arrived = {v for v in finished if rows[v].get('vaporized', '') in ('', 'false', '0')}
+    removed = finished - arrived
     valid = arrived - teleported
     for v in valid:
         row = rows[v]
@@ -68,6 +81,7 @@ def trip_metrics(trips, teleport_ids, requested, begin, end):
         'valid_completed': len(valid), 'completed_metric_count': len(valid),
         'arrived_teleported': len(arrived & teleported), 'teleported': len(teleported),
         'unfinished': len(inserted - arrived), 'undeparted': requested - len(inserted),
+        'removed_without_arrival': len(removed),
         'unfinished_teleported': len((inserted - arrived) & teleported),
         'average_waiting_time': mean('waitingTime'), 'average_travel_time': travel,
         'average_time_loss': mean('timeLoss'),
@@ -145,5 +159,6 @@ def read_metrics(output, request_ids, begin, end):
     if len(request_ids) == vehicles['loaded']:
         assert result['inserted'] == vehicles['inserted']
         assert result['undeparted'] == vehicles['waiting']
-        assert result['unfinished'] == vehicles['running']
+        # Xe bi loai truoc horizon khong con trong bo dem running cua SUMO.
+        assert result['unfinished'] - result['removed_without_arrival'] == vehicles['running']
     return result

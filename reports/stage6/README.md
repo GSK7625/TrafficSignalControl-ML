@@ -354,19 +354,18 @@ downstream mạnh hoặc sửa input để thuật toán nào thắng.
 
 ## 9. Kiểm chứng, pilot và giới hạn tái hiện
 
-Lệnh thực đã chạy bằng Python `.venv`:
+Lệnh chạy lại bằng Python `.venv` vào thư mục mới.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe evaluate.py --algorithm QL --map cologne1 --seed 42 --model reports/stage5/train/cologne1/cologne1_q_table.json --output reports/stage6/pilot/cologne1/QL/seed_42
-.\.venv\Scripts\python.exe evaluate.py --all --output reports/stage6/runs
-.\.venv\Scripts\python.exe plot_results.py --runs reports/stage6/runs --output reports/stage6
+.\.venv\Scripts\python.exe src/evaluate.py --algorithm QL --map cologne1 --seed 42 --model reports/stage5/train/cologne1/cologne1_q_table.json --output reports/stage6/pilot_repeat/cologne1/QL/seed_42
+.\.venv\Scripts\python.exe src/evaluate.py --all --output reports/stage6/runs_repeat_new
+.\.venv\Scripts\python.exe tools/plot_results.py --runs reports/stage6/runs --output reports/stage6/plots_from_saved_runs
 ```
 
-Đường dẫn thí nghiệm/pilot đã tồn tại nên runner sẽ từ chối ghi đè. Khi chạy
-lại chọn `--output reports/stage6/runs_repeat_new`, rồi truyền đường dẫn đó
-cho `plot_results.py`. Có thể tái tạo bảng/16 biểu đồ ngay từ raw đã bàn giao
-bằng lệnh plot ở trên. Horizon CLI luôn theo config gốc; tham số Python
+Lệnh vẽ ở trên đọc raw đã lưu trong `reports/stage6/runs`. Để vẽ từ lượt
+mới, truyền `--runs reports/stage6/runs_repeat_new`. Luôn dùng thư mục đầu ra
+mới vì công cụ vẽ có thể ghi đè tệp hiện có. Horizon CLI luôn theo config gốc; tham số Python
 `horizon` chỉ dùng để test tích hợp ngắn, không xuất hiện trong CLI chính.
 
 Test mới đã được chạy đỏ trước khi triển khai, gồm waiting/travel/timeLoss

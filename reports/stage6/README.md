@@ -3,7 +3,7 @@
 Đã chạy **30/30 lượt chính**, mỗi lượt 3600 giây, đủ năm seed cho mỗi thuật
 toán trên từng map. Giữ nguyên tất cả lượt, kể cả collision, teleport, đói
 movement và tỷ lệ hoàn thành thấp. Không train thêm, đổi policy/state/reward,
-hyperparameter, sửa data, thêm DQN/torch, commit hoặc push.
+hyperparameter, sửa data, commit hoặc push.
 
 **Kết quả đáng chú ý:** Cologne1 QL có waiting/travel thấp trên nhóm hoàn thành,
 nhưng chỉ hoàn thành hợp lệ khoảng 49% nhu cầu, bỏ xanh 10/20 movement cả giờ.
@@ -462,7 +462,7 @@ thống kê, không gộp hai map để chọn người thắng chung. Hai mạn
 đại diện giao thông thực tế; chưa đo đầy đủ ùn ngoài boundary, toàn bộ chờ
 của xe chưa chèn, tác động tới người đi bộ hoặc độ nhạy nhu cầu.
 
-Hướng tiếp theo, làm thành thí nghiệm riêng và chưa cần DQN:
+Hướng thực nghiệm tiếp theo:
 
 1. Khoanh vùng replay không khớp và hai sự kiện an toàn bằng trace vị trí/
    route/va chạm đủ bước, giữ nguyên bằng chứng stage6 trước khi sửa.

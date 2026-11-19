@@ -24,7 +24,7 @@ remote đúng repository GSK7625/TrafficSignalControl-ML.
 SHA của **1.333 file tracked ban đầu** được kiểm tra trước/sau. Chỉ `analyze_ql.py`
 thay đổi có chủ đích; toàn bộ data, model và kết quả Stage 1–6.2 giữ nguyên.
 Không sửa `q_learning.py`, `SumoEnv`, FT, MP, evaluate.py hoặc evaluation_metrics.py.
-Không có DQN, PyTorch, neural network hoặc framework RL.
+Không dùng framework RL.
 
 | Model QL-3ep giữ nguyên | SHA-256 trước = sau |
 |---|---|

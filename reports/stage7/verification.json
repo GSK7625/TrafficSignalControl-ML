@@ -21,7 +21,7 @@
   "tests_after": "157 passed in 17.50s; no skips/deselections",
   "sumo_short_integration_tests_included": true,
   "limitations": [
-    "No DQN, no algorithm/state/reward/control changes",
+    "No algorithm/state/reward/control changes",
     "No causal isolation of training budget vs epsilon schedule",
     "No convergence or fix for SUMO nondeterminism claimed"
   ]

@@ -7,7 +7,7 @@ Sáu lượt FT, mỗi lượt 3600 s, ba seed trên mỗi bản đồ: **0 coll
 
 Đã đọc AGENTS.md, hai báo cáo trước, code/test/smoke và các bằng chứng va chạm.
 Git ban đầu sạch, nhánh main. Không sửa dữ liệu gốc, cài gói, train, commit/push,
-triển khai MP/QL/DQN hoặc so chất lượng thuật toán. Python .venv 3.11.9,
+triển khai MP/QL hoặc so chất lượng thuật toán. Python .venv 3.11.9,
 SUMO/TraCI/sumolib 1.28.0; chạy headless trên Windows.
 
 ## 1. Nguyên nhân và cách sửa môi trường

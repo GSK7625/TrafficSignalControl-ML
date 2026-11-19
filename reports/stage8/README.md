@@ -2,7 +2,7 @@
 
 ## Kế hoạch chốt trước thí nghiệm
 
-Thực hiện tuần tự theo yêu cầu Stage 8; không DQN, không sửa FT/MP,
+Thực hiện tuần tự theo yêu cầu Stage 8; không sửa FT/MP,
 SumoEnv, reward, mạng/route/timing, alpha/gamma hoặc tie-break. Không commit/push.
 Git ban đầu sạch trên main; baseline: **157 passed trong 15,33 s**.
 
@@ -71,8 +71,7 @@ vòng lặp action7 của state-only.
 **State4bin giảm một phần mất thông tin nhưng không cải thiện Q-Learning
 thuần trong thí nghiệm này. Guard giảm giữ pha và có kết quả test mô tả tốt
 hơn Original, nhưng không thắng validation và chưa bảo đảm từng movement.**
-Không có bằng chứng Q/policy ổn định hơn hoặc hội tụ. Không triển khai DQN,
-không sửa FT/MP, SumoEnv, metric, reward, mạng/route/timing hoặc model cũ.
+Không có bằng chứng Q/policy ổn định hơn hoặc hội tụ. Không sửa FT/MP, SumoEnv, metric, reward, mạng/route/timing hoặc model cũ.
 
 Đã train mới đúng15 episode Cologne1 và chạy36 evaluation đủ3600s:
 12 validation,4 checkpoint validation,18 test mới,2 diagnostic. Không bỏ lượt
@@ -366,6 +365,6 @@ xe ngoài vùng boundary, chưa bảo đảm max gap/waiting, chưa có model QL
 tốt hơn đáng tin cậy, chưa có bằng chứng hội tụ. Guard còn teleport và gap
 dài, không được gọi là công bằng tuyệt đối. Chưa có train replicate độc lập
 hoặc thống kê đủ mạnh để quy cải thiện cho riêng một nguyên nhân.
-Không dùng test để chỉnh model; chưa mở map/nhu cầu khác, không train30ep
-hoặc triển khai DQN. Kết quả Guard đáng nghiên cứu tiếp trong một nhiệm vụ
+Không dùng test để chỉnh model; chưa mở map/nhu cầu khác, không train30ep.
+Kết quả Guard đáng nghiên cứu tiếp trong một nhiệm vụ
 riêng, chưa đủ cơ sở thay lựa chọn validation hoặc khẳng định thành công toàn diện.

@@ -21,7 +21,7 @@ qua TraCI khi reset. Git ban đầu sạch, nhánh main; 26 test baseline passed
 Chỉ tạo mp.py, test_mp.py và reports/stage4/. Giữ nguyên môi trường, FT,
 test cũ, dữ liệu gốc và nhu cầu. source_hashes.json đối chiếu SHA-256 cả 8 tệp
 data với reports/stage3/source_hashes_after.json: không đổi. git diff xác nhận
-không sửa mã cũ. Không cài gói, train, triển khai QL/DQN, commit hoặc push.
+không sửa mã cũ. Không cài gói, train, triển khai QL, commit hoặc push.
 Python .venv 3.11.9, SUMO/TraCI/sumolib 1.28.0; chạy headless trên Windows.
 
 ## 2. Công thức và ý nghĩa chính xác của trọng số

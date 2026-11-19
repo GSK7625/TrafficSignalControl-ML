@@ -1,7 +1,7 @@
 # Stage 7 — controlled training plan
 
 Spec: yêu cầu Stage 7 trong chat ngày 15/11/2026; AGENTS.md áp dụng.
-Thực thi trực tiếp trong checkout được giao, không commit/push, không DQN.
+Thực thi trực tiếp trong checkout được giao, không commit/push.
 
 - [x] Đọc pipeline, các báo cáo Stage 5–6.2; Git ban đầu sạch tại c42e396.
 - [x] Chụp SHA toàn bộ file tracked, data, model cũ; phiên bản Python/SUMO và binary.

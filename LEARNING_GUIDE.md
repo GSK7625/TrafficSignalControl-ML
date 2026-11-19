@@ -2,7 +2,7 @@
 
 Đây là bài học Python + SUMO/TraCI cho **một bộ điều khiển trên mỗi map**
 Cologne1/Ingolstadt1. Bắt đầu bằng luồng dưới đây; chưa cần đọc các script
-điều tra. DQN chưa triển khai.
+điều tra.
 
 ## 1. Đọc theo thứ tự nào?
 

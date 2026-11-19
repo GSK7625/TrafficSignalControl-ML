@@ -8,7 +8,7 @@ chưa tuyên bố đã sửa tính không xác định hoặc nguyên nhân gố
 Không sửa sáu file production `sumo_env.py`, `evaluate.py`,
 `evaluation_metrics.py`, `ft.py`, `mp.py`, `q_learning.py`. SHA của **832 file**
 Stage 1–6 và data giữ nguyên, gồm cả model Stage 5 và mọi kết quả Stage 6.
-Không train, DQN, sửa network/timing/seed, thêm dependency, commit hoặc push.
+Không train, sửa network/timing/seed, thêm dependency, commit hoặc push.
 
 ## 1. Hiện trạng đã xác nhận
 
@@ -247,8 +247,8 @@ Lệnh replay đọc đường dẫn tuyệt đối và SHA của SUMO, config v
 Cologne1 660 giây mới rồi dùng thư mục của lượt đó làm nguồn replay.
 
 `reports/stage6_1/verify.py` là công cụ kiểm chứng lịch sử. Nó yêu cầu mã
-nguồn đúng phiên bản Stage 6.1 và ghi vào `verification.json` trong cùng thư
-mục. Xem [kết quả đã lưu](verification.json) để đối chiếu.
+nguồn và các tệp được đối chiếu SHA-256 đúng phiên bản Stage 6.1. Công cụ ghi vào
+`verification.json` trong cùng thư mục. Xem [kết quả đã lưu](verification.json) để đối chiếu.
 
 Đổi mode B/C trong lệnh đầu để kiểm tra output; bỏ --observe để đối chứng.
 Metadata/argv và log console giữ chính xác các lượt đã chạy. Tổng thực tế:

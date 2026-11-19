@@ -19,7 +19,7 @@ Python .venv 3.11.9, SUMO 1.28.0, chạy headless. Cologne1: TLS
 horizon [25200,28800). Ingolstadt1: TLS
 `cluster_274083968_cluster_1200364014_1200364088`, 8 links, 7 làn vào/6 làn ra,
 1716 trip, horizon [57600,61200). SumoEnv.reset đối chiếu controlled links thật
-qua TraCI. Không dùng cologne3, neural network, PyTorch hoặc framework RL.
+qua TraCI. Không dùng cologne3 hoặc framework RL.
 
 ## 2. State và kiểm tra ngưỡng
 
@@ -275,11 +275,10 @@ model khác, lưu ngoài stage5 hoặc cập nhật test reference tương ứng
 | Phép tính tay/terminal | test_q_learning.py: test_q_update_hand_calculation_correct_column_and_negative_q, test_terminal_does_not_read_or_create_next_state |
 | Replay từng update và RNG từ CSV | test_q_learning.py: test_replay_every_training_update_and_rng_against_checkpoints |
 
-**Đủ nền tảng kỹ thuật để bắt đầu DQN trong phạm vi học tập**: state thông tin
-gốc/action/reward/timing chung đã rõ, QL có test công thức, train/evaluate và
-lưu/tải thực. Chưa đủ để tuyên bố đã học tốt hoặc hoàn tất đánh giá thuật toán.
-DQN sau này nên dùng cùng incoming/outgoing/phase thông tin gốc (có thể chuẩn
-hóa), action/reward/control interval này và ghi rõ khác biệt với bin của QL.
+Đã xác định state, action, reward và thời gian điều khiển của Q-Learning.
+Đã kiểm tra công thức cập nhật Q-table, train, evaluate và lưu/tải bảng Q.
+Các phép kiểm tra này xác nhận cách triển khai, còn chất lượng chính sách cần
+được đánh giá qua thực nghiệm.
 
 Chưa kiểm tra hội tụ, train dài, nhiều exploration seed, nhu cầu khác, GUI,
 bước dưới 1 s, mọi hình học thân xe hoặc mọi nguyên nhân teleport. Ngưỡng thô,

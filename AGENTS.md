@@ -4,7 +4,7 @@
 
 Đây là dự án **học tập bằng Python + SUMO/TraCI**, không phải sản phẩm thương mại.
 
-- Thuật toán chính: **Q-Learning** và **DQN**.
+- Thuật toán chính: **Q-Learning**.
 - Thuật toán đối chứng: **Fixed-Time (FT)** và **Max-Pressure (MP)**.
 - Phạm vi trước mắt: `data/cologne1` và `data/ingolstadt1`, mỗi bản đồ một bộ điều khiển. Chưa làm điều khiển nhiều nút trên `cologne3` nếu chưa được giao.
 - Người mới học phải **đọc được, giải thích được và chỉ vào code để thuyết trình**.
@@ -19,7 +19,7 @@ Tham khảo: https://github.com/DietrichGebert/ponytail
 - Tận dụng code đang có, thư viện chuẩn và thư viện đã cài; không tự tạo framework.
 - Ưu tiên hàm Python thông thường, `if`, `for` và tên biến rõ nghĩa.
 - Không tạo base class, factory, interface, lớp trung gian hoặc nhiều tầng thư mục chỉ để “đúng kiến trúc”.
-- Chỉ dùng class nếu thực sự cần, ví dụ mạng neural kế thừa `torch.nn.Module`.
+- Chỉ dùng class nếu thực sự cần, ví dụ `SumoEnv` giữ trạng thái mô phỏng.
 - **Ngắn không bằng dễ hiểu:** không viết một dòng phức tạp thay cho vài dòng dễ giải thích.
 - Chỉ viết chú thích khi cần giải thích **vì sao** hoặc liên hệ với công thức; không chú thích từng dòng hiển nhiên.
 - Mỗi hàm có một mục đích rõ ràng. Không tách hàm vô nghĩa, cũng không dồn mọi thứ vào một hàm quá dài.
@@ -51,7 +51,7 @@ Tham khảo: https://github.com/DietrichGebert/ponytail
 Chỉ tạo tệp khi thực sự cần. Hướng tới:
 
 - Một phần **môi trường SUMO dùng chung**: khởi chạy/reset, lấy state, áp dụng pha an toàn, tiến mô phỏng, tính reward/metric.
-- Các phần thuật toán riêng, dễ tìm: `ft`, `mp`, `q_learning`, `dqn`.
+- Các phần thuật toán riêng, dễ tìm: `ft`, `mp`, `q_learning`.
 - Lệnh chạy train/evaluate đơn giản; kết quả CSV và đồ thị Matplotlib khi cần.
 
 Không cần web app, database, API, Docker, framework RL hoặc hệ thống logging lớn. Không bắt buộc đổi cấu trúc thư mục đang hoạt động tốt.
@@ -86,23 +86,13 @@ Không cần web app, database, API, Docker, framework RL hoặc hệ thống lo
 - Nếu `done=True`, target chỉ là `r`, không cộng giá trị trạng thái sau.
 - Train được cập nhật Q; evaluate không cập nhật, mặc định chọn action tham lam. Có lưu/tải Q-table.
 
-### DQN
-
-- Dùng PyTorch trực tiếp với **MLP nhỏ**; không sử dụng framework RL lớn.
-- Phải có: **online network, target network, replay buffer, epsilon-greedy, minibatch update**.
-- Target: `r + gamma * (1 - done) * max_a' Q_target(s', a')`.
-- Không truyền gradient qua target; cập nhật target theo lịch rõ ràng. Xử lý đúng `done`, shape và action hợp lệ.
-- Có lưu/tải model; evaluate không khám phá hoặc cập nhật trọng số theo mặc định.
-
-**Đối với Q-Learning và DQN:** ưu tiên dùng cùng định nghĩa state thông tin gốc, action, reward và khoảng điều khiển; Q-Learning có thể rời rạc hóa state, DQN có thể chuẩn hóa đầu vào. Mọi khác biệt phải được ghi rõ.
-
 ## 5. Đánh giá công bằng, không chạy theo điểm đẹp
 
-- FT, MP, Q-Learning và DQN phải dùng **cùng bản đồ, nhu cầu xe, thời gian mô phỏng, giới hạn an toàn và cách đo metric**.
+- FT, MP và Q-Learning phải dùng **cùng bản đồ, nhu cầu xe, thời gian mô phỏng, giới hạn an toàn và cách đo metric**.
 - Huấn luyện RL riêng; **không so kết quả trong lúc train** với kết quả evaluate của baseline.
 - Ghi rõ định nghĩa/đơn vị của: **Average Waiting Time, Travel Time, Queue Length, Time Loss, Throughput**, đặc biệt cách xử lý xe chưa kết thúc chuyến.
 - Lưu kết quả thô; nếu chạy nhiều seed, kiểm tra seed có thật sự tạo biến thiên trong mô phỏng hay chỉ ảnh hưởng quá trình học.
-- Không sửa dữ liệu, bỏ lần chạy kém hoặc khẳng định DQN/QL phải thắng FT/MP.
+- Không sửa dữ liệu, bỏ lần chạy kém hoặc khẳng định QL phải thắng FT/MP.
 
 ## 6. Kiểm tra tối thiểu nhưng đúng chỗ
 
@@ -111,7 +101,6 @@ Không tạo bộ test phức tạp. Ưu tiên các phép kiểm tra nhỏ, ch�
 - Pha xanh không xung đột; chuyển pha an toàn.
 - FT đúng 30 giây xanh; MP đúng một ví dụ pressure tính tay.
 - Q-Learning đúng một phép cập nhật Q, gồm trường hợp `done`.
-- DQN có shape đúng, loss hữu hạn, target không có gradient, lưu/tải được.
 - Evaluate sinh được kết quả và không lẫn metric giữa các thuật toán.
 
 Dùng `assert` hoặc `pytest` nếu có sẵn. Chỉ viết thêm test khi logic dễ sai hoặc cần kiểm chứng.

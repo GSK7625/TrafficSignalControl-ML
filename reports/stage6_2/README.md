@@ -5,7 +5,7 @@
 Phân tích offline model cuối Stage 5, toàn bộ 6 episode training, 4 lượt evaluate
 Stage 5 và 30 lượt chính Stage 6. Không sửa thuật toán, state/reward/tham số,
 checkpoint, dữ liệu SUMO hoặc kết quả Stage 1–6.1; không chạy SUMO, train thêm,
-DQN, cài thư viện, commit hoặc push.
+cài thư viện, commit hoặc push.
 
 **Cologne1 có một cơ chế lựa chọn đã xác minh từng quyết định:** coverage học
 mỏng, Q chưa thử bằng 0 thắng Q âm, state lạ trả hàng 0 và tie-break lấy action
@@ -599,7 +599,6 @@ nhất. Ingolstadt1 coverage cao vẫn có aliasing và chất lượng kém ở
 Không ưu tiên tự xóa chiều outgoing chỉ vì0 trong tập hiện tại: nó không
 tách state ở đây nên xóa nó cũng không tự giảm số state **thực đã thăm**.
 Không có đề xuất nào ở đây đã được triển khai hay chứng minh cải thiện.
-DQN không nằm trong phạm vi này.
 
 ## 14. Tệp bàn giao, cách chạy và vị trí thuyết trình
 

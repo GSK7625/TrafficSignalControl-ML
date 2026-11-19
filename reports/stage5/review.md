@@ -23,4 +23,4 @@ khởi chạy SUMO. Parent đã chạy full suite 99 passed, không skip.
 
 Reviewer không đánh giá chất lượng chính sách, mô phỏng evaluate đang chạy
 lúc review, hoặc an toàn ngoài cơ chế môi trường chung. Các số liệu đủ giờ,
-phân bố bin, điều kiện sang DQN và README do parent đối chiếu với kết quả cuối.
+phân bố bin và README do parent đối chiếu với kết quả cuối.

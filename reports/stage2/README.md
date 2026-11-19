@@ -2,7 +2,7 @@
 
 **Trạng thái: prototype. Chức năng môi trường đã chạy và được kiểm tra; an toàn giao thông chưa được giải quyết hoàn chỉnh. Chưa đủ điều kiện chốt giai đoạn 2 để bắt đầu giai đoạn 3 (Fixed-Time).**
 
-Không sửa `data/`, không cài dependency, không train, không triển khai FT/MP/QL/DQN, không commit/push. Git lúc bắt đầu sạch, nhánh `main`. Thay đổi chỉ gồm ba tệp Python ở gốc và đầu ra/báo cáo trong thư mục này.
+Không sửa `data/`, không cài dependency, không train, không triển khai FT/MP/QL, không commit/push. Git lúc bắt đầu sạch, nhánh `main`. Thay đổi chỉ gồm ba tệp Python ở gốc và đầu ra/báo cáo trong thư mục này.
 
 ## Căn cứ và thiết kế trước khi viết code
 

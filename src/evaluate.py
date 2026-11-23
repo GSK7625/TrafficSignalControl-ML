@@ -33,39 +33,23 @@ def greedy_steps(env, table, encoding, guard_seconds=None):
     """QL tham lam dong bang, co tuy chon rang buoc phuc vu edge dau vao da quan sat."""
     if guard_seconds is not None and (type(guard_seconds) is not int or guard_seconds <= 0):
         raise ValueError('guard_seconds must be a positive integer or None')
-    groups = encoding['incoming_groups'] if guard_seconds is not None else []
-    demand_since = [None] * len(groups)
-    serving_actions = [
-        [a for a in env.actions if any(env.green_states[a][i] == 'G'
-         for i, incoming, _, _ in env.links if incoming in group['lanes'])]
-        for group in groups]
+    demand = ql.EdgeDemand(env, encoding) if guard_seconds is not None or 'overdue_seconds' in encoding else None
     state = env.get_state()
     done = False
     while not done:
+        if demand is not None:
+            oldest, age = demand.observe(state, env.conn.simulation.getTime())
         encoded = ql.encode_state(state, encoding)
         greedy = ql.choose_action(table, encoded, env.actions, epsilon=0)
         values = ql.get_q_values(table, encoded, env.actions, create=False)
         action, guard_edge, guard_age = greedy, None, 0
-        if guard_seconds is not None:
-            now = env.conn.simulation.getTime()
-            by_lane = dict(zip(encoding['incoming_lanes'], state['incoming']))
-            for index, group in enumerate(groups):
-                if sum(by_lane[lane] for lane in group['lanes']) == 0:
-                    demand_since[index] = None
-                elif demand_since[index] is None:
-                    demand_since[index] = now
-            overdue = [i for i, since in enumerate(demand_since)
-                       if since is not None and now - since >= guard_seconds]
-            if overdue:
-                index = min(overdue, key=lambda i: demand_since[i])
-                guard_edge, guard_age = groups[index]['edge'], now - demand_since[index]
-                # Lane dung chung chi cho thay nhu cau theo edge, khong biet huong re nao dang cho.
-                action = max(serving_actions[index], key=lambda a: values[env.actions.index(a)])
+        if guard_seconds is not None and oldest is not None and age >= guard_seconds:
+            guard_edge, guard_age = demand.groups[oldest]['edge'], age
+            serving = [a for a in env.actions if any(env.green_states[a][i] == 'G' for i in demand.links[oldest])]
+            action = max(serving, key=lambda a: values[env.actions.index(a)])
         next_state, _, done, info = env.step(action)
-        for index, group in enumerate(groups):
-            if any(sample['signal'][i] == 'G' for sample in info['samples']
-                   for i, incoming, _, _ in env.links if incoming in group['lanes']):
-                demand_since[index] = None
+        if demand is not None:
+            demand.record_green(info['samples'])
         yield {**info, 'state': state, 'encoded_state': encoded,
                'unseen': encoded not in table,
                'q_values': values, 'greedy_action': greedy,

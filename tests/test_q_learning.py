@@ -113,6 +113,59 @@ def test_epsilon_greedy_action_ids_negative_values_and_ties():
         ql.choose_action(table, state, actions, 0.5, b) for _ in range(20)]
 
 
+def test_untried_first_uses_update_counts_only_when_exploring():
+    state, actions = (0,), (0, 2, 4)
+    table = {state: [0, 0, 0]}
+    counts = {(state, 0): 2, (state, 2): 1, ((1,), 4): 3}
+    rng = random.Random(7)
+    assert ql.choose_action(table, state, actions, 1, rng, update_counts=counts) == 4
+    assert ql.choose_action(table, state, actions, 0, update_counts=counts) == 0
+    counts[state, 4] = 1
+    original_rng, variant_rng = random.Random(17), random.Random(17)
+    for _ in range(30):
+        assert ql.choose_action(table, state, actions, 1, variant_rng, update_counts=counts) == (
+            ql.choose_action(table, state, actions, 1, original_rng))
+
+
+@pytest.mark.parametrize("name", ["cologne1", "ingolstadt1"])
+def test_untried_first_short_train_replay_and_frozen_evaluation(tmp_path, monkeypatch, name):
+    import analyze_ql as audit
+    import evaluate
+
+    def short_env(*args, **kwargs):
+        env = SumoEnv(*args, **kwargs)
+        env.end = env.begin + 93
+        return env
+
+    monkeypatch.setattr(ql, "SumoEnv", short_env)
+    monkeypatch.setattr(evaluate, "SumoEnv", short_env)
+    training = tmp_path / "train"
+    table, metadata = ql.train(name, training, episodes=3, epsilon_min=1,
+                               exploration_strategy="untried-first")
+    model = training / f"{name}_q_table.json"
+    assert ql.load_q_table(model, short_env(name)) == (table, metadata)
+    assert metadata["training"]["exploration_strategy"] == "untried-first"
+
+    initial_actions = []
+    for episode in sorted(training.glob("episode_*")):
+        rows = audit.read_csv(episode / "actions.csv")
+        initial_actions.extend(int(row["action"]) for row in rows
+                               if row["encoded_state"] == rows[0]["encoded_state"])
+    assert len(set(initial_actions[:3])) == 3
+
+    result = evaluate.run_evaluation(name, "QL", 42, tmp_path / "eval", model)
+    assert result["model_sha256_before"] == result["model_sha256_after"]
+    assert result["simulation_seconds"] == result["queue_samples"] == 93
+    mapping = audit.read_json(tmp_path / "eval" / "metadata.json")
+    assert mapping["epsilon"] == 0 and mapping["guard_seconds"] is None
+    for row in audit.read_csv(tmp_path / "eval" / "actions.csv"):
+        values = json.loads(row["q_values"])
+        assert int(row["action"]) == mapping["actions"][values.index(max(values))]
+    _, _, episodes, _ = audit.replay_training(ROOT, name, audit.read_json(model), mapping,
+                                               training_dir=training)
+    assert len(episodes) == 3
+
+
 @pytest.mark.parametrize("epsilon", [-0.1, 1.1, float("nan")])
 def test_invalid_epsilon(epsilon):
     with pytest.raises(ValueError):
@@ -213,6 +266,7 @@ def test_real_train_three_episodes_save_load_and_read_only_evaluation(tmp_path, 
     output = tmp_path / "train"
     table, metadata = ql.train("ingolstadt1", output, episodes=3)
     assert metadata["training"]["episodes_trained"] == 3
+    assert metadata["training"]["exploration_strategy"] == "uniform"
     assert table and any(value < 0 for row in table.values() for value in row)
     model = output / "ingolstadt1_q_table.json"
     assert ql.load_q_table(model, short_env("ingolstadt1"))[0] == table
@@ -301,6 +355,7 @@ def test_unseen_greedy_episode_keeps_empty_table(tmp_path):
 @pytest.mark.parametrize("kwargs", [{"episodes": 0}, {"episodes": 1, "alpha": 0},
                                     {"episodes": 1, "gamma": 2},
                                     {"episodes": 1, "epsilon_min": 2},
+                                    {"episodes": 1, "exploration_strategy": "unknown"},
                                     {"episodes": 1, "exploration_seed": -1}])
 def test_invalid_training_settings_create_no_output(tmp_path, kwargs):
     output = tmp_path / "invalid"

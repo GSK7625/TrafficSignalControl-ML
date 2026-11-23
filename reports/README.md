@@ -1,8 +1,21 @@
 # Bản đồ báo cáo và dữ liệu thực nghiệm
 
 Bắt đầu từ [README ở gốc](../README.md) và [hướng dẫn đọc mã](../LEARNING_GUIDE.md).
-[Báo cáo train và test mới nhất](ql_validation_test.md) dùng chung metric cho
-bốn bộ điều khiển. Stage 7 và Stage 8 lưu bối cảnh các model đối chứng.
+
+[Tổng kết hai thí nghiệm Q-Learning](ql_final_review.md) ghi quyết định giữ biến thể nào,
+kết quả trên từng bộ seed test và các hàm cần mở khi thuyết trình.
+
+[Thí nghiệm ưu tiên pha chưa cập nhật](ql_untried_first/README.md) so sánh FT,
+MP, QL-Original và QL dùng `untried-first` trên hai bản đồ. Báo cáo kèm kết
+quả từng lượt và thống kê theo controller. Stage 7 và Stage 8 lưu bối cảnh các model đối chứng.
+
+[Thí nghiệm state có hướng chờ xanh lâu nhất](ql_overdue_state/README.md) so sánh
+FT, MP, QL-Original và QL-Overdue trên Cologne1, kèm kết quả từng lượt, coverage
+và đối chiếu khoảng thiếu xanh theo movement.
+
+[Thí nghiệm thu nhỏ bảng Q bằng hướng đông nhất](ql_busiest_state/README.md)
+so sánh QL-Busiest với QL-Overdue sau khi huấn luyện lại, kèm kết quả của
+FT, MP và QL-Original trên cùng ba seed test mới.
 
 [Kiểm tra độ tái lập](reproducibility_check.md) ghi lại kết quả phát lại mới
 với cùng lịch đèn, đối số khởi chạy và cổng TraCI.

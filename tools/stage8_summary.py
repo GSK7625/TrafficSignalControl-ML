@@ -54,26 +54,14 @@ def repetition_evidence(rows):
 def audit_guard_decisions(rows, signals, metadata, encoding):
     """Tai dung tuoi nhu cau va cac lan ghi de bat buoc tu hang doi va den G thuc te."""
     groups = encoding['incoming_groups']
-    since = [None] * len(groups)
     runtime = dict(metadata['environment']['runtime_green_states'])
     links = metadata['controlled_links']
-    actual = {}
-    for sample in signals:
-        actual.setdefault(int(sample['decision']), set()).update(
-            incoming for i, incoming, _, _ in links if sample['signal'][i] == 'G')
-    for row in rows:
-        now = float(row['start'])
-        queues = dict(zip(encoding['incoming_lanes'], json.loads(row['state'])['incoming']))
-        for i, group in enumerate(groups):
-            if sum(queues[lane] for lane in group['lanes']) == 0:
-                since[i] = None
-            elif since[i] is None:
-                since[i] = now
-        expired = [i for i, start in enumerate(since)
-                   if start is not None and now - start >= metadata['guard_seconds']]
-        index = min(expired, key=lambda i: since[i]) if expired else None
+    ages = audit.replay_edge_ages(rows, signals, metadata, encoding)
+    for row, (index, age) in zip(rows, ages, strict=True):
+        if age < metadata['guard_seconds']:
+            index = None
         assert json.loads(row['guard_edge']) == (groups[index]['edge'] if index is not None else None)
-        assert float(row['guard_age']) == (now-since[index] if index is not None else 0)
+        assert float(row['guard_age']) == (age if index is not None else 0)
         expected = int(row['greedy_action'])
         if index is not None:
             candidates = [a for a in metadata['actions'] if any(runtime[a][i] == 'G'
@@ -81,9 +69,6 @@ def audit_guard_decisions(rows, signals, metadata, encoding):
             values = json.loads(row['q_values'])
             expected = max(candidates, key=lambda a: values[metadata['actions'].index(a)])
         assert int(row['action']) == expected
-        for i, group in enumerate(groups):
-            if actual[int(row['decision'])].intersection(group['lanes']):
-                since[i] = None
 
 
 def run_evidence(folder, payload, updates):
@@ -104,6 +89,8 @@ def run_evidence(folder, payload, updates):
     assert metadata['source_hashes'] == payload['metadata']['source_hashes']
     table = audit.model_table(payload)
     actions = payload['metadata']['actions']
+    if 'overdue_seconds' in metadata['encoding']:
+        audit.audit_overdue_states(rows, signal_rows, metadata, metadata['encoding'])
     if metadata.get('guard_seconds'):
         audit_guard_decisions(rows, signal_rows, metadata, payload['metadata']['encoding'])
     decisions, observations = [], []

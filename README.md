@@ -36,6 +36,12 @@ Một episode dùng để kiểm tra quy trình train, lưu và nạp Q-table. `
 
 `--queue-bins` mặc định là `0 4`. Nếu train hoặc dùng model Stage 8 `QL-NewState`, chỉ định `--queue-bins 0 4 14` khi train model mới và khi evaluate model đó. Tham số evaluate phải khớp metadata của model.
 
+Để thử ưu tiên pha chưa học, thêm `--exploration-strategy untried-first` vào lệnh train. Khi khám phá, agent lấy mẫu đều trong các pha chưa từng cập nhật Q ở state hiện tại. Sau khi thử đủ pha, agent lấy mẫu đều trong toàn bộ pha hợp lệ. Bộ đếm dùng chung qua các episode của một lượt train. Mặc định `uniform` dùng cách khám phá của QL-Original. Cả hai model dùng cùng lệnh evaluate tham lam.
+
+Thí nghiệm state trên Cologne1 dùng lệnh train với `--overdue-state` và cách khám phá mặc định `uniform`. Khóa Q có thêm một số sau ID pha. Số 0 nghĩa là chưa có edge vào nào có queue quan sát được và thiếu xanh ưu tiên trong ít nhất 300 giây. Các số 1–4 chỉ edge chờ lâu nhất theo thứ tự `encoding.incoming_groups` trong model. Tuổi bắt đầu khi thấy queue dương tại một quyết định, đặt lại khi thấy queue bằng 0 hoặc khi một movement của edge thực nhận `G`. Model lưu phiên bản `overdue-edge-v1` và ngưỡng thời gian. Lệnh evaluate tự đọc encoding và chọn pha tham lam. Để đo riêng tác động của state, dùng lệnh evaluate QL mặc định với Guard tắt.
+
+Cờ train `--busiest-state` thử một cách thu nhỏ bảng Q trên Cologne1. Bốn hướng vào được mã hóa bằng bốn dấu hiệu có xe dừng và một mã hướng có queue dài nhất. Mã 0 nghĩa là cả bốn hướng đều trống. Nếu nhiều hướng cùng dài nhất, lấy hướng đứng đầu theo thứ tự edge trong model. Các bin đầu ra, pha hiện tại và mã hướng quá hạn 300 giây vẫn nằm trong khóa. Lệnh evaluate đọc phiên bản `overdue-busiest-v1` từ model.
+
 ## Đọc kết quả
 
 Train ghi `training.csv` và Q-table theo episode. Các lượt qua `src/evaluate.py` dùng chung cách tính metric và lưu `result.json`, `metadata.json`, `actions.csv`, `signals.csv`, XML cùng log SUMO. Dùng `result.json` để xem các chỉ số sau.

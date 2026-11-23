@@ -64,6 +64,7 @@ def observation_analysis(records, encoding):
     raw_by_edge = defaultdict(set)
     edge_by_encoded = defaultdict(set)
     examples = defaultdict(list)
+    busiest = encoding.get('state_version') == 'overdue-busiest-v1'
     for record in records:
         totals = []
         raw = []
@@ -79,11 +80,25 @@ def observation_analysis(records, encoding):
         phase = record['phase']
         if phase not in encoding['phase_ids']:
             raise ValueError('Invalid observation phase')
-        encoded = tuple(bisect_left(encoding['queue_bins'], q) for q in totals) + (phase,)
+        binned = tuple(bisect_left(encoding['queue_bins'], q) for q in totals)
+        if busiest:
+            n = len(encoding['incoming_groups'])
+            incoming = totals[:n]
+            peak = max(range(n), key=incoming.__getitem__) + 1 if any(incoming) else 0
+            binned = tuple(int(q > 0) for q in incoming) + (peak,) + binned[n:]
+        encoded = binned + (phase,)
+        if 'overdue_seconds' in encoding:
+            code = record['overdue_edge']
+            if type(code) is not int or not 0 <= code <= len(encoding['incoming_groups']):
+                raise ValueError('Invalid overdue edge')
+            encoded += (code,)
         if 'encoded' in record and encoded != tuple(record['encoded']):
             raise ValueError('Saved encoding differs from raw lane queues')
         edge = tuple(totals) + (phase,)
         raw = tuple(raw) + (phase,)
+        if 'overdue_seconds' in encoding:
+            edge += (code,)
+            raw += (code,)
         raw_by_edge[edge].add(raw)
         edge_by_encoded[encoded].add(edge)
         grouped.append(totals)
@@ -94,9 +109,10 @@ def observation_analysis(records, encoding):
     for side in ('incoming', 'outgoing'):
         for group in encoding[side + '_groups']:
             values = [row[index] for row in grouped]
-            high = [v for v in values if bisect_left(encoding['queue_bins'], v) == 2]
-            counts = [sum(bisect_left(encoding['queue_bins'], v) == b for v in values)
-                      for b in range(len(encoding['queue_bins']) + 1)]
+            bounds = [0] if busiest and side == 'incoming' else encoding['queue_bins']
+            high = [v for v in values if bisect_left(bounds, v) == 2]
+            counts = [sum(bisect_left(bounds, v) == b for v in values)
+                      for b in range(len(bounds) + 1)]
             bins.append(dict(side=side, edge=group['edge'], lanes=group['lanes'], samples=len(values),
                              bins=counts, proportions=[n / len(values) for n in counts],
                              min=min(values), max=max(values), mean=statistics.mean(values),
@@ -138,9 +154,50 @@ def audit_signals(signals, metadata):
     return metrics, green
 
 
+def replay_edge_ages(rows, signals, metadata, encoding):
+    """Tinh doc lap tu queue dau decision va cac ky tu G thuc te trong signals.csv."""
+    groups = encoding['incoming_groups']
+    since = [None] * len(groups)
+    served = defaultdict(set)
+    for sample in signals:
+        for i, lane, _, _ in metadata['controlled_links']:
+            if sample['signal'][i] == 'G':
+                served[int(sample['decision'])].add(lane)
+    for row in rows:
+        now = float(row['start'])
+        incoming = json.loads(row['incoming']) if 'incoming' in row else json.loads(row['state'])['incoming']
+        queues = dict(zip(encoding['incoming_lanes'], incoming))
+        for i, group in enumerate(groups):
+            if sum(queues[lane] for lane in group['lanes']) == 0:
+                since[i] = None
+            elif since[i] is None:
+                since[i] = now
+        waiting = [i for i, start in enumerate(since) if start is not None]
+        oldest = min(waiting, key=since.__getitem__) if waiting else None
+        yield oldest, now - since[oldest] if waiting else 0
+        for i, group in enumerate(groups):
+            if served[int(row['decision'])].intersection(group['lanes']):
+                since[i] = None
+
+
+def audit_overdue_states(rows, signals, metadata, encoding):
+    ages = replay_edge_ages(rows, signals, metadata, encoding)
+    for j, (row, (oldest, age)) in enumerate(zip(rows, ages, strict=True)):
+        code = oldest + 1 if age >= encoding['overdue_seconds'] else 0
+        assert json.loads(row['encoded_state'])[-1] == code
+        if 'state' in row:
+            assert json.loads(row['state'])['overdue_edge'] == code
+        if 'next_encoded_state' in row:
+            successor = json.loads(rows[j+1]['encoded_state']) if j+1 < len(rows) else None
+            assert json.loads(row['next_encoded_state']) == successor
+
+
 def replay_training(root, name, payload, mapping, *, training_dir=None):
     """Tai dung so lan tham, nhanh RNG va cap nhat Bellman; doi chieu moi checkpoint."""
     settings = payload['metadata']['training']
+    strategy = settings.get('exploration_strategy', 'uniform')
+    if strategy not in ('uniform', 'untried-first'):
+        raise ValueError(f'Unknown exploration strategy: {strategy}')
     actions = payload['metadata']['actions']
     table, updates, visits = {}, Counter(), Counter()
     rng = random.Random(settings['exploration_seed'])
@@ -149,12 +206,18 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
     for episode in range(1, settings['episodes_trained'] + 1):
         folder = training_dir / f'episode_{episode:03d}'
         rows = read_csv(folder / 'actions.csv')
+        signal_rows = read_csv(folder / 'signals.csv')
         result = read_json(folder / 'result.json')
         checkpoint = read_json(folder / 'q_table.json')
         run_meta = read_json(folder / 'metadata.json')
+        for meta in (run_meta, checkpoint['metadata']):
+            if meta['training'].get('exploration_strategy', 'uniform') != strategy:
+                raise ValueError('Training exploration strategy mismatch')
         if (run_meta['encoding'] != payload['metadata']['encoding']
                 or run_meta['environment'] != payload['metadata']['environment']):
             raise ValueError('Training encoding/timing mismatch')
+        if 'overdue_seconds' in run_meta['encoding']:
+            audit_overdue_states(rows, signal_rows, mapping, run_meta['encoding'])
         explored = 0
         greedy_ties = 0
         action_counts = Counter()
@@ -168,13 +231,19 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
             assert values == json.loads(row['q_before'])
             epsilon = float(row['epsilon'])
             schedule = settings['epsilon_schedule']
-            expected_epsilon = max(schedule['minimum'], schedule['start'] -
-                                   (schedule['start'] - schedule['minimum']) *
-                                   (episode - 1) / (schedule['episodes'] - 1))
+            expected_epsilon = schedule['start']
+            if schedule['episodes'] > 1:
+                expected_epsilon = max(schedule['minimum'], schedule['start'] -
+                                       (schedule['start'] - schedule['minimum']) *
+                                       (episode - 1) / (schedule['episodes'] - 1))
             assert epsilon == expected_epsilon == run_meta['epsilon']
             exploring = epsilon > 0 and rng.random() < epsilon
             if exploring:
-                action = rng.choice(actions)
+                candidates = actions
+                if strategy == 'untried-first':
+                    untried = [a for a in actions if updates[state, a] == 0]
+                    candidates = untried or actions
+                action = rng.choice(candidates)
                 explored += 1
             else:
                 evidence = greedy_evidence(state, table, actions, updates)
@@ -201,11 +270,13 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
             updates[state, action] += 1
             observations.append(dict(incoming=json.loads(row['incoming']), outgoing=json.loads(row['outgoing']),
                                      phase=int(row['previous_phase']), encoded=state))
+            if 'overdue_seconds' in run_meta['encoding']:
+                observations[-1]['overdue_edge'] = state[-1]
         assert table == model_table(checkpoint)
         assert len(rows) == result['control_calls']
         assert {str(a): action_counts[a] for a in actions} == result['action_counts']
         assert math.isclose(sum(rewards), result['total_reward'], abs_tol=1e-9)
-        metrics, green = audit_signals(read_csv(folder / 'signals.csv'),
+        metrics, green = audit_signals(signal_rows,
                                        dict(mapping, begin=result['begin'], end=result['end']))
         assert metrics['queue_seconds'] == result['queue_seconds']
         vehicles = {k: int(v) for k, v in result['vehicles'].items()}
@@ -243,6 +314,8 @@ def evaluation_policy(rows, payload, updates, source):
             assert float(row['epsilon']) == 0
             raw = dict(incoming=json.loads(row['incoming']), outgoing=json.loads(row['outgoing']),
                        phase=int(row['previous_phase']))
+            if 'overdue_seconds' in payload['metadata']['encoding']:
+                raw['overdue_edge'] = state[-1]
         else:
             assert json.loads(row['q_values']) == values
             assert json.loads(row['unseen']) == evidence['unseen']

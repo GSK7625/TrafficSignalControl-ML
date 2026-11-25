@@ -23,5 +23,6 @@ __pycache__/
 *.swo
 
 # OS generated files
+/experiments/
 .DS_Store
 Thumbs.db

@@ -191,6 +191,99 @@ def test_terminal_does_not_read_or_create_next_state():
     assert set(table) == {(0,), (1,)}
 
 
+def test_negative_initial_q_is_used_for_successor_and_preserves_learned_cells():
+    actions = (4, 0, 2)
+    table = {}
+    assert ql.get_q_values(table, (1,), actions, create=False, initial_q=-20) == [-20] * 3
+    assert table == {}
+    ql.update_q_value(table, (1,), 0, -5, (2,), False, actions, .5, .5, initial_q=-20)
+    # target = -5 + 0.5 * (-20) = -15. Chi cot cua pha 0 duoc cap nhat.
+    assert table == {(1,): [-20, -17.5, -20], (2,): [-20, -20, -20]}
+    assert ql.choose_action(table, (1,), actions, initial_q=-20) == 0
+    ql.update_q_value(table, (1,), 2, 0, None, True, actions, 1, .5, initial_q=-20)
+    assert table[(1,)] == [-20, -17.5, 0] and None not in table
+    assert ql.choose_action(table, (1,), actions, initial_q=-20) == 2
+
+
+def test_train_tie_rng_only_draws_for_greedy_ties():
+    actions = (4, 0, 2)
+    table = {(1,): [-3, -5, -3], (2,): [-5, -1, -8]}
+    ties = random.Random(19)
+    initial_state = ties.getstate()
+    ql.choose_action(table, (1,), actions, 1, random.Random(7), tie_rng=ties)
+    assert ql.choose_action(table, (2,), actions, tie_rng=ties) == 0
+    assert ties.getstate() == initial_state
+    expected = random.Random(19)
+    picks = [ql.choose_action(table, (1,), actions, tie_rng=ties) for _ in range(20)]
+    assert picks == [expected.choice([4, 2]) for _ in picks]
+    assert set(picks) == {4, 2}
+    assert ql.choose_action(table, (1,), actions) == 4
+    assert ql.choose_action(table, (3,), actions, initial_q=-20) == 4 and (3,) not in table
+
+
+def test_unseen_state_after_load_uses_saved_prior_in_both_evaluation_paths(tmp_path, monkeypatch):
+    import analyze_ql as audit
+    import evaluate
+
+    def short_env(*args, **kwargs):
+        env = SumoEnv(*args, **kwargs)
+        env.end = env.begin + 40
+        return env
+
+    monkeypatch.setattr(ql, "SumoEnv", short_env)
+    monkeypatch.setattr(evaluate, "SumoEnv", short_env)
+    metadata = ql.make_metadata(short_env("ingolstadt1"), episodes=1, alpha=.1, gamma=.95,
+                                epsilon_start=1, epsilon_min=.05, exploration_seed=7,
+                                initial_q=-20, train_tie_seed=19)
+    model = tmp_path / "empty.json"
+    ql.save_q_table(model, {}, metadata)
+    ql.evaluate("ingolstadt1", model, tmp_path / "diagnostic", seed=42)
+    evaluate.run_evaluation("ingolstadt1", "QL", 42, tmp_path / "common", model)
+    for folder, field in (("diagnostic", "q_before"), ("common", "q_values")):
+        for row in audit.read_csv(tmp_path / folder / "actions.csv"):
+            assert json.loads(row[field]) == [-20, -20, -20]
+            assert int(row["action"]) == 0
+    assert ql.load_q_table(model, short_env("ingolstadt1")) == ({}, metadata)
+
+
+@pytest.mark.parametrize("arm,options", [
+    ("baseline", {}), ("negative", {"initial_q": -1358.5}), ("train-ties", {"train_tie_seed": 19})],
+    ids=["baseline", "negative", "train-ties"])
+def test_action_selection_smoke(tmp_path, monkeypatch, arm, options):
+    import analyze_ql as audit
+    import evaluate
+    from ql_progress import progress
+
+    def short_env(*args, **kwargs):
+        env = SumoEnv(*args, **kwargs)
+        env.end = env.begin + 420
+        return env
+
+    monkeypatch.setattr(ql, "SumoEnv", short_env)
+    monkeypatch.setattr(evaluate, "SumoEnv", short_env)
+    folder = tmp_path / arm
+    table, metadata = ql.train("cologne1", folder, 3, overdue_state=True, decay_episodes=3, **options)
+    model = folder / "episode_003/q_table.json"
+    assert ql.load_q_table(model, short_env("cologne1")) == (table, metadata)
+    initial = options.get("initial_q", 0.)
+    assert metadata["training"]["initial_q"] == initial
+    assert metadata["training"]["train_tie_seed"] == options.get("train_tie_seed")
+    out = tmp_path / "validation"
+    result = evaluate.run_evaluation("cologne1", "QL", 42, out, model)
+    assert result["model_sha256_before"] == result["model_sha256_after"]
+    payload = audit.read_json(model)
+    updates, _, _, _ = audit.replay_training(ROOT, "cologne1", payload, audit.read_json(out / "metadata.json"),
+                                             training_dir=folder)
+    stats = progress(folder, [out])[-1]
+    assert stats["updated_pairs"] == len(updates)
+    assert stats["validation_decisions"] == result["control_calls"]
+    for row in audit.read_csv(out / "actions.csv"):
+        state = tuple(json.loads(row["encoded_state"]))
+        values = json.loads(row["q_values"])
+        assert values == table.get(state, [initial] * len(metadata["actions"]))
+        assert int(row["action"]) == metadata["actions"][values.index(max(values))]
+
+
 @pytest.mark.parametrize("alpha,gamma", [(0, .95), (-1, .95), (1.1, .95),
                                              (.1, -1), (.1, 1.1), (float("nan"), .95)])
 def test_invalid_learning_parameters_do_not_mutate(alpha, gamma):
@@ -251,6 +344,71 @@ def test_linear_epsilon_schedule_and_one_episode():
     assert ql.episode_epsilon(1, 1, 1, .05) == 1
 
 
+@pytest.mark.parametrize("schedule", ["linear", "exponential"])
+def test_budget_independent_epsilon_and_floor(schedule):
+    prefixes = [[ql.episode_epsilon(i, 15, 1, .05, schedule) for i in range(1, n + 1)]
+                for n in (15, 30, 60, 100)]
+    for values in prefixes:
+        assert values == prefixes[-1][:len(values)]
+        assert values[0] == 1 and values[14] == pytest.approx(.05)
+        assert all(a >= b for a, b in zip(values, values[1:]))
+        assert all(e == .05 for e in values[15:])
+    midpoint = .525 if schedule == "linear" else .05 ** .5
+    assert prefixes[0][7] == pytest.approx(midpoint)
+
+
+def test_sumo_seed_cycle_and_invalid_schedules():
+    assert [ql.episode_sumo_seed(i, [11, 22]) for i in (1, 2, 3, 4)] == [11, 22, 11, 22]
+    assert ql.episode_sumo_seed(100, [11]) == 11
+    for seeds in ([], [11, -1], [2**31], [True]):
+        with pytest.raises(ValueError):
+            ql.episode_sumo_seed(1, seeds)
+    with pytest.raises(ValueError):
+        ql.episode_epsilon(1, 15, 1, 0, "exponential")
+
+
+def test_scheduled_training_and_checkpoint_validation(tmp_path, monkeypatch):
+    import analyze_ql as audit
+    import evaluate
+    from ql_progress import progress
+
+    def short_env(*args, **kwargs):
+        env = SumoEnv(*args, **kwargs)
+        env.end = env.begin + 180
+        return env
+
+    monkeypatch.setattr(ql, "SumoEnv", short_env)
+    monkeypatch.setattr(evaluate, "SumoEnv", short_env)
+    train_dir = tmp_path / "train"
+    _, meta = ql.train("cologne1", train_dir, 3, overdue_state=True, sumo_seeds=[11, 22],
+                       epsilon_schedule="exponential", decay_episodes=5)
+    assert meta["training"]["sumo_seeds"] == [11, 22]
+    assert meta["training"]["sumo_seed"] is None
+    checkpoint = train_dir / "episode_002/q_table.json"
+    validation = tmp_path / "validation_42"
+    result = evaluate.run_evaluation("cologne1", "QL", 42, validation, checkpoint)
+    rows = progress(train_dir, [validation])
+    assert [int(row["sumo_seed"]) for row in rows] == [11, 22, 11]
+    assert [float(row["epsilon"]) for row in rows] == pytest.approx([1, .05**.25, .05**.5])
+    assert rows[0]["greedy_change_rate"] is None
+    assert "validation_runs" not in rows[0] and "validation_runs" not in rows[2]
+    assert rows[1]["completion"] == result["completion_rate"]
+    assert rows[1]["validation_runs"] == 1
+    counts, _, _, _ = audit.replay_training(ROOT, "cologne1", audit.read_json(checkpoint),
+                                            audit.read_json(validation / "metadata.json"), training_dir=train_dir)
+    assert rows[1]["updated_pairs"] == len(counts)
+    eval_rows = audit.read_csv(validation / "actions.csv")
+    untried = sum((tuple(json.loads(r["encoded_state"])), int(r["action"])) not in counts for r in eval_rows)
+    assert rows[1]["validation_unseen_action_rate"] == untried / len(eval_rows)
+    assert result["model_sha256_before"] == result["model_sha256_after"]
+    with pytest.raises(ValueError, match="Duplicate"):
+        progress(train_dir, [validation, validation])
+    result["simulation_seconds"] -= 1
+    (validation / "result.json").write_text(json.dumps(result))
+    with pytest.raises(ValueError, match="horizon"):
+        progress(train_dir, [validation])
+
+
 def test_real_train_three_episodes_save_load_and_read_only_evaluation(tmp_path, monkeypatch):
     # Khung gio ngan de kiem tra luong chay; bao cao chinh thuc dung du 1 gio goc.
     real_env = ql.SumoEnv
@@ -284,7 +442,7 @@ def test_real_train_three_episodes_save_load_and_read_only_evaluation(tmp_path, 
     with (output / "training.csv").open(newline="") as f:
         rows = list(csv.DictReader(f))
     assert len(rows) == 3
-    assert [float(row["epsilon"]) for row in rows] == pytest.approx([1, .525, .05])
+    assert [float(row["epsilon"]) for row in rows] == pytest.approx([1, 1-.95/14, 1-2*.95/14])
     result = ql.evaluate("ingolstadt1", model, tmp_path / "eval", seed=42)
     assert result["epsilon"] == 0 and result["simulation_seconds"] == 47
     assert result["training_sumo_seed"] == 23423 and result["sumo_seed"] == 42

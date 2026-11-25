@@ -18,10 +18,10 @@ Nếu đã có `.venv`, dùng lại môi trường đó. Môi trường kiểm t
 
 ## Chạy FT, MP, Q-Learning và Guard
 
-Chạy các lệnh dưới đây từ gốc repository. Mỗi lần chạy nhóm lệnh sẽ tạo một đường dẫn mới trong thư mục tạm. Có thể xem vị trí kết quả bằng `$runRoot`. Ví dụ dùng `cologne1`; để chạy `ingolstadt1`, đổi tên bản đồ trong các lệnh và tên tệp Q-table cho khớp.
+Chạy các lệnh dưới đây từ gốc repository. Mỗi lần chạy nhóm lệnh sẽ tạo một thư mục kết quả mới trong `experiments/` của dự án. Có thể xem vị trí kết quả bằng `$runRoot`. Ví dụ dùng `cologne1`; để chạy `ingolstadt1`, đổi tên bản đồ trong các lệnh và tên tệp Q-table cho khớp.
 
 ```powershell
-$runRoot = Join-Path $env:TEMP ("traffic-signal-" + [guid]::NewGuid().ToString("N"))
+$runRoot = Join-Path '.\experiments' ("traffic-signal-" + [guid]::NewGuid().ToString("N"))
 
 .\.venv\Scripts\python.exe src/evaluate.py --algorithm FT --map cologne1 --seed 42 --output "$runRoot/ft"
 .\.venv\Scripts\python.exe src/evaluate.py --algorithm MP --map cologne1 --seed 42 --output "$runRoot/mp"
@@ -43,6 +43,14 @@ Thí nghiệm state trên Cologne1 dùng lệnh train với `--overdue-state` v�
 Cờ train `--busiest-state` thử một cách thu nhỏ bảng Q trên Cologne1. Bốn hướng vào được mã hóa bằng bốn dấu hiệu có xe dừng và một mã hướng có queue dài nhất. Mã 0 nghĩa là cả bốn hướng đều trống. Nếu nhiều hướng cùng dài nhất, lấy hướng đứng đầu theo thứ tự edge trong model. Các bin đầu ra, pha hiện tại và mã hướng quá hạn 300 giây vẫn nằm trong khóa. Lệnh evaluate đọc phiên bản `overdue-busiest-v1` từ model.
 
 ## Đọc kết quả
+
+Để thử phạt nhu cầu chờ xanh, thêm `--starvation-lambda 5` hoặc `15` khi train QL. Mặc định λ=0 dùng reward queue gốc. [Công thức, đối chứng và kết quả validation](reports/ql_starvation_reward.md)
+
+Trên Cologne1, `--relative-state` giữ các bin Overdue và đánh dấu hướng dẫn đầu khi hai hướng cùng có ít nhất 5 xe dừng và chênh nhau ít nhất 5 xe (bin mặc định). [So sánh kích thước bảng, mức gộp state và kết quả smoke](reports/ql_relative_state.md)
+
+[Thí nghiệm Q ban đầu và phá hòa](reports/ql_action_selection.md) so sánh riêng `--initial-q` và `--train-tie-seed` với baseline Q=0. Evaluate đọc mức khởi tạo từ model và chọn pha đầu tiên khi hòa.
+
+Để so sánh các checkpoint 15/30/60 episode, xem [thí nghiệm ngân sách huấn luyện](reports/ql_training_budget.md). Mốc giảm epsilon mặc định là 15 episode cho mọi ngân sách. Dùng `--epsilon-schedule exponential` để thử lịch hàm mũ hoặc `--sumo-seeds 23423 23424 23425` để luân phiên seed train. Báo cáo có lệnh validation và cách đọc coverage theo đúng checkpoint.
 
 Train ghi `training.csv` và Q-table theo episode. Các lượt qua `src/evaluate.py` dùng chung cách tính metric và lưu `result.json`, `metadata.json`, `actions.csv`, `signals.csv`, XML cùng log SUMO. Dùng `result.json` để xem các chỉ số sau.
 

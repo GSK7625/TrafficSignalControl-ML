@@ -46,7 +46,7 @@ Thư mục `TrafficSignalControl-stage2-96746490` trong Documents của tài kho
 ```powershell
 $documents = [Environment]::GetFolderPath('MyDocuments')
 $saved = Join-Path $documents 'TrafficSignalControl-stage2-96746490'
-$newRun = Join-Path $documents ("TrafficSignalControl-stage2-" + [guid]::NewGuid().ToString("N"))
+$newRun = Join-Path '.\experiments' ("TrafficSignalControl-stage2-" + [guid]::NewGuid().ToString("N"))
 New-Item -ItemType Directory -Path $newRun -ErrorAction Stop | Out-Null
 Copy-Item -LiteralPath (Join-Path $saved 'run_replays.py') -Destination $newRun
 .\.venv\Scripts\python.exe (Join-Path $newRun 'run_replays.py')

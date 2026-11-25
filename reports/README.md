@@ -1,6 +1,10 @@
 # Bản đồ báo cáo và dữ liệu thực nghiệm
 
+Dữ liệu chạy cục bộ nằm trong [experiments/](../experiments/). Git bỏ qua thư mục này. Log, manifest và script lưu kèm kết quả cũ có thể ghi đường dẫn tại thời điểm chạy. Ví dụ, thư mục cũ mang tên `TrafficSignalControl-ML-stage4-2382c8e3` hiện nằm ở `experiments/stage4-2382c8e3/`. Mã nguồn đang dùng nằm trong `src/` và `tools/`.
+
 Bắt đầu từ [README ở gốc](../README.md) và [hướng dẫn đọc mã](../LEARNING_GUIDE.md).
+
+[Kiểm chứng Q-Learning và khóa đánh giá cuối](ql_final_evaluation.md) đối chiếu thời lượng pha với trace, tổng hợp validation và chuẩn bị 70 lượt test trên hai bản đồ.
 
 [Tổng kết hai thí nghiệm Q-Learning](ql_final_review.md) ghi quyết định giữ biến thể nào,
 kết quả trên từng bộ seed test và các hàm cần mở khi thuyết trình.
@@ -108,7 +112,7 @@ của Stage 6.2 và hai bảng `summary.csv` của Stage 7 và Stage 8 khớp n�
 
 **Đề xuất lưu trữ.** Giữ các báo cáo Stage 1–8 ở vị trí hiện tại vì một số
 test và công cụ replay dùng trực tiếp đường dẫn đến XML, CSV và checkpoint.
-Lưu các lượt mới ngoài Git như [Giai đoạn 4](ql_validation_test.md), kèm
+Lưu các lượt mới vào `experiments/` trong dự án như [Giai đoạn 4](ql_validation_test.md), kèm
 manifest đầu vào, phiên bản SUMO, checkpoint và SHA của các tệp chứng cứ.
 Khi cần lưu dài hạn, tạo một bản nén theo đợt, kiểm SHA và giải nén thử
 vào thư mục riêng, rồi chạy công cụ tổng hợp để đối chiếu bảng. Việc nén,

@@ -85,7 +85,7 @@ Wait và Time Loss lấy từ SUMO; Travel bằng arrival trừ actual depart. C
 
 ## Kiểm tra và dữ liệu đã lưu
 
-Các tệp ở thư mục `C:/Users/dotru/Documents/TrafficSignalControl-ML-stage4-2382c8e3` ngoài Git. `protocol.md` là thiết kế đã lưu trước khi train. `plan.json`, `selection.json`, `metric_repair.json` và `commands.jsonl` lưu thiết lập, SHA, quyết định khóa và thời điểm gọi từng lệnh.
+Các tệp ở thư mục `experiments/stage4-2382c8e3` ngoài Git. `protocol.md` là thiết kế đã lưu trước khi train. `plan.json`, `selection.json`, `metric_repair.json` và `commands.jsonl` lưu thiết lập, SHA, quyết định khóa và thời điểm gọi từng lệnh.
 
 - Lệnh train dùng `src/q_learning.py train`; lệnh validation/test dùng `src/evaluate.py`. Mỗi lượt giữ `actions.csv`, `signals.csv`, metadata và log SUMO; các lượt evaluate giữ thêm tripinfo đầy đủ.
 - `audit_experiment.py` replay **60 episode** với công cụ Stage 7, kiểm quyết định QL/Guard với công cụ Stage 8 và đối chiếu metric từ XML/CSV cho **80 lượt evaluate**. Audit xác nhận FT dùng 30 giây cho mọi lượt xanh đầy đủ, SHA model QL giữ nguyên trong evaluate và test dùng đúng SHA đã khóa.

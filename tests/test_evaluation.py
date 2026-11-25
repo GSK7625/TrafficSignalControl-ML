@@ -11,6 +11,22 @@ import pytest
 from evaluation_metrics import trip_metrics, signal_metrics, requested_trips
 
 
+def test_final_plan_has_paired_seeds_and_no_simulation_by_default(monkeypatch, capsys):
+    import sys
+    import final_ql_evaluation as final
+
+    monkeypatch.setattr(final, "run_evaluation", lambda *a, **kw: pytest.fail("Dry run started SUMO"))
+    monkeypatch.setattr(sys, "argv", ["final_ql_evaluation.py"])
+    final.main()
+    rows = json.loads(capsys.readouterr().out)
+    assert len(rows) == 70
+    for name, labels in (("cologne1", ("FT", "MP", "QL-Original", "QL-Overdue")),
+                         ("ingolstadt1", ("FT", "MP", "QL-Original"))):
+        for label in labels:
+            pairs = {(r["seed"], r["repeat"]) for r in rows if r["map"] == name and r["controller"] == label}
+            assert pairs == {(s, n) for s in range(161101, 161106) for n in (1, 2)}
+
+
 @pytest.mark.parametrize('removed', [False, True])
 def test_raw_xml_csv_repeated_teleport_and_final_step_arrival(tmp_path, removed):
     """Hai su kien teleport cho cung mot ID; xe chua xong/dang cho van nam trong demand."""

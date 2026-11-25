@@ -1,0 +1,3 @@
+# Checkout the same bytes that were hashed when these checkpoints were selected.
+reports/ql_final_models/*.json text eol=crlf
+reports/stage7/training/ingolstadt1/exploration_7/ingolstadt1_q_table.json text eol=crlf

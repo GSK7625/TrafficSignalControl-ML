@@ -18,6 +18,7 @@ for _d in (ROOT / "src", ROOT / "tools"):
         sys.path.insert(0, str(_d))
 
 from evaluation_metrics import signal_metrics
+from training_schedule import episode_epsilon, episode_sumo_seed
 
 
 MAPS = ('cologne1', 'ingolstadt1')
@@ -47,8 +48,8 @@ def model_table(payload):
     return table
 
 
-def greedy_evidence(state, table, actions, updates):
-    values = table.get(state, [0.] * len(actions))
+def greedy_evidence(state, table, actions, updates, initial_q=0.0):
+    values = table.get(state, [initial_q] * len(actions))
     maximum = max(values)
     winners = [a for a, q in zip(actions, values) if q == maximum]
     return dict(action=winners[0], winners=winners, unseen=state not in table,
@@ -61,10 +62,13 @@ def greedy_evidence(state, table, actions, updates):
 def observation_analysis(records, encoding):
     """Dem hai loai mat thong tin rieng biet: lane -> tong edge, roi tong edge -> bin."""
     grouped = []
+    observed_bins = []
     raw_by_edge = defaultdict(set)
     edge_by_encoded = defaultdict(set)
     examples = defaultdict(list)
     busiest = encoding.get('state_version') == 'overdue-busiest-v1'
+    relative = encoding.get('state_version') == 'overdue-relative-v1'
+    n = len(encoding['incoming_groups'])
     for record in records:
         totals = []
         raw = []
@@ -82,10 +86,17 @@ def observation_analysis(records, encoding):
             raise ValueError('Invalid observation phase')
         binned = tuple(bisect_left(encoding['queue_bins'], q) for q in totals)
         if busiest:
-            n = len(encoding['incoming_groups'])
             incoming = totals[:n]
             peak = max(range(n), key=incoming.__getitem__) + 1 if any(incoming) else 0
             binned = tuple(int(q > 0) for q in incoming) + (peak,) + binned[n:]
+        if relative:
+            incoming = totals[:n]
+            lead = incoming.index(max(incoming))
+            runner_up = max(incoming[:lead] + incoming[lead+1:])
+            if runner_up > encoding['queue_bins'][-1] and incoming[lead] - runner_up >= encoding['lead_gap']:
+                binned = binned[:lead] + (len(encoding['queue_bins']) + 1,) + binned[lead+1:]
+        # Thong ke theo edge: ma vi tri edge dong nhat cua Busiest la truong rieng.
+        observed_bins.append(binned[:n] + binned[n+1:] if busiest else binned)
         encoded = binned + (phase,)
         if 'overdue_seconds' in encoding:
             code = record['overdue_edge']
@@ -110,9 +121,10 @@ def observation_analysis(records, encoding):
         for group in encoding[side + '_groups']:
             values = [row[index] for row in grouped]
             bounds = [0] if busiest and side == 'incoming' else encoding['queue_bins']
-            high = [v for v in values if bisect_left(bounds, v) == 2]
-            counts = [sum(bisect_left(bounds, v) == b for v in values)
-                      for b in range(len(bounds) + 1)]
+            codes = [row[index] for row in observed_bins]
+            high = [v for v, code in zip(values, codes) if code == 2]
+            bin_count = len(bounds) + 1 + int(relative and side == 'incoming')
+            counts = [codes.count(b) for b in range(bin_count)]
             bins.append(dict(side=side, edge=group['edge'], lanes=group['lanes'], samples=len(values),
                              bins=counts, proportions=[n / len(values) for n in counts],
                              min=min(values), max=max(values), mean=statistics.mean(values),
@@ -192,6 +204,37 @@ def audit_overdue_states(rows, signals, metadata, encoding):
             assert json.loads(row['next_encoded_state']) == successor
 
 
+def audit_rewards(rows, signals, mapping, payload):
+    """Rebuild end-of-action demand ages (including terminal) and queue area from trace."""
+    terminal = dict(start=rows[-1]['end'], incoming=rows[-1]['next_incoming'], decision=len(rows))
+    ages = list(replay_edge_ages([*rows, terminal], signals, mapping, payload['encoding']))
+    spec = payload.get('reward', {'version': 'mean-queue-v1', 'lambda': 0.0})
+    weight = spec['lambda']
+    assert weight >= 0 and math.isfinite(weight)
+    assert spec['version'] == ('mean-queue-edge-age-v1' if weight else 'mean-queue-v1')
+    if weight:
+        assert spec['threshold_seconds'] == spec['ramp_seconds'] == 300
+    area, last_queue = Counter(), {}
+    for sample in signals:
+        decision = int(sample['decision'])
+        last_queue[decision] = int(sample['queue'])
+        area[decision] += last_queue[decision] * (float(sample['end']) - float(sample['start']))
+    for i, (row, (_, age)) in enumerate(zip(rows, ages[1:], strict=True)):
+        after = json.loads(row['next_incoming'])
+        assert sum(after) == last_queue[i]
+        if i+1 < len(rows):
+            successor = rows[i+1]
+            incoming = json.loads(successor['incoming']) if 'incoming' in successor else json.loads(successor['state'])['incoming']
+            assert after == incoming
+        elapsed = float(row['end']) - float(row['start'])
+        assert float(row['elapsed']) == elapsed and float(row['queue_seconds']) == area[i]
+        queue = area[i] / elapsed
+        penalty = min(max(age - 300, 0), 300) / 300
+        assert queue == float(row['mean_queue']) and age == float(row['oldest_age_end'])
+        assert penalty == float(row['starvation_penalty']) and -queue - weight * penalty == float(row['reward'])
+    return max(age for _, age in ages)
+
+
 def replay_training(root, name, payload, mapping, *, training_dir=None):
     """Tai dung so lan tham, nhanh RNG va cap nhat Bellman; doi chieu moi checkpoint."""
     settings = payload['metadata']['training']
@@ -201,6 +244,9 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
     actions = payload['metadata']['actions']
     table, updates, visits = {}, Counter(), Counter()
     rng = random.Random(settings['exploration_seed'])
+    initial_q = settings.get('initial_q', 0.0)
+    tie_seed = settings.get('train_tie_seed')
+    tie_rng = None if tie_seed is None else random.Random(tie_seed)
     episodes, observations = [], []
     training_dir = root / f'reports/stage5/train/{name}' if training_dir is None else Path(training_dir)
     for episode in range(1, settings['episodes_trained'] + 1):
@@ -210,7 +256,18 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
         result = read_json(folder / 'result.json')
         checkpoint = read_json(folder / 'q_table.json')
         run_meta = read_json(folder / 'metadata.json')
+        schedule = settings['epsilon_schedule']
+        if schedule['name'] == 'linear per episode':  # Checkpoint cu giam epsilon theo tong ngan sach.
+            expected_epsilon = episode_epsilon(episode, schedule['episodes'], schedule['start'], schedule['minimum'])
+        else:
+            expected_epsilon = episode_epsilon(episode, schedule['decay_episodes'], schedule['start'],
+                                               schedule['minimum'], schedule['name'])
+        expected_seed = episode_sumo_seed(episode, settings.get('sumo_seeds', [settings['sumo_seed']]))
+        assert expected_seed == run_meta['sumo_seed'] == result['sumo_seed']
         for meta in (run_meta, checkpoint['metadata']):
+            assert meta.get('reward') == payload['metadata'].get('reward')
+            assert meta['training'].get('initial_q', 0.0) == initial_q
+            assert meta['training'].get('train_tie_seed') == tie_seed
             if meta['training'].get('exploration_strategy', 'uniform') != strategy:
                 raise ValueError('Training exploration strategy mismatch')
         if (run_meta['encoding'] != payload['metadata']['encoding']
@@ -218,6 +275,8 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
             raise ValueError('Training encoding/timing mismatch')
         if 'overdue_seconds' in run_meta['encoding']:
             audit_overdue_states(rows, signal_rows, mapping, run_meta['encoding'])
+        if run_meta['schema_version'] == 2:
+            audit_rewards(rows, signal_rows, mapping, run_meta)
         explored = 0
         greedy_ties = 0
         action_counts = Counter()
@@ -227,15 +286,9 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
             state = tuple(json.loads(row['encoded_state']))
             observed_states.add(state)
             visits[state] += 1
-            values = table.setdefault(state, [0.] * len(actions))
+            values = table.setdefault(state, [initial_q] * len(actions))
             assert values == json.loads(row['q_before'])
             epsilon = float(row['epsilon'])
-            schedule = settings['epsilon_schedule']
-            expected_epsilon = schedule['start']
-            if schedule['episodes'] > 1:
-                expected_epsilon = max(schedule['minimum'], schedule['start'] -
-                                       (schedule['start'] - schedule['minimum']) *
-                                       (episode - 1) / (schedule['episodes'] - 1))
             assert epsilon == expected_epsilon == run_meta['epsilon']
             exploring = epsilon > 0 and rng.random() < epsilon
             if exploring:
@@ -246,20 +299,23 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
                 action = rng.choice(candidates)
                 explored += 1
             else:
-                evidence = greedy_evidence(state, table, actions, updates)
+                evidence = greedy_evidence(state, table, actions, updates, initial_q)
                 action = evidence['action']
+                if evidence['tied'] and tie_rng is not None:
+                    action = tie_rng.choice(evidence['winners'])
                 greedy_ties += evidence['tied']
             assert action == int(row['action'])
             action_counts[action] += 1
             reward = float(row['reward'])
-            assert reward == -float(row['queue_seconds']) / float(row['elapsed'])
+            if run_meta['schema_version'] == 1:
+                assert reward == -float(row['queue_seconds']) / float(row['elapsed'])
             rewards.append(reward)
             target = reward
             done = row['done'] == 'True'
             assert done == (row is rows[-1])
             if not done:
                 successor = tuple(json.loads(row['next_encoded_state']))
-                successor_values = table.setdefault(successor, [0.] * len(actions))
+                successor_values = table.setdefault(successor, [initial_q] * len(actions))
                 assert max(successor_values) == float(row['next_max'])
                 target += settings['gamma'] * max(successor_values)
             else:
@@ -303,12 +359,13 @@ def replay_training(root, name, payload, mapping, *, training_dir=None):
 def evaluation_policy(rows, payload, updates, source):
     table = model_table(payload)
     actions = payload['metadata']['actions']
+    initial_q = payload['metadata']['training'].get('initial_q', 0.0)
     details, observations = [], []
     for row in rows:
         state = tuple(json.loads(row['encoded_state']))
-        evidence = greedy_evidence(state, table, actions, updates)
+        evidence = greedy_evidence(state, table, actions, updates, initial_q)
         assert evidence['action'] == int(row['action'])
-        values = table.get(state, [0.] * len(actions))
+        values = table.get(state, [initial_q] * len(actions))
         if 'q_before' in row:
             assert json.loads(row['q_before']) == json.loads(row['q_after']) == values
             assert float(row['epsilon']) == 0

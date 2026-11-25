@@ -89,6 +89,7 @@ def run_evidence(folder, payload, updates):
     assert metadata['source_hashes'] == payload['metadata']['source_hashes']
     table = audit.model_table(payload)
     actions = payload['metadata']['actions']
+    initial_q = payload['metadata']['training'].get('initial_q', 0.0)
     if 'overdue_seconds' in metadata['encoding']:
         audit.audit_overdue_states(rows, signal_rows, metadata, metadata['encoding'])
     if metadata.get('guard_seconds'):
@@ -97,8 +98,8 @@ def run_evidence(folder, payload, updates):
     overrides = 0
     for row in rows:
         state = tuple(json.loads(row['encoded_state']))
-        evidence = audit.greedy_evidence(state, table, actions, updates)
-        values = table.get(state, [0.]*len(actions))
+        evidence = audit.greedy_evidence(state, table, actions, updates, initial_q)
+        values = table.get(state, [initial_q] * len(actions))
         assert json.loads(row['q_values']) == values
         assert json.loads(row['unseen']) == evidence['unseen']
         selected = int(row['action'])
